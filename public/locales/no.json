@@ -1,0 +1,25 @@
+{
+  "_metadata": {
+    "code": "no",
+    "name": "Norwegian",
+    "nativeName": "Norsk",
+    "direction": "ltr"
+  },
+  "header": {
+    "tagline": "Lydavspilling for Live-arrangementer"
+  },
+  "common": {
+    "changeLanguage": "Bytt språk"
+  },
+  "download": {
+    "windows": {
+      "title": "Windows"
+    },
+    "macArm": {
+      "title": "macOS — Apple Silicon"
+    },
+    "linux": {
+      "title": "Linux"
+    }
+  }
+}

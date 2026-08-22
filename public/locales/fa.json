@@ -1,0 +1,25 @@
+{
+  "_metadata": {
+    "code": "fa",
+    "name": "Persian",
+    "nativeName": "فارسی",
+    "direction": "rtl"
+  },
+  "header": {
+    "tagline": "پخش سیگنال صوتی برای رویدادهای زنده"
+  },
+  "common": {
+    "changeLanguage": "تغییر زبان"
+  },
+  "download": {
+    "windows": {
+      "title": "Windows"
+    },
+    "macArm": {
+      "title": "macOS — Apple Silicon"
+    },
+    "linux": {
+      "title": "Linux"
+    }
+  }
+}

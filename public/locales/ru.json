@@ -1,0 +1,25 @@
+{
+  "_metadata": {
+    "code": "ru",
+    "name": "Russian",
+    "nativeName": "Русский",
+    "direction": "ltr"
+  },
+  "header": {
+    "tagline": "Воспроизведение аудио для живых мероприятий"
+  },
+  "common": {
+    "changeLanguage": "Сменить язык"
+  },
+  "download": {
+    "windows": {
+      "title": "Windows"
+    },
+    "macArm": {
+      "title": "macOS — Apple Silicon"
+    },
+    "linux": {
+      "title": "Linux"
+    }
+  }
+}

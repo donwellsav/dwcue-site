@@ -1,0 +1,12 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "dwcue-web"
+compatibility_date = "2026-08-21"
+
+# NOTE: the site is served by this Worker from the R2 bucket `dwcue-site`
+# (binding env.SITE), NOT from Workers static assets. Large binaries under
+# public/downloads/ exceed the 25 MiB Workers asset limit — upload them with:
+#   npx wrangler r2 object put "dwcue-site/downloads/<file>" --remote --file public/downloads/<file> \
+#     --content-type <mime> --content-disposition 'attachment; filename="<file>"' \
+#     --cache-control "public, max-age=31536000, immutable"
+[assets]
+directory = "./.output/public"

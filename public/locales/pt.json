@@ -1,0 +1,25 @@
+{
+  "_metadata": {
+    "code": "pt",
+    "name": "Portuguese",
+    "nativeName": "Português",
+    "direction": "ltr"
+  },
+  "header": {
+    "tagline": "Reprodução de Áudio para Eventos ao Vivo"
+  },
+  "common": {
+    "changeLanguage": "Mudar idioma"
+  },
+  "download": {
+    "windows": {
+      "title": "Windows"
+    },
+    "macArm": {
+      "title": "macOS — Apple Silicon"
+    },
+    "linux": {
+      "title": "Linux"
+    }
+  }
+}

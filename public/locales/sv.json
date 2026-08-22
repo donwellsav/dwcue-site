@@ -1,0 +1,25 @@
+{
+  "_metadata": {
+    "code": "sv",
+    "name": "Swedish",
+    "nativeName": "Svenska",
+    "direction": "ltr"
+  },
+  "header": {
+    "tagline": "Ljuduppspelning för Live-evenemang"
+  },
+  "common": {
+    "changeLanguage": "Byt språk"
+  },
+  "download": {
+    "windows": {
+      "title": "Windows"
+    },
+    "macArm": {
+      "title": "macOS — Apple Silicon"
+    },
+    "linux": {
+      "title": "Linux"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+name: Build Website
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci --include=optional
+      - run: NUXT_APP_BASE_URL=/ npm run generate
+      - uses: actions/upload-artifact@v4
+        with:
+          name: donwells-cue-website
+          path: .output/public

@@ -1,0 +1,25 @@
+{
+  "_metadata": {
+    "code": "en",
+    "name": "English",
+    "nativeName": "English",
+    "direction": "ltr"
+  },
+  "header": {
+    "tagline": "Audio Cue Playback for Live Events"
+  },
+  "common": {
+    "changeLanguage": "Change language"
+  },
+  "download": {
+    "windows": {
+      "title": "Windows"
+    },
+    "macArm": {
+      "title": "macOS — Apple Silicon"
+    },
+    "linux": {
+      "title": "Linux"
+    }
+  }
+}

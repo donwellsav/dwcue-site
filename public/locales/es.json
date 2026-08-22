@@ -1,0 +1,25 @@
+{
+  "_metadata": {
+    "code": "es",
+    "name": "Spanish",
+    "nativeName": "Español",
+    "direction": "ltr"
+  },
+  "header": {
+    "tagline": "Reproducción de Audio para Eventos en Vivo"
+  },
+  "common": {
+    "changeLanguage": "Cambiar idioma"
+  },
+  "download": {
+    "windows": {
+      "title": "Windows"
+    },
+    "macArm": {
+      "title": "macOS — Apple Silicon"
+    },
+    "linux": {
+      "title": "Linux"
+    }
+  }
+}

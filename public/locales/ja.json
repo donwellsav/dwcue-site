@@ -1,0 +1,25 @@
+{
+  "_metadata": {
+    "code": "ja",
+    "name": "Japanese",
+    "nativeName": "日本語",
+    "direction": "ltr"
+  },
+  "header": {
+    "tagline": "ライブイベント用オーディオキュー再生"
+  },
+  "common": {
+    "changeLanguage": "言語を変更"
+  },
+  "download": {
+    "windows": {
+      "title": "Windows"
+    },
+    "macArm": {
+      "title": "macOS — Apple Silicon"
+    },
+    "linux": {
+      "title": "Linux"
+    }
+  }
+}

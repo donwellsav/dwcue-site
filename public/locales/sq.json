@@ -1,0 +1,25 @@
+{
+  "_metadata": {
+    "code": "sq",
+    "name": "Albanian",
+    "nativeName": "Shqip",
+    "direction": "ltr"
+  },
+  "header": {
+    "tagline": "Luajtja e Sinjaleve Audio për Ngjarje të Drejtpërdrejta"
+  },
+  "common": {
+    "changeLanguage": "Ndrysho gjuhën"
+  },
+  "download": {
+    "windows": {
+      "title": "Windows"
+    },
+    "macArm": {
+      "title": "macOS — Apple Silicon"
+    },
+    "linux": {
+      "title": "Linux"
+    }
+  }
+}

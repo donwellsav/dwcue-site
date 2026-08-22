@@ -1,0 +1,25 @@
+{
+  "_metadata": {
+    "code": "de",
+    "name": "German",
+    "nativeName": "Deutsch",
+    "direction": "ltr"
+  },
+  "header": {
+    "tagline": "Audio-Cue-Wiedergabe für Live-Events"
+  },
+  "common": {
+    "changeLanguage": "Sprache ändern"
+  },
+  "download": {
+    "windows": {
+      "title": "Windows"
+    },
+    "macArm": {
+      "title": "macOS — Apple Silicon"
+    },
+    "linux": {
+      "title": "Linux"
+    }
+  }
+}

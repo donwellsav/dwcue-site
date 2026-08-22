@@ -1,0 +1,25 @@
+{
+  "_metadata": {
+    "code": "ko",
+    "name": "Korean",
+    "nativeName": "한국어",
+    "direction": "ltr"
+  },
+  "header": {
+    "tagline": "라이브 이벤트용 오디오 큐 재생"
+  },
+  "common": {
+    "changeLanguage": "언어 변경"
+  },
+  "download": {
+    "windows": {
+      "title": "Windows"
+    },
+    "macArm": {
+      "title": "macOS — Apple Silicon"
+    },
+    "linux": {
+      "title": "Linux"
+    }
+  }
+}

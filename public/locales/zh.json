@@ -1,0 +1,25 @@
+{
+  "_metadata": {
+    "code": "zh",
+    "name": "Chinese",
+    "nativeName": "中文",
+    "direction": "ltr"
+  },
+  "header": {
+    "tagline": "现场活动音频提示播放"
+  },
+  "common": {
+    "changeLanguage": "更改语言"
+  },
+  "download": {
+    "windows": {
+      "title": "Windows"
+    },
+    "macArm": {
+      "title": "macOS — Apple Silicon"
+    },
+    "linux": {
+      "title": "Linux"
+    }
+  }
+}

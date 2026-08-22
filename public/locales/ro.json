@@ -1,0 +1,25 @@
+{
+  "_metadata": {
+    "code": "ro",
+    "name": "Romanian",
+    "nativeName": "Română",
+    "direction": "ltr"
+  },
+  "header": {
+    "tagline": "Redare Audio pentru Evenimente Live"
+  },
+  "common": {
+    "changeLanguage": "Schimbă limba"
+  },
+  "download": {
+    "windows": {
+      "title": "Windows"
+    },
+    "macArm": {
+      "title": "macOS — Apple Silicon"
+    },
+    "linux": {
+      "title": "Linux"
+    }
+  }
+}

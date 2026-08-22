@@ -1,0 +1,25 @@
+{
+  "_metadata": {
+    "code": "el",
+    "name": "Greek",
+    "nativeName": "Ελληνικά",
+    "direction": "ltr"
+  },
+  "header": {
+    "tagline": "Αναπαραγωγή Ηχητικών Σημάτων για Ζωντανές Εκδηλώσεις"
+  },
+  "common": {
+    "changeLanguage": "Αλλαγή γλώσσας"
+  },
+  "download": {
+    "windows": {
+      "title": "Windows"
+    },
+    "macArm": {
+      "title": "macOS — Apple Silicon"
+    },
+    "linux": {
+      "title": "Linux"
+    }
+  }
+}

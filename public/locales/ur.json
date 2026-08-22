@@ -1,0 +1,25 @@
+{
+  "_metadata": {
+    "code": "ur",
+    "name": "Urdu",
+    "nativeName": "اردو",
+    "direction": "rtl"
+  },
+  "header": {
+    "tagline": "لائیو ایونٹس کے لیے آڈیو کیو پلے بیک"
+  },
+  "common": {
+    "changeLanguage": "زبان تبدیل کریں"
+  },
+  "download": {
+    "windows": {
+      "title": "Windows"
+    },
+    "macArm": {
+      "title": "macOS — Apple Silicon"
+    },
+    "linux": {
+      "title": "Linux"
+    }
+  }
+}

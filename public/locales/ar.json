@@ -1,0 +1,25 @@
+{
+  "_metadata": {
+    "code": "ar",
+    "name": "Arabic",
+    "nativeName": "العربية",
+    "direction": "rtl"
+  },
+  "header": {
+    "tagline": "تشغيل إشارات صوتية للفعاليات الحية"
+  },
+  "common": {
+    "changeLanguage": "تغيير اللغة"
+  },
+  "download": {
+    "windows": {
+      "title": "Windows"
+    },
+    "macArm": {
+      "title": "macOS — Apple Silicon"
+    },
+    "linux": {
+      "title": "Linux"
+    }
+  }
+}

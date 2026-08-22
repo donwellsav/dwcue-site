@@ -1,0 +1,25 @@
+{
+  "_metadata": {
+    "code": "fr",
+    "name": "French",
+    "nativeName": "Français",
+    "direction": "ltr"
+  },
+  "header": {
+    "tagline": "Lecture Audio pour Événements en Direct"
+  },
+  "common": {
+    "changeLanguage": "Changer de langue"
+  },
+  "download": {
+    "windows": {
+      "title": "Windows"
+    },
+    "macArm": {
+      "title": "macOS — Apple Silicon"
+    },
+    "linux": {
+      "title": "Linux"
+    }
+  }
+}
