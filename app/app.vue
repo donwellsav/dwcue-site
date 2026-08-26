@@ -285,7 +285,7 @@ const baseURL = useRuntimeConfig().app.baseURL;
 const asset = (path: string) => `${baseURL}${path.replace(/^\/+/, '')}`;
 const siteURL = baseURL === '/' ? 'https://dwcue.com/' : baseURL;
 
-const version = ref('2.6.6');
+const version = ref('2.6.7');
 const detectedOS = ref<string | null>(null);
 
 const workflowSteps = [
