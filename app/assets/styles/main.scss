@@ -17,3 +17,20 @@ body {
 #__nuxt {
   min-height: 100vh;
 }
+// Visible keyboard focus for every interactive element — the site palette's
+// accent blue, thick enough to read against both paper and ink surfaces.
+a:focus-visible,
+button:focus-visible,
+select:focus-visible,
+input:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid var(--blue, #315fcf);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+// Never show the mouse-focus ring for pointer users.
+a:focus:not(:focus-visible),
+button:focus:not(:focus-visible) {
+  outline: none;
+}

@@ -5,17 +5,20 @@
       @click="toggleDropdown"
       :aria-label="t('common.changeLanguage')"
       :aria-expanded="isOpen"
+      aria-haspopup="true"
     >
       <span class="current-locale">{{ locale }}</span>
       <span class="language-chevron" aria-hidden="true">⌄</span>
     </button>
     
-    <div v-if="isOpen" class="language-dropdown">
+    <div v-if="isOpen" class="language-dropdown" role="menu" :aria-label="t('common.changeLanguage')">
       <button
         v-for="(name, code) in locales"
         :key="code"
         class="language-option"
         :class="{ active: locale === code }"
+        :lang="code"
+        role="menuitem"
         @click="selectLocale(code)"
       >
         {{ name }}
@@ -47,13 +50,22 @@ const handleClickOutside = (event: MouseEvent) => {
     isOpen.value = false;
   }
 };
+// Escape closes the dropdown and returns focus to the trigger button.
+const handleKeydown = (event: KeyboardEvent) => {
+  if (event.key === 'Escape' && isOpen.value) {
+    isOpen.value = false;
+    (document.querySelector('.language-button') as HTMLElement | null)?.focus();
+  }
+};
 
 onMounted(() => {
   document.addEventListener('click', handleClickOutside);
+  document.addEventListener('keydown', handleKeydown);
 });
 
 onUnmounted(() => {
   document.removeEventListener('click', handleClickOutside);
+  document.removeEventListener('keydown', handleKeydown);
 });
 </script>
 

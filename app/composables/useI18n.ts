@@ -111,10 +111,12 @@ export const useI18n = () => {
 
   // Get translation by path (e.g., 'header.tagline'). Falls back to English,
   // then to the raw path if even English is missing the key.
-  const t = (path: string): string => {
-    return resolve(localeData.value, path)
+  const t = (path: string, params?: Record<string, string>): string => {
+    const raw = resolve(localeData.value, path)
       ?? resolve(fallbackData.value, path)
       ?? path;
+    if (!params) return raw;
+    return raw.replace(/\{(\w+)\}/g, (m, name) => params[name] ?? m);
   };
 
   // Initialize locale

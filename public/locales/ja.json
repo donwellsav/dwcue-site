@@ -6,20 +6,161 @@
     "direction": "ltr"
   },
   "header": {
-    "tagline": "ライブイベント用オーディオキュー再生"
+    "tagline": "ライブイベント向けオーディオキュー再生"
   },
   "common": {
-    "changeLanguage": "言語を変更"
+    "changeLanguage": "言語を変更",
+    "skipLink": "コンテンツへ移動",
+    "download": "ダウンロード"
+  },
+  "seo": {
+    "description": "One Shots、Show Mode、Properties、トゥルーピーク保護を備えた、ローカル優先のライブイベント向けオーディオキュー再生。"
+  },
+  "brand": {
+    "home": "DonWells Cue ホーム",
+    "descriptor": "ライブオーディオ"
+  },
+  "nav": {
+    "label": "メインナビゲーション",
+    "workflow": "ワークフロー",
+    "oneShots": "One Shots",
+    "showMode": "Show Mode",
+    "download": "ダウンロード",
+    "docs": "ドキュメント"
+  },
+  "hero": {
+    "title": "次のキューを、必然のタイミングで。",
+    "lede": "ライブ公演のための、落ち着いて操作できるローカル優先の再生環境。細部まで準備し、ライブ画面の視認性を保ち、探し回ることなく正しい音を再生できます。",
+    "ctaPrimary": "DonWells Cue を入手",
+    "ctaSecondary": "仕組みを見る",
+    "factPrepare": "準備",
+    "factRehearse": "リハーサル",
+    "factPerform": "本番",
+    "framePath": "DonWells Cue / ライブビュー",
+    "captionA": "プレイリスト · One Shots · 出力",
+    "captionB": "ローカルセッション",
+    "annotationTop": "プレイリスト作業領域",
+    "annotationBottom": "プログラム / モニター",
+    "screenshotAlt": "色分けされたプレイリスト、One Shots グリッド、出力メーターを表示する DonWells Cue"
+  },
+  "signal": {
+    "localFirst": "ローカル優先",
+    "localFirstText": "信頼できるマシンで本番を進行。",
+    "platforms": "Windows · macOS · Linux",
+    "platformsText": "ブースを問わず一貫したワークフロー。",
+    "license": "AGPL-3.0",
+    "licenseText": "検証可能なオープンソース。",
+    "versionText": "現在のパッケージ版リリース。",
+    "label": "DonWells Cue の製品情報"
+  },
+  "workflow": {
+    "eyebrow": "ワークフロー",
+    "title": "3つの画面。1つの本番。",
+    "intro": "DonWells Cue は準備、試聴、本番操作を明確に分け、ライブオペレーターがその瞬間に必要な情報を常に確認できるようにします。",
+    "step1Title": "Properties で準備",
+    "step1Text": "マーカー、フェード、音量、ルーティング、ノーマライズ、必要な正確な位置からのトランスポート操作まで、キューを元データから整えます。",
+    "step2Title": "Preview で試聴",
+    "step2Text": "プログラムバスに触れず、個別に試聴できます。次のキューを設定し、トリムを確認して、本番を滞りなく進めます。",
+    "step3Title": "Show Mode で本番操作",
+    "step3Text": "ライブで重要な要素だけに画面を集約。再生中、次のキュー、トランスポート、One Shots、メーターを一目で確認できます。"
+  },
+  "oneShots": {
+    "frameLabel": "01 / クイック再生",
+    "screenshotAlt": "すぐに再生できる固定セルを備えた DonWells Cue の One Shots パネル",
+    "eyebrow": "One Shots",
+    "title": "重要なサウンドを、ワンタッチで。",
+    "text": "One Shots は、アナウンス、ジングル、効果音、登場曲、ベッド音源のための常設クイック再生画面です。セルは音源の有無にかかわらず同じ位置にあるため、オペレーターはサウンドの場所を常に把握できます。",
+    "point1": "ファイルをドラッグするか、プレイリストのキューをセルにコピー。",
+    "point2": "元のプレイリストを変更せずにセルを再生。",
+    "point3": "ライブ画面を煩雑にせず、設定へすぐにアクセス。",
+    "link": "ワークフローの解説を読む"
+  },
+  "showMode": {
+    "frameLabel": "02 / 本番ビュー",
+    "screenshotAlt": "シンプルなプレイリストとライブ出力メーターを表示する DonWells Cue の Show Mode",
+    "eyebrow": "Show Mode",
+    "title": "本番中は、インターフェースを必要最小限に。",
+    "text": "本番では、シンプルでタッチ操作しやすい再生画面に切り替えられます。再生中、次のキュー、トランスポート、出力情報は明確に保たれ、編集専用の操作項目は表示されません。",
+    "currentLabel": "再生中",
+    "currentText": "現在オンエア中の内容",
+    "nextLabel": "次",
+    "nextText": "再生準備ができている内容",
+    "safeLabel": "安全域",
+    "safeText": "メーターの現在位置",
+    "link": "現在のリリースをダウンロード"
+  },
+  "safety": {
+    "eyebrow": "信号管理",
+    "title": "会場に届く前に、リスクを把握。",
+    "text": "Properties は、本番前に技術スタッフが必要とする詳細情報を提供します。ピークおよびRMS波形表示、再生ヘッド、編集可能なマーカー、フェード、ルーティング、ノーマライズ、キュー位置からのトランスポート操作を利用できます。",
+    "cardHeaderA": "アプリの機能",
+    "cardHeaderB": "Properties / 出力",
+    "item1Title": "ピーク + RMS波形",
+    "item1Text": "プレイリストと同じトラックカラーで、本番前にキューを確認。",
+    "item2Title": "編集可能な再生ヘッドとマーカー",
+    "item2Text": "波形または正確な時刻フィールドから、イン、アウト、次キュー移行マーカーの位置を設定。",
+    "item3Title": "ノーマライズとトゥルーピーク保護",
+    "item3Text": "指定したターゲットにノーマライズし、作業中も出力上限を常に確認。",
+    "item4Title": "プログラムと Preview のルーティング",
+    "item4Text": "個別に試聴し、本番の信号経路を意図どおりに設定。両方のメーター経路を明瞭に表示します。",
+    "link": "現在のワークフロードキュメントを読む"
   },
   "download": {
+    "eyebrow": "現在のビルドをインストール",
+    "versionLabel": "現在のパッケージ版リリース",
+    "title": "本番用マシンを選択。",
+    "detectedText": "{os} が検出されました。対応するビルドが強調表示され、サポート対象の全プラットフォームも以下に表示されます。",
+    "fallbackText": "本番で使用するプラットフォーム向けの、現在のパッケージ版リリースをダウンロードしてください。",
+    "badge": "推奨",
     "windows": {
-      "title": "Windows"
+      "title": "Windows",
+      "description": "Windows 10/11 · 64ビットインストーラー",
+      "action": ".exe をダウンロード",
+      "meta": "NSIS インストーラー"
     },
     "macArm": {
-      "title": "macOS — Apple Silicon"
+      "title": "macOS — Apple Silicon",
+      "description": "M1/M2/M3 以降 · arm64",
+      "action": ".dmg をダウンロード",
+      "meta": "Apple Silicon"
     },
     "linux": {
-      "title": "Linux"
-    }
+      "title": "Linux",
+      "description": "x86_64 · AppImage",
+      "action": "AppImage をダウンロード",
+      "meta": "ポータブルビルド"
+    },
+    "otherFormats": "その他の形式",
+    "macZip": "macOS .zip",
+    "macIntelDmg": "macOS Intel .dmg",
+    "intelZip": "Intel .zip",
+    "linuxDeb": "Linux .deb",
+    "linuxRpm": "Linux .rpm",
+    "allReleases": "すべてのリリース",
+    "quickTitle": "Terminal を使う場合は、1つのコマンドでインストールできます。",
+    "quickText": "これを Terminal に貼り付けてください（⌘Space を押し、「Terminal」と入力）。最新リリースをダウンロードして DonWells Cue をインストールします。Homebrew や rustup と同じ形式のインストール方法です。Apple Silicon と Intel の両方に対応しています。",
+    "quickAlt": "または、上のダウンロードカードを利用できます。macOS アプリは署名および公証済みのため、セキュリティ警告なしで通常どおり開けます。",
+    "firstRunTitle": "ダウンロードして開くだけ。セキュリティ警告なし。",
+    "firstRunText": "DonWells Cue は Apple Developer ID で署名され、Apple による公証も受けているため、初回起動時から macOS Gatekeeper に承認されます。DMG を開き、アプリをアプリケーションフォルダへドラッグして、ダブルクリックするだけです。",
+    "firstRunWin": "Windows で SmartScreen が表示された場合は、詳細情報 → 実行 を選択してください。",
+    "osMac": "macOS Apple Silicon",
+    "osWindows": "Windows x64",
+    "osLinux": "Linux x64"
+  },
+  "docs": {
+    "eyebrow": "ドキュメント",
+    "title": "本番を組み立てたら、あとは画面を信頼するだけ。",
+    "lede": "README は、現在のクライアント／サーバーワークフロー、パッケージ化、ネットワーク運用、プロジェクト設定に関する正式な情報源です。",
+    "readme": "README を読む",
+    "viewSource": "ソースを表示",
+    "checklistHeading": "初回起動",
+    "step1": "プロジェクトフォルダを選択し、DonWells Cue にメディアディレクトリを作成させます。",
+    "step2": "プロジェクト設定で、プログラム出力、ターゲット、個別試聴用の Preview 出力を設定します。",
+    "step3": "Properties でキューマーカーとフェードを準備し、繰り返し使うサウンドを One Shots にコピーします。",
+    "step4": "Show Mode に切り替え、メーターを確認して、本番を開始します。"
+  },
+  "footer": {
+    "tagline": "ライブイベント向けのオープンソース・オーディオ再生。",
+    "backToTop": "ページ上部へ戻る"
   }
 }

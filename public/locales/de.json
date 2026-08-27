@@ -9,17 +9,158 @@
     "tagline": "Audio-Cue-Wiedergabe für Live-Events"
   },
   "common": {
-    "changeLanguage": "Sprache ändern"
+    "changeLanguage": "Sprache ändern",
+    "skipLink": "Zum Inhalt springen",
+    "download": "Herunterladen"
+  },
+  "seo": {
+    "description": "Lokale Audio-Cue-Wiedergabe für Live-Events — mit One Shots, Show Mode, Properties und True-Peak-Schutz."
+  },
+  "brand": {
+    "home": "DonWells Cue Startseite",
+    "descriptor": "LIVE-AUDIO"
+  },
+  "nav": {
+    "label": "Hauptnavigation",
+    "workflow": "Workflow",
+    "oneShots": "One Shots",
+    "showMode": "Show Mode",
+    "download": "Downloads",
+    "docs": "Doku"
+  },
+  "hero": {
+    "title": "Der nächste Cue fühlt sich unausweichlich an.",
+    "lede": "Eine ruhige, lokale Wiedergabe-Oberfläche für Live-Shows. Bereiten Sie jedes Detail vor, behalten Sie die Live-Ansicht lesbar und starten Sie den richtigen Sound ohne Suchen.",
+    "ctaPrimary": "DonWells Cue holen",
+    "ctaSecondary": "So funktioniert es",
+    "factPrepare": "Vorbereiten",
+    "factRehearse": "Proben",
+    "factPerform": "Aufführen",
+    "framePath": "DONWELLS CUE / LIVE-ANSICHT",
+    "captionA": "PLAYLIST · ONE SHOTS · AUSGABE",
+    "captionB": "LOKALE SITZUNG",
+    "annotationTop": "PLAYLIST-ARBEITSBEREICH",
+    "annotationBottom": "PROGRAMM / MONITOR",
+    "screenshotAlt": "DonWells Cue mit farbcodierter Playlist, One-Shots-Raster und Ausgangspegeln"
+  },
+  "signal": {
+    "localFirst": "Lokal zuerst",
+    "localFirstText": "Führen Sie die Show auf dem Rechner aus, dem Sie vertrauen.",
+    "platforms": "Windows · macOS · Linux",
+    "platformsText": "Ein Workflow für die gesamte Regie.",
+    "license": "AGPL-3.0",
+    "licenseText": "Open Source, gebaut zum Nachlesen.",
+    "versionText": "Aktuelles paketiertes Release.",
+    "label": "DonWells Cue Produktdaten"
+  },
+  "workflow": {
+    "eyebrow": "DER WORKFLOW",
+    "title": "Drei Oberflächen. Eine Show.",
+    "intro": "DonWells Cue hält Vorbereitung, Probehören und Aufführung getrennt, damit der Operator live immer genau die Informationen sieht, die jetzt zählen.",
+    "step1Title": "Vorbereiten in Properties",
+    "step1Text": "Formen Sie den Cue an der Quelle: Marker, Fades, Lautstärke, Routing, Normalisierung und Transport ab exakt der gewünschten Position.",
+    "step2Title": "Probehören über Preview",
+    "step2Text": "Hören Sie privat, ohne den Programm-Bus anzufassen. Nächsten Cue setzen, Schnitt prüfen und die Show läuft weiter.",
+    "step3Title": "Aufführen im Show Mode",
+    "step3Text": "Reduzieren Sie die Oberfläche auf das, was live zählt: aktuell, nächster, Transport, One Shots und Pegel, die auf einen Blick lesbar sind."
+  },
+  "oneShots": {
+    "frameLabel": "01 / SCHNELLSPIELEN",
+    "screenshotAlt": "DonWells Cue One-Shots-Panel mit permanenten Zellen für schnelles Abspielen",
+    "eyebrow": "ONE SHOTS",
+    "title": "Die wichtigen Sounds bleiben eine Berührung entfernt.",
+    "text": "One Shots sind eine permanente Schnellspiel-Fläche für Ansagen, Stinger, Effekte, Walk-ons und Beds. Die Zellen bleiben an Ort und Stelle, ob voll oder leer — der Operator weiß immer, wo ein Sound liegt.",
+    "point1": "Ziehen Sie eine Datei in eine Zelle oder kopieren Sie einen Playlist-Cue hinein.",
+    "point2": "Spielen Sie die Zelle ab, ohne die Quell-Playlist zu verändern.",
+    "point3": "Einstellungen bleiben griffbereit, ohne die Live-Ansicht zu überladen.",
+    "link": "Die Workflow-Notizen lesen"
+  },
+  "showMode": {
+    "frameLabel": "02 / PERFORMANCE-ANSICHT",
+    "screenshotAlt": "DonWells Cue Show Mode mit vereinfachter Playlist und Live-Ausgangspegeln",
+    "eyebrow": "SHOW MODE",
+    "title": "Weniger Interface, wenn der Raum live ist.",
+    "text": "Wechseln Sie für die Aufführung zu einer vereinfachten, touch-freundlichen Wiedergabeansicht. Aktuell, nächster, Transport und Ausgangsinformationen bleiben klar, während Bearbeitungs-Elemente in den Hintergrund treten.",
+    "currentLabel": "Aktuell",
+    "currentText": "was on air ist",
+    "nextLabel": "Nächster",
+    "nextText": "was bereitsteht",
+    "safeLabel": "Sicher",
+    "safeText": "wo die Pegel stehen",
+    "link": "Das aktuelle Release herunterladen"
+  },
+  "safety": {
+    "eyebrow": "SIGNALDISZIPLIN",
+    "title": "Sehen Sie das Risiko, bevor es den Raum erreicht.",
+    "text": "Properties liefert dem Techniker alle Details vor der Show: Peak- und RMS-Wellenformen, Playheads, editierbare Marker, Fades, Routing, Normalisierung und Transport ab der Cue-Position.",
+    "cardHeaderA": "WAS IN DER APP STECKT",
+    "cardHeaderB": "PROPERTIES / AUSGABE",
+    "item1Title": "Peak- + RMS-Wellenformen",
+    "item1Text": "Prüfen Sie den Cue vor dem Senden — mit derselben Track-Farbe wie in der Playlist.",
+    "item2Title": "Editierbare Playheads und Marker",
+    "item2Text": "Setzen Sie In-, Out- und Next-at-Marker-Positionen aus der Wellenform oder über exakte Zeitfelder.",
+    "item3Title": "Normalisierung und True-Peak-Schutz",
+    "item3Text": "Normalisieren Sie auf ein gewähltes Ziel und behalten Sie die Ausgangs-Obergrenze während der Arbeit im Blick.",
+    "item4Title": "Programm- und Preview-Routing",
+    "item4Text": "Hören Sie privat vor, routen Sie die Show bewusst und behalten Sie beide Pegelpfade lesbar.",
+    "link": "Die aktuelle Workflow-Dokumentation lesen"
   },
   "download": {
+    "eyebrow": "AKTUELLEN BUILD INSTALLIEREN",
+    "versionLabel": "Aktuelles paketiertes Release",
+    "title": "Wählen Sie Ihren Show-Rechner.",
+    "detectedText": "Wir haben {os} erkannt. Der passende Build ist hervorgehoben, und jede unterstützte Plattform bleibt unten sichtbar.",
+    "fallbackText": "Laden Sie das aktuelle paketierte Release für die Plattform herunter, auf der Ihre Show läuft.",
+    "badge": "EMPFOHLEN",
     "windows": {
-      "title": "Windows"
+      "title": "Windows",
+      "description": "Windows 10/11 · 64-Bit-Installer",
+      "action": ".exe herunterladen",
+      "meta": "NSIS-Installer"
     },
     "macArm": {
-      "title": "macOS — Apple Silicon"
+      "title": "macOS — Apple Silicon",
+      "description": "M1/M2/M3 und neuer · arm64",
+      "action": ".dmg herunterladen",
+      "meta": "Apple Silicon"
     },
     "linux": {
-      "title": "Linux"
-    }
+      "title": "Linux",
+      "description": "x86_64 · AppImage",
+      "action": "AppImage herunterladen",
+      "meta": "Portable Build"
+    },
+    "otherFormats": "Weitere Formate",
+    "macZip": "macOS .zip",
+    "macIntelDmg": "macOS Intel .dmg",
+    "intelZip": "Intel .zip",
+    "linuxDeb": "Linux .deb",
+    "linuxRpm": "Linux .rpm",
+    "allReleases": "Alle Releases",
+    "quickTitle": "Lieber Terminal? Ein Befehl installiert es.",
+    "quickText": "Fügen Sie dies in Terminal ein (⌘Leertaste, „Terminal“ tippen). Es lädt das neueste Release herunter und installiert DonWells Cue — derselbe Installationsstil wie Homebrew und rustup. Funktioniert auf Apple Silicon und Intel.",
+    "quickAlt": "Oder nutzen Sie die Download-Karten oben — die macOS-App ist signiert und notariell beglaubigt und öffnet sich ohne Sicherheitswarnung.",
+    "firstRunTitle": "Herunterladen, öffnen, starten — keine Sicherheitswarnungen.",
+    "firstRunText": "DonWells Cue ist mit einer Apple Developer ID signiert und von Apple notariell beglaubigt, sodass macOS Gatekeeper es beim ersten Start akzeptiert. DMG öffnen, App in Programme ziehen, doppelklicken.",
+    "firstRunWin": "Unter Windows: Falls SmartScreen erscheint, wählen Sie „Weitere Informationen → Trotzdem ausführen“.",
+    "osMac": "macOS Apple Silicon",
+    "osWindows": "Windows x64",
+    "osLinux": "Linux x64"
+  },
+  "docs": {
+    "eyebrow": "DOKUMENTATION",
+    "title": "Bauen Sie die Show. Dann vertrauen Sie der Oberfläche.",
+    "lede": "Die README ist die verbindliche Quelle für den aktuellen Client/Server-Workflow, Paketierung, Netzwerkbetrieb und Projekt-Setup.",
+    "readme": "README lesen",
+    "viewSource": "Quellcode ansehen",
+    "checklistHeading": "ERSTER START",
+    "step1": "Wählen Sie einen Projektordner und lassen Sie DonWells Cue sein Medienverzeichnis anlegen.",
+    "step2": "Setzen Sie Programm-Ausgabe, Ziel und privaten Preview-Ausgang in den Projekteinstellungen.",
+    "step3": "Bereiten Sie Cue-Marker und Fades in Properties vor; kopieren Sie wiederkehrende Sounds in One Shots.",
+    "step4": "Wechseln Sie in den Show Mode, prüfen Sie die Pegel und fahren Sie die Show."
+  },
+  "footer": {
+    "tagline": "Open-Source-Audiowiedergabe für Live-Events.",
+    "backToTop": "Nach oben"
   }
 }
