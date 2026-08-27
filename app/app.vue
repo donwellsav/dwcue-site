@@ -55,7 +55,7 @@
             </dl>
           </div>
 
-          <div class="hero__visual">
+          <div class="hero__visual" aria-label="DonWells Cue main workspace screenshot">
             <div class="product-frame">
               <div class="product-frame__bar">
                 <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
@@ -280,7 +280,7 @@
 import { computed, onMounted, ref, watch } from 'vue';
 import { useI18n } from './composables/useI18n';
 
-const { t, locale, direction, initLocale, isLocaleLoaded } = useI18n();
+const { t, direction, initLocale, isLocaleLoaded } = useI18n();
 const baseURL = useRuntimeConfig().app.baseURL;
 const asset = (path: string) => `${baseURL}${path.replace(/^\/+/, '')}`;
 const siteURL = baseURL === '/' ? 'https://dwcue.com/' : baseURL;
@@ -357,10 +357,7 @@ watch(isLocaleLoaded, () => {
   if (isLocaleLoaded.value) updateSeoMeta();
 });
 
-useHead({
-  title: 'DonWells Cue — Audio Cue Playback for Live Events',
-  htmlAttrs: { lang: locale, dir: direction },
-});
+useHead({ title: 'DonWells Cue — Audio Cue Playback for Live Events' });
 </script>
 
 <style lang="scss">

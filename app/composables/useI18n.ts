@@ -1,4 +1,5 @@
 import { ref, computed } from 'vue';
+import enData from '../../public/locales/en.json';
 
 interface LocaleMetadata {
   code: string;
@@ -37,10 +38,12 @@ const availableLocales: Record<string, string> = {
 };
 
 const currentLocale = ref<string>('en');
-const localeData = ref<LocaleData | null>(null);
+// English is bundled synchronously so SSG/SSR HTML renders real text; the
+// fetch in loadLocale() only swaps in a non-English locale afterwards.
+const localeData = ref<LocaleData | null>(enData as LocaleData);
 // English data kept loaded as a fallback so untranslated/new keys in other
 // locales render real text instead of the raw key path.
-const fallbackData = ref<LocaleData | null>(null);
+const fallbackData = ref<LocaleData | null>(enData as LocaleData);
 
 export const useI18n = () => {
   const baseURL = useRuntimeConfig().app.baseURL || '/';
