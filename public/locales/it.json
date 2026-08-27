@@ -6,20 +6,161 @@
     "direction": "ltr"
   },
   "header": {
-    "tagline": "Riproduzione Audio per Eventi dal Vivo"
+    "tagline": "Riproduzione di segnali audio per eventi dal vivo"
   },
   "common": {
-    "changeLanguage": "Cambia lingua"
+    "changeLanguage": "Cambia lingua",
+    "skipLink": "Vai al contenuto",
+    "download": "Scarica"
+  },
+  "seo": {
+    "description": "Riproduzione in locale di segnali audio per eventi dal vivo, con One Shots, Show Mode, Properties e protezione dal picco reale."
+  },
+  "brand": {
+    "home": "Pagina iniziale di DonWells Cue",
+    "descriptor": "AUDIO DAL VIVO"
+  },
+  "nav": {
+    "label": "Navigazione principale",
+    "workflow": "Flusso di lavoro",
+    "oneShots": "One Shots",
+    "showMode": "Show Mode",
+    "download": "Scaricamenti",
+    "docs": "Documentazione"
+  },
+  "hero": {
+    "title": "Fa’ sembrare inevitabile il segnale successivo.",
+    "lede": "Un’interfaccia di riproduzione affidabile e progettata per funzionare in locale durante gli spettacoli dal vivo. Prepara ogni dettaglio, mantieni leggibile la vista operativa e avvia il suono giusto senza doverlo cercare.",
+    "ctaPrimary": "Scarica DonWells Cue",
+    "ctaSecondary": "Scopri come funziona",
+    "factPrepare": "Prepara",
+    "factRehearse": "Prova",
+    "factPerform": "Vai in scena",
+    "framePath": "DONWELLS CUE / VISTA OPERATIVA",
+    "captionA": "SCALETTA · ONE SHOTS · USCITA",
+    "captionB": "SESSIONE LOCALE",
+    "annotationTop": "AREA DI LAVORO DELLA SCALETTA",
+    "annotationBottom": "PROGRAMMA / ASCOLTO",
+    "screenshotAlt": "DonWells Cue con una scaletta a colori, la griglia One Shots e gli indicatori del livello di uscita"
+  },
+  "signal": {
+    "localFirst": "FUNZIONAMENTO LOCALE",
+    "localFirstText": "Gestisci lo spettacolo sul computer di cui ti fidi.",
+    "platforms": "Windows · macOS · Linux",
+    "platformsText": "Un unico flusso di lavoro in regia.",
+    "license": "AGPL-3.0",
+    "licenseText": "Codice aperto, realizzato per poter essere esaminato.",
+    "versionText": "Versione distribuita attuale.",
+    "label": "Caratteristiche di DonWells Cue"
+  },
+  "workflow": {
+    "eyebrow": "IL FLUSSO DI LAVORO",
+    "title": "Tre interfacce. Un solo spettacolo.",
+    "intro": "DonWells Cue tiene separate preparazione, ascolto di prova ed esecuzione, così durante lo spettacolo l’operatore vede sempre le informazioni che contano in quel momento.",
+    "step1Title": "Prepara in Properties",
+    "step1Text": "Configura il segnale alla fonte: marcatori, dissolvenze, volume, instradamento, normalizzazione e controlli di riproduzione, a partire dal punto esatto che ti serve.",
+    "step2Title": "Prova l’ascolto in Preview",
+    "step2Text": "Ascolta in privato senza intervenire sul canale di programma. Predisponi il segnale successivo, controlla il livello e mantieni fluido lo spettacolo.",
+    "step3Title": "Vai in scena con Show Mode",
+    "step3Text": "Riduci l’interfaccia all’essenziale per lo spettacolo: segnale in riproduzione, segnale successivo, controlli di riproduzione, One Shots e indicatori leggibili a colpo d’occhio."
+  },
+  "oneShots": {
+    "frameLabel": "01 / RIPRODUZIONE RAPIDA",
+    "screenshotAlt": "Pannello One Shots di DonWells Cue con celle fisse pronte per la riproduzione rapida",
+    "eyebrow": "ONE SHOTS",
+    "title": "Tieni i suoni importanti a portata di tocco.",
+    "text": "One Shots offre un’area permanente di riproduzione rapida per annunci, stacchi, effetti, ingressi in scena e sottofondi. Le celle restano al loro posto, piene o vuote, così l’operatore sa sempre dove trovare ogni suono.",
+    "point1": "Trascina un file o copia un segnale della scaletta in una cella.",
+    "point2": "Riproduci il contenuto della cella senza modificare la scaletta di origine.",
+    "point3": "Tieni le impostazioni a portata di mano senza affollare la vista operativa.",
+    "link": "Leggi le note sul flusso di lavoro"
+  },
+  "showMode": {
+    "frameLabel": "02 / VISTA PER LO SPETTACOLO",
+    "screenshotAlt": "Show Mode di DonWells Cue con una scaletta semplificata e gli indicatori del livello di uscita durante lo spettacolo",
+    "eyebrow": "SHOW MODE",
+    "title": "Meno interfaccia quando lo spettacolo è in corso.",
+    "text": "Durante lo spettacolo, passa a una vista di riproduzione semplificata e adatta all’uso tattile. Il segnale in riproduzione, quello successivo, i controlli di riproduzione e le informazioni sull’uscita restano chiari, mentre i comandi riservati alla modifica scompaiono.",
+    "currentLabel": "IN RIPRODUZIONE",
+    "currentText": "ciò che è in onda",
+    "nextLabel": "SUCCESSIVO",
+    "nextText": "ciò che è pronto",
+    "safeLabel": "MARGINE SICURO",
+    "safeText": "la zona in cui si mantengono i livelli",
+    "link": "Scarica la versione attuale"
+  },
+  "safety": {
+    "eyebrow": "CONTROLLO DEL SEGNALE",
+    "title": "Individua il rischio prima che raggiunga la sala.",
+    "text": "Properties offre al tecnico tutti i dettagli necessari prima dello spettacolo: forme d’onda di picco e RMS, cursori di riproduzione, marcatori modificabili, dissolvenze, instradamento, normalizzazione e controlli di riproduzione dal punto impostato nel segnale.",
+    "cardHeaderA": "COSA INCLUDE L’APPLICAZIONE",
+    "cardHeaderB": "PROPERTIES / USCITA",
+    "item1Title": "Forme d’onda di picco + RMS",
+    "item1Text": "Controlla il segnale prima di mandarlo in onda, con lo stesso colore della traccia usato nella scaletta.",
+    "item2Title": "Cursori di riproduzione e marcatori modificabili",
+    "item2Text": "Imposta i punti di ingresso, uscita e passaggio al segnale successivo dalla forma d’onda o dai campi con tempo esatto.",
+    "item3Title": "Normalizzazione e protezione dal picco reale",
+    "item3Text": "Normalizza al livello obiettivo scelto e mantieni visibile il limite massimo dell’uscita mentre lavori.",
+    "item4Title": "Instradamento di Programma e Preview",
+    "item4Text": "Ascolta in privato, instrada lo spettacolo con precisione e mantieni leggibili entrambi i percorsi e i relativi indicatori di livello.",
+    "link": "Leggi la documentazione aggiornata sul flusso di lavoro"
   },
   "download": {
+    "eyebrow": "INSTALLA LA VERSIONE ATTUALE",
+    "versionLabel": "VERSIONE DISTRIBUITA ATTUALE",
+    "title": "Scegli il computer per lo spettacolo.",
+    "detectedText": "Abbiamo rilevato {os}. Il pacchetto corrispondente è evidenziato e tutte le piattaforme supportate restano visibili qui sotto.",
+    "fallbackText": "Scarica la versione distribuita attuale per la piattaforma che usi durante lo spettacolo.",
+    "badge": "CONSIGLIATO",
     "windows": {
-      "title": "Windows"
+      "title": "Windows",
+      "description": "Windows 10/11 · Programma di installazione a 64 bit",
+      "action": "Scarica .exe",
+      "meta": "Programma di installazione NSIS"
     },
     "macArm": {
-      "title": "macOS — Apple Silicon"
+      "title": "macOS — Apple Silicon",
+      "description": "M1/M2/M3 e successivi · arm64",
+      "action": "Scarica .dmg",
+      "meta": "Apple Silicon"
     },
     "linux": {
-      "title": "Linux"
-    }
+      "title": "Linux",
+      "description": "x86_64 · AppImage",
+      "action": "Scarica AppImage",
+      "meta": "Pacchetto portatile"
+    },
+    "otherFormats": "Altri formati",
+    "macZip": "macOS .zip",
+    "macIntelDmg": "macOS Intel .dmg",
+    "intelZip": "Intel .zip",
+    "linuxDeb": "Linux .deb",
+    "linuxRpm": "Linux .rpm",
+    "allReleases": "Tutte le versioni pubblicate",
+    "quickTitle": "Preferisci Terminal? Basta un comando.",
+    "quickText": "Incolla questo comando in Terminal (⌘Space, digita \"Terminal\"). Scarica la versione più recente e installa DonWells Cue con lo stesso metodo usato da Homebrew e rustup. Funziona su Apple Silicon e Intel.",
+    "quickAlt": "In alternativa, usa le schede di scaricamento qui sopra: l’applicazione per macOS è firmata e autenticata, quindi si apre normalmente senza avvisi di sicurezza.",
+    "firstRunTitle": "Scarica, apri e avvia: nessun avviso di sicurezza.",
+    "firstRunText": "DonWells Cue è firmato con un Apple Developer ID e autenticato da Apple, quindi macOS Gatekeeper lo approva al primo avvio. Apri il file .dmg, trascina l’applicazione in Applicazioni e fai doppio clic.",
+    "firstRunWin": "Su Windows, se compare SmartScreen, seleziona Ulteriori informazioni → Esegui comunque.",
+    "osMac": "macOS con chip Apple",
+    "osWindows": "Windows x64",
+    "osLinux": "Linux x64"
+  },
+  "docs": {
+    "eyebrow": "DOCUMENTAZIONE",
+    "title": "Prepara lo spettacolo. Poi affidati all’interfaccia.",
+    "lede": "Il README è il riferimento autorevole per l’attuale flusso di lavoro tra client e server, la creazione dei pacchetti, il funzionamento in rete e la configurazione del progetto.",
+    "readme": "Leggi il README",
+    "viewSource": "Vedi il codice sorgente",
+    "checklistHeading": "PRIMO AVVIO",
+    "step1": "Scegli una cartella di progetto e lascia che DonWells Cue crei la directory dei contenuti multimediali.",
+    "step2": "In Impostazioni del progetto, configura l’uscita di programma, il livello obiettivo e l’uscita Preview privata.",
+    "step3": "Prepara i marcatori e le dissolvenze dei segnali in Properties; copia in One Shots i suoni da riutilizzare.",
+    "step4": "Passa a Show Mode, controlla gli indicatori di livello e gestisci lo spettacolo."
+  },
+  "footer": {
+    "tagline": "Riproduzione audio a codice aperto per eventi dal vivo.",
+    "backToTop": "Torna all’inizio"
   }
 }

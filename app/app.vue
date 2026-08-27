@@ -1,27 +1,27 @@
 <template>
   <div class="site-shell" :dir="direction">
-    <a class="skip-link" href="#main">Skip to content</a>
+    <a class="skip-link" href="#main">{{ t('common.skipLink') }}</a>
 
     <header class="site-header">
       <div class="wrap site-header__inner">
-        <a class="brand" href="#top" aria-label="DonWells Cue home">
+        <a class="brand" href="#top" :aria-label="t('brand.home')">
           <img :src="asset('assets/logo.svg')" alt="" class="brand__mark" />
           <span class="brand__name">DonWells Cue</span>
           <span class="brand__rule" aria-hidden="true"></span>
-          <span class="brand__descriptor">LIVE AUDIO</span>
+          <span class="brand__descriptor">{{ t('brand.descriptor') }}</span>
         </a>
 
-        <nav class="site-nav" aria-label="Primary navigation">
-          <a href="#workflow">Workflow</a>
-          <a href="#one-shots">One Shots</a>
-          <a href="#show-mode">Show Mode</a>
-          <a href="#download">Downloads</a>
-          <a href="#docs">Docs</a>
+        <nav class="site-nav" :aria-label="t('nav.label')">
+          <a href="#workflow">{{ t('nav.workflow') }}</a>
+          <a href="#one-shots">{{ t('nav.oneShots') }}</a>
+          <a href="#show-mode">{{ t('nav.showMode') }}</a>
+          <a href="#download">{{ t('nav.download') }}</a>
+          <a href="#docs">{{ t('nav.docs') }}</a>
         </nav>
 
         <div class="site-header__actions">
           <LanguageSwitcher />
-          <a class="button button--compact button--dark" href="#download">Download</a>
+          <a class="button button--compact button--dark" href="#download">{{ t('common.download') }}</a>
         </div>
       </div>
     </header>
@@ -31,60 +31,60 @@
         <div class="wrap hero__grid">
           <div class="hero__copy">
             <p class="eyebrow"><span class="eyebrow__signal" aria-hidden="true"></span> DonWells Cue · v{{ version }}</p>
-            <h1>Make the next cue feel inevitable.</h1>
+            <h1>{{ t('hero.title') }}</h1>
             <p class="hero__lede">
-              A calm, local-first playback surface for live shows. Prepare every detail, keep the live view legible, and fire the right sound without hunting for it.
+              {{ t('hero.lede') }}
             </p>
             <div class="hero__actions">
-              <a class="button button--primary" href="#download">Get DonWells Cue <span aria-hidden="true">↗</span></a>
-              <a class="text-link" href="#workflow">See how it works <span aria-hidden="true">↓</span></a>
+              <a class="button button--primary" href="#download">{{ t('hero.ctaPrimary') }} <span aria-hidden="true">↗</span></a>
+              <a class="text-link" href="#workflow">{{ t('hero.ctaSecondary') }} <span aria-hidden="true">↓</span></a>
             </div>
             <dl class="hero__facts">
               <div>
                 <dt>01</dt>
-                <dd>Prepare</dd>
+                <dd>{{ t('hero.factPrepare') }}</dd>
               </div>
               <div>
                 <dt>02</dt>
-                <dd>Rehearse</dd>
+                <dd>{{ t('hero.factRehearse') }}</dd>
               </div>
               <div>
                 <dt>03</dt>
-                <dd>Perform</dd>
+                <dd>{{ t('hero.factPerform') }}</dd>
               </div>
             </dl>
           </div>
 
-          <div class="hero__visual" aria-label="DonWells Cue main workspace screenshot">
+          <div class="hero__visual">
             <div class="product-frame">
               <div class="product-frame__bar">
                 <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
-                <span class="product-frame__path">DONWELLS CUE / LIVE VIEW</span>
+                <span class="product-frame__path">{{ t('hero.framePath') }}</span>
                 <span class="product-frame__version">{{ version }}</span>
               </div>
               <div class="product-frame__image">
                 <img
                   :src="asset('screenshots/donwells_cue_main.jpg')"
-                  alt="DonWells Cue showing a color-coded playlist, One Shots grid, and output meters"
+                  :alt="t('hero.screenshotAlt')"
                 />
               </div>
               <div class="product-frame__caption">
-                <span>PLAYLIST · ONE SHOTS · OUTPUT</span>
-                <span>LOCAL SESSION</span>
+                <span>{{ t('hero.captionA') }}</span>
+                <span>{{ t('hero.captionB') }}</span>
               </div>
             </div>
-            <div class="hero__annotation hero__annotation--top">PLAYLIST WORKSPACE</div>
-            <div class="hero__annotation hero__annotation--bottom">PROGRAM / MONITOR</div>
+            <div class="hero__annotation hero__annotation--top">{{ t('hero.annotationTop') }}</div>
+            <div class="hero__annotation hero__annotation--bottom">{{ t('hero.annotationBottom') }}</div>
           </div>
         </div>
       </section>
 
-      <section class="signal-band" aria-label="DonWells Cue product facts">
+      <section class="signal-band" :aria-label="t('signal.label')">
         <div class="wrap signal-band__grid">
-          <div class="signal-band__item"><strong>Local-first</strong><span>Run the show on the machine you trust.</span></div>
-          <div class="signal-band__item"><strong>Windows · macOS · Linux</strong><span>One workflow across the booth.</span></div>
-          <div class="signal-band__item"><strong>AGPL-3.0</strong><span>Open source, built to be inspected.</span></div>
-          <div class="signal-band__item"><strong>v{{ version }}</strong><span>Current packaged release.</span></div>
+          <div class="signal-band__item"><strong>{{ t('signal.localFirst') }}</strong><span>{{ t('signal.localFirstText') }}</span></div>
+          <div class="signal-band__item"><strong>{{ t('signal.platforms') }}</strong><span>{{ t('signal.platformsText') }}</span></div>
+          <div class="signal-band__item"><strong>{{ t('signal.license') }}</strong><span>{{ t('signal.licenseText') }}</span></div>
+          <div class="signal-band__item"><strong>v{{ version }}</strong><span>{{ t('signal.versionText') }}</span></div>
         </div>
       </section>
 
@@ -92,10 +92,10 @@
         <div class="wrap">
           <div class="section-heading section-heading--split">
             <div>
-              <p class="eyebrow">THE WORKFLOW</p>
-              <h2>Three surfaces. One show.</h2>
+              <p class="eyebrow">{{ t('workflow.eyebrow') }}</p>
+              <h2>{{ t('workflow.title') }}</h2>
             </div>
-            <p>DonWells Cue keeps preparation, auditioning, and performance distinct so the live operator always sees the information that matters now.</p>
+            <p>{{ t('workflow.intro') }}</p>
           </div>
 
           <div class="workflow-grid">
@@ -113,23 +113,23 @@
         <div class="wrap feature-band__grid">
           <div class="feature-band__media">
             <div class="media-frame">
-              <span class="media-frame__label">01 / QUICK PLAY</span>
+              <span class="media-frame__label">{{ t('oneShots.frameLabel') }}</span>
               <img
                 :src="asset('screenshots/donwells_cue_one_shots.jpg')"
-                alt="DonWells Cue One Shots panel with permanent cells ready for quick playback"
+                :alt="t('oneShots.screenshotAlt')"
               />
             </div>
           </div>
           <div class="feature-band__copy">
-            <p class="eyebrow eyebrow--light">ONE SHOTS</p>
-            <h2>Keep the important sounds one touch away.</h2>
-            <p>One Shots are a permanent quick-play surface for announcements, stings, effects, walk-ons, and beds. The cells stay in place whether they are full or empty, so the operator always knows where a sound lives.</p>
+            <p class="eyebrow eyebrow--light">{{ t('oneShots.eyebrow') }}</p>
+            <h2>{{ t('oneShots.title') }}</h2>
+            <p>{{ t('oneShots.text') }}</p>
             <ul class="feature-list">
-              <li><span>01</span> Drag a file or copy a playlist cue into a cell.</li>
-              <li><span>02</span> Play the cell without changing the source playlist.</li>
-              <li><span>03</span> Keep settings close, without crowding the live view.</li>
+              <li><span>01</span> {{ t('oneShots.point1') }}</li>
+              <li><span>02</span> {{ t('oneShots.point2') }}</li>
+              <li><span>03</span> {{ t('oneShots.point3') }}</li>
             </ul>
-            <a class="text-link text-link--light" href="#docs">Read the workflow notes <span aria-hidden="true">→</span></a>
+            <a class="text-link text-link--light" href="#docs">{{ t('oneShots.link') }} <span aria-hidden="true">→</span></a>
           </div>
         </div>
       </section>
@@ -138,23 +138,23 @@
         <div class="wrap feature-band__grid feature-band__grid--reverse">
           <div class="feature-band__media">
             <div class="media-frame media-frame--light">
-              <span class="media-frame__label">02 / PERFORMANCE VIEW</span>
+              <span class="media-frame__label">{{ t('showMode.frameLabel') }}</span>
               <img
                 :src="asset('screenshots/donwells_cue_show_mode.jpg')"
-                alt="DonWells Cue Show Mode with a simplified playlist and live output meters"
+                :alt="t('showMode.screenshotAlt')"
               />
             </div>
           </div>
           <div class="feature-band__copy feature-band__copy--paper">
-            <p class="eyebrow">SHOW MODE</p>
-            <h2>Less interface when the room is live.</h2>
-            <p>Switch to a simplified, touch-friendly playback view for the performance. Current, next, transport, and output information remain clear while edit-only controls step out of the way.</p>
+            <p class="eyebrow">{{ t('showMode.eyebrow') }}</p>
+            <h2>{{ t('showMode.title') }}</h2>
+            <p>{{ t('showMode.text') }}</p>
             <div class="feature-stat-row">
-              <div><strong>Current</strong><span>what is on air</span></div>
-              <div><strong>Next</strong><span>what is ready</span></div>
-              <div><strong>Safe</strong><span>where the meters sit</span></div>
+              <div><strong>{{ t('showMode.currentLabel') }}</strong><span>{{ t('showMode.currentText') }}</span></div>
+              <div><strong>{{ t('showMode.nextLabel') }}</strong><span>{{ t('showMode.nextText') }}</span></div>
+              <div><strong>{{ t('showMode.safeLabel') }}</strong><span>{{ t('showMode.safeText') }}</span></div>
             </div>
-            <a class="text-link" href="#download">Download the current release <span aria-hidden="true">→</span></a>
+            <a class="text-link" href="#download">{{ t('showMode.link') }} <span aria-hidden="true">→</span></a>
           </div>
         </div>
       </section>
@@ -162,19 +162,19 @@
       <section class="section safety-section">
         <div class="wrap safety-section__grid">
           <div class="section-heading">
-            <p class="eyebrow">SIGNAL DISCIPLINE</p>
-            <h2>See the risk before it reaches the room.</h2>
-            <p>Properties gives the tech the detail needed before the show: peak and RMS waveform views, playheads, editable markers, fades, routing, normalization, and transport from the cue location.</p>
+            <p class="eyebrow">{{ t('safety.eyebrow') }}</p>
+            <h2>{{ t('safety.title') }}</h2>
+            <p>{{ t('safety.text') }}</p>
           </div>
           <div class="safety-card">
-            <div class="safety-card__header"><span>WHAT IS IN THE APP</span><span>PROPERTIES / OUTPUT</span></div>
+            <div class="safety-card__header"><span>{{ t('safety.cardHeaderA') }}</span><span>{{ t('safety.cardHeaderB') }}</span></div>
             <ul class="safety-card__list">
-              <li><span>01</span><div><strong>Peak + RMS waveforms</strong><p>Inspect the cue before air, with the same track color used in the playlist.</p></div></li>
-              <li><span>02</span><div><strong>Editable playheads and markers</strong><p>Set in, out, and next-at-marker locations from the waveform or exact time fields.</p></div></li>
-              <li><span>03</span><div><strong>Normalization and true-peak protection</strong><p>Normalize to a chosen target, then keep the output ceiling visible while you work.</p></div></li>
-              <li><span>04</span><div><strong>Program and Preview routing</strong><p>Audition privately, route the show deliberately, and keep both meter paths readable.</p></div></li>
+              <li><span>01</span><div><strong>{{ t('safety.item1Title') }}</strong><p>{{ t('safety.item1Text') }}</p></div></li>
+              <li><span>02</span><div><strong>{{ t('safety.item2Title') }}</strong><p>{{ t('safety.item2Text') }}</p></div></li>
+              <li><span>03</span><div><strong>{{ t('safety.item3Title') }}</strong><p>{{ t('safety.item3Text') }}</p></div></li>
+              <li><span>04</span><div><strong>{{ t('safety.item4Title') }}</strong><p>{{ t('safety.item4Text') }}</p></div></li>
             </ul>
-            <a class="safety-card__link" href="https://github.com/donwellsav/dwcue#readme" target="_blank" rel="noopener noreferrer">Read the current workflow documentation <span aria-hidden="true">↗</span></a>
+            <a class="safety-card__link" href="https://github.com/donwellsav/dwcue#readme" target="_blank" rel="noopener noreferrer">{{ t('safety.link') }} <span aria-hidden="true">↗</span></a>
           </div>
         </div>
       </section>
@@ -184,13 +184,13 @@
           <div class="section-heading section-heading--split section-heading--download">
             <div>
               <div class="download-heading__label">
-                <p class="eyebrow">INSTALL THE CURRENT BUILD</p>
-                <span class="download-version" aria-label="Current packaged release">v{{ version }}</span>
+                <p class="eyebrow">{{ t('download.eyebrow') }}</p>
+                <span class="download-version" :aria-label="t('download.versionLabel')">v{{ version }}</span>
               </div>
-              <h2>Choose your show machine.</h2>
+              <h2>{{ t('download.title') }}</h2>
             </div>
-            <p v-if="detectedOS">We detected <strong>{{ detectedOSLabel }}</strong>. The matching build is highlighted, and every supported platform stays visible below.</p>
-            <p v-else>Download the current packaged release for the platform you run at the show.</p>
+            <p v-if="detectedOS">{{ t('download.detectedText', { os: detectedOSLabel }) }}</p>
+            <p v-else>{{ t('download.fallbackText') }}</p>
           </div>
 
           <div class="download-grid">
@@ -203,7 +203,7 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div class="download-card__top"><span>{{ platform.index }}</span><span v-if="platform.key === detectedOSKey" class="download-card__badge">RECOMMENDED</span></div>
+              <div class="download-card__top"><span>{{ platform.index }}</span><span v-if="platform.key === detectedOSKey" class="download-card__badge">{{ t('download.badge') }}</span></div>
               <h3>{{ platform.title }}</h3>
               <p>{{ platform.description }}</p>
               <span class="download-card__action">{{ platform.action }} <span aria-hidden="true">↗</span></span>
@@ -212,33 +212,33 @@
           </div>
 
           <div class="download-links">
-            <span>Other formats</span>
-            <a :href="downloadLinks.macArmZip" target="_blank" rel="noopener noreferrer">macOS .zip</a>
-            <a :href="downloadLinks.macIntel" target="_blank" rel="noopener noreferrer">macOS Intel .dmg</a>
-            <a :href="downloadLinks.macIntelZip" target="_blank" rel="noopener noreferrer">Intel .zip</a>
-            <a :href="downloadLinks.deb" target="_blank" rel="noopener noreferrer">Linux .deb</a>
-            <a :href="downloadLinks.rpm" target="_blank" rel="noopener noreferrer">Linux .rpm</a>
-            <a href="https://github.com/donwellsav/dwcue/releases" target="_blank" rel="noopener noreferrer">All releases ↗</a>
+            <span>{{ t('download.otherFormats') }}</span>
+            <a :href="downloadLinks.macArmZip" target="_blank" rel="noopener noreferrer">{{ t('download.macZip') }}</a>
+            <a :href="downloadLinks.macIntel" target="_blank" rel="noopener noreferrer">{{ t('download.macIntelDmg') }}</a>
+            <a :href="downloadLinks.macIntelZip" target="_blank" rel="noopener noreferrer">{{ t('download.intelZip') }}</a>
+            <a :href="downloadLinks.deb" target="_blank" rel="noopener noreferrer">{{ t('download.linuxDeb') }}</a>
+            <a :href="downloadLinks.rpm" target="_blank" rel="noopener noreferrer">{{ t('download.linuxRpm') }}</a>
+            <a href="https://github.com/donwellsav/dwcue/releases" target="_blank" rel="noopener noreferrer">{{ t('download.allReleases') }} ↗</a>
           </div>
 
           <div class="quick-install">
             <div class="quick-install__copy">
-              <strong>Prefer Terminal? One command installs it.</strong>
-              <p>Paste this into Terminal (⌘Space, type "Terminal"). It downloads the latest release and installs DonWells&nbsp;Cue — the same install style as Homebrew and rustup. Works on Apple&nbsp;Silicon and Intel.</p>
+              <strong>{{ t('download.quickTitle') }}</strong>
+              <p>{{ t('download.quickText') }}</p>
             </div>
             <code class="quick-install__cmd">curl -fsSL https://dwcue.com/install.sh | bash</code>
-            <p class="quick-install__alt">Or use the download cards above — the macOS app is signed and notarized, so it opens normally with no security warning.</p>
+            <p class="quick-install__alt">{{ t('download.quickAlt') }}</p>
           </div>
 
           <div class="first-run">
             <div class="first-run__head">
               <span class="install-note__mark" aria-hidden="true">✓</span>
               <div>
-                <strong>Download, open, run — no security warnings.</strong>
-                <p>DonWells&nbsp;Cue is signed with an Apple Developer ID and notarized by Apple, so macOS Gatekeeper approves it on first launch. Just open the DMG, drag the app to Applications, and double-click.</p>
+                <strong>{{ t('download.firstRunTitle') }}</strong>
+                <p>{{ t('download.firstRunText') }}</p>
               </div>
             </div>
-            <p class="first-run__win">On Windows, if SmartScreen appears, choose <strong>More info → Run anyway</strong>.</p>
+            <p class="first-run__win">{{ t('download.firstRunWin') }}</p>
           </div>
         </div>
       </section>
@@ -246,21 +246,21 @@
       <section id="docs" class="docs-section">
         <div class="wrap docs-section__grid">
           <div>
-            <p class="eyebrow eyebrow--light">DOCUMENTATION</p>
-            <h2>Build the show. Then trust the surface.</h2>
-            <p class="docs-section__lede">The README is the source of truth for the current client/server workflow, packaging, network operation, and project setup.</p>
+            <p class="eyebrow eyebrow--light">{{ t('docs.eyebrow') }}</p>
+            <h2>{{ t('docs.title') }}</h2>
+            <p class="docs-section__lede">{{ t('docs.lede') }}</p>
             <div class="docs-section__actions">
-              <a class="button button--light" href="https://github.com/donwellsav/dwcue#readme" target="_blank" rel="noopener noreferrer">Read the README <span aria-hidden="true">↗</span></a>
-              <a class="text-link text-link--light" href="https://github.com/donwellsav/dwcue" target="_blank" rel="noopener noreferrer">View source <span aria-hidden="true">↗</span></a>
+              <a class="button button--light" href="https://github.com/donwellsav/dwcue#readme" target="_blank" rel="noopener noreferrer">{{ t('docs.readme') }} <span aria-hidden="true">↗</span></a>
+              <a class="text-link text-link--light" href="https://github.com/donwellsav/dwcue" target="_blank" rel="noopener noreferrer">{{ t('docs.viewSource') }} <span aria-hidden="true">↗</span></a>
             </div>
           </div>
           <div class="docs-checklist">
-            <div class="docs-checklist__heading"><span>FIRST RUN</span><span>01—04</span></div>
+            <div class="docs-checklist__heading"><span>{{ t('docs.checklistHeading') }}</span><span>01—04</span></div>
             <ol>
-              <li><span>01</span><p>Choose a project folder and let DonWells Cue create its media directory.</p></li>
-              <li><span>02</span><p>Set the program output, target, and private Preview output in Project Settings.</p></li>
-              <li><span>03</span><p>Prepare cue markers and fades in Properties; copy repeatable sounds to One Shots.</p></li>
-              <li><span>04</span><p>Switch to Show Mode, verify the meters, and run the show.</p></li>
+              <li><span>01</span><p>{{ t('docs.step1') }}</p></li>
+              <li><span>02</span><p>{{ t('docs.step2') }}</p></li>
+              <li><span>03</span><p>{{ t('docs.step3') }}</p></li>
+              <li><span>04</span><p>{{ t('docs.step4') }}</p></li>
             </ol>
           </div>
         </div>
@@ -269,8 +269,8 @@
 
     <footer class="site-footer">
       <div class="wrap site-footer__inner">
-        <div><strong>DonWells Cue</strong><span>Open-source audio playback for live events.</span></div>
-        <div class="site-footer__links"><a href="https://github.com/donwellsav/dwcue" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://github.com/donwellsav/dwcue/blob/main/LICENCE.txt" target="_blank" rel="noopener noreferrer">AGPL-3.0</a><a href="#top">Back to top ↑</a></div>
+        <div><strong>DonWells Cue</strong><span>{{ t('footer.tagline') }}</span></div>
+        <div class="site-footer__links"><a href="https://github.com/donwellsav/dwcue" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://github.com/donwellsav/dwcue/blob/main/LICENCE.txt" target="_blank" rel="noopener noreferrer">AGPL-3.0</a><a href="#top">{{ t('footer.backToTop') }} ↑</a></div>
       </div>
     </footer>
   </div>
@@ -280,7 +280,7 @@
 import { computed, onMounted, ref, watch } from 'vue';
 import { useI18n } from './composables/useI18n';
 
-const { t, direction, initLocale, isLocaleLoaded } = useI18n();
+const { t, locale, direction, initLocale, isLocaleLoaded } = useI18n();
 const baseURL = useRuntimeConfig().app.baseURL;
 const asset = (path: string) => `${baseURL}${path.replace(/^\/+/, '')}`;
 const siteURL = baseURL === '/' ? 'https://dwcue.com/' : baseURL;
@@ -288,11 +288,11 @@ const siteURL = baseURL === '/' ? 'https://dwcue.com/' : baseURL;
 const version = ref('2.6.8');
 const detectedOS = ref<string | null>(null);
 
-const workflowSteps = [
-  { title: 'Prepare in Properties', description: 'Shape the cue at its source: markers, fades, volume, routing, normalization, and transport from the exact location you need.' },
-  { title: 'Audition on Preview', description: 'Listen privately without touching the program bus. Set the next cue, check the trim, and keep the show moving.' },
-  { title: 'Perform in Show Mode', description: 'Reduce the surface to what matters live: current, next, transport, One Shots, and meters you can read at a glance.' }
-];
+const workflowSteps = computed(() => [
+  { title: t('workflow.step1Title'), description: t('workflow.step1Text') },
+  { title: t('workflow.step2Title'), description: t('workflow.step2Text') },
+  { title: t('workflow.step3Title'), description: t('workflow.step3Text') }
+]);
 
 type PlatformKey = 'windows' | 'macArm' | 'linux';
 const osPlatformMap: Record<string, PlatformKey> = { windows: 'windows', mac: 'macArm', linux: 'linux' };
@@ -308,7 +308,7 @@ const detectOS = (): string | null => {
 };
 
 const detectedOSKey = computed<PlatformKey | null>(() => detectedOS.value ? osPlatformMap[detectedOS.value] ?? null : null);
-const detectedOSLabel = computed(() => detectedOS.value === 'mac' ? 'macOS Apple Silicon' : detectedOS.value === 'windows' ? 'Windows x64' : 'Linux x64');
+const detectedOSLabel = computed(() => detectedOS.value === 'mac' ? t('download.osMac') : detectedOS.value === 'windows' ? t('download.osWindows') : t('download.osLinux'));
 
 const downloadLinks = computed<Record<string, string>>(() => {
   const v = version.value;
@@ -327,15 +327,15 @@ const downloadLinks = computed<Record<string, string>>(() => {
 });
 
 const platformCards = computed(() => [
-  { key: 'windows' as PlatformKey, index: '01', title: t('download.windows.title'), description: 'Windows 10/11 · 64-bit installer', action: 'Download .exe', meta: 'NSIS installer' },
-  { key: 'macArm' as PlatformKey, index: '02', title: t('download.macArm.title'), description: 'M1/M2/M3 and newer · arm64', action: 'Download .dmg', meta: 'Apple Silicon' },
-  { key: 'linux' as PlatformKey, index: '03', title: t('download.linux.title'), description: 'x86_64 · AppImage', action: 'Download AppImage', meta: 'Portable build' }
+  { key: 'windows' as PlatformKey, index: '01', title: t('download.windows.title'), description: t('download.windows.description'), action: t('download.windows.action'), meta: t('download.windows.meta') },
+  { key: 'macArm' as PlatformKey, index: '02', title: t('download.macArm.title'), description: t('download.macArm.description'), action: t('download.macArm.action'), meta: t('download.macArm.meta') },
+  { key: 'linux' as PlatformKey, index: '03', title: t('download.linux.title'), description: t('download.linux.description'), action: t('download.linux.action'), meta: t('download.linux.meta') }
 ]);
 
 const updateSeoMeta = () => {
   if (!isLocaleLoaded.value) return;
   const title = `DonWells Cue — ${t('header.tagline')}`;
-  const description = 'Local-first audio cue playback for live events, with One Shots, Show Mode, Properties, and true-peak protection.';
+  const description = t('seo.description');
   const ogImage = `${siteURL}screenshots/donwells_cue_main.jpg`;
   useHead({ title, meta: [{ name: 'description', content: description }] });
   useSeoMeta({ title, description, ogTitle: title, ogDescription: description, ogType: 'website', ogUrl: siteURL, ogImage, ogImageWidth: '1920', ogImageHeight: '1080', ogImageType: 'image/jpeg', twitterCard: 'summary_large_image', twitterTitle: title, twitterDescription: description, twitterImage: ogImage });
@@ -357,7 +357,10 @@ watch(isLocaleLoaded, () => {
   if (isLocaleLoaded.value) updateSeoMeta();
 });
 
-useHead({ title: 'DonWells Cue — Audio Cue Playback for Live Events' });
+useHead({
+  title: 'DonWells Cue — Audio Cue Playback for Live Events',
+  htmlAttrs: { lang: locale, dir: direction },
+});
 </script>
 
 <style lang="scss">

@@ -6,20 +6,161 @@
     "direction": "ltr"
   },
   "header": {
-    "tagline": "Redare Audio pentru Evenimente Live"
+    "tagline": "Redare de repere audio pentru evenimente în direct"
   },
   "common": {
-    "changeLanguage": "Schimbă limba"
+    "changeLanguage": "Schimbă limba",
+    "skipLink": "Sari la conținut",
+    "download": "Descarcă"
+  },
+  "seo": {
+    "description": "Redare locală prioritară a reperelor audio pentru evenimente în direct, cu One Shots, Show Mode, Properties și protecție la vârf real."
+  },
+  "brand": {
+    "home": "Pagina principală DonWells Cue",
+    "descriptor": "AUDIO ÎN DIRECT"
+  },
+  "nav": {
+    "label": "Navigare principală",
+    "workflow": "Flux de lucru",
+    "oneShots": "One Shots",
+    "showMode": "Show Mode",
+    "download": "Descărcări",
+    "docs": "Documentație"
+  },
+  "hero": {
+    "title": "Fă ca următorul reper să pară inevitabil.",
+    "lede": "O interfață de redare calmă, concepută să ruleze local, pentru spectacole în direct. Pregătește fiecare detaliu, păstrează lizibilă vizualizarea pentru spectacol și declanșează sunetul potrivit fără să-l cauți.",
+    "ctaPrimary": "Descarcă DonWells Cue",
+    "ctaSecondary": "Vezi cum funcționează",
+    "factPrepare": "Pregătește",
+    "factRehearse": "Repetă",
+    "factPerform": "Prezintă",
+    "framePath": "DONWELLS CUE / VIZUALIZARE PENTRU SPECTACOL",
+    "captionA": "LISTĂ DE REDARE · ONE SHOTS · IEȘIRE",
+    "captionB": "SESIUNE LOCALĂ",
+    "annotationTop": "SPAȚIU DE LUCRU PENTRU LISTA DE REDARE",
+    "annotationBottom": "PROGRAM / MONITORIZARE",
+    "screenshotAlt": "DonWells Cue afișând o listă de redare codificată cromatic, grila One Shots și indicatoare de nivel pentru ieșire"
+  },
+  "signal": {
+    "localFirst": "Funcționare locală prioritară",
+    "localFirstText": "Rulează spectacolul pe sistemul în care ai încredere.",
+    "platforms": "Windows · macOS · Linux",
+    "platformsText": "Același flux de lucru în orice cabină tehnică.",
+    "license": "AGPL-3.0",
+    "licenseText": "Cu sursă deschisă, conceput pentru a putea fi verificat.",
+    "versionText": "Versiunea publicată și împachetată în prezent.",
+    "label": "Informații despre DonWells Cue"
+  },
+  "workflow": {
+    "eyebrow": "FLUXUL DE LUCRU",
+    "title": "Trei interfețe. Un singur spectacol.",
+    "intro": "DonWells Cue separă clar pregătirea, audiția și redarea în spectacol, astfel încât operatorul să vadă mereu informațiile relevante în acel moment.",
+    "step1Title": "Pregătește în Properties",
+    "step1Text": "Configurează reperul de la sursă: marcaje, estompări, volum, rutare, normalizare și comenzi de redare, exact din poziția de care ai nevoie.",
+    "step2Title": "Ascultă în Preview",
+    "step2Text": "Ascultă în privat, fără să afectezi magistrala de program. Pregătește următorul reper, verifică ajustarea nivelului și menține ritmul spectacolului.",
+    "step3Title": "Prezintă spectacolul în Show Mode",
+    "step3Text": "Redu interfața la elementele esențiale în timpul spectacolului: reperul curent, următorul reper, comenzile de redare, One Shots și indicatoare de nivel lizibile dintr-o privire."
+  },
+  "oneShots": {
+    "frameLabel": "01 / REDARE RAPIDĂ",
+    "screenshotAlt": "Panoul One Shots din DonWells Cue, cu celule permanente pregătite pentru redare rapidă",
+    "eyebrow": "ONE SHOTS",
+    "title": "Păstrează sunetele importante la o singură atingere distanță.",
+    "text": "One Shots oferă o interfață permanentă de redare rapidă pentru anunțuri, semnale sonore scurte, efecte, intrări pe scenă și fundaluri sonore. Celulele rămân pe poziție, fie că sunt pline sau goale, astfel încât operatorul știe mereu unde se află fiecare sunet.",
+    "point1": "Trage un fișier sau copiază un reper din lista de redare într-o celulă.",
+    "point2": "Redă celula fără să modifici lista de redare sursă.",
+    "point3": "Păstrează setările la îndemână, fără să aglomerezi vizualizarea pentru spectacol.",
+    "link": "Citește notele despre fluxul de lucru"
+  },
+  "showMode": {
+    "frameLabel": "02 / VIZUALIZARE PENTRU SPECTACOL",
+    "screenshotAlt": "DonWells Cue în Show Mode, cu o listă de redare simplificată și indicatoare de nivel pentru ieșirea în direct",
+    "eyebrow": "SHOW MODE",
+    "title": "Mai puține elemente pe ecran când spectacolul este în direct.",
+    "text": "Comută la o vizualizare de redare simplificată și adaptată utilizării tactile în timpul spectacolului. Reperul curent, următorul reper, comenzile de redare și informațiile despre ieșire rămân clare, iar comenzile dedicate exclusiv editării dispar din prim-plan.",
+    "currentLabel": "În redare",
+    "currentText": "ce se difuzează",
+    "nextLabel": "Urmează",
+    "nextText": "ce este pregătit",
+    "safeLabel": "Nivel sigur",
+    "safeText": "unde se află nivelul pe indicatoare",
+    "link": "Descarcă versiunea publicată în prezent"
+  },
+  "safety": {
+    "eyebrow": "CONTROLUL SEMNALULUI",
+    "title": "Identifică riscul înainte să ajungă în sală.",
+    "text": "Properties îi oferă tehnicianului detaliile necesare înaintea spectacolului: forme de undă pentru nivelul de vârf și RMS, cursoare de redare, marcaje editabile, estompări, rutare, normalizare și comenzi de redare din poziția reperului.",
+    "cardHeaderA": "CE INCLUDE APLICAȚIA",
+    "cardHeaderB": "PROPERTIES / IEȘIRE",
+    "item1Title": "Forme de undă pentru vârf + RMS",
+    "item1Text": "Verifică reperul înainte de difuzare, folosind aceeași culoare a pistei ca în lista de redare.",
+    "item2Title": "Cursoare de redare și marcaje editabile",
+    "item2Text": "Stabilește pozițiile de început, de sfârșit și de trecere la următorul reper direct pe forma de undă sau în câmpurile de timp exacte.",
+    "item3Title": "Normalizare și protecție la vârf real",
+    "item3Text": "Normalizează la valoarea-țintă aleasă, apoi păstrează vizibilă limita maximă a ieșirii în timp ce lucrezi.",
+    "item4Title": "Rutare pentru program și Preview",
+    "item4Text": "Ascultă în privat, rutează controlat semnalul spectacolului și păstrează lizibile indicatoarele ambelor căi.",
+    "link": "Citește documentația actuală despre fluxul de lucru"
   },
   "download": {
+    "eyebrow": "INSTALEAZĂ VERSIUNEA COMPILATĂ ACTUALĂ",
+    "versionLabel": "Versiunea publicată și împachetată în prezent",
+    "title": "Alege sistemul pentru spectacol.",
+    "detectedText": "Am detectat {os}. Versiunea compatibilă este evidențiată, iar toate platformele acceptate rămân vizibile mai jos.",
+    "fallbackText": "Descarcă versiunea publicată și împachetată în prezent pentru platforma pe care o folosești la spectacol.",
+    "badge": "RECOMANDAT",
     "windows": {
-      "title": "Windows"
+      "title": "Windows",
+      "description": "Windows 10/11 · program de instalare pe 64 de biți",
+      "action": "Descarcă .exe",
+      "meta": "Program de instalare NSIS"
     },
     "macArm": {
-      "title": "macOS — Apple Silicon"
+      "title": "macOS — Apple Silicon",
+      "description": "M1/M2/M3 și mai noi · arm64",
+      "action": "Descarcă .dmg",
+      "meta": "Apple Silicon"
     },
     "linux": {
-      "title": "Linux"
-    }
+      "title": "Linux",
+      "description": "x86_64 · AppImage",
+      "action": "Descarcă AppImage",
+      "meta": "Versiune portabilă"
+    },
+    "otherFormats": "Alte formate",
+    "macZip": "macOS .zip",
+    "macIntelDmg": "macOS Intel .dmg",
+    "intelZip": "Intel .zip",
+    "linuxDeb": "Linux .deb",
+    "linuxRpm": "Linux .rpm",
+    "allReleases": "Toate versiunile publicate",
+    "quickTitle": "Preferi Terminal? O singură comandă este suficientă pentru instalare.",
+    "quickText": "Lipește comanda în Terminal (⌘Space, tastează „Terminal”). Aceasta descarcă cea mai recentă versiune publicată și instalează DonWells Cue — în același mod ca Homebrew și rustup. Funcționează pe Apple Silicon și Intel.",
+    "quickAlt": "Sau folosește opțiunile de descărcare de mai sus — aplicația pentru macOS este semnată și autentificată notarial, așa că se deschide normal, fără avertismente de securitate.",
+    "firstRunTitle": "Descarcă, deschide și rulează — fără avertismente de securitate.",
+    "firstRunText": "DonWells Cue este semnat cu un Apple Developer ID și autentificat notarial de Apple, astfel încât macOS Gatekeeper îl aprobă la prima lansare. Deschide fișierul DMG, trage aplicația în Aplicații și fă dublu clic.",
+    "firstRunWin": "Pe Windows, dacă apare SmartScreen, alege Mai multe informații → Rulează oricum.",
+    "osMac": "macOS Apple Silicon",
+    "osWindows": "Windows x64",
+    "osLinux": "Linux x64"
+  },
+  "docs": {
+    "eyebrow": "DOCUMENTAȚIE",
+    "title": "Pregătește spectacolul. Apoi bazează-te pe interfață.",
+    "lede": "README este sursa de referință pentru fluxul de lucru actual dintre client și server, împachetare, funcționarea în rețea și configurarea proiectului.",
+    "readme": "Citește README",
+    "viewSource": "Vezi codul-sursă",
+    "checklistHeading": "PRIMA RULARE",
+    "step1": "Alege un dosar de proiect și permite-i aplicației DonWells Cue să creeze directorul pentru fișiere media.",
+    "step2": "Configurează în setările proiectului ieșirea de program, valoarea-țintă și ieșirea privată Preview.",
+    "step3": "Pregătește marcajele și estompările reperelor în Properties; copiază sunetele reutilizabile în One Shots.",
+    "step4": "Comută la Show Mode, verifică indicatoarele de nivel și rulează spectacolul."
+  },
+  "footer": {
+    "tagline": "Redare audio cu sursă deschisă pentru evenimente în direct.",
+    "backToTop": "Înapoi sus"
   }
 }

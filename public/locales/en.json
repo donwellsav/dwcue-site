@@ -9,17 +9,158 @@
     "tagline": "Audio Cue Playback for Live Events"
   },
   "common": {
-    "changeLanguage": "Change language"
+    "changeLanguage": "Change language",
+    "skipLink": "Skip to content",
+    "download": "Download"
+  },
+  "seo": {
+    "description": "Local-first audio cue playback for live events, with One Shots, Show Mode, Properties, and true-peak protection."
+  },
+  "brand": {
+    "home": "DonWells Cue home",
+    "descriptor": "LIVE AUDIO"
+  },
+  "nav": {
+    "label": "Primary navigation",
+    "workflow": "Workflow",
+    "oneShots": "One Shots",
+    "showMode": "Show Mode",
+    "download": "Downloads",
+    "docs": "Docs"
+  },
+  "hero": {
+    "title": "Make the next cue feel inevitable.",
+    "lede": "A calm, local-first playback surface for live shows. Prepare every detail, keep the live view legible, and fire the right sound without hunting for it.",
+    "ctaPrimary": "Get DonWells Cue",
+    "ctaSecondary": "See how it works",
+    "factPrepare": "Prepare",
+    "factRehearse": "Rehearse",
+    "factPerform": "Perform",
+    "framePath": "DONWELLS CUE / LIVE VIEW",
+    "captionA": "PLAYLIST · ONE SHOTS · OUTPUT",
+    "captionB": "LOCAL SESSION",
+    "annotationTop": "PLAYLIST WORKSPACE",
+    "annotationBottom": "PROGRAM / MONITOR",
+    "screenshotAlt": "DonWells Cue showing a color-coded playlist, One Shots grid, and output meters"
+  },
+  "signal": {
+    "localFirst": "Local-first",
+    "localFirstText": "Run the show on the machine you trust.",
+    "platforms": "Windows · macOS · Linux",
+    "platformsText": "One workflow across the booth.",
+    "license": "AGPL-3.0",
+    "licenseText": "Open source, built to be inspected.",
+    "versionText": "Current packaged release.",
+    "label": "DonWells Cue product facts"
+  },
+  "workflow": {
+    "eyebrow": "THE WORKFLOW",
+    "title": "Three surfaces. One show.",
+    "intro": "DonWells Cue keeps preparation, auditioning, and performance distinct so the live operator always sees the information that matters now.",
+    "step1Title": "Prepare in Properties",
+    "step1Text": "Shape the cue at its source: markers, fades, volume, routing, normalization, and transport from the exact location you need.",
+    "step2Title": "Audition on Preview",
+    "step2Text": "Listen privately without touching the program bus. Set the next cue, check the trim, and keep the show moving.",
+    "step3Title": "Perform in Show Mode",
+    "step3Text": "Reduce the surface to what matters live: current, next, transport, One Shots, and meters you can read at a glance."
+  },
+  "oneShots": {
+    "frameLabel": "01 / QUICK PLAY",
+    "screenshotAlt": "DonWells Cue One Shots panel with permanent cells ready for quick playback",
+    "eyebrow": "ONE SHOTS",
+    "title": "Keep the important sounds one touch away.",
+    "text": "One Shots are a permanent quick-play surface for announcements, stings, effects, walk-ons, and beds. The cells stay in place whether they are full or empty, so the operator always knows where a sound lives.",
+    "point1": "Drag a file or copy a playlist cue into a cell.",
+    "point2": "Play the cell without changing the source playlist.",
+    "point3": "Keep settings close, without crowding the live view.",
+    "link": "Read the workflow notes"
+  },
+  "showMode": {
+    "frameLabel": "02 / PERFORMANCE VIEW",
+    "screenshotAlt": "DonWells Cue Show Mode with a simplified playlist and live output meters",
+    "eyebrow": "SHOW MODE",
+    "title": "Less interface when the room is live.",
+    "text": "Switch to a simplified, touch-friendly playback view for the performance. Current, next, transport, and output information remain clear while edit-only controls step out of the way.",
+    "currentLabel": "Current",
+    "currentText": "what is on air",
+    "nextLabel": "Next",
+    "nextText": "what is ready",
+    "safeLabel": "Safe",
+    "safeText": "where the meters sit",
+    "link": "Download the current release"
+  },
+  "safety": {
+    "eyebrow": "SIGNAL DISCIPLINE",
+    "title": "See the risk before it reaches the room.",
+    "text": "Properties gives the tech the detail needed before the show: peak and RMS waveform views, playheads, editable markers, fades, routing, normalization, and transport from the cue location.",
+    "cardHeaderA": "WHAT IS IN THE APP",
+    "cardHeaderB": "PROPERTIES / OUTPUT",
+    "item1Title": "Peak + RMS waveforms",
+    "item1Text": "Inspect the cue before air, with the same track color used in the playlist.",
+    "item2Title": "Editable playheads and markers",
+    "item2Text": "Set in, out, and next-at-marker locations from the waveform or exact time fields.",
+    "item3Title": "Normalization and true-peak protection",
+    "item3Text": "Normalize to a chosen target, then keep the output ceiling visible while you work.",
+    "item4Title": "Program and Preview routing",
+    "item4Text": "Audition privately, route the show deliberately, and keep both meter paths readable.",
+    "link": "Read the current workflow documentation"
   },
   "download": {
+    "eyebrow": "INSTALL THE CURRENT BUILD",
+    "versionLabel": "Current packaged release",
+    "title": "Choose your show machine.",
+    "detectedText": "We detected {os}. The matching build is highlighted, and every supported platform stays visible below.",
+    "fallbackText": "Download the current packaged release for the platform you run at the show.",
+    "badge": "RECOMMENDED",
     "windows": {
-      "title": "Windows"
+      "title": "Windows",
+      "description": "Windows 10/11 · 64-bit installer",
+      "action": "Download .exe",
+      "meta": "NSIS installer"
     },
     "macArm": {
-      "title": "macOS — Apple Silicon"
+      "title": "macOS — Apple Silicon",
+      "description": "M1/M2/M3 and newer · arm64",
+      "action": "Download .dmg",
+      "meta": "Apple Silicon"
     },
     "linux": {
-      "title": "Linux"
-    }
+      "title": "Linux",
+      "description": "x86_64 · AppImage",
+      "action": "Download AppImage",
+      "meta": "Portable build"
+    },
+    "otherFormats": "Other formats",
+    "macZip": "macOS .zip",
+    "macIntelDmg": "macOS Intel .dmg",
+    "intelZip": "Intel .zip",
+    "linuxDeb": "Linux .deb",
+    "linuxRpm": "Linux .rpm",
+    "allReleases": "All releases",
+    "quickTitle": "Prefer Terminal? One command installs it.",
+    "quickText": "Paste this into Terminal (⌘Space, type \"Terminal\"). It downloads the latest release and installs DonWells Cue — the same install style as Homebrew and rustup. Works on Apple Silicon and Intel.",
+    "quickAlt": "Or use the download cards above — the macOS app is signed and notarized, so it opens normally with no security warning.",
+    "firstRunTitle": "Download, open, run — no security warnings.",
+    "firstRunText": "DonWells Cue is signed with an Apple Developer ID and notarized by Apple, so macOS Gatekeeper approves it on first launch. Just open the DMG, drag the app to Applications, and double-click.",
+    "firstRunWin": "On Windows, if SmartScreen appears, choose More info → Run anyway.",
+    "osMac": "macOS Apple Silicon",
+    "osWindows": "Windows x64",
+    "osLinux": "Linux x64"
+  },
+  "docs": {
+    "eyebrow": "DOCUMENTATION",
+    "title": "Build the show. Then trust the surface.",
+    "lede": "The README is the source of truth for the current client/server workflow, packaging, network operation, and project setup.",
+    "readme": "Read the README",
+    "viewSource": "View source",
+    "checklistHeading": "FIRST RUN",
+    "step1": "Choose a project folder and let DonWells Cue create its media directory.",
+    "step2": "Set the program output, target, and private Preview output in Project Settings.",
+    "step3": "Prepare cue markers and fades in Properties; copy repeatable sounds to One Shots.",
+    "step4": "Switch to Show Mode, verify the meters, and run the show."
+  },
+  "footer": {
+    "tagline": "Open-source audio playback for live events.",
+    "backToTop": "Back to top"
   }
 }
