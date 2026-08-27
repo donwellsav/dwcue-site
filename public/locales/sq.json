@@ -6,161 +6,20 @@
     "direction": "ltr"
   },
   "header": {
-    "tagline": "Riprodhim sinjalesh audio për veprimtari të drejtpërdrejta"
+    "tagline": "Luajtja e Sinjaleve Audio për Ngjarje të Drejtpërdrejta"
   },
   "common": {
-    "changeLanguage": "Ndrysho gjuhën",
-    "skipLink": "Kalo te përmbajtja",
-    "download": "Shkarko"
-  },
-  "seo": {
-    "description": "Riprodhim vendor i sinjaleve audio për veprimtari të drejtpërdrejta, me One Shots, Show Mode, Properties dhe mbrojtje nga piku real."
-  },
-  "brand": {
-    "home": "Faqja kryesore e DonWells Cue",
-    "descriptor": "AUDIO PËR SHFAQJE TË DREJTPËRDREJTA"
-  },
-  "nav": {
-    "label": "NAVIGIMI KRYESOR",
-    "workflow": "Rrjedha e punës",
-    "oneShots": "One Shots",
-    "showMode": "Show Mode",
-    "download": "Shkarkimet",
-    "docs": "Dokumentacioni"
-  },
-  "hero": {
-    "title": "Bëj që sinjali i radhës të vijë krejt natyrshëm.",
-    "lede": "Një ndërfaqe e qetë riprodhimi, që funksionon së pari në pajisjen tënde, për shfaqje të drejtpërdrejta. Përgatit çdo hollësi, ruaj qartësinë e pamjes gjatë shfaqjes dhe lësho tingullin e duhur pa humbur kohë duke e kërkuar.",
-    "ctaPrimary": "Merr DonWells Cue",
-    "ctaSecondary": "Shih si funksionon",
-    "factPrepare": "Përgatit",
-    "factRehearse": "Provo",
-    "factPerform": "Jep shfaqjen",
-    "framePath": "DONWELLS CUE / PAMJA E SHFAQJES",
-    "captionA": "LISTA E RIPRODHIMIT · ONE SHOTS · DALJA",
-    "captionB": "SESION VENDOR",
-    "annotationTop": "HAPËSIRA E PUNËS E LISTËS SË RIPRODHIMIT",
-    "annotationBottom": "PROGRAMI / MONITORIMI",
-    "screenshotAlt": "DonWells Cue që shfaq një listë riprodhimi të koduar me ngjyra, rrjetën One Shots dhe matësit e daljes"
-  },
-  "signal": {
-    "localFirst": "PUNON SË PARI NË PAJISJEN TËNDE",
-    "localFirstText": "Drejtoje shfaqjen në pajisjen që i beson.",
-    "platforms": "Windows · macOS · Linux",
-    "platformsText": "E njëjta rrjedhë pune në çdo pozicion teknik.",
-    "license": "AGPL-3.0",
-    "licenseText": "Me kod burimor të hapur, i krijuar për t’u verifikuar.",
-    "versionText": "Versioni aktual i paketuar.",
-    "label": "TË DHËNA PËR PRODUKTIN DonWells Cue"
-  },
-  "workflow": {
-    "eyebrow": "RRJEDHA E PUNËS",
-    "title": "Tri ndërfaqe. Një shfaqje.",
-    "intro": "DonWells Cue i mban të ndara përgatitjen, dëgjimin provë dhe shfaqjen, në mënyrë që operatori të shohë gjithmonë informacionin që ka rëndësi në atë çast.",
-    "step1Title": "Përgatit në Properties",
-    "step1Text": "Përpunoje sinjalin që në burim: shënuesit, zbehjet, volumin, drejtimin e sinjalit, normalizimin dhe komandat e riprodhimit, pikërisht nga pozicioni që të nevojitet.",
-    "step2Title": "Dëgjoje provë në Preview",
-    "step2Text": "Dëgjoje privatisht pa prekur kanalin e programit. Cakto sinjalin e radhës, kontrollo rregullimin e nivelit dhe vazhdo shfaqjen pa ndërprerje.",
-    "step3Title": "Jep shfaqjen në Show Mode",
-    "step3Text": "Kufizoje ndërfaqen vetëm tek elementet që kanë rëndësi gjatë shfaqjes: sinjali aktual, ai i radhës, komandat e riprodhimit, One Shots dhe matësit që lexohen me një shikim."
-  },
-  "oneShots": {
-    "frameLabel": "01 / RIPRODHIM I SHPEJTË",
-    "screenshotAlt": "Paneli One Shots i DonWells Cue me qeliza të përhershme, gati për riprodhim të shpejtë",
-    "eyebrow": "ONE SHOTS",
-    "title": "Mbaji tingujt e rëndësishëm vetëm një prekje larg.",
-    "text": "One Shots është një ndërfaqe e përhershme për riprodhimin e shpejtë të njoftimeve, ndërhyrjeve të shkurtra muzikore, efekteve, hyrjeve në skenë dhe sfondeve muzikore. Qelizat qëndrojnë në vend, qofshin plot apo bosh, ndaj operatori e di gjithmonë se ku gjendet çdo tingull.",
-    "point1": "Tërhiq një skedar ose kopjo një sinjal nga lista e riprodhimit në një qelizë.",
-    "point2": "Luaje qelizën pa ndryshuar listën burimore të riprodhimit.",
-    "point3": "Mbaji cilësimet pranë, pa mbingarkuar pamjen e shfaqjes.",
-    "link": "Lexo shënimet për rrjedhën e punës"
-  },
-  "showMode": {
-    "frameLabel": "02 / PAMJA E SHFAQJES",
-    "screenshotAlt": "Show Mode në DonWells Cue me një listë riprodhimi të thjeshtuar dhe matës të daljes gjatë shfaqjes",
-    "eyebrow": "SHOW MODE",
-    "title": "Më pak elemente në ekran kur shfaqja është në zhvillim.",
-    "text": "Për shfaqjen, kalo në një pamje të thjeshtuar riprodhimi, të përshtatshme për ekran me prekje. Informacioni për sinjalin aktual, atë të radhës, komandat e riprodhimit dhe daljen mbetet i qartë, ndërsa kontrollet që shërbejnë vetëm për redaktim hiqen nga pamja.",
-    "currentLabel": "AKTUAL",
-    "currentText": "çfarë po transmetohet",
-    "nextLabel": "I RADHËS",
-    "nextText": "çfarë është gati",
-    "safeLabel": "I SIGURT",
-    "safeText": "nëse nivelet janë brenda kufijve",
-    "link": "Shkarko versionin aktual"
-  },
-  "safety": {
-    "eyebrow": "KONTROLLI I SINJALIT",
-    "title": "Dalloje rrezikun para se të arrijë në sallë.",
-    "text": "Properties i jep teknikut hollësitë e nevojshme para shfaqjes: pamjet e formës së valës për pikun dhe RMS, treguesit e pozicionit, shënuesit e redaktueshëm, zbehjet, drejtimin e sinjalit, normalizimin dhe komandat e riprodhimit nga pozicioni i sinjalit.",
-    "cardHeaderA": "ÇFARË PËRMBAN APLIKACIONI",
-    "cardHeaderB": "PROPERTIES / DALJA",
-    "item1Title": "Format e valës për pikun + RMS",
-    "item1Text": "Kontrolloje sinjalin para transmetimit, me të njëjtën ngjyrë piste që përdoret në listën e riprodhimit.",
-    "item2Title": "Tregues pozicioni dhe shënues të redaktueshëm",
-    "item2Text": "Cakto pikat e hyrjes, daljes dhe kalimit te sinjali i radhës nga forma e valës ose nga fushat me kohë të saktë.",
-    "item3Title": "Normalizim dhe mbrojtje nga piku real",
-    "item3Text": "Normalizoje sipas një niveli të zgjedhur, pastaj mbaje të dukshëm kufirin maksimal të daljes gjatë punës.",
-    "item4Title": "Drejtimi i programit dhe i Preview",
-    "item4Text": "Dëgjoje provë privatisht, drejtoje me kujdes sinjalin e shfaqjes dhe mbaji të lexueshme të dyja rrugët e matjes.",
-    "link": "Lexo dokumentacionin aktual të rrjedhës së punës"
+    "changeLanguage": "Ndrysho gjuhën"
   },
   "download": {
-    "eyebrow": "INSTALO PAKETËN AKTUALE",
-    "versionLabel": "VERSIONI AKTUAL I PAKETUAR",
-    "title": "Zgjidh pajisjen e shfaqjes.",
-    "detectedText": "Zbuluam {os}. Paketa përkatëse është theksuar dhe të gjitha platformat e mbështetura shfaqen më poshtë.",
-    "fallbackText": "Shkarko versionin aktual të paketuar për platformën që përdor gjatë shfaqjes.",
-    "badge": "I REKOMANDUAR",
     "windows": {
-      "title": "Windows",
-      "description": "Windows 10/11 · instalues 64-bitësh",
-      "action": "Shkarko .exe",
-      "meta": "Instalues NSIS"
+      "title": "Windows"
     },
     "macArm": {
-      "title": "macOS — Apple Silicon",
-      "description": "M1/M2/M3 dhe më të rinj · arm64",
-      "action": "Shkarko .dmg",
-      "meta": "Apple Silicon"
+      "title": "macOS — Apple Silicon"
     },
     "linux": {
-      "title": "Linux",
-      "description": "x86_64 · AppImage",
-      "action": "Shkarko AppImage",
-      "meta": "Paketë portative"
-    },
-    "otherFormats": "Formate të tjera",
-    "macZip": "macOS .zip",
-    "macIntelDmg": "macOS Intel .dmg",
-    "intelZip": "Intel .zip",
-    "linuxDeb": "Linux .deb",
-    "linuxRpm": "Linux .rpm",
-    "allReleases": "Të gjitha versionet e publikuara",
-    "quickTitle": "Preferon Terminal? Mjafton një komandë për instalim.",
-    "quickText": "Ngjite këtë në Terminal (⌘Space, shkruaj \"Terminal\"). Komanda shkarkon versionin më të fundit dhe instalon DonWells Cue — në të njëjtën mënyrë si Homebrew dhe rustup. Funksionon në Apple Silicon dhe Intel.",
-    "quickAlt": "Ose përdor kartat e shkarkimit më sipër — aplikacioni për macOS është i nënshkruar dhe i noterizuar, ndaj hapet normalisht pa paralajmërim sigurie.",
-    "firstRunTitle": "Shkarko, hap dhe ekzekuto — pa paralajmërime sigurie.",
-    "firstRunText": "DonWells Cue është nënshkruar me një Apple Developer ID dhe noterizuar nga Apple, ndaj macOS Gatekeeper e miraton që në hapjen e parë. Thjesht hap skedarin .dmg, tërhiq aplikacionin te dosja Aplikacionet dhe kliko dy herë.",
-    "firstRunWin": "Në Windows, nëse shfaqet SmartScreen, zgjidh Më shumë informacion → Ekzekuto gjithsesi.",
-    "osMac": "macOS Apple Silicon",
-    "osWindows": "Windows x64",
-    "osLinux": "Linux x64"
-  },
-  "docs": {
-    "eyebrow": "DOKUMENTACIONI",
-    "title": "Përgatite shfaqjen. Pastaj besoju kontrolleve.",
-    "lede": "README është referenca përfundimtare për rrjedhën aktuale të punës ndërmjet klientit dhe shërbyesit, paketimin, funksionimin në rrjet dhe konfigurimin e projektit.",
-    "readme": "Lexo README",
-    "viewSource": "Shiko kodin burimor",
-    "checklistHeading": "HAPJA E PARË",
-    "step1": "Zgjidh një dosje projekti dhe lejo DonWells Cue të krijojë dosjen e skedarëve media.",
-    "step2": "Cakto daljen e programit, nivelin objektiv dhe daljen private Preview te Cilësimet e projektit.",
-    "step3": "Përgatit shënuesit dhe zbehjet e sinjaleve në Properties; kopjo tingujt që përdoren në mënyrë të përsëritur te One Shots.",
-    "step4": "Kalo në Show Mode, verifiko matësit dhe drejtoje shfaqjen."
-  },
-  "footer": {
-    "tagline": "Riprodhim audio me kod burimor të hapur për veprimtari të drejtpërdrejta.",
-    "backToTop": "Kthehu në krye"
+      "title": "Linux"
+    }
   }
 }

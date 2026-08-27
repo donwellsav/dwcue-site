@@ -9,158 +9,17 @@
     "tagline": "라이브 이벤트용 오디오 큐 재생"
   },
   "common": {
-    "changeLanguage": "언어 변경",
-    "skipLink": "콘텐츠로 건너뛰기",
-    "download": "다운로드"
-  },
-  "seo": {
-    "description": "One Shots, Show Mode, Properties, 트루 피크 보호 기능을 갖춘 로컬 우선 라이브 이벤트용 오디오 큐 재생 도구입니다."
-  },
-  "brand": {
-    "home": "DonWells Cue 홈",
-    "descriptor": "라이브 오디오"
-  },
-  "nav": {
-    "label": "기본 탐색",
-    "workflow": "워크플로",
-    "oneShots": "One Shots",
-    "showMode": "Show Mode",
-    "download": "다운로드",
-    "docs": "문서"
-  },
-  "hero": {
-    "title": "다음 큐가 필연처럼 느껴지게.",
-    "lede": "라이브 공연을 위한 차분한 로컬 우선 재생 인터페이스입니다. 모든 세부 사항을 준비하고, 라이브 화면의 가독성을 유지하며, 헤매지 않고 정확한 사운드를 재생하세요.",
-    "ctaPrimary": "DonWells Cue 받기",
-    "ctaSecondary": "작동 방식 보기",
-    "factPrepare": "준비",
-    "factRehearse": "리허설",
-    "factPerform": "공연",
-    "framePath": "DonWells Cue / 라이브 화면",
-    "captionA": "재생 목록 · One Shots · 출력",
-    "captionB": "로컬 세션",
-    "annotationTop": "재생 목록 작업 영역",
-    "annotationBottom": "프로그램 / 모니터",
-    "screenshotAlt": "색상으로 구분된 재생 목록, One Shots 그리드, 출력 미터를 표시하는 DonWells Cue"
-  },
-  "signal": {
-    "localFirst": "로컬 우선",
-    "localFirstText": "신뢰하는 컴퓨터에서 공연을 운영하세요.",
-    "platforms": "Windows · macOS · Linux",
-    "platformsText": "부스 어디서나 동일한 워크플로를 사용하세요.",
-    "license": "AGPL-3.0",
-    "licenseText": "검토할 수 있도록 만들어진 오픈 소스입니다.",
-    "versionText": "현재 패키지 릴리스입니다.",
-    "label": "DonWells Cue 제품 정보"
-  },
-  "workflow": {
-    "eyebrow": "워크플로",
-    "title": "세 가지 인터페이스. 하나의 공연.",
-    "intro": "DonWells Cue는 준비, 사전 청취, 공연을 명확히 구분해 라이브 오퍼레이터가 지금 중요한 정보를 언제나 확인할 수 있게 합니다.",
-    "step1Title": "Properties에서 준비",
-    "step1Text": "필요한 정확한 위치에서 마커, 페이드, 볼륨, 라우팅, 노멀라이제이션, 전송 제어를 사용해 큐의 원본을 다듬으세요.",
-    "step2Title": "Preview에서 사전 청취",
-    "step2Text": "프로그램 버스를 건드리지 않고 비공개로 들어보세요. 다음 큐를 설정하고 트림을 확인하면서 공연의 흐름을 이어가세요.",
-    "step3Title": "Show Mode에서 공연",
-    "step3Text": "라이브에 필요한 요소만 남기세요. 현재 큐, 다음 큐, 전송 제어, One Shots, 한눈에 읽히는 미터에 집중할 수 있습니다."
-  },
-  "oneShots": {
-    "frameLabel": "01 / 빠른 재생",
-    "screenshotAlt": "빠른 재생을 위해 고정 셀이 준비된 DonWells Cue One Shots 패널",
-    "eyebrow": "One Shots",
-    "title": "중요한 사운드를 한 번의 터치로 재생하세요.",
-    "text": "One Shots는 안내 방송, 스팅, 효과음, 등장 음악, 배경 음악을 위한 상시 빠른 재생 인터페이스입니다. 셀이 채워져 있든 비어 있든 제자리를 유지하므로 오퍼레이터는 사운드의 위치를 언제나 알 수 있습니다.",
-    "point1": "파일을 드래그하거나 재생 목록 큐를 셀에 복사하세요.",
-    "point2": "원본 재생 목록을 변경하지 않고 셀을 재생하세요.",
-    "point3": "라이브 화면을 복잡하게 만들지 않으면서 설정을 가까이 두세요.",
-    "link": "워크플로 참고 사항 읽기"
-  },
-  "showMode": {
-    "frameLabel": "02 / 공연 화면",
-    "screenshotAlt": "간소화된 재생 목록과 라이브 출력 미터를 표시하는 DonWells Cue Show Mode",
-    "eyebrow": "Show Mode",
-    "title": "공연 중에는 인터페이스를 더 간결하게.",
-    "text": "공연을 위해 간소화되고 터치에 최적화된 재생 화면으로 전환하세요. 편집 전용 컨트롤은 방해되지 않도록 사라지고, 현재 큐, 다음 큐, 전송 제어, 출력 정보는 선명하게 유지됩니다.",
-    "currentLabel": "현재",
-    "currentText": "현재 송출 중인 항목",
-    "nextLabel": "다음",
-    "nextText": "재생 준비된 항목",
-    "safeLabel": "안전",
-    "safeText": "미터가 위치한 범위",
-    "link": "현재 릴리스 다운로드"
-  },
-  "safety": {
-    "eyebrow": "신호 관리",
-    "title": "위험이 현장에 도달하기 전에 확인하세요.",
-    "text": "Properties는 공연 전에 기술 담당자에게 필요한 세부 정보를 제공합니다. 피크 및 RMS 파형 보기, 재생 헤드, 편집 가능한 마커, 페이드, 라우팅, 노멀라이제이션, 큐 위치에서의 전송 제어를 사용할 수 있습니다.",
-    "cardHeaderA": "앱에 포함된 기능",
-    "cardHeaderB": "Properties / 출력",
-    "item1Title": "피크 + RMS 파형",
-    "item1Text": "재생 목록과 동일한 트랙 색상으로 송출 전에 큐를 점검하세요.",
-    "item2Title": "편집 가능한 재생 헤드와 마커",
-    "item2Text": "파형이나 정확한 시간 필드에서 시작, 종료, 다음 큐 전환 마커 위치를 설정하세요.",
-    "item3Title": "노멀라이제이션과 트루 피크 보호",
-    "item3Text": "선택한 목표값으로 노멀라이즈한 다음, 작업 중에도 출력 상한을 계속 확인하세요.",
-    "item4Title": "프로그램 및 Preview 라우팅",
-    "item4Text": "비공개로 사전 청취하고, 공연 신호를 의도대로 라우팅하며, 두 미터 경로 모두 읽기 쉽게 유지하세요.",
-    "link": "현재 워크플로 문서 읽기"
+    "changeLanguage": "언어 변경"
   },
   "download": {
-    "eyebrow": "현재 빌드 설치",
-    "versionLabel": "현재 패키지 릴리스",
-    "title": "공연용 컴퓨터를 선택하세요.",
-    "detectedText": "{os}이(가) 감지되었습니다. 해당 빌드가 강조 표시되며, 지원되는 모든 플랫폼은 아래에서 계속 확인할 수 있습니다.",
-    "fallbackText": "공연에서 사용하는 플랫폼용 현재 패키지 릴리스를 다운로드하세요.",
-    "badge": "권장",
     "windows": {
-      "title": "Windows",
-      "description": "Windows 10/11 · 64비트 설치 프로그램",
-      "action": ".exe 다운로드",
-      "meta": "NSIS 설치 프로그램"
+      "title": "Windows"
     },
     "macArm": {
-      "title": "macOS — Apple Silicon",
-      "description": "M1/M2/M3 이상 · arm64",
-      "action": ".dmg 다운로드",
-      "meta": "Apple Silicon"
+      "title": "macOS — Apple Silicon"
     },
     "linux": {
-      "title": "Linux",
-      "description": "x86_64 · AppImage",
-      "action": "AppImage 다운로드",
-      "meta": "휴대용 빌드"
-    },
-    "otherFormats": "기타 형식",
-    "macZip": "macOS .zip",
-    "macIntelDmg": "macOS Intel .dmg",
-    "intelZip": "Intel .zip",
-    "linuxDeb": "Linux .deb",
-    "linuxRpm": "Linux .rpm",
-    "allReleases": "모든 릴리스",
-    "quickTitle": "Terminal이 더 편하신가요? 명령어 하나로 설치할 수 있습니다.",
-    "quickText": "이 명령어를 Terminal에 붙여 넣으세요(⌘Space를 누르고 \"Terminal\" 입력). 최신 릴리스를 다운로드하고 DonWells Cue를 설치합니다. Homebrew 및 rustup과 같은 설치 방식이며 Apple Silicon과 Intel에서 작동합니다.",
-    "quickAlt": "또는 위의 다운로드 카드를 이용하세요. macOS 앱은 서명 및 공증을 완료해 보안 경고 없이 정상적으로 열립니다.",
-    "firstRunTitle": "다운로드하고 열어 실행하세요. 보안 경고가 없습니다.",
-    "firstRunText": "DonWells Cue는 Apple Developer ID로 서명되고 Apple의 공증을 받아 처음 실행할 때 macOS Gatekeeper의 승인을 받습니다. DMG를 열고 앱을 응용 프로그램 폴더로 드래그한 뒤 더블 클릭하기만 하면 됩니다.",
-    "firstRunWin": "Windows에서 SmartScreen이 표시되면 추가 정보 → 실행을 선택하세요.",
-    "osMac": "macOS Apple Silicon",
-    "osWindows": "Windows x64",
-    "osLinux": "Linux x64"
-  },
-  "docs": {
-    "eyebrow": "문서",
-    "title": "공연을 구성하세요. 이제 인터페이스를 믿으세요.",
-    "lede": "README는 현재 클라이언트/서버 워크플로, 패키징, 네트워크 운영, 프로젝트 설정에 관한 가장 정확한 기준 문서입니다.",
-    "readme": "README 읽기",
-    "viewSource": "소스 보기",
-    "checklistHeading": "첫 실행",
-    "step1": "프로젝트 폴더를 선택하면 DonWells Cue가 미디어 디렉터리를 생성합니다.",
-    "step2": "프로젝트 설정에서 프로그램 출력, 목표값, 비공개 Preview 출력을 설정하세요.",
-    "step3": "Properties에서 큐 마커와 페이드를 준비하고, 반복해서 사용할 사운드는 One Shots에 복사하세요.",
-    "step4": "Show Mode로 전환하고 미터를 확인한 뒤 공연을 진행하세요."
-  },
-  "footer": {
-    "tagline": "라이브 이벤트를 위한 오픈 소스 오디오 재생 도구.",
-    "backToTop": "맨 위로"
+      "title": "Linux"
+    }
   }
 }

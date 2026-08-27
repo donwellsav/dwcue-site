@@ -6,161 +6,20 @@
     "direction": "ltr"
   },
   "header": {
-    "tagline": "Lecture de cues audio pour les événements en direct"
+    "tagline": "Lecture Audio pour Événements en Direct"
   },
   "common": {
-    "changeLanguage": "Changer de langue",
-    "skipLink": "Aller au contenu",
-    "download": "Télécharger"
-  },
-  "seo": {
-    "description": "Lecture de cues audio locale pour les événements en direct, avec One Shots, Show Mode, Properties et protection true-peak."
-  },
-  "brand": {
-    "home": "Accueil DonWells Cue",
-    "descriptor": "AUDIO LIVE"
-  },
-  "nav": {
-    "label": "Navigation principale",
-    "workflow": "Workflow",
-    "oneShots": "One Shots",
-    "showMode": "Show Mode",
-    "download": "Téléchargements",
-    "docs": "Docs"
-  },
-  "hero": {
-    "title": "Faites du prochain cue une évidence.",
-    "lede": "Une surface de lecture calme et locale pour les spectacles vivants. Préparez chaque détail, gardez la vue live lisible et déclenchez le bon son sans le chercher.",
-    "ctaPrimary": "Obtenir DonWells Cue",
-    "ctaSecondary": "Voir comment ça marche",
-    "factPrepare": "Préparer",
-    "factRehearse": "Répéter",
-    "factPerform": "Jouer",
-    "framePath": "DONWELLS CUE / VUE LIVE",
-    "captionA": "PLAYLIST · ONE SHOTS · SORTIE",
-    "captionB": "SESSION LOCALE",
-    "annotationTop": "ESPACE PLAYLIST",
-    "annotationBottom": "PROGRAMME / MONITOR",
-    "screenshotAlt": "DonWells Cue affichant une playlist colorée, la grille One Shots et les compteurs de sortie"
-  },
-  "signal": {
-    "localFirst": "Local d'abord",
-    "localFirstText": "Jouez le spectacle sur la machine en laquelle vous avez confiance.",
-    "platforms": "Windows · macOS · Linux",
-    "platformsText": "Un seul workflow pour toute la régie.",
-    "license": "AGPL-3.0",
-    "licenseText": "Open source, conçu pour être inspecté.",
-    "versionText": "Version packagée actuelle.",
-    "label": "Caractéristiques de DonWells Cue"
-  },
-  "workflow": {
-    "eyebrow": "LE WORKFLOW",
-    "title": "Trois surfaces. Un spectacle.",
-    "intro": "DonWells Cue sépare préparation, écoute et représentation pour que l'opérateur voie toujours l'information qui compte à l'instant présent.",
-    "step1Title": "Préparer dans Properties",
-    "step1Text": "Façonnez le cue à la source : marqueurs, fondus, volume, routage, normalisation et transport depuis l'emplacement exact voulu.",
-    "step2Title": "Écouter sur Preview",
-    "step2Text": "Écoutez en privé sans toucher au bus programme. Définissez le cue suivant, vérifiez le montage et laissez le spectacle avancer.",
-    "step3Title": "Jouer en Show Mode",
-    "step3Text": "Réduisez la surface à l'essentiel en direct : en cours, suivant, transport, One Shots et des compteurs lisibles d'un coup d'œil."
-  },
-  "oneShots": {
-    "frameLabel": "01 / JEU RAPIDE",
-    "screenshotAlt": "Panneau One Shots de DonWells Cue avec des cellules permanentes prêtes à jouer",
-    "eyebrow": "ONE SHOTS",
-    "title": "Gardez les sons importants à portée de doigt.",
-    "text": "One Shots est une surface de jeu rapide permanente pour les annonces, jingles, effets, entrées d'artistes et nappes. Les cellules restent en place, pleines ou vides : l'opérateur sait toujours où vit un son.",
-    "point1": "Glissez un fichier ou copiez un cue de la playlist dans une cellule.",
-    "point2": "Jouez la cellule sans modifier la playlist source.",
-    "point3": "Gardez les réglages à portée de main sans encombrer la vue live.",
-    "link": "Lire les notes de workflow"
-  },
-  "showMode": {
-    "frameLabel": "02 / VUE PERFORMANCE",
-    "screenshotAlt": "DonWells Cue en Show Mode avec playlist simplifiée et compteurs de sortie en direct",
-    "eyebrow": "SHOW MODE",
-    "title": "Moins d'interface quand la salle est en direct.",
-    "text": "Passez à une vue de lecture simplifiée et tactile pour la représentation. En cours, suivant, transport et informations de sortie restent lisibles pendant que les commandes d'édition s'effacent.",
-    "currentLabel": "En cours",
-    "currentText": "ce qui est à l'antenne",
-    "nextLabel": "Suivant",
-    "nextText": "ce qui est prêt",
-    "safeLabel": "Sûr",
-    "safeText": "où se situent les compteurs",
-    "link": "Télécharger la version actuelle"
-  },
-  "safety": {
-    "eyebrow": "DISCIPLINE DU SIGNAL",
-    "title": "Voyez le risque avant qu'il n'atteigne la salle.",
-    "text": "Properties donne au technicien le détail nécessaire avant le spectacle : vues de forme d'onde peak et RMS, têtes de lecture, marqueurs éditables, fondus, routage, normalisation et transport depuis l'emplacement du cue.",
-    "cardHeaderA": "CE QUE CONTIENT L'APP",
-    "cardHeaderB": "PROPERTIES / SORTIE",
-    "item1Title": "Formes d'onde peak + RMS",
-    "item1Text": "Inspectez le cue avant l'antenne, avec la même couleur de piste que dans la playlist.",
-    "item2Title": "Têtes de lecture et marqueurs éditables",
-    "item2Text": "Définissez les positions d'entrée, de sortie et de marqueur depuis la forme d'onde ou des champs de temps exacts.",
-    "item3Title": "Normalisation et protection true-peak",
-    "item3Text": "Normalisez vers la cible choisie, puis gardez le plafond de sortie visible pendant le travail.",
-    "item4Title": "Routage Programme et Preview",
-    "item4Text": "Écoutez en privé, routez le spectacle délibérément et gardez les deux chemins de compteurs lisibles.",
-    "link": "Lire la documentation de workflow actuelle"
+    "changeLanguage": "Changer de langue"
   },
   "download": {
-    "eyebrow": "INSTALLER LA BUILD ACTUELLE",
-    "versionLabel": "Version packagée actuelle",
-    "title": "Choisissez votre machine de spectacle.",
-    "detectedText": "Nous avons détecté {os}. La build correspondante est mise en évidence, et chaque plateforme prise en charge reste visible ci-dessous.",
-    "fallbackText": "Téléchargez la version packagée actuelle pour la plateforme sur laquelle tourne votre spectacle.",
-    "badge": "RECOMMANDÉ",
     "windows": {
-      "title": "Windows",
-      "description": "Windows 10/11 · installateur 64 bits",
-      "action": "Télécharger .exe",
-      "meta": "Installateur NSIS"
+      "title": "Windows"
     },
     "macArm": {
-      "title": "macOS — Apple Silicon",
-      "description": "M1/M2/M3 et plus récent · arm64",
-      "action": "Télécharger .dmg",
-      "meta": "Apple Silicon"
+      "title": "macOS — Apple Silicon"
     },
     "linux": {
-      "title": "Linux",
-      "description": "x86_64 · AppImage",
-      "action": "Télécharger AppImage",
-      "meta": "Build portable"
-    },
-    "otherFormats": "Autres formats",
-    "macZip": "macOS .zip",
-    "macIntelDmg": "macOS Intel .dmg",
-    "intelZip": "Intel .zip",
-    "linuxDeb": "Linux .deb",
-    "linuxRpm": "Linux .rpm",
-    "allReleases": "Toutes les versions",
-    "quickTitle": "Vous préférez le Terminal ? Une commande suffit.",
-    "quickText": "Collez ceci dans le Terminal (⌘Espace, tapez « Terminal »). Il télécharge la dernière version et installe DonWells Cue — le même style d'installation que Homebrew et rustup. Fonctionne sur Apple Silicon et Intel.",
-    "quickAlt": "Ou utilisez les cartes de téléchargement ci-dessus — l'app macOS est signée et notariée, elle s'ouvre normalement sans avertissement de sécurité.",
-    "firstRunTitle": "Télécharger, ouvrir, lancer — sans avertissements de sécurité.",
-    "firstRunText": "DonWells Cue est signé avec un Apple Developer ID et notarié par Apple : macOS Gatekeeper l'approuve au premier lancement. Ouvrez le DMG, glissez l'app dans Applications et double-cliquez.",
-    "firstRunWin": "Sous Windows, si SmartScreen apparaît, choisissez « Informations complémentaires → Exécuter quand même ».",
-    "osMac": "macOS Apple Silicon",
-    "osWindows": "Windows x64",
-    "osLinux": "Linux x64"
-  },
-  "docs": {
-    "eyebrow": "DOCUMENTATION",
-    "title": "Construisez le spectacle. Puis faites confiance à la surface.",
-    "lede": "Le README est la source de vérité pour le workflow client/serveur actuel, le packaging, l'exploitation réseau et la configuration de projet.",
-    "readme": "Lire le README",
-    "viewSource": "Voir le code source",
-    "checklistHeading": "PREMIER DÉMARRAGE",
-    "step1": "Choisissez un dossier de projet et laissez DonWells Cue créer son répertoire média.",
-    "step2": "Définissez la sortie programme, la cible et la sortie Preview privée dans les réglages du projet.",
-    "step3": "Préparez marqueurs de cue et fondus dans Properties ; copiez les sons récurrents dans One Shots.",
-    "step4": "Passez en Show Mode, vérifiez les compteurs et jouez le spectacle."
-  },
-  "footer": {
-    "tagline": "Lecture audio open source pour les événements en direct.",
-    "backToTop": "Haut de page"
+      "title": "Linux"
+    }
   }
 }

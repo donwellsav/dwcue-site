@@ -6,161 +6,20 @@
     "direction": "ltr"
   },
   "header": {
-    "tagline": "面向现场活动的音频提示播放"
+    "tagline": "现场活动音频提示播放"
   },
   "common": {
-    "changeLanguage": "切换语言",
-    "skipLink": "跳至内容",
-    "download": "下载"
-  },
-  "seo": {
-    "description": "面向现场活动的本地优先音频提示播放工具，提供 One Shots、Show Mode、Properties 和真峰值保护。"
-  },
-  "brand": {
-    "home": "DonWells Cue 首页",
-    "descriptor": "现场音频"
-  },
-  "nav": {
-    "label": "主导航",
-    "workflow": "工作流程",
-    "oneShots": "One Shots",
-    "showMode": "Show Mode",
-    "download": "下载",
-    "docs": "文档"
-  },
-  "hero": {
-    "title": "让下一个提示自然衔接。",
-    "lede": "专为现场演出打造的沉稳可靠、本地优先播放界面。细致准备每个环节，确保现场视图清晰易读，无需翻找即可播放正确的声音。",
-    "ctaPrimary": "获取 DonWells Cue",
-    "ctaSecondary": "了解工作方式",
-    "factPrepare": "准备",
-    "factRehearse": "彩排",
-    "factPerform": "演出",
-    "framePath": "DonWells Cue / 现场视图",
-    "captionA": "播放列表 · One Shots · 输出",
-    "captionB": "本地会话",
-    "annotationTop": "播放列表工作区",
-    "annotationBottom": "主输出 / 监听",
-    "screenshotAlt": "DonWells Cue 界面，显示按颜色分类的播放列表、One Shots 网格和输出电平表"
-  },
-  "signal": {
-    "localFirst": "本地优先",
-    "localFirstText": "在您信赖的设备上掌控演出。",
-    "platforms": "Windows · macOS · Linux",
-    "platformsText": "整个控制台采用统一工作流程。",
-    "license": "AGPL-3.0",
-    "licenseText": "开源透明，可供审查。",
-    "versionText": "当前已打包版本。",
-    "label": "DonWells Cue 产品信息"
-  },
-  "workflow": {
-    "eyebrow": "工作流程",
-    "title": "三个界面，一场演出。",
-    "intro": "DonWells Cue 将准备、试听和演出清晰分离，让现场操作员始终看到当前最重要的信息。",
-    "step1Title": "在 Properties 中准备",
-    "step1Text": "从提示源头精细设置：标记、淡入淡出、音量、路由、响度标准化，以及从所需精确位置进行播放控制。",
-    "step2Title": "在 Preview 中试听",
-    "step2Text": "私下试听，不影响主输出总线。设定下一个提示、检查增益微调，让演出顺畅推进。",
-    "step3Title": "在 Show Mode 中演出",
-    "step3Text": "将界面精简为现场必需内容：当前项目、下一项目、播放控制、One Shots，以及一目了然的电平表。"
-  },
-  "oneShots": {
-    "frameLabel": "01 / 快速播放",
-    "screenshotAlt": "DonWells Cue 的 One Shots 面板，固定单元格可随时快速播放",
-    "eyebrow": "One Shots",
-    "title": "重要声音，一触即达。",
-    "text": "One Shots 是固定的快速播放界面，适合播放广播通知、过场音、音效、登场音乐和铺底音乐。无论单元格有无内容，位置始终不变，操作员总能准确找到声音。",
-    "point1": "将文件拖入单元格，或把播放列表中的提示复制到单元格。",
-    "point2": "播放单元格，不改变源播放列表。",
-    "point3": "设置触手可及，同时保持现场视图简洁。",
-    "link": "阅读工作流程说明"
-  },
-  "showMode": {
-    "frameLabel": "02 / 演出视图",
-    "screenshotAlt": "DonWells Cue 的 Show Mode，显示精简的播放列表和现场输出电平表",
-    "eyebrow": "Show Mode",
-    "title": "演出开始，界面更简洁。",
-    "text": "演出时切换至精简且适合触控的播放视图。当前项目、下一项目、播放控制和输出信息保持清晰，纯编辑控件则隐于幕后。",
-    "currentLabel": "当前",
-    "currentText": "正在播出的内容",
-    "nextLabel": "下一项",
-    "nextText": "已准备的内容",
-    "safeLabel": "安全",
-    "safeText": "电平表所处位置",
-    "link": "下载当前版本"
-  },
-  "safety": {
-    "eyebrow": "信号规范",
-    "title": "在风险传到现场前及时发现。",
-    "text": "Properties 为技术人员提供演出前所需的详细信息：峰值与均方根波形视图、播放指针、可编辑标记、淡入淡出、路由、响度标准化，以及从提示位置进行播放控制。",
-    "cardHeaderA": "应用内功能",
-    "cardHeaderB": "Properties / 输出",
-    "item1Title": "峰值 + 均方根波形",
-    "item1Text": "播出前检查提示，并沿用播放列表中的相同轨道颜色。",
-    "item2Title": "可编辑的播放指针和标记",
-    "item2Text": "通过波形或精确时间字段设置入点、出点和下一项触发标记位置。",
-    "item3Title": "响度标准化与真峰值保护",
-    "item3Text": "按选定目标进行响度标准化，并在工作时始终清楚掌握输出上限。",
-    "item4Title": "主输出与 Preview 路由",
-    "item4Text": "私下试听、精准规划演出路由，并确保两路电平表清晰易读。",
-    "link": "阅读当前工作流程文档"
+    "changeLanguage": "更改语言"
   },
   "download": {
-    "eyebrow": "安装当前版本",
-    "versionLabel": "当前已打包版本",
-    "title": "选择您的演出设备。",
-    "detectedText": "检测到您使用 {os}。匹配的版本已高亮显示，所有受支持的平台版本仍列于下方。",
-    "fallbackText": "为演出所用平台下载当前已打包版本。",
-    "badge": "推荐",
     "windows": {
-      "title": "Windows",
-      "description": "Windows 10/11 · 64 位安装程序",
-      "action": "下载 .exe",
-      "meta": "NSIS 安装程序"
+      "title": "Windows"
     },
     "macArm": {
-      "title": "macOS — Apple Silicon",
-      "description": "M1/M2/M3 及更新型号 · arm64",
-      "action": "下载 .dmg",
-      "meta": "Apple Silicon"
+      "title": "macOS — Apple Silicon"
     },
     "linux": {
-      "title": "Linux",
-      "description": "x86_64 · AppImage",
-      "action": "下载 AppImage",
-      "meta": "便携版本"
-    },
-    "otherFormats": "其他格式",
-    "macZip": "macOS .zip",
-    "macIntelDmg": "macOS Intel .dmg",
-    "intelZip": "Intel .zip",
-    "linuxDeb": "Linux .deb",
-    "linuxRpm": "Linux .rpm",
-    "allReleases": "所有版本",
-    "quickTitle": "偏爱 Terminal？一条命令即可安装。",
-    "quickText": "将此命令粘贴到 Terminal（按 ⌘Space，输入“Terminal”）。它会下载最新版本并安装 DonWells Cue，安装方式与 Homebrew 和 rustup 相同。支持 Apple Silicon 和 Intel。",
-    "quickAlt": "也可使用上方的下载卡片——macOS 应用已经签名并通过公证，可正常打开，不会出现安全警告。",
-    "firstRunTitle": "下载、打开、运行——无安全警告。",
-    "firstRunText": "DonWells Cue 已使用 Apple Developer ID 签名并通过苹果公证，因此首次启动时可通过 macOS Gatekeeper 验证。只需打开 DMG，将应用拖入“应用程序”文件夹，然后双击即可。",
-    "firstRunWin": "在 Windows 上，如果出现 SmartScreen，请选择“更多信息”→“仍要运行”。",
-    "osMac": "macOS Apple Silicon",
-    "osWindows": "Windows 64 位",
-    "osLinux": "Linux 64 位"
-  },
-  "docs": {
-    "eyebrow": "文档",
-    "title": "搭建演出，然后放心交给界面。",
-    "lede": "README 是当前客户端/服务器工作流程、打包、网络运行和项目设置的权威说明。",
-    "readme": "阅读 README",
-    "viewSource": "查看源代码",
-    "checklistHeading": "首次运行",
-    "step1": "选择项目文件夹，让 DonWells Cue 创建媒体目录。",
-    "step2": "在项目设置中设定主输出、目标值和专用 Preview 输出。",
-    "step3": "在 Properties 中设置提示标记和淡入淡出；将需要重复播放的声音复制到 One Shots。",
-    "step4": "切换至 Show Mode，确认电平表，然后开始演出。"
-  },
-  "footer": {
-    "tagline": "面向现场活动的开源音频播放工具。",
-    "backToTop": "返回顶部"
+      "title": "Linux"
+    }
   }
 }
