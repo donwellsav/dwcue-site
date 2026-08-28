@@ -1,6 +1,6 @@
 {
   "name": "donwells-cue",
-  "version": "2.6.10",
+  "version": "2.6.11",
   "description": "DonWells Cue \u2014 open-source audio playback for live sound operators.",
   "license": "AGPL-3.0-only",
   "repository": "https://github.com/donwellsav/dwcue"
