@@ -24,8 +24,8 @@ export default defineNuxtConfig({
         { property: 'og:type', content: 'website' },
         { property: 'og:url', content: siteURL },
         { property: 'og:image', content: `${siteURL}screenshots/donwells_cue_main.jpg` },
-        { property: 'og:image:width', content: '1920' },
-        { property: 'og:image:height', content: '1080' },
+        { property: 'og:image:width', content: '2800' },
+        { property: 'og:image:height', content: '1736' },
         { property: 'og:image:type', content: 'image/jpeg' },
         // Twitter Card
         { name: 'twitter:card', content: 'summary_large_image' },
@@ -56,6 +56,8 @@ export default defineNuxtConfig({
         // Point explicitly at the current CUE favicon so browsers do not retain an older icon.
         { rel: 'icon', type: 'image/x-icon', href: `${baseURL}favicon-cue.ico` },
         { rel: 'canonical', href: siteURL },
+        { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'anonymous' },
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap' }
       ]
     }

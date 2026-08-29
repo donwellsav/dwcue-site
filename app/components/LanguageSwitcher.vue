@@ -74,7 +74,7 @@ const handleChange = async (event: Event) => {
     top: 50%;
     pointer-events: none;
     transform: translateY(-50%);
-    color: #65707b;
+    color: #5f6974;
     font-size: 15px;
     line-height: 1;
   }
