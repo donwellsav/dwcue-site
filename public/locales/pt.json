@@ -22,6 +22,8 @@
   },
   "nav": {
     "label": "Navegação principal",
+    "openMenu": "Abrir menu",
+    "closeMenu": "Fechar menu",
     "workflow": "Fluxo de trabalho",
     "oneShots": "One Shots",
     "showMode": "Show Mode",
@@ -30,6 +32,7 @@
     "docs": "Documentação"
   },
   "hero": {
+    "productLabel": "Software gratuito e de código aberto para reprodução de deixas em eventos ao vivo.",
     "title": "Faça a próxima deixa parecer inevitável.",
     "lede": "Prepare deixas de áudio e vídeo para eventos ao vivo. Mantenha a interface de controle tranquila, a saída para o público visível e o próximo som a um toque de distância.",
     "ctaPrimary": "Baixar o DonWells Cue",

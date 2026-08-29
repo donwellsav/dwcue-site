@@ -22,6 +22,8 @@
   },
   "nav": {
     "label": "Navegación principal",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
     "workflow": "Flujo de trabajo",
     "oneShots": "One Shots",
     "showMode": "Show Mode",
@@ -30,6 +32,7 @@
     "docs": "Documentación"
   },
   "hero": {
+    "productLabel": "Reproducción de señales gratuita y de código abierto para eventos en directo.",
     "title": "Haz que la siguiente señal parezca inevitable.",
     "lede": "Prepara señales de audio y vídeo para espectáculos en directo. Mantén despejada la superficie de control, visible la salida para el público y el siguiente sonido a un toque.",
     "ctaPrimary": "Descargar DonWells Cue",

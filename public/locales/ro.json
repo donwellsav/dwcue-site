@@ -22,6 +22,8 @@
   },
   "nav": {
     "label": "Navigare principală",
+    "openMenu": "Deschide meniul",
+    "closeMenu": "Închide meniul",
     "workflow": "Flux de lucru",
     "oneShots": "One Shots",
     "showMode": "Show Mode",
@@ -30,6 +32,7 @@
     "docs": "Documentație"
   },
   "hero": {
+    "productLabel": "Software gratuit și cu sursă deschisă pentru redarea reperelor la evenimente în direct.",
     "title": "Fă ca următorul reper să pară inevitabil.",
     "lede": "Pregătește repere audio și video pentru spectacole în direct. Păstrează calmă interfața de control, vizibilă ieșirea pentru public și următorul sunet la o atingere distanță.",
     "ctaPrimary": "Descarcă DonWells Cue",

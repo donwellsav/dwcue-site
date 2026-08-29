@@ -22,6 +22,8 @@
   },
   "nav": {
     "label": "Hauptnavigation",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen",
     "workflow": "Workflow",
     "oneShots": "One Shots",
     "showMode": "Show Mode",
@@ -30,6 +32,7 @@
     "docs": "Doku"
   },
   "hero": {
+    "productLabel": "Kostenlose Open-Source-Cue-Wiedergabe für Live-Veranstaltungen.",
     "title": "Der nächste Cue fühlt sich unausweichlich an.",
     "lede": "Bereiten Sie Audio- und Video-Cues für Live-Shows vor. Halten Sie die Bedienoberfläche ruhig, den Publikums-Output sichtbar und den nächsten Sound nur einen Fingertipp entfernt.",
     "ctaPrimary": "DonWells Cue holen",

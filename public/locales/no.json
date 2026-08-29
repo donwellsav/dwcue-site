@@ -22,6 +22,8 @@
   },
   "nav": {
     "label": "Hovednavigasjon",
+    "openMenu": "Åpne meny",
+    "closeMenu": "Lukk meny",
     "workflow": "Arbeidsflyt",
     "oneShots": "One Shots",
     "showMode": "Show Mode",
@@ -30,6 +32,7 @@
     "docs": "Dokumentasjon"
   },
   "hero": {
+    "productLabel": "Gratis programvare med åpen kildekode for avspilling av innslag under livearrangementer.",
     "title": "Gjør neste lydinnslag til en selvfølge.",
     "lede": "Forbered lyd- og videoinnslag til forestillinger og arrangementer. Hold kontrollflaten oversiktlig, publikumsutgangen synlig og neste lyd ett trykk unna.",
     "ctaPrimary": "Last ned DonWells Cue",

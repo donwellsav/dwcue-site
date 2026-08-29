@@ -22,6 +22,8 @@
   },
   "nav": {
     "label": "Huvudnavigering",
+    "openMenu": "Öppna menyn",
+    "closeMenu": "Stäng menyn",
     "workflow": "Arbetsflöde",
     "oneShots": "One Shots",
     "showMode": "Show Mode",
@@ -30,6 +32,7 @@
     "docs": "Dokumentation"
   },
   "hero": {
+    "productLabel": "Kostnadsfri programvara med öppen källkod för uppspelning av inslag vid liveevenemang.",
     "title": "Få nästa ljudinslag att kännas självklart.",
     "lede": "Förbered ljud- och videoinslag för liveföreställningar. Behåll lugnet på kontrollytan, ha publikens utsignal under uppsikt och håll nästa ljud en tryckning bort.",
     "ctaPrimary": "Hämta DonWells Cue",

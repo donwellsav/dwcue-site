@@ -22,6 +22,8 @@
   },
   "nav": {
     "label": "主导航",
+    "openMenu": "打开菜单",
+    "closeMenu": "关闭菜单",
     "workflow": "工作流程",
     "oneShots": "One Shots",
     "showMode": "Show Mode",
@@ -30,6 +32,7 @@
     "docs": "文档"
   },
   "hero": {
+    "productLabel": "面向现场活动的免费开源提示播放工具。",
     "title": "让下一个提示自然衔接。",
     "lede": "为现场演出准备音频和视频提示。保持控制界面沉稳清晰、观众输出随时可见，让下一段声音一触即发。",
     "ctaPrimary": "获取 DonWells Cue",

@@ -1,6 +1,6 @@
 # DonWells Cue Website — developer guide
 
-This is the standalone public-facing DonWells Cue static site. It is a Nuxt 4 SPA built from the current desktop app and README, separate from the desktop-app repository. It builds the site intended for [`https://dwcue.com/`](https://dwcue.com/); generating locally does not deploy it.
+This is the standalone public-facing DonWells Cue static site. It is a Nuxt 4 prerendered site built from the current desktop app and README, separate from the desktop-app repository. It builds the site intended for [`https://dwcue.com/`](https://dwcue.com/); generating locally does not deploy it.
 
 This document is the developer's guide to the website. The current screenshot set is stored in `public/screenshots/`; refresh it from the current app UI when the playback surface changes. The checked-in workflow builds an artifact only; hosting/deployment credentials stay outside this project.
 
@@ -8,11 +8,11 @@ This document is the developer's guide to the website. The current screenshot se
 
 ## Stack
 
-- **Nuxt 4** (`ssr: false`, `nitro.preset: 'static'`) → generates a fully static SPA.
+- **Nuxt 4** (`ssr: true`, `nitro.preset: 'static'`) → prerenders the English landing page and hydrates client-side locale switching.
 - **Vue 3** Composition API + `<script setup>`.
 - **SCSS** for styles ([`app/assets/styles/main.scss`](app/assets/styles/main.scss)).
 - Static output can be hosted by any static host. The production domain uses root-relative assets.
-- No backend, no API: the page fetches the version snapshot and locale JSON at runtime.
+- No backend, no API: the page fetches the version snapshot and non-English locale JSON at runtime.
 
 The site is deliberately tiny — a small set of reusable components, one composable, and one Nuxt page. Anything more elaborate (component libraries, CMS, etc.) is out of scope.
 
@@ -22,12 +22,12 @@ The site is deliberately tiny — a small set of reusable components, one compos
 
 ```
 website/
-├── app/app.vue                   The whole page: product story, current screenshots, downloads, docs checklist
-├── nuxt.config.ts                Nuxt config — root base URL, OG/Twitter metadata
+├── app/app.vue                   The whole page: product story, responsive navigation, screenshots, downloads, docs checklist
+├── nuxt.config.ts                Nuxt config — prerendering, OG/Twitter metadata, structured data
 ├── package.json                  Nuxt 4 + Vue 3 + sass
 ├── tsconfig.json
 ├── app/components/
-│   └── LanguageSwitcher.vue      Compact locale dropdown
+│   └── LanguageSwitcher.vue      Native locale select
 ├── app/composables/
 │   └── useI18n.ts                Auto-detect browser language; load JSON from /locales
 ├── app/assets/
@@ -39,7 +39,8 @@ website/
     ├── favicon.ico
     ├── assets/                   logo.svg
     ├── locales/                  Site-specific locale JSON for strings rendered by the landing page
-    └── screenshots/              Current in-app screenshots
+    ├── screenshots/              Current in-app screenshots
+    └── sitemap.xml               Search-engine discovery file
 ```
 
 `public/README.md`, `public/package.json`, and `public/screenshots/` are snapshots. Refresh them from the app repository before publishing. The site intentionally has no dependency on the app repository at build time.
@@ -85,7 +86,7 @@ cp ../liveplay/client/public/screenshots/donwells_cue_*.jpg public/screenshots/
 
    The current site release is **v2.6.12**. macOS artifacts are served from the site mirror; Windows and Linux links require the matching GitHub release.
 3. **Product story** — the page explains the current audio/video workflow (Properties → Preview → Show Mode), Video Output, armed One Shots, output safety, language coverage, and supported release builds. The full technical reference remains the root README, linked from the docs section.
-4. **Localisation** — `app/composables/useI18n.ts` detects the browser language and loads the matching JSON from `/locales/<code>.json`. Locale fetches use `cache: 'reload'` because published locale objects are immutable, so a release cannot leave returning visitors on stale copy. Falls back to English. The current locale is persisted in `localStorage`. `LanguageSwitcher.vue` is the UI.
+4. **Localisation** — `app/composables/useI18n.ts` detects the browser language and loads the matching JSON from `/locales/<code>.json`. Locale fetches use `cache: 'reload'` because published locale objects are immutable, so a release cannot leave returning visitors on stale copy. Falls back to English. The current locale is persisted in `localStorage`; the document `lang` and `dir` attributes, title, and description stay synchronized. `LanguageSwitcher.vue` uses a native single-select control for complete keyboard support.
 
 ---
 
@@ -112,13 +113,13 @@ Build the standalone static output with root-relative asset URLs:
 NUXT_APP_BASE_URL=/ npm run generate
 ```
 
-The checked-in GitHub Actions workflow builds and uploads a validation artifact. Production hosting is the `dwcue-web` Worker backed by the `dwcue-site` R2 bucket. Publish `.output/public` with `npx --yes wrangler@4 r2 object put --remote`, uploading every generated file except `downloads/` (the release CI owns the macOS binaries). Use no-cache headers for HTML and `package.json`, and immutable caching for hashed assets.
+The checked-in GitHub Actions workflow builds and uploads a validation artifact. Production hosting is the `dwcue-web` Worker backed by the `dwcue-site` R2 bucket. Publish `.output/public` with `npx --yes wrangler@4 r2 object put --remote`, uploading every generated file except `downloads/` (the release CI owns the macOS binaries). Use no-cache headers for HTML, XML, and `package.json`, and immutable caching for hashed assets.
 
 ---
 
 ## Adding a section
 
-Edit `app/app.vue`. Sections are plain `<section class="…-section">` blocks inside the page; the SCSS is colocated at the bottom of the same file. There is no router and no other page — keep everything single-page.
+Edit `app/app.vue`. Sections are plain `<section class="…-section">` blocks inside the page; the SCSS is colocated at the bottom of the same file. There is no router or other page — keep everything single-page, with English content prerendered for crawlers and client-side locale switching after hydration.
 
 If a section needs reusable layout (image-on-left, image-on-right, alternating), reuse the existing `feature-band__grid` pattern in `app/app.vue` rather than adding a component library.
 

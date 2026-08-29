@@ -22,6 +22,8 @@
   },
   "nav": {
     "label": "NAVIGIMI KRYESOR",
+    "openMenu": "Hap menynë",
+    "closeMenu": "Mbyll menynë",
     "workflow": "Rrjedha e punës",
     "oneShots": "One Shots",
     "showMode": "Show Mode",
@@ -30,6 +32,7 @@
     "docs": "Dokumentacioni"
   },
   "hero": {
+    "productLabel": "Program falas dhe me burim të hapur për riprodhimin e sinjaleve në veprimtari të drejtpërdrejta.",
     "title": "Bëj që sinjali i radhës të vijë krejt natyrshëm.",
     "lede": "Përgatit sinjalet audio dhe video për shfaqje të drejtpërdrejta. Mbaje të qetë ndërfaqen e kontrollit, të dukshme daljen për publikun dhe tingullin e radhës vetëm një prekje larg.",
     "ctaPrimary": "Merr DonWells Cue",

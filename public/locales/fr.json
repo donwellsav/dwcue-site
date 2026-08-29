@@ -22,6 +22,8 @@
   },
   "nav": {
     "label": "Navigation principale",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
     "workflow": "Workflow",
     "oneShots": "One Shots",
     "showMode": "Show Mode",
@@ -30,6 +32,7 @@
     "docs": "Docs"
   },
   "hero": {
+    "productLabel": "Lecture de cues gratuite et open source pour les événements en direct.",
     "title": "Faites du prochain cue une évidence.",
     "lede": "Préparez les cues audio et vidéo de vos spectacles. Gardez une surface de contrôle claire, la sortie destinée au public visible et le prochain son à portée de main.",
     "ctaPrimary": "Obtenir DonWells Cue",

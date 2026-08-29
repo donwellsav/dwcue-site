@@ -22,6 +22,8 @@
   },
   "nav": {
     "label": "Primary navigation",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
     "workflow": "Workflow",
     "oneShots": "One Shots",
     "showMode": "Show Mode",
@@ -31,6 +33,7 @@
   },
   "hero": {
     "title": "Make the next cue feel inevitable.",
+    "productLabel": "Free, open-source cue playback for live events.",
     "lede": "Prepare audio and video cues for live shows. Keep the control surface calm, the audience output visible, and the next sound one touch away.",
     "ctaPrimary": "Get DonWells Cue",
     "ctaSecondary": "See how it works",

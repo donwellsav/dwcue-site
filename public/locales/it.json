@@ -22,6 +22,8 @@
   },
   "nav": {
     "label": "Navigazione principale",
+    "openMenu": "Apri il menu",
+    "closeMenu": "Chiudi il menu",
     "workflow": "Flusso di lavoro",
     "oneShots": "One Shots",
     "showMode": "Show Mode",
@@ -30,6 +32,7 @@
     "docs": "Documentazione"
   },
   "hero": {
+    "productLabel": "Riproduzione di segnali gratuita e open source per eventi dal vivo.",
     "title": "Fa’ sembrare inevitabile il segnale successivo.",
     "lede": "Prepara segnali audio e video per gli spettacoli dal vivo. Mantieni ordinata l’interfaccia di controllo, visibile l’uscita per il pubblico e il suono successivo a portata di tocco.",
     "ctaPrimary": "Scarica DonWells Cue",

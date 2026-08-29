@@ -22,6 +22,8 @@
   },
   "nav": {
     "label": "기본 탐색",
+    "openMenu": "메뉴 열기",
+    "closeMenu": "메뉴 닫기",
     "workflow": "워크플로",
     "oneShots": "One Shots",
     "showMode": "Show Mode",
@@ -30,6 +32,7 @@
     "docs": "문서"
   },
   "hero": {
+    "productLabel": "라이브 이벤트를 위한 무료 오픈 소스 큐 재생 도구입니다.",
     "title": "다음 큐가 필연처럼 느껴지게.",
     "lede": "라이브 공연용 오디오 및 비디오 큐를 준비하세요. 제어 화면은 차분하게, 관객용 출력은 눈에 보이게 유지하고, 다음 사운드는 한 번의 터치로 재생하세요.",
     "ctaPrimary": "DonWells Cue 받기",
