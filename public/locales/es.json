@@ -6,7 +6,7 @@
     "direction": "ltr"
   },
   "header": {
-    "tagline": "Reproducción de señales de audio para eventos en directo"
+    "tagline": "Reproducción de señales de audio + vídeo para eventos en directo"
   },
   "common": {
     "changeLanguage": "Cambiar idioma",
@@ -14,7 +14,7 @@
     "download": "Descargar"
   },
   "seo": {
-    "description": "Reproducción local de señales de audio para eventos en directo, con One Shots, Show Mode, Properties y protección contra picos reales."
+    "description": "Reproducción de señales de audio y vídeo para eventos en directo, con One Shots, Show Mode, Video Output dedicado y protección contra picos reales."
   },
   "brand": {
     "home": "Inicio de DonWells Cue",
@@ -25,12 +25,13 @@
     "workflow": "Flujo de trabajo",
     "oneShots": "One Shots",
     "showMode": "Show Mode",
+    "videoOutput": "Video Output",
     "download": "Descargas",
     "docs": "Documentación"
   },
   "hero": {
     "title": "Haz que la siguiente señal parezca inevitable.",
-    "lede": "Una interfaz de reproducción serena y local para espectáculos en directo. Prepara cada detalle, mantén legible la vista de directo y lanza el sonido correcto sin tener que buscarlo.",
+    "lede": "Prepara señales de audio y vídeo para espectáculos en directo. Mantén despejada la superficie de control, visible la salida para el público y el siguiente sonido a un toque.",
     "ctaPrimary": "Descargar DonWells Cue",
     "ctaSecondary": "Descubre cómo funciona",
     "factPrepare": "Preparar",
@@ -44,35 +45,35 @@
     "screenshotAlt": "DonWells Cue con una lista de reproducción codificada por colores, una cuadrícula de One Shots y medidores de salida"
   },
   "signal": {
-    "localFirst": "Funcionamiento local",
-    "localFirstText": "Controla el espectáculo desde el equipo en el que confías.",
-    "platforms": "Windows · macOS · Linux",
-    "platformsText": "Un mismo flujo de trabajo en toda la cabina.",
-    "license": "AGPL-3.0",
-    "licenseText": "Código abierto, creado para que puedas inspeccionarlo.",
+    "localFirst": "Motor local",
+    "localFirstText": "Reproduce desde el equipo en el que confías — o conéctate a un servidor junto al escenario.",
+    "platforms": "Audio + vídeo",
+    "platformsText": "Versiones para Windows, macOS y Linux con Video Output dedicado.",
+    "license": "21 idiomas",
+    "licenseText": "Incluye compatibilidad con escritura de derecha a izquierda para árabe, persa y urdu.",
     "versionText": "Versión empaquetada actual.",
     "label": "Datos del producto DonWells Cue"
   },
   "workflow": {
     "eyebrow": "EL FLUJO DE TRABAJO",
-    "title": "Tres interfaces. Un espectáculo.",
-    "intro": "DonWells Cue mantiene separadas la preparación, la preescucha y la actuación para que el operador siempre vea la información importante en ese momento.",
-    "step1Title": "Prepara en Properties",
-    "step1Text": "Configura la señal desde el propio archivo: marcadores, fundidos, volumen, enrutamiento, normalización y controles de reproducción desde el punto exacto que necesites.",
-    "step2Title": "Haz la preescucha en Preview",
-    "step2Text": "Escucha en privado sin afectar al canal de programa. Prepara la siguiente señal, comprueba el ajuste de ganancia y mantén el espectáculo en marcha.",
-    "step3Title": "Actúa en Show Mode",
-    "step3Text": "Reduce la interfaz a lo esencial para el directo: señal actual, siguiente señal, controles de reproducción, One Shots y medidores que puedas leer de un vistazo."
+    "title": "Prepara una vez. Ejecuta con claridad.",
+    "intro": "Monta el espectáculo, comprueba la señal y mantén la superficie de directo centrada en lo esencial — con audio, vídeo y control remoto en un solo flujo de trabajo.",
+    "step1Title": "Importa y organiza",
+    "step1Text": "Añade audio o vídeo local, YouTube o pistas seleccionadas de Spotify y ordénalos en grupos anidados de listas de reproducción.",
+    "step2Title": "Prepara en Properties",
+    "step2Text": "Ajusta cada señal con formas de onda de pico/RMS, marcadores, fundidos, normalización de sonoridad o pico real, enrutamiento y código de tiempo LTC opcional.",
+    "step3Title": "Actúa con confianza",
+    "step3Text": "Usa Preview, One Shots, controles de teclado/MIDI, Show Mode y medidores en directo sin perder de vista la siguiente señal."
   },
   "oneShots": {
     "frameLabel": "01 / REPRODUCCIÓN RÁPIDA",
     "screenshotAlt": "Panel One Shots de DonWells Cue con celdas permanentes listas para reproducir sonidos rápidamente",
     "eyebrow": "ONE SHOTS",
     "title": "Ten los sonidos importantes a un solo toque.",
-    "text": "One Shots es una interfaz permanente de reproducción rápida para anuncios, ráfagas musicales, efectos, entradas a escena y fondos. Las celdas permanecen en su sitio, estén llenas o vacías, para que el operador siempre sepa dónde está cada sonido.",
-    "point1": "Arrastra un archivo o copia una señal de la lista de reproducción a una celda.",
-    "point2": "Reproduce la celda sin cambiar la lista de reproducción de origen.",
-    "point3": "Mantén los ajustes a mano sin recargar la vista de directo.",
+    "text": "One Shots es una superficie permanente de reproducción rápida para anuncios, ráfagas musicales, efectos, entradas a escena y fondos. En Show Mode, arma una celda antes de lanzarla desde su botón, una tecla rápida o MIDI, sin alterar la lista de reproducción de origen.",
+    "point1": "Copia archivos locales o señales de una lista de reproducción en una celda sin modificar el origen.",
+    "point2": "Arma una celda para lanzarla de forma deliberada desde su botón, una tecla rápida o un controlador MIDI.",
+    "point3": "Atenúa o sustituye la reproducción de programa, configura el comportamiento al volver a lanzar y mantén visibles las cuentas atrás.",
     "link": "Consulta las notas del flujo de trabajo"
   },
   "showMode": {
@@ -80,29 +81,29 @@
     "screenshotAlt": "Show Mode de DonWells Cue con una lista de reproducción simplificada y medidores de salida en directo",
     "eyebrow": "SHOW MODE",
     "title": "Menos interfaz cuando la sala está en directo.",
-    "text": "Cambia a una vista de reproducción simplificada y apta para pantallas táctiles durante la actuación. La información de la señal actual, la siguiente, los controles de reproducción y la salida permanece clara, mientras los controles exclusivos de edición desaparecen.",
+    "text": "Cambia a una vista de reproducción simplificada y táctil durante la actuación. La barra de accesos directos, el panel Preview, las señales actual y siguiente y los medidores permanecen a mano, mientras los controles exclusivos de edición desaparecen.",
     "currentLabel": "ACTUAL",
     "currentText": "lo que está sonando",
     "nextLabel": "SIGUIENTE",
     "nextText": "lo que está preparado",
     "safeLabel": "ZONA SEGURA",
-    "safeText": "dónde se encuentran los niveles",
+    "safeText": "medidores + salida",
     "link": "Descarga la versión actual"
   },
   "safety": {
-    "eyebrow": "CONTROL DE LA SEÑAL",
-    "title": "Detecta el riesgo antes de que llegue a la sala.",
-    "text": "Properties ofrece al técnico el nivel de detalle necesario antes del espectáculo: vistas de la forma de onda con valores de pico y RMS, cursores de reproducción, marcadores editables, fundidos, enrutamiento, normalización y controles de reproducción desde la posición de la señal.",
+    "eyebrow": "SEÑAL + VÍDEO",
+    "title": "Protege la señal. Mantén la imagen lista.",
+    "text": "Preview mantiene la preescucha fuera del bus de programa; Output Target, la normalización y la limitación de picos reales permiten controlar los niveles; Video Output ofrece al público una superficie de imagen dedicada.",
     "cardHeaderA": "QUÉ INCLUYE LA APLICACIÓN",
-    "cardHeaderB": "PROPERTIES / SALIDA",
-    "item1Title": "Formas de onda de pico + RMS",
-    "item1Text": "Revisa la señal antes de emitirla, con el mismo color de pista que se utiliza en la lista de reproducción.",
-    "item2Title": "Cursores y marcadores editables",
-    "item2Text": "Define los puntos de entrada, salida y paso a la siguiente señal desde la forma de onda o mediante campos de tiempo exactos.",
-    "item3Title": "Normalización y protección contra picos reales",
-    "item3Text": "Normaliza al nivel objetivo elegido y mantén visible el límite de salida mientras trabajas.",
-    "item4Title": "Enrutamiento de programa y Preview",
-    "item4Text": "Haz la preescucha en privado, enruta el sonido del espectáculo de forma deliberada y mantén legibles los medidores de ambas rutas.",
+    "cardHeaderB": "SEÑAL / VÍDEO",
+    "item1Title": "Preview fuera del bus de programa",
+    "item1Text": "Haz la preescucha, desplázate, recorta y ajusta la siguiente señal mediante una salida de monitor dedicada.",
+    "item2Title": "Objetivos de sonoridad y pico real",
+    "item2Text": "Ajusta los objetivos de televisión, streaming, radio, OTT o consola de directo antes de que la señal salga al aire.",
+    "item3Title": "Video Output seguro para la sesión",
+    "item3Text": "Envía vídeo H.264/HEVC a la pantalla seleccionada, con identificación de pantallas, carta de ajuste, imagen de espera y controles de recuperación.",
+    "item4Title": "Seguridad de One Shots armados",
+    "item4Text": "En Show Mode, exige un armado explícito antes de poder lanzar una celda; al salir de Show Mode, las celdas se desarman, mientras que Detener siempre está disponible.",
     "link": "Consulta la documentación actual del flujo de trabajo"
   },
   "download": {
@@ -150,14 +151,14 @@
   "docs": {
     "eyebrow": "DOCUMENTACIÓN",
     "title": "Prepara el espectáculo. Después, confía en la interfaz.",
-    "lede": "El README es la referencia principal para el flujo de trabajo actual entre cliente y servidor, la creación de paquetes, el funcionamiento en red y la configuración del proyecto.",
+    "lede": "El README es la referencia principal para el flujo de trabajo actual de audio y vídeo, la interfaz en 21 idiomas, la creación de paquetes, el funcionamiento en red y la configuración del proyecto.",
     "readme": "Leer el README",
     "viewSource": "Ver código fuente",
     "checklistHeading": "PRIMER INICIO",
-    "step1": "Elige una carpeta para el proyecto y deja que DonWells Cue cree en ella el directorio de archivos multimedia.",
-    "step2": "Configura la salida de programa, el nivel objetivo y la salida privada de Preview en los ajustes del proyecto.",
-    "step3": "Prepara los marcadores y fundidos de las señales en Properties; copia los sonidos recurrentes en One Shots.",
-    "step4": "Cambia a Show Mode, comprueba los medidores y ejecuta el espectáculo."
+    "step1": "Crea un proyecto e importa audio o vídeo local; después, confirma la carpeta de archivos multimedia.",
+    "step2": "Configura las salidas de programa y Preview, Output Target y el dispositivo LTC opcional en Ajustes.",
+    "step3": "Prepara los marcadores, fundidos, normalización, enrutamiento y controles de One Shots en Properties.",
+    "step4": "Si el espectáculo usa vídeo, identifica la pantalla, abre Video Output, comprueba la carta de ajuste y activa Show Mode."
   },
   "footer": {
     "tagline": "Reproducción de audio de código abierto para eventos en directo.",

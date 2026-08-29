@@ -6,7 +6,7 @@
     "direction": "ltr"
   },
   "header": {
-    "tagline": "Uppspelning av ljudinslag för direktevenemang"
+    "tagline": "Uppspelning av ljudinslag + videoinslag för direktevenemang"
   },
   "common": {
     "changeLanguage": "Byt språk",
@@ -14,7 +14,7 @@
     "download": "Ladda ned"
   },
   "seo": {
-    "description": "Lokalt körd uppspelning av ljudinslag för direktevenemang, med One Shots, Show Mode, Properties och skydd mot sanna toppnivåer."
+    "description": "Uppspelning av ljud- och videoinslag för direktevenemang, med One Shots, Show Mode, separat Video Output och skydd mot sanna toppnivåer."
   },
   "brand": {
     "home": "DonWells Cue – startsida",
@@ -25,12 +25,13 @@
     "workflow": "Arbetsflöde",
     "oneShots": "One Shots",
     "showMode": "Show Mode",
+    "videoOutput": "Video Output",
     "download": "Nedladdningar",
     "docs": "Dokumentation"
   },
   "hero": {
     "title": "Få nästa ljudinslag att kännas självklart.",
-    "lede": "En trygg uppspelningsyta som körs lokalt för föreställningar och direktevenemang. Förbered varje detalj, behåll överblicken i körvyn och starta rätt ljud utan att behöva leta.",
+    "lede": "Förbered ljud- och videoinslag för liveföreställningar. Behåll lugnet på kontrollytan, ha publikens utsignal under uppsikt och håll nästa ljud en tryckning bort.",
     "ctaPrimary": "Hämta DonWells Cue",
     "ctaSecondary": "Se hur det fungerar",
     "factPrepare": "Förbered",
@@ -44,35 +45,35 @@
     "screenshotAlt": "DonWells Cue med en färgkodad spellista, ett One Shots-rutnät och utgångsnivåmätare"
   },
   "signal": {
-    "localFirst": "LOKAL DRIFT",
-    "localFirstText": "Kör evenemanget på den dator du litar på.",
-    "platforms": "Windows · macOS · Linux",
-    "platformsText": "Ett och samma arbetsflöde vid teknikerplatsen.",
-    "license": "AGPL-3.0",
-    "licenseText": "Öppen källkod, skapad för att kunna granskas.",
+    "localFirst": "LOKAL MOTOR",
+    "localFirstText": "Spela upp från den dator du litar på — eller anslut till en server vid scenen.",
+    "platforms": "LJUD + VIDEO",
+    "platformsText": "Versioner för Windows, macOS och Linux med separat videoutgång.",
+    "license": "21 SPRÅK",
+    "licenseText": "Inkluderar stöd för höger-till-vänster-skrift på arabiska, persiska och urdu.",
     "versionText": "Aktuell paketerad utgåva.",
     "label": "Produktfakta om DonWells Cue"
   },
   "workflow": {
     "eyebrow": "ARBETSFÖLDET",
-    "title": "Tre vyer. Ett evenemang.",
-    "intro": "DonWells Cue håller förberedelser, provlyssning och genomförande åtskilda, så att operatören alltid ser den information som är viktig för stunden.",
-    "step1Title": "Förbered i Properties",
-    "step1Text": "Finjustera ljudinslaget från grunden: markörer, toningar, volym, signalvägar, normalisering och uppspelningsreglage från exakt den position du behöver.",
-    "step2Title": "Provlyssna i Preview",
-    "step2Text": "Lyssna enskilt utan att påverka huvudbussen. Förbered nästa ljudinslag, kontrollera nivåjusteringen och håll evenemanget i gång.",
-    "step3Title": "Genomför i Show Mode",
-    "step3Text": "Skala ned vyn till det som behövs under körningen: aktuellt och nästa ljudinslag, uppspelningsreglage, One Shots samt mätare som kan avläsas med ett ögonkast."
+    "title": "Förbered en gång. Genomför tydligt.",
+    "intro": "Bygg föreställningen, kontrollera signalen och håll körvyn fokuserad — med ljud, video och fjärrstyrning i ett enda arbetsflöde.",
+    "step1Title": "Importera och ordna",
+    "step1Text": "Lägg till lokalt ljud/lokal video, YouTube eller utvalda låtar från Spotify och ordna dem sedan i nästlade spellistegrupper.",
+    "step2Title": "Förbered i Properties",
+    "step2Text": "Forma varje inslag med vågformer för toppnivå/RMS, markörer, toningar, normalisering av ljudstyrka eller sann toppnivå, signalvägar och valfri LTC-tidskod.",
+    "step3Title": "Genomför med trygghet",
+    "step3Text": "Använd Preview, One Shots, tangentbords-/MIDI-styrning, Show Mode och livemätare utan att tappa bort nästa inslag."
   },
   "oneShots": {
     "frameLabel": "01 / SNABBUPPSPELNING",
     "screenshotAlt": "Panelen One Shots i DonWells Cue med fasta rutor redo för snabb uppspelning",
     "eyebrow": "ONE SHOTS",
     "title": "Ha de viktiga ljuden inom ett trycks räckhåll.",
-    "text": "One Shots är en fast yta för snabb uppspelning av meddelanden, vinjetter, effekter, entrémusik och bakgrundsljud. Rutorna ligger alltid kvar, oavsett om de är fyllda eller tomma, så att operatören alltid vet var varje ljud finns.",
-    "point1": "Dra en fil eller kopiera ett ljudinslag från spellistan till en ruta.",
-    "point2": "Spela upp rutan utan att ändra den ursprungliga spellistan.",
-    "point3": "Ha inställningarna nära till hands utan att belamra körvyn.",
+    "text": "One Shots är en fast yta för snabb uppspelning av meddelanden, vinjetter, effekter, entrémusik och bakgrundsljud. I Show Mode armerar du en ruta innan du startar den från rutan, ett kortkommando eller MIDI, medan källspellistan förblir orörd.",
+    "point1": "Kopiera lokala filer eller inslag från spellistan till en ruta utan att ändra källan.",
+    "point2": "Armera en ruta för avsiktlig start från rutan, ett kortkommando eller en MIDI-styrenhet.",
+    "point3": "Dämpa eller ersätt programuppspelningen, ange omstartsbeteende och håll nedräkningarna synliga.",
     "link": "Läs anvisningarna för arbetsflödet"
   },
   "showMode": {
@@ -80,29 +81,29 @@
     "screenshotAlt": "DonWells Cue Show Mode med en förenklad spellista och utgångsnivåmätare under körning",
     "eyebrow": "SHOW MODE",
     "title": "Mindre gränssnitt när evenemanget pågår.",
-    "text": "Växla till en förenklad, pekvänlig uppspelningsvy under föreställningen. Aktuellt och nästa ljudinslag, uppspelningsreglage och utgångsinformation förblir tydliga, medan reglage som endast används vid redigering flyttas undan.",
+    "text": "Växla till en förenklad, pekvänlig uppspelningsvy under föreställningen. Genvägsfältet, Preview-panelen, aktuellt och nästa inslag samt mätarna finns nära till hands, medan reglage som endast används vid redigering flyttas undan.",
     "currentLabel": "Aktuellt",
     "currentText": "det som hörs ut",
     "nextLabel": "Nästa",
     "nextText": "det som är klart",
     "safeLabel": "Säker nivå",
-    "safeText": "mätarnas nivåläge",
+    "safeText": "mätare + utgång",
     "link": "Ladda ned den aktuella utgåvan"
   },
   "safety": {
-    "eyebrow": "SIGNALKONTROLL",
-    "title": "Se risken innan den hörs i lokalen.",
-    "text": "Properties ger teknikern den detaljnivå som behövs före evenemanget: vågformsvisning av toppnivå och RMS, spelhuvuden, redigerbara markörer, toningar, signalvägar, normalisering och uppspelningsreglage från ljudinslagets position.",
+    "eyebrow": "SIGNAL + VIDEO",
+    "title": "Skydda signalen. Håll bilden redo.",
+    "text": "Preview håller provlyssningen borta från programbussen; Output Target, normalisering och begränsning av sanna toppnivåer ger kontrollerade nivåer; Video Output ger publiken en separat bildyta.",
     "cardHeaderA": "DETTA FINNS I APPEN",
-    "cardHeaderB": "PROPERTIES / UTGÅNG",
-    "item1Title": "Vågformer för toppnivå + RMS",
-    "item1Text": "Granska ljudinslaget innan det hörs ut, med samma spårfärg som i spellistan.",
-    "item2Title": "Redigerbara spelhuvuden och markörer",
-    "item2Text": "Ange inpunkt, utpunkt och position för nästa markör i vågformen eller i exakta tidsfält.",
-    "item3Title": "Normalisering och skydd mot sanna toppnivåer",
-    "item3Text": "Normalisera till ett valt målvärde och håll utgångens maxnivå synlig medan du arbetar.",
-    "item4Title": "Signalvägar för huvudsignal och Preview",
-    "item4Text": "Provlyssna enskilt, styr evenemangets signalvägar medvetet och håll båda mätkedjorna tydligt avläsbara.",
+    "cardHeaderB": "SIGNAL / VIDEO",
+    "item1Title": "Preview utanför programbussen",
+    "item1Text": "Provlyssna, sök, trimma och ställ in nästa inslag via en separat monitorutgång.",
+    "item2Title": "Målvärden för ljudstyrka och sann toppnivå",
+    "item2Text": "Anpassa till målvärden för tv, strömning, radio, OTT eller livekonsol innan inslaget går ut.",
+    "item3Title": "Sessionssäker Video Output",
+    "item3Text": "Skicka H.264/HEVC-video till en vald skärm, med identifiering av skärmar, testbild, standbybild och återställningsreglage.",
+    "item4Title": "Säkerhet med armerade One Shots",
+    "item4Text": "I Show Mode ska en ruta uttryckligen armeras innan den kan startas; när Show Mode lämnas avarmeras rutorna, medan Stopp alltid är tillgängligt.",
     "link": "Läs den aktuella dokumentationen för arbetsflödet"
   },
   "download": {
@@ -150,14 +151,14 @@
   "docs": {
     "eyebrow": "DOKUMENTATION",
     "title": "Förbered evenemanget. Lita sedan på arbetsytan.",
-    "lede": "README är den primära referensen för det aktuella klient- och serverarbetsflödet, paketering, nätverksdrift och projektkonfiguration.",
+    "lede": "README är den primära referensen för det aktuella arbetsflödet för ljud/video, gränssnittet på 21 språk, paketering, nätverksdrift och projektkonfiguration.",
     "readme": "Läs README",
     "viewSource": "Visa källkoden",
     "checklistHeading": "FÖRSTA STARTEN",
-    "step1": "Välj en projektmapp och låt DonWells Cue skapa sin mediekatalog.",
-    "step2": "Ställ in huvudutgång, målvärde och privat Preview-utgång i projektinställningarna.",
-    "step3": "Förbered markörer och toningar för ljudinslagen i Properties och kopiera återkommande ljud till One Shots.",
-    "step4": "Växla till Show Mode, kontrollera mätarna och genomför evenemanget."
+    "step1": "Skapa ett projekt och importera lokalt ljud eller lokal video, och bekräfta sedan mediemappen.",
+    "step2": "Ställ in program- och Preview-utgångarna, Output Target och valfri LTC-enhet i Inställningar.",
+    "step3": "Förbered markörer, toningar, normalisering, signalvägar och One Shots-reglage i Properties.",
+    "step4": "Om föreställningen använder video: identifiera skärmen, öppna Video Output, kontrollera testbilden och kör sedan Show Mode."
   },
   "footer": {
     "tagline": "Ljuduppspelning med öppen källkod för direktevenemang.",

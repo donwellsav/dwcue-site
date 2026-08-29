@@ -6,7 +6,7 @@
     "direction": "ltr"
   },
   "header": {
-    "tagline": "面向现场活动的音频提示播放"
+    "tagline": "面向现场活动的音频 + 视频提示播放"
   },
   "common": {
     "changeLanguage": "切换语言",
@@ -14,7 +14,7 @@
     "download": "下载"
   },
   "seo": {
-    "description": "面向现场活动的本地优先音频提示播放工具，提供 One Shots、Show Mode、Properties 和真峰值保护。"
+    "description": "面向现场活动的音频和视频提示播放工具，提供 One Shots、Show Mode、专用 Video Output 和真峰值保护。"
   },
   "brand": {
     "home": "DonWells Cue 首页",
@@ -25,12 +25,13 @@
     "workflow": "工作流程",
     "oneShots": "One Shots",
     "showMode": "Show Mode",
+    "videoOutput": "Video Output",
     "download": "下载",
     "docs": "文档"
   },
   "hero": {
     "title": "让下一个提示自然衔接。",
-    "lede": "专为现场演出打造的沉稳可靠、本地优先播放界面。细致准备每个环节，确保现场视图清晰易读，无需翻找即可播放正确的声音。",
+    "lede": "为现场演出准备音频和视频提示。保持控制界面沉稳清晰、观众输出随时可见，让下一段声音一触即发。",
     "ctaPrimary": "获取 DonWells Cue",
     "ctaSecondary": "了解工作方式",
     "factPrepare": "准备",
@@ -44,35 +45,35 @@
     "screenshotAlt": "DonWells Cue 界面，显示按颜色分类的播放列表、One Shots 网格和输出电平表"
   },
   "signal": {
-    "localFirst": "本地优先",
-    "localFirstText": "在您信赖的设备上掌控演出。",
-    "platforms": "Windows · macOS · Linux",
-    "platformsText": "整个控制台采用统一工作流程。",
-    "license": "AGPL-3.0",
-    "licenseText": "开源透明，可供审查。",
+    "localFirst": "本地引擎",
+    "localFirstText": "在您信赖的设备上播放 — 也可连接舞台侧服务器。",
+    "platforms": "音频 + 视频",
+    "platformsText": "提供 Windows、macOS 和 Linux 版本，并配备专用视频输出。",
+    "license": "21 种语言",
+    "licenseText": "支持阿拉伯语、波斯语和乌尔都语从右至左显示。",
     "versionText": "当前已打包版本。",
     "label": "DonWells Cue 产品信息"
   },
   "workflow": {
     "eyebrow": "工作流程",
-    "title": "三个界面，一场演出。",
-    "intro": "DonWells Cue 将准备、试听和演出清晰分离，让现场操作员始终看到当前最重要的信息。",
-    "step1Title": "在 Properties 中准备",
-    "step1Text": "从提示源头精细设置：标记、淡入淡出、音量、路由、响度标准化，以及从所需精确位置进行播放控制。",
-    "step2Title": "在 Preview 中试听",
-    "step2Text": "私下试听，不影响主输出总线。设定下一个提示、检查增益微调，让演出顺畅推进。",
-    "step3Title": "在 Show Mode 中演出",
-    "step3Text": "将界面精简为现场必需内容：当前项目、下一项目、播放控制、One Shots，以及一目了然的电平表。"
+    "title": "一次准备，清晰演出。",
+    "intro": "编排演出、检查信号，让现场界面保持专注 — 在同一工作流程中管理音频、视频和远程控制。",
+    "step1Title": "导入并编排",
+    "step1Text": "导入本地音频/视频、YouTube 或指定的 Spotify 曲目，再将其编排到可嵌套的播放列表组中。",
+    "step2Title": "在 Properties 中准备",
+    "step2Text": "利用峰值/均方根波形、标记、淡入淡出、响度或真峰值标准化、路由及可选 LTC 时间码，精细设置每条提示。",
+    "step3Title": "从容演出",
+    "step3Text": "使用 Preview、One Shots、键盘/MIDI 控制、Show Mode 和实时电平表，同时确保下一条提示始终清晰可见。"
   },
   "oneShots": {
     "frameLabel": "01 / 快速播放",
     "screenshotAlt": "DonWells Cue 的 One Shots 面板，固定单元格可随时快速播放",
     "eyebrow": "One Shots",
     "title": "重要声音，一触即达。",
-    "text": "One Shots 是固定的快速播放界面，适合播放广播通知、过场音、音效、登场音乐和铺底音乐。无论单元格有无内容，位置始终不变，操作员总能准确找到声音。",
-    "point1": "将文件拖入单元格，或把播放列表中的提示复制到单元格。",
-    "point2": "播放单元格，不改变源播放列表。",
-    "point3": "设置触手可及，同时保持现场视图简洁。",
+    "text": "One Shots 是固定的快速播放界面，适合播放广播通知、过场音、音效、登场音乐和铺底音乐。在 Show Mode 中，必须先将单元格设为就绪，才能通过图块、快捷键或 MIDI 触发，同时不改动源播放列表。",
+    "point1": "将本地文件或播放列表提示复制到单元格，不改变源内容。",
+    "point2": "将单元格设为就绪，再通过图块、快捷键或 MIDI 控制器有意触发。",
+    "point3": "压低或替换主节目播放，设置再次触发行为，并让倒计时保持可见。",
     "link": "阅读工作流程说明"
   },
   "showMode": {
@@ -80,29 +81,29 @@
     "screenshotAlt": "DonWells Cue 的 Show Mode，显示精简的播放列表和现场输出电平表",
     "eyebrow": "Show Mode",
     "title": "演出开始，界面更简洁。",
-    "text": "演出时切换至精简且适合触控的播放视图。当前项目、下一项目、播放控制和输出信息保持清晰，纯编辑控件则隐于幕后。",
+    "text": "演出时切换至精简且适合触控的播放视图。快捷栏、Preview 面板、当前/下一条提示和电平表触手可及，纯编辑控件则隐于幕后。",
     "currentLabel": "当前",
     "currentText": "正在播出的内容",
     "nextLabel": "下一项",
     "nextText": "已准备的内容",
     "safeLabel": "安全",
-    "safeText": "电平表所处位置",
+    "safeText": "电平表 + 输出",
     "link": "下载当前版本"
   },
   "safety": {
-    "eyebrow": "信号规范",
-    "title": "在风险传到现场前及时发现。",
-    "text": "Properties 为技术人员提供演出前所需的详细信息：峰值与均方根波形视图、播放指针、可编辑标记、淡入淡出、路由、响度标准化，以及从提示位置进行播放控制。",
+    "eyebrow": "信号 + 视频",
+    "title": "保护信号，确保画面就绪。",
+    "text": "Preview 试听不进入主节目总线；Output Target、标准化和真峰值限制确保电平受控；Video Output 为观众提供专用画面界面。",
     "cardHeaderA": "应用内功能",
-    "cardHeaderB": "Properties / 输出",
-    "item1Title": "峰值 + 均方根波形",
-    "item1Text": "播出前检查提示，并沿用播放列表中的相同轨道颜色。",
-    "item2Title": "可编辑的播放指针和标记",
-    "item2Text": "通过波形或精确时间字段设置入点、出点和下一项触发标记位置。",
-    "item3Title": "响度标准化与真峰值保护",
-    "item3Text": "按选定目标进行响度标准化，并在工作时始终清楚掌握输出上限。",
-    "item4Title": "主输出与 Preview 路由",
-    "item4Text": "私下试听、精准规划演出路由，并确保两路电平表清晰易读。",
+    "cardHeaderB": "信号 / 视频",
+    "item1Title": "脱离主节目总线的 Preview",
+    "item1Text": "通过专用监听输出试听、定位、修剪并设定下一条提示。",
+    "item2Title": "响度与真峰值目标",
+    "item2Text": "在提示播出前，使其符合广播、流媒体、电台、OTT 或现场调音台的目标。",
+    "item3Title": "会话安全的 Video Output",
+    "item3Text": "将 H.264/HEVC 视频发送到指定显示器，并提供显示器识别、测试卡、待机图像和恢复控制。",
+    "item4Title": "One Shot 就绪保护",
+    "item4Text": "在 Show Mode 中，单元格必须明确设为就绪后才能触发；退出 Show Mode 会取消单元格的就绪状态，停止控制则始终可用。",
     "link": "阅读当前工作流程文档"
   },
   "download": {
@@ -150,14 +151,14 @@
   "docs": {
     "eyebrow": "文档",
     "title": "搭建演出，然后放心交给界面。",
-    "lede": "README 是当前客户端/服务器工作流程、打包、网络运行和项目设置的权威说明。",
+    "lede": "README 是当前音频/视频工作流程、21 种语言界面、打包、网络运行和项目设置的权威说明。",
     "readme": "阅读 README",
     "viewSource": "查看源代码",
     "checklistHeading": "首次运行",
-    "step1": "选择项目文件夹，让 DonWells Cue 创建媒体目录。",
-    "step2": "在项目设置中设定主输出、目标值和专用 Preview 输出。",
-    "step3": "在 Properties 中设置提示标记和淡入淡出；将需要重复播放的声音复制到 One Shots。",
-    "step4": "切换至 Show Mode，确认电平表，然后开始演出。"
+    "step1": "创建项目并导入本地音频或视频，然后确认媒体文件夹。",
+    "step2": "在设置中设定主节目和 Preview 输出、Output Target，以及可选的 LTC 设备。",
+    "step3": "在 Properties 中设置提示标记、淡入淡出、标准化、路由和 One Shot 控制。",
+    "step4": "如果演出使用视频，请识别显示器、打开 Video Output、检查测试卡，然后运行 Show Mode。"
   },
   "footer": {
     "tagline": "面向现场活动的开源音频播放工具。",

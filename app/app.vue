@@ -15,6 +15,7 @@
           <a href="#workflow">{{ t('nav.workflow') }}</a>
           <a href="#one-shots">{{ t('nav.oneShots') }}</a>
           <a href="#show-mode">{{ t('nav.showMode') }}</a>
+          <a href="#video-output">{{ t('nav.videoOutput') }}</a>
           <a href="#download">{{ t('nav.download') }}</a>
           <a href="#docs">{{ t('nav.docs') }}</a>
         </nav>
@@ -159,7 +160,7 @@
         </div>
       </section>
 
-      <section class="section safety-section">
+      <section id="video-output" class="section safety-section">
         <div class="wrap safety-section__grid">
           <div class="section-heading">
             <p class="eyebrow">{{ t('safety.eyebrow') }}</p>

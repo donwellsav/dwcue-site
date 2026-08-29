@@ -74,18 +74,18 @@ cp ../liveplay/client/public/screenshots/donwells_cue_*.jpg public/screenshots/
 
 ## How it works
 
-1. **Version detection** — at runtime, the page fetches `package.json` from the active host and reads the `version` field. All download links are constructed from this version, with `2.5.21` as a safe local fallback.
+1. **Version detection** — at runtime, the page fetches `package.json` from the active host and reads the `version` field. All download links are constructed from this version, with `2.6.12` as the checked-in fallback. Bump the three website version pointers with every app release.
 2. **Download links** — macOS artifacts are served from this site’s `/downloads/` path; Windows and Linux artifacts continue to use the matching GitHub release:
 
    | Platform | Asset pattern                          |
    |----------|-----------------------------------------|
    | Windows  | `DonWells-Cue-Setup-<version>.exe`         |
-   | macOS    | `DonWells-Cue-<version>-arm64.dmg`, `DonWells-Cue-<version>-arm64.zip` |
+   | macOS    | `DonWells-Cue-<version>-arm64.dmg/.zip`, `DonWells-Cue-<version>-x64.dmg/.zip` |
    | Linux    | `DonWells-Cue-<version>-x86_64.AppImage`, `DonWells-Cue-<version>-amd64.deb`, `DonWells-Cue-<version>-x86_64.rpm` |
 
-   The current site release is **v2.5.21**. If you rename a release asset on the server side, update the URL builder in `app.vue`.
-3. **Product story** — the page explains the current workflow (Properties → Preview → Show Mode), the permanent One Shots grid, output safety, and the supported release builds. The full technical reference remains the root README, linked from the docs section.
-4. **Localisation** — `app/composables/useI18n.ts` detects the browser language and loads the matching JSON from `/locales/<code>.json`. Falls back to English. The current locale is persisted in `localStorage`. `LanguageSwitcher.vue` is the UI.
+   The current site release is **v2.6.12**. macOS artifacts are served from the site mirror; Windows and Linux links require the matching GitHub release.
+3. **Product story** — the page explains the current audio/video workflow (Properties → Preview → Show Mode), Video Output, armed One Shots, output safety, language coverage, and supported release builds. The full technical reference remains the root README, linked from the docs section.
+4. **Localisation** — `app/composables/useI18n.ts` detects the browser language and loads the matching JSON from `/locales/<code>.json`. Locale fetches use `cache: 'reload'` because published locale objects are immutable, so a release cannot leave returning visitors on stale copy. Falls back to English. The current locale is persisted in `localStorage`. `LanguageSwitcher.vue` is the UI.
 
 ---
 
@@ -112,7 +112,7 @@ Build the standalone static output with root-relative asset URLs:
 NUXT_APP_BASE_URL=/ npm run generate
 ```
 
-The generated `.output/public/` tree can then be published by the website's hosting project. Keep deployment credentials and workflows outside the desktop-app repository.
+The checked-in GitHub Actions workflow builds and uploads a validation artifact. Production hosting is the `dwcue-web` Worker backed by the `dwcue-site` R2 bucket. Publish `.output/public` with `npx --yes wrangler@4 r2 object put --remote`, uploading every generated file except `downloads/` (the release CI owns the macOS binaries). Use no-cache headers for HTML and `package.json`, and immutable caching for hashed assets.
 
 ---
 
@@ -126,7 +126,7 @@ If a section needs reusable layout (image-on-left, image-on-right, alternating),
 
 ## Troubleshooting
 
-- **Old version shows after a release** — GitHub Pages caches aggressively. Hard-refresh (Ctrl/Cmd+Shift+R). If it persists after ~5 minutes, check that the deploy workflow actually re-ran (Actions tab).
-- **404 on downloads** — the site reads its version from `public/package.json`; ensure the matching macOS files exist under `public/downloads/` before deploying. Windows and Linux links require the matching GitHub release.
+- **Old version shows after a release** — verify that the live `https://dwcue.com/package.json` has the new version and that the generated assets were uploaded to the `dwcue-site` R2 bucket. The page fetches this pointer at runtime.
+- **404 on downloads** — the site reads its version from `public/package.json`; ensure the matching macOS files exist in the R2 `downloads/` prefix. Windows and Linux links require the matching GitHub release.
 - **404 on assets** — confirm the file is in `public/` (not just `assets/` — Nuxt's `assets/` is bundle-only).
 - **Build fails** — reproduce locally with `npm run generate` and confirm the snapshots in `public/` are present.

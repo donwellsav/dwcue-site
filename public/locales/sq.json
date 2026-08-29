@@ -6,7 +6,7 @@
     "direction": "ltr"
   },
   "header": {
-    "tagline": "Riprodhim sinjalesh audio për veprimtari të drejtpërdrejta"
+    "tagline": "Riprodhim sinjalesh audio + video për veprimtari të drejtpërdrejta"
   },
   "common": {
     "changeLanguage": "Ndrysho gjuhën",
@@ -14,7 +14,7 @@
     "download": "Shkarko"
   },
   "seo": {
-    "description": "Riprodhim vendor i sinjaleve audio për veprimtari të drejtpërdrejta, me One Shots, Show Mode, Properties dhe mbrojtje nga piku real."
+    "description": "Riprodhim sinjalesh audio dhe video për veprimtari të drejtpërdrejta, me One Shots, Show Mode, Video Output të dedikuar dhe mbrojtje nga piku real."
   },
   "brand": {
     "home": "Faqja kryesore e DonWells Cue",
@@ -25,12 +25,13 @@
     "workflow": "Rrjedha e punës",
     "oneShots": "One Shots",
     "showMode": "Show Mode",
+    "videoOutput": "Video Output",
     "download": "Shkarkimet",
     "docs": "Dokumentacioni"
   },
   "hero": {
     "title": "Bëj që sinjali i radhës të vijë krejt natyrshëm.",
-    "lede": "Një ndërfaqe e qetë riprodhimi, që funksionon së pari në pajisjen tënde, për shfaqje të drejtpërdrejta. Përgatit çdo hollësi, ruaj qartësinë e pamjes gjatë shfaqjes dhe lësho tingullin e duhur pa humbur kohë duke e kërkuar.",
+    "lede": "Përgatit sinjalet audio dhe video për shfaqje të drejtpërdrejta. Mbaje të qetë ndërfaqen e kontrollit, të dukshme daljen për publikun dhe tingullin e radhës vetëm një prekje larg.",
     "ctaPrimary": "Merr DonWells Cue",
     "ctaSecondary": "Shih si funksionon",
     "factPrepare": "Përgatit",
@@ -44,35 +45,35 @@
     "screenshotAlt": "DonWells Cue që shfaq një listë riprodhimi të koduar me ngjyra, rrjetën One Shots dhe matësit e daljes"
   },
   "signal": {
-    "localFirst": "PUNON SË PARI NË PAJISJEN TËNDE",
-    "localFirstText": "Drejtoje shfaqjen në pajisjen që i beson.",
-    "platforms": "Windows · macOS · Linux",
-    "platformsText": "E njëjta rrjedhë pune në çdo pozicion teknik.",
-    "license": "AGPL-3.0",
-    "licenseText": "Me kod burimor të hapur, i krijuar për t’u verifikuar.",
+    "localFirst": "MOTOR VENDOR",
+    "localFirstText": "Riprodho nga pajisja që i beson — ose lidhu me një shërbyes pranë skenës.",
+    "platforms": "AUDIO + VIDEO",
+    "platformsText": "Versione për Windows, macOS dhe Linux me Video Output të dedikuar.",
+    "license": "21 GJUHË",
+    "licenseText": "Përfshin shkrimin nga e djathta në të majtë për arabishten, persishten dhe urdishten.",
     "versionText": "Versioni aktual i paketuar.",
     "label": "TË DHËNA PËR PRODUKTIN DonWells Cue"
   },
   "workflow": {
     "eyebrow": "RRJEDHA E PUNËS",
-    "title": "Tri ndërfaqe. Një shfaqje.",
-    "intro": "DonWells Cue i mban të ndara përgatitjen, dëgjimin provë dhe shfaqjen, në mënyrë që operatori të shohë gjithmonë informacionin që ka rëndësi në atë çast.",
-    "step1Title": "Përgatit në Properties",
-    "step1Text": "Përpunoje sinjalin që në burim: shënuesit, zbehjet, volumin, drejtimin e sinjalit, normalizimin dhe komandat e riprodhimit, pikërisht nga pozicioni që të nevojitet.",
-    "step2Title": "Dëgjoje provë në Preview",
-    "step2Text": "Dëgjoje privatisht pa prekur kanalin e programit. Cakto sinjalin e radhës, kontrollo rregullimin e nivelit dhe vazhdo shfaqjen pa ndërprerje.",
-    "step3Title": "Jep shfaqjen në Show Mode",
-    "step3Text": "Kufizoje ndërfaqen vetëm tek elementet që kanë rëndësi gjatë shfaqjes: sinjali aktual, ai i radhës, komandat e riprodhimit, One Shots dhe matësit që lexohen me një shikim."
+    "title": "Përgatite një herë. Jep shfaqjen qartë.",
+    "intro": "Ndërto shfaqjen, kontrollo sinjalin dhe mbaje të përqendruar ndërfaqen e drejtpërdrejtë — me audio, video dhe komandim në distancë në një rrjedhë të vetme pune.",
+    "step1Title": "Importo dhe sistemo",
+    "step1Text": "Shto audio/video vendore, materiale nga YouTube ose këngë të zgjedhura nga Spotify, pastaj renditi në grupe të ndërthurura të listës së riprodhimit.",
+    "step2Title": "Përgatit në Properties",
+    "step2Text": "Përpuno çdo sinjal me forma vale për pikun/RMS, shënues, zbehje, normalizim të volumit ose të pikut real, drejtim sinjali dhe, sipas dëshirës, kod kohor LTC.",
+    "step3Title": "Jep shfaqjen me siguri",
+    "step3Text": "Përdor Preview, One Shots, komandat e tastierës/MIDI, Show Mode dhe matësit e drejtpërdrejtë pa humbur sinjalin e radhës."
   },
   "oneShots": {
     "frameLabel": "01 / RIPRODHIM I SHPEJTË",
     "screenshotAlt": "Paneli One Shots i DonWells Cue me qeliza të përhershme, gati për riprodhim të shpejtë",
     "eyebrow": "ONE SHOTS",
     "title": "Mbaji tingujt e rëndësishëm vetëm një prekje larg.",
-    "text": "One Shots është një ndërfaqe e përhershme për riprodhimin e shpejtë të njoftimeve, ndërhyrjeve të shkurtra muzikore, efekteve, hyrjeve në skenë dhe sfondeve muzikore. Qelizat qëndrojnë në vend, qofshin plot apo bosh, ndaj operatori e di gjithmonë se ku gjendet çdo tingull.",
-    "point1": "Tërhiq një skedar ose kopjo një sinjal nga lista e riprodhimit në një qelizë.",
-    "point2": "Luaje qelizën pa ndryshuar listën burimore të riprodhimit.",
-    "point3": "Mbaji cilësimet pranë, pa mbingarkuar pamjen e shfaqjes.",
+    "text": "One Shots është një ndërfaqe e përhershme për riprodhimin e shpejtë të njoftimeve, ndërhyrjeve të shkurtra muzikore, efekteve, hyrjeve në skenë dhe sfondeve muzikore. Në Show Mode, armatose qelizën para se ta lëshosh nga pllaka, një tast i shpejtë ose MIDI, ndërsa lista burimore e riprodhimit mbetet e paprekur.",
+    "point1": "Kopjo skedarë vendorë ose sinjale nga lista e riprodhimit në një qelizë pa ndryshuar burimin.",
+    "point2": "Armatose qelizën për ta lëshuar qëllimisht nga pllaka e saj, një tast i shpejtë ose një kontrollues MIDI.",
+    "point3": "Ule ose zëvendëso riprodhimin e programit, cakto sjelljen e rilëshimit dhe mbaji të dukshme numërimet mbrapsht.",
     "link": "Lexo shënimet për rrjedhën e punës"
   },
   "showMode": {
@@ -80,29 +81,29 @@
     "screenshotAlt": "Show Mode në DonWells Cue me një listë riprodhimi të thjeshtuar dhe matës të daljes gjatë shfaqjes",
     "eyebrow": "SHOW MODE",
     "title": "Më pak elemente në ekran kur shfaqja është në zhvillim.",
-    "text": "Për shfaqjen, kalo në një pamje të thjeshtuar riprodhimi, të përshtatshme për ekran me prekje. Informacioni për sinjalin aktual, atë të radhës, komandat e riprodhimit dhe daljen mbetet i qartë, ndërsa kontrollet që shërbejnë vetëm për redaktim hiqen nga pamja.",
+    "text": "Për shfaqjen, kalo në një pamje të thjeshtuar riprodhimi, të përshtatshme për prekje. Shiriti i shkurtoreve, paneli Preview, sinjali aktual dhe ai i radhës, si dhe matësit, qëndrojnë pranë, ndërsa kontrollet vetëm për redaktim largohen nga pamja.",
     "currentLabel": "AKTUAL",
     "currentText": "çfarë po transmetohet",
     "nextLabel": "I RADHËS",
     "nextText": "çfarë është gati",
     "safeLabel": "I SIGURT",
-    "safeText": "nëse nivelet janë brenda kufijve",
+    "safeText": "matësit + dalja",
     "link": "Shkarko versionin aktual"
   },
   "safety": {
-    "eyebrow": "KONTROLLI I SINJALIT",
-    "title": "Dalloje rrezikun para se të arrijë në sallë.",
-    "text": "Properties i jep teknikut hollësitë e nevojshme para shfaqjes: pamjet e formës së valës për pikun dhe RMS, treguesit e pozicionit, shënuesit e redaktueshëm, zbehjet, drejtimin e sinjalit, normalizimin dhe komandat e riprodhimit nga pozicioni i sinjalit.",
+    "eyebrow": "SINJALI + VIDEO",
+    "title": "Mbro sinjalin. Mbaje pamjen gati.",
+    "text": "Preview e mban dëgjimin provë jashtë kanalit të programit; Output Target, normalizimi dhe kufizimi i pikut real i mbajnë nivelet të kontrolluara; Video Output i jep publikut një sipërfaqe të dedikuar pamjeje.",
     "cardHeaderA": "ÇFARË PËRMBAN APLIKACIONI",
-    "cardHeaderB": "PROPERTIES / DALJA",
-    "item1Title": "Format e valës për pikun + RMS",
-    "item1Text": "Kontrolloje sinjalin para transmetimit, me të njëjtën ngjyrë piste që përdoret në listën e riprodhimit.",
-    "item2Title": "Tregues pozicioni dhe shënues të redaktueshëm",
-    "item2Text": "Cakto pikat e hyrjes, daljes dhe kalimit te sinjali i radhës nga forma e valës ose nga fushat me kohë të saktë.",
-    "item3Title": "Normalizim dhe mbrojtje nga piku real",
-    "item3Text": "Normalizoje sipas një niveli të zgjedhur, pastaj mbaje të dukshëm kufirin maksimal të daljes gjatë punës.",
-    "item4Title": "Drejtimi i programit dhe i Preview",
-    "item4Text": "Dëgjoje provë privatisht, drejtoje me kujdes sinjalin e shfaqjes dhe mbaji të lexueshme të dyja rrugët e matjes.",
+    "cardHeaderB": "SINJALI / VIDEO",
+    "item1Title": "Preview jashtë kanalit të programit",
+    "item1Text": "Dëgjoje provë, kërko, shkurto dhe cakto sinjalin e radhës përmes një daljeje të dedikuar monitorimi.",
+    "item2Title": "Objektivat e volumit dhe të pikut real",
+    "item2Text": "Përshtati sinjalet me objektivat e transmetimit, platformave të transmetimit në internet, radios, OTT ose konsolës së drejtpërdrejtë para se sinjali të dalë në transmetim.",
+    "item3Title": "Video Output i sigurt për sesionin",
+    "item3Text": "Dërgo video H.264/HEVC te një ekran i zgjedhur, me identifikimin e ekraneve, kartë prove, figurë gatishmërie dhe kontrolle rikuperimi.",
+    "item4Title": "Siguri për One Shots të armatosura",
+    "item4Text": "Në Show Mode, kërko armatosje të qartë para se një qelizë të lëshohet; dalja nga Show Mode i çarmatos qelizat, ndërsa Ndalimi është gjithmonë i disponueshëm.",
     "link": "Lexo dokumentacionin aktual të rrjedhës së punës"
   },
   "download": {
@@ -150,14 +151,14 @@
   "docs": {
     "eyebrow": "DOKUMENTACIONI",
     "title": "Përgatite shfaqjen. Pastaj besoju kontrolleve.",
-    "lede": "README është referenca përfundimtare për rrjedhën aktuale të punës ndërmjet klientit dhe shërbyesit, paketimin, funksionimin në rrjet dhe konfigurimin e projektit.",
+    "lede": "README është referenca përfundimtare për rrjedhën aktuale të punës me audio/video, ndërfaqen në 21 gjuhë, paketimin, funksionimin në rrjet dhe konfigurimin e projektit.",
     "readme": "Lexo README",
     "viewSource": "Shiko kodin burimor",
     "checklistHeading": "HAPJA E PARË",
-    "step1": "Zgjidh një dosje projekti dhe lejo DonWells Cue të krijojë dosjen e skedarëve media.",
-    "step2": "Cakto daljen e programit, nivelin objektiv dhe daljen private Preview te Cilësimet e projektit.",
-    "step3": "Përgatit shënuesit dhe zbehjet e sinjaleve në Properties; kopjo tingujt që përdoren në mënyrë të përsëritur te One Shots.",
-    "step4": "Kalo në Show Mode, verifiko matësit dhe drejtoje shfaqjen."
+    "step1": "Krijo një projekt dhe importo audio ose video vendore, pastaj konfirmo dosjen e skedarëve media.",
+    "step2": "Te Cilësimet, cakto daljet e programit dhe të Preview, Output Target dhe pajisjen opsionale LTC.",
+    "step3": "Në Properties, përgatit shënuesit e sinjaleve, zbehjet, normalizimin, drejtimin e sinjalit dhe komandat e One Shots.",
+    "step4": "Nëse shfaqja përdor video, identifiko ekranin, hap Video Output, verifiko kartën e provës dhe pastaj ekzekuto Show Mode."
   },
   "footer": {
     "tagline": "Riprodhim audio me kod burimor të hapur për veprimtari të drejtpërdrejta.",

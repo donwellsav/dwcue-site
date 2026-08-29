@@ -6,7 +6,7 @@
     "direction": "ltr"
   },
   "header": {
-    "tagline": "Redare de repere audio pentru evenimente în direct"
+    "tagline": "Redare de repere audio + video pentru evenimente în direct"
   },
   "common": {
     "changeLanguage": "Schimbă limba",
@@ -14,7 +14,7 @@
     "download": "Descarcă"
   },
   "seo": {
-    "description": "Redare locală prioritară a reperelor audio pentru evenimente în direct, cu One Shots, Show Mode, Properties și protecție la vârf real."
+    "description": "Redare de repere audio și video pentru evenimente în direct, cu One Shots, Show Mode, Video Output dedicată și protecție la vârf real."
   },
   "brand": {
     "home": "Pagina principală DonWells Cue",
@@ -25,12 +25,13 @@
     "workflow": "Flux de lucru",
     "oneShots": "One Shots",
     "showMode": "Show Mode",
+    "videoOutput": "Video Output",
     "download": "Descărcări",
     "docs": "Documentație"
   },
   "hero": {
     "title": "Fă ca următorul reper să pară inevitabil.",
-    "lede": "O interfață de redare calmă, concepută să ruleze local, pentru spectacole în direct. Pregătește fiecare detaliu, păstrează lizibilă vizualizarea pentru spectacol și declanșează sunetul potrivit fără să-l cauți.",
+    "lede": "Pregătește repere audio și video pentru spectacole în direct. Păstrează calmă interfața de control, vizibilă ieșirea pentru public și următorul sunet la o atingere distanță.",
     "ctaPrimary": "Descarcă DonWells Cue",
     "ctaSecondary": "Vezi cum funcționează",
     "factPrepare": "Pregătește",
@@ -44,35 +45,35 @@
     "screenshotAlt": "DonWells Cue afișând o listă de redare codificată cromatic, grila One Shots și indicatoare de nivel pentru ieșire"
   },
   "signal": {
-    "localFirst": "Funcționare locală prioritară",
-    "localFirstText": "Rulează spectacolul pe sistemul în care ai încredere.",
-    "platforms": "Windows · macOS · Linux",
-    "platformsText": "Același flux de lucru în orice cabină tehnică.",
-    "license": "AGPL-3.0",
-    "licenseText": "Cu sursă deschisă, conceput pentru a putea fi verificat.",
+    "localFirst": "Motor local",
+    "localFirstText": "Redă de pe sistemul în care ai încredere — sau conectează-te la un server amplasat lângă scenă.",
+    "platforms": "Audio + video",
+    "platformsText": "Versiuni pentru Windows, macOS și Linux, cu ieșire video dedicată.",
+    "license": "21 de limbi",
+    "licenseText": "Include scriere de la dreapta la stânga pentru arabă, persană și urdu.",
     "versionText": "Versiunea publicată și împachetată în prezent.",
     "label": "Informații despre DonWells Cue"
   },
   "workflow": {
     "eyebrow": "FLUXUL DE LUCRU",
-    "title": "Trei interfețe. Un singur spectacol.",
-    "intro": "DonWells Cue separă clar pregătirea, audiția și redarea în spectacol, astfel încât operatorul să vadă mereu informațiile relevante în acel moment.",
-    "step1Title": "Pregătește în Properties",
-    "step1Text": "Configurează reperul de la sursă: marcaje, estompări, volum, rutare, normalizare și comenzi de redare, exact din poziția de care ai nevoie.",
-    "step2Title": "Ascultă în Preview",
-    "step2Text": "Ascultă în privat, fără să afectezi magistrala de program. Pregătește următorul reper, verifică ajustarea nivelului și menține ritmul spectacolului.",
-    "step3Title": "Prezintă spectacolul în Show Mode",
-    "step3Text": "Redu interfața la elementele esențiale în timpul spectacolului: reperul curent, următorul reper, comenzile de redare, One Shots și indicatoare de nivel lizibile dintr-o privire."
+    "title": "Pregătește o dată. Prezintă clar.",
+    "intro": "Construiește spectacolul, verifică semnalul și păstrează interfața de redare concentrată — cu audio, video și control de la distanță într-un singur flux de lucru.",
+    "step1Title": "Importă și organizează",
+    "step1Text": "Importă fișiere audio/video locale, conținut YouTube sau piese Spotify selectate, apoi ordonează-le în grupuri imbricate de liste de redare.",
+    "step2Title": "Pregătește în Properties",
+    "step2Text": "Configurează fiecare reper cu forme de undă pentru vârf/RMS, marcaje, estompări, normalizare după sonoritate sau vârf real, rutare și cod temporal LTC opțional.",
+    "step3Title": "Rulează spectacolul cu încredere",
+    "step3Text": "Folosește Preview, One Shots, comenzi din tastatură/MIDI, Show Mode și indicatoare în timp real fără să pierzi din vedere următorul reper."
   },
   "oneShots": {
     "frameLabel": "01 / REDARE RAPIDĂ",
     "screenshotAlt": "Panoul One Shots din DonWells Cue, cu celule permanente pregătite pentru redare rapidă",
     "eyebrow": "ONE SHOTS",
     "title": "Păstrează sunetele importante la o singură atingere distanță.",
-    "text": "One Shots oferă o interfață permanentă de redare rapidă pentru anunțuri, semnale sonore scurte, efecte, intrări pe scenă și fundaluri sonore. Celulele rămân pe poziție, fie că sunt pline sau goale, astfel încât operatorul știe mereu unde se află fiecare sunet.",
-    "point1": "Trage un fișier sau copiază un reper din lista de redare într-o celulă.",
-    "point2": "Redă celula fără să modifici lista de redare sursă.",
-    "point3": "Păstrează setările la îndemână, fără să aglomerezi vizualizarea pentru spectacol.",
+    "text": "One Shots oferă o interfață permanentă de redare rapidă pentru anunțuri, semnale sonore scurte, efecte, intrări pe scenă și fundaluri sonore. În Show Mode, armează o celulă înainte să o declanșezi din casetă, printr-o tastă rapidă sau MIDI, fără să modifici lista de redare sursă.",
+    "point1": "Copiază fișiere locale sau repere din lista de redare într-o celulă fără să modifici sursa.",
+    "point2": "Armează o celulă pentru declanșare deliberată din casetă, printr-o tastă rapidă sau un controler MIDI.",
+    "point3": "Redu automat volumul redării de program sau înlocuiește-o, configurează comportamentul la redeclanșare și păstrează vizibile numărătorile inverse.",
     "link": "Citește notele despre fluxul de lucru"
   },
   "showMode": {
@@ -80,29 +81,29 @@
     "screenshotAlt": "DonWells Cue în Show Mode, cu o listă de redare simplificată și indicatoare de nivel pentru ieșirea în direct",
     "eyebrow": "SHOW MODE",
     "title": "Mai puține elemente pe ecran când spectacolul este în direct.",
-    "text": "Comută la o vizualizare de redare simplificată și adaptată utilizării tactile în timpul spectacolului. Reperul curent, următorul reper, comenzile de redare și informațiile despre ieșire rămân clare, iar comenzile dedicate exclusiv editării dispar din prim-plan.",
+    "text": "În timpul spectacolului, comută la o vizualizare de redare simplificată și adaptată utilizării tactile. Bara de scurtături, panoul Preview, reperele curent și următor și indicatoarele rămân la îndemână, iar comenzile dedicate exclusiv editării dispar din prim-plan.",
     "currentLabel": "În redare",
     "currentText": "ce se difuzează",
     "nextLabel": "Urmează",
     "nextText": "ce este pregătit",
     "safeLabel": "Nivel sigur",
-    "safeText": "unde se află nivelul pe indicatoare",
+    "safeText": "indicatoare + ieșire",
     "link": "Descarcă versiunea publicată în prezent"
   },
   "safety": {
-    "eyebrow": "CONTROLUL SEMNALULUI",
-    "title": "Identifică riscul înainte să ajungă în sală.",
-    "text": "Properties îi oferă tehnicianului detaliile necesare înaintea spectacolului: forme de undă pentru nivelul de vârf și RMS, cursoare de redare, marcaje editabile, estompări, rutare, normalizare și comenzi de redare din poziția reperului.",
+    "eyebrow": "SEMNAL + VIDEO",
+    "title": "Protejează semnalul. Păstrează imaginea pregătită.",
+    "text": "Preview păstrează audiția în afara magistralei de program; Output Target, normalizarea și limitarea la vârf real mențin nivelurile controlate; Video Output oferă publicului o suprafață de imagine dedicată.",
     "cardHeaderA": "CE INCLUDE APLICAȚIA",
-    "cardHeaderB": "PROPERTIES / IEȘIRE",
-    "item1Title": "Forme de undă pentru vârf + RMS",
-    "item1Text": "Verifică reperul înainte de difuzare, folosind aceeași culoare a pistei ca în lista de redare.",
-    "item2Title": "Cursoare de redare și marcaje editabile",
-    "item2Text": "Stabilește pozițiile de început, de sfârșit și de trecere la următorul reper direct pe forma de undă sau în câmpurile de timp exacte.",
-    "item3Title": "Normalizare și protecție la vârf real",
-    "item3Text": "Normalizează la valoarea-țintă aleasă, apoi păstrează vizibilă limita maximă a ieșirii în timp ce lucrezi.",
-    "item4Title": "Rutare pentru program și Preview",
-    "item4Text": "Ascultă în privat, rutează controlat semnalul spectacolului și păstrează lizibile indicatoarele ambelor căi.",
+    "cardHeaderB": "SEMNAL / VIDEO",
+    "item1Title": "Preview în afara magistralei de program",
+    "item1Text": "Ascultă, navighează, ajustează limitele și configurează următorul reper printr-o ieșire de monitorizare dedicată.",
+    "item2Title": "Ținte de sonoritate și vârf real",
+    "item2Text": "Potrivește țintele pentru televiziune, streaming, radio, OTT sau consolă de spectacol înainte ca reperul să intre în emisie.",
+    "item3Title": "Video Output sigură pe durata sesiunii",
+    "item3Text": "Trimite conținut video H.264/HEVC către un ecran selectat, cu identificarea ecranelor, o miră de test, imagine de așteptare și comenzi de recuperare.",
+    "item4Title": "Siguranță pentru One Shots armate",
+    "item4Text": "În Show Mode, solicită armarea explicită înainte ca o celulă să poată fi declanșată; ieșirea din Show Mode dezarmează celulele, iar comanda Oprire rămâne mereu disponibilă.",
     "link": "Citește documentația actuală despre fluxul de lucru"
   },
   "download": {
@@ -150,14 +151,14 @@
   "docs": {
     "eyebrow": "DOCUMENTAȚIE",
     "title": "Pregătește spectacolul. Apoi bazează-te pe interfață.",
-    "lede": "README este sursa de referință pentru fluxul de lucru actual dintre client și server, împachetare, funcționarea în rețea și configurarea proiectului.",
+    "lede": "README este sursa de referință pentru fluxul de lucru audio/video actual, interfața în 21 de limbi, împachetare, funcționarea în rețea și configurarea proiectului.",
     "readme": "Citește README",
     "viewSource": "Vezi codul-sursă",
     "checklistHeading": "PRIMA RULARE",
-    "step1": "Alege un dosar de proiect și permite-i aplicației DonWells Cue să creeze directorul pentru fișiere media.",
-    "step2": "Configurează în setările proiectului ieșirea de program, valoarea-țintă și ieșirea privată Preview.",
-    "step3": "Pregătește marcajele și estompările reperelor în Properties; copiază sunetele reutilizabile în One Shots.",
-    "step4": "Comută la Show Mode, verifică indicatoarele de nivel și rulează spectacolul."
+    "step1": "Creează un proiect, importă fișiere audio sau video locale, apoi confirmă dosarul media.",
+    "step2": "Configurează în Setări ieșirile de program și Preview, Output Target și dispozitivul LTC opțional.",
+    "step3": "Pregătește marcajele, estompările, normalizarea, rutarea și comenzile One Shots în Properties.",
+    "step4": "Dacă spectacolul folosește conținut video, identifică ecranul, deschide Video Output, verifică mira de test, apoi rulează Show Mode."
   },
   "footer": {
     "tagline": "Redare audio cu sursă deschisă pentru evenimente în direct.",

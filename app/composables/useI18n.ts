@@ -48,6 +48,7 @@ const fallbackData = ref<LocaleData | null>(enData as LocaleData);
 export const useI18n = () => {
   const baseURL = useRuntimeConfig().app.baseURL || '/';
   const localeURL = (locale: string) => `${baseURL}locales/${locale}.json`;
+  // Locale JSON is immutable on the CDN; reload ensures a new deployment is visible.
 
   // Get URL parameter
   const getUrlParam = (param: string): string | null => {
@@ -70,7 +71,7 @@ export const useI18n = () => {
   // Load locale data
   const loadLocale = async (locale: string) => {
     try {
-      const response = await fetch(localeURL(locale));
+      const response = await fetch(localeURL(locale), { cache: 'reload' });
       const data = await response.json();
       localeData.value = data;
       currentLocale.value = locale;
@@ -80,7 +81,7 @@ export const useI18n = () => {
         fallbackData.value = data;
       } else if (!fallbackData.value) {
         try {
-          const enResponse = await fetch(localeURL('en'));
+          const enResponse = await fetch(localeURL('en'), { cache: 'reload' });
           fallbackData.value = await enResponse.json();
         } catch { /* fallback is best-effort */ }
       }

@@ -6,7 +6,7 @@
     "direction": "ltr"
   },
   "header": {
-    "tagline": "Canlı Etkinlikler İçin Ses İşareti Oynatma"
+    "tagline": "Canlı etkinlikler için ses + video işareti oynatma"
   },
   "common": {
     "changeLanguage": "Dili değiştir",
@@ -14,7 +14,7 @@
     "download": "İndir"
   },
   "seo": {
-    "description": "One Shots, Show Mode, Properties ve gerçek tepe koruması sunan, canlı etkinliklere yönelik yerel çalışan ses işareti oynatma yazılımı."
+    "description": "Canlı etkinlikler için One Shots, Show Mode, özel Video Output ve gerçek tepe koruması sunan ses ve video işareti oynatma yazılımı."
   },
   "brand": {
     "home": "DonWells Cue ana sayfası",
@@ -25,12 +25,13 @@
     "workflow": "İş akışı",
     "oneShots": "One Shots",
     "showMode": "Show Mode",
+    "videoOutput": "Video Output",
     "download": "İndirmeler",
     "docs": "Belgeler"
   },
   "hero": {
     "title": "Sıradaki işaret tam zamanında gelsin.",
-    "lede": "Canlı gösteriler için sakin ve yerel çalışan bir oynatma arayüzü. Her ayrıntıyı hazırlayın, gösteri görünümünü okunaklı tutun ve aramakla uğraşmadan doğru sesi tetikleyin.",
+    "lede": "Canlı gösteriler için ses ve video işaretlerini hazırlayın. Kumanda arayüzünü sakin, seyirci çıkışını görünür ve sıradaki sesi tek dokunuş mesafesinde tutun.",
     "ctaPrimary": "DonWells Cue'yu edinin",
     "ctaSecondary": "Nasıl çalıştığını görün",
     "factPrepare": "Hazırla",
@@ -44,35 +45,35 @@
     "screenshotAlt": "Renk kodlu çalma listesi, One Shots ızgarası ve çıkış seviye göstergelerini gösteren DonWells Cue"
   },
   "signal": {
-    "localFirst": "Yerel çalışan",
-    "localFirstText": "Gösteriyi güvendiğiniz bilgisayarda yürütün.",
-    "platforms": "Windows · macOS · Linux",
-    "platformsText": "Kumanda noktasındaki tüm sistemlerde aynı iş akışı.",
-    "license": "AGPL-3.0",
-    "licenseText": "İncelenmek üzere geliştirilmiş açık kaynak.",
+    "localFirst": "Yerel motor",
+    "localFirstText": "Güvendiğiniz bilgisayardan oynatın — veya sahne yanındaki bir sunucuya bağlanın.",
+    "platforms": "Ses + video",
+    "platformsText": "Özel video çıkışıyla Windows, macOS ve Linux sürümleri.",
+    "license": "21 dil",
+    "licenseText": "Arapça, Farsça ve Urduca için sağdan sola yazım desteği içerir.",
     "versionText": "Güncel paketlenmiş sürüm.",
     "label": "DonWells Cue ürün bilgileri"
   },
   "workflow": {
     "eyebrow": "İŞ AKIŞI",
-    "title": "Üç arayüz. Tek gösteri.",
-    "intro": "DonWells Cue; hazırlık, ön dinleme ve gösteri aşamalarını birbirinden ayırır. Böylece operatör, o anda önemli olan bilgileri her zaman görür.",
-    "step1Title": "Properties'de hazırlayın",
-    "step1Text": "Ses işaretini kaynağında biçimlendirin: işaretçiler, geçişler, ses düzeyi, yönlendirme, normalizasyon ve tam istediğiniz konumdan oynatma denetimi.",
-    "step2Title": "Preview'da ön dinleyin",
-    "step2Text": "Ana yayın veri yolunu etkilemeden özel olarak dinleyin. Sıradaki ses işaretini ayarlayın, düzey ince ayarını kontrol edin ve gösterinin akışını koruyun.",
-    "step3Title": "Show Mode'da oynatın",
-    "step3Text": "Arayüzü gösteri sırasında gerekenlerle sınırlayın: çalan, sıradaki, oynatma denetimleri, One Shots ve tek bakışta okunabilen seviye göstergeleri."
+    "title": "Bir kez hazırlayın. Net biçimde yürütün.",
+    "intro": "Gösteriyi oluşturun, sinyali kontrol edin ve canlı arayüzü odaklı tutun — ses, video ve uzaktan kumanda tek bir iş akışında.",
+    "step1Title": "İçe aktarın ve düzenleyin",
+    "step1Text": "Yerel ses/video dosyalarını, YouTube içeriklerini veya seçili Spotify parçalarını ekleyin; ardından bunları iç içe çalma listesi gruplarında sıralayın.",
+    "step2Title": "Properties'de hazırlayın",
+    "step2Text": "Her işareti tepe/RMS dalga biçimleri, işaretçiler, geçişler, ses yüksekliği veya gerçek tepe normalizasyonu, yönlendirme ve isteğe bağlı LTC zaman koduyla biçimlendirin.",
+    "step3Title": "Güvenle oynatın",
+    "step3Text": "Sıradaki işareti kaybetmeden Preview, One Shots, klavye/MIDI denetimleri, Show Mode ve canlı seviye göstergelerini kullanın."
   },
   "oneShots": {
     "frameLabel": "01 / HIZLI OYNATMA",
     "screenshotAlt": "Hızlı oynatmaya hazır, sabit hücreler içeren DonWells Cue One Shots paneli",
     "eyebrow": "ONE SHOTS",
     "title": "Önemli sesler tek dokunuş uzağınızda olsun.",
-    "text": "One Shots; anonslar, kısa müzikler, efektler, sahne girişleri ve fon sesleri için kalıcı bir hızlı oynatma arayüzüdür. Hücreler dolu ya da boşken yerini korur; böylece operatör her sesin nerede olduğunu daima bilir.",
-    "point1": "Bir dosyayı sürükleyin veya çalma listesindeki bir ses işaretini hücreye kopyalayın.",
-    "point2": "Kaynak çalma listesini değiştirmeden hücreyi oynatın.",
-    "point3": "Gösteri görünümünü kalabalıklaştırmadan ayarları elinizin altında tutun.",
+    "text": "One Shots; anonslar, kısa müzikler, efektler, sahne girişleri ve fon sesleri için kalıcı bir hızlı oynatma arayüzüdür. Show Mode'da, kaynak çalma listesine dokunmadan hücreyi kutucuktan, kısayol tuşundan veya MIDI üzerinden tetiklemeden önce etkinleştirin.",
+    "point1": "Yerel dosyaları veya çalma listesi işaretlerini, kaynağı değiştirmeden bir hücreye kopyalayın.",
+    "point2": "Kutucuğundan, kısayol tuşundan veya MIDI kumandasından bilinçli olarak tetiklemek için hücreyi etkinleştirin.",
+    "point3": "Ana yayın oynatmasını kısın veya değiştirin, yeniden tetikleme davranışını ayarlayın ve geri sayımları görünür tutun.",
     "link": "İş akışı notlarını okuyun"
   },
   "showMode": {
@@ -80,29 +81,29 @@
     "screenshotAlt": "Sadeleştirilmiş çalma listesi ve anlık çıkış seviye göstergeleriyle DonWells Cue Show Mode",
     "eyebrow": "SHOW MODE",
     "title": "Gösteri sürerken daha sade bir arayüz.",
-    "text": "Gösteri sırasında sadeleştirilmiş, dokunmatik kullanıma uygun oynatma görünümüne geçin. Yalnızca düzenlemede kullanılan denetimler aradan çekilirken çalan parça, sıradaki parça, oynatma denetimleri ve çıkış bilgileri netliğini korur.",
+    "text": "Gösteri sırasında sadeleştirilmiş, dokunmatik kullanıma uygun oynatma görünümüne geçin. Yalnızca düzenlemede kullanılan denetimler aradan çekilirken kısayol çubuğu, Preview paneli, çalan/sıradaki işaretler ve seviye göstergeleri elinizin altında kalır.",
     "currentLabel": "Çalan",
     "currentText": "yayında olan",
     "nextLabel": "Sıradaki",
     "nextText": "hazır olan",
     "safeLabel": "Güvenli",
-    "safeText": "seviye göstergelerinin güvenli aralığı",
+    "safeText": "seviye göstergeleri + çıkış",
     "link": "Güncel sürümü indirin"
   },
   "safety": {
-    "eyebrow": "SİNYAL DİSİPLİNİ",
-    "title": "Riski salona ulaşmadan görün.",
-    "text": "Properties, gösteriden önce teknisyenin ihtiyaç duyduğu ayrıntıları sunar: tepe ve RMS dalga biçimi görünümleri, oynatma imleçleri, düzenlenebilir işaretçiler, geçişler, yönlendirme, normalizasyon ve ses işaretinin bulunduğu konumdan oynatma denetimi.",
+    "eyebrow": "SİNYAL + VİDEO",
+    "title": "Sinyali koruyun. Görüntüyü hazır tutun.",
+    "text": "Preview, ön dinlemeyi ana yayın veri yolunun dışında tutar; Output Target, normalizasyon ve gerçek tepe sınırlaması düzeyleri kontrollü kılar; Video Output ise seyirciye özel bir görüntü yüzeyi sağlar.",
     "cardHeaderA": "UYGULAMADAKİ ÖZELLİKLER",
-    "cardHeaderB": "PROPERTIES / ÇIKIŞ",
-    "item1Title": "Tepe + RMS dalga biçimleri",
-    "item1Text": "Ses işaretini yayına almadan önce, çalma listesindekiyle aynı parça renginde inceleyin.",
-    "item2Title": "Düzenlenebilir oynatma imleçleri ve işaretçiler",
-    "item2Text": "Başlangıç, bitiş ve sonraki işaret konumlarını dalga biçiminden veya kesin zaman alanlarından ayarlayın.",
-    "item3Title": "Normalizasyon ve gerçek tepe koruması",
-    "item3Text": "Seçtiğiniz hedefe göre normalleştirin; çalışırken çıkış üst sınırını görünür tutun.",
-    "item4Title": "Ana yayın ve Preview yönlendirmesi",
-    "item4Text": "Özel olarak ön dinleyin, gösteri sinyalini bilinçli biçimde yönlendirin ve her iki ölçüm yolunu da okunaklı tutun.",
+    "cardHeaderB": "SİNYAL / VİDEO",
+    "item1Title": "Ana yayın veri yolu dışında Preview",
+    "item1Text": "Özel bir monitör çıkışı üzerinden ön dinleme yapın, konum arayın, kırpın ve sıradaki işareti ayarlayın.",
+    "item2Title": "Ses yüksekliği ve gerçek tepe hedefleri",
+    "item2Text": "İşaret yayına çıkmadan önce televizyon, akış, radyo, OTT veya canlı miks konsolu hedefleriyle eşleştirin.",
+    "item3Title": "Oturum güvenli Video Output",
+    "item3Text": "H.264/HEVC videoyu seçili bir ekrana gönderin; Ekranları Tanımla, test kartı, bekleme görüntüsü ve kurtarma denetimlerini kullanın.",
+    "item4Title": "Etkinleştirilmiş One Shots güvenliği",
+    "item4Text": "Show Mode'da bir hücrenin tetiklenebilmesi için açıkça etkinleştirilmesini zorunlu kılın; Show Mode'dan çıkıldığında hücreler devre dışı kalır, Durdur ise her zaman kullanılabilir.",
     "link": "Güncel iş akışı belgelerini okuyun"
   },
   "download": {
@@ -150,14 +151,14 @@
   "docs": {
     "eyebrow": "BELGELER",
     "title": "Gösteriyi hazırlayın. Sonra arayüze güvenin.",
-    "lede": "README; güncel istemci-sunucu iş akışı, paketleme, ağ üzerinden kullanım ve proje kurulumu için temel başvuru kaynağıdır.",
+    "lede": "README; güncel ses/video iş akışı, 21 dilli arayüz, paketleme, ağ üzerinden kullanım ve proje kurulumu için temel başvuru kaynağıdır.",
     "readme": "README'yi okuyun",
     "viewSource": "Kaynak kodunu görüntüleyin",
     "checklistHeading": "İLK ÇALIŞTIRMA",
-    "step1": "Bir proje klasörü seçin ve DonWells Cue'nun medya dizinini oluşturmasına izin verin.",
-    "step2": "Proje Ayarları'nda ana yayın çıkışını, hedef düzeyi ve özel Preview çıkışını ayarlayın.",
-    "step3": "Ses işareti işaretçilerini ve geçişlerini Properties'de hazırlayın; tekrar kullanılacak sesleri One Shots'a kopyalayın.",
-    "step4": "Show Mode'a geçin, seviye göstergelerini kontrol edin ve gösteriyi yürütün."
+    "step1": "Bir proje oluşturup yerel ses veya video içe aktarın, ardından medya klasörünü doğrulayın.",
+    "step2": "Ayarlar'da ana yayın ve Preview çıkışlarını, Output Target değerini ve isteğe bağlı LTC aygıtını ayarlayın.",
+    "step3": "Properties'de işaretçileri, geçişleri, normalizasyonu, yönlendirmeyi ve One Shots denetimlerini hazırlayın.",
+    "step4": "Gösteride video kullanılıyorsa ekranı tanımlayın, Video Output penceresini açın, test kartını doğrulayın ve ardından Show Mode'u çalıştırın."
   },
   "footer": {
     "tagline": "Canlı etkinlikler için açık kaynaklı ses oynatma.",

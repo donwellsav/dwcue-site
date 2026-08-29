@@ -6,7 +6,7 @@
     "direction": "ltr"
   },
   "header": {
-    "tagline": "Audio Cue Playback for Live Events"
+    "tagline": "Audio + Video Cue Playback for Live Events"
   },
   "common": {
     "changeLanguage": "Change language",
@@ -14,7 +14,7 @@
     "download": "Download"
   },
   "seo": {
-    "description": "Local-first audio cue playback for live events, with One Shots, Show Mode, Properties, and true-peak protection."
+    "description": "Audio and video cue playback for live events, with One Shots, Show Mode, dedicated Video Output, and true-peak protection."
   },
   "brand": {
     "home": "DonWells Cue home",
@@ -25,12 +25,13 @@
     "workflow": "Workflow",
     "oneShots": "One Shots",
     "showMode": "Show Mode",
+    "videoOutput": "Video Output",
     "download": "Downloads",
     "docs": "Docs"
   },
   "hero": {
     "title": "Make the next cue feel inevitable.",
-    "lede": "A calm, local-first playback surface for live shows. Prepare every detail, keep the live view legible, and fire the right sound without hunting for it.",
+    "lede": "Prepare audio and video cues for live shows. Keep the control surface calm, the audience output visible, and the next sound one touch away.",
     "ctaPrimary": "Get DonWells Cue",
     "ctaSecondary": "See how it works",
     "factPrepare": "Prepare",
@@ -44,35 +45,35 @@
     "screenshotAlt": "DonWells Cue showing a color-coded playlist, One Shots grid, and output meters"
   },
   "signal": {
-    "localFirst": "Local-first",
-    "localFirstText": "Run the show on the machine you trust.",
-    "platforms": "Windows · macOS · Linux",
-    "platformsText": "One workflow across the booth.",
-    "license": "AGPL-3.0",
-    "licenseText": "Open source, built to be inspected.",
+    "localFirst": "Local engine",
+    "localFirstText": "Play from the machine you trust — or connect to a stage-side server.",
+    "platforms": "Audio + video",
+    "platformsText": "Windows, macOS, and Linux builds with dedicated video output.",
+    "license": "21 languages",
+    "licenseText": "Includes right-to-left support for Arabic, Persian, and Urdu.",
     "versionText": "Current packaged release.",
     "label": "DonWells Cue product facts"
   },
   "workflow": {
     "eyebrow": "THE WORKFLOW",
-    "title": "Three surfaces. One show.",
-    "intro": "DonWells Cue keeps preparation, auditioning, and performance distinct so the live operator always sees the information that matters now.",
-    "step1Title": "Prepare in Properties",
-    "step1Text": "Shape the cue at its source: markers, fades, volume, routing, normalization, and transport from the exact location you need.",
-    "step2Title": "Audition on Preview",
-    "step2Text": "Listen privately without touching the program bus. Set the next cue, check the trim, and keep the show moving.",
-    "step3Title": "Perform in Show Mode",
-    "step3Text": "Reduce the surface to what matters live: current, next, transport, One Shots, and meters you can read at a glance."
+    "title": "Prepare once. Perform clearly.",
+    "intro": "Build the show, check the signal, and keep the live surface focused — with audio, video, and remote control in one workflow.",
+    "step1Title": "Import and arrange",
+    "step1Text": "Bring in local audio/video, YouTube, or selected Spotify tracks, then order them into nested playlist groups.",
+    "step2Title": "Prepare in Properties",
+    "step2Text": "Shape each cue with peak/RMS waveforms, markers, fades, loudness or true-peak normalization, routing, and optional LTC timecode.",
+    "step3Title": "Perform with confidence",
+    "step3Text": "Use Preview, One Shots, keyboard/MIDI controls, Show Mode, and live meters without losing the next cue."
   },
   "oneShots": {
     "frameLabel": "01 / QUICK PLAY",
     "screenshotAlt": "DonWells Cue One Shots panel with permanent cells ready for quick playback",
     "eyebrow": "ONE SHOTS",
     "title": "Keep the important sounds one touch away.",
-    "text": "One Shots are a permanent quick-play surface for announcements, stings, effects, walk-ons, and beds. The cells stay in place whether they are full or empty, so the operator always knows where a sound lives.",
-    "point1": "Drag a file or copy a playlist cue into a cell.",
-    "point2": "Play the cell without changing the source playlist.",
-    "point3": "Keep settings close, without crowding the live view.",
+    "text": "One Shots are a permanent quick-play surface for announcements, stings, effects, walk-ons, and beds. In Show Mode, arm a cell before firing it from the tile, a hotkey, or MIDI, while the source playlist stays untouched.",
+    "point1": "Copy local files or playlist cues into a cell without changing the source.",
+    "point2": "Arm a cell for deliberate firing from its tile, hotkey, or MIDI controller.",
+    "point3": "Duck or replace program playback, set retrigger behavior, and keep countdowns visible.",
     "link": "Read the workflow notes"
   },
   "showMode": {
@@ -80,29 +81,29 @@
     "screenshotAlt": "DonWells Cue Show Mode with a simplified playlist and live output meters",
     "eyebrow": "SHOW MODE",
     "title": "Less interface when the room is live.",
-    "text": "Switch to a simplified, touch-friendly playback view for the performance. Current, next, transport, and output information remain clear while edit-only controls step out of the way.",
+    "text": "Switch to a simplified, touch-friendly playback view for the performance. The shortcuts bar, Preview panel, current/next cues, and meters stay close while edit-only controls step out of the way.",
     "currentLabel": "Current",
     "currentText": "what is on air",
     "nextLabel": "Next",
     "nextText": "what is ready",
     "safeLabel": "Safe",
-    "safeText": "where the meters sit",
+    "safeText": "meters + output",
     "link": "Download the current release"
   },
   "safety": {
-    "eyebrow": "SIGNAL DISCIPLINE",
-    "title": "See the risk before it reaches the room.",
-    "text": "Properties gives the tech the detail needed before the show: peak and RMS waveform views, playheads, editable markers, fades, routing, normalization, and transport from the cue location.",
+    "eyebrow": "SIGNAL + VIDEO",
+    "title": "Protect the signal. Keep the picture ready.",
+    "text": "Preview keeps auditioning off the program bus; Output Target, normalization, and true-peak limiting keep levels deliberate; Video Output gives the audience a dedicated picture surface.",
     "cardHeaderA": "WHAT IS IN THE APP",
-    "cardHeaderB": "PROPERTIES / OUTPUT",
-    "item1Title": "Peak + RMS waveforms",
-    "item1Text": "Inspect the cue before air, with the same track color used in the playlist.",
-    "item2Title": "Editable playheads and markers",
-    "item2Text": "Set in, out, and next-at-marker locations from the waveform or exact time fields.",
-    "item3Title": "Normalization and true-peak protection",
-    "item3Text": "Normalize to a chosen target, then keep the output ceiling visible while you work.",
-    "item4Title": "Program and Preview routing",
-    "item4Text": "Audition privately, route the show deliberately, and keep both meter paths readable.",
+    "cardHeaderB": "SIGNAL / VIDEO",
+    "item1Title": "Preview off the program bus",
+    "item1Text": "Audition, seek, trim, and set the next cue through a dedicated monitor output.",
+    "item2Title": "Loudness and true-peak targets",
+    "item2Text": "Match broadcast, streaming, radio, OTT, or live-console targets before the cue reaches air.",
+    "item3Title": "Session-safe Video Output",
+    "item3Text": "Send H.264/HEVC video to a selected display, with Identify Displays, a test card, standby image, and recovery controls.",
+    "item4Title": "Armed One Shot safety",
+    "item4Text": "In Show Mode, require an explicit arm before a cell can fire; leaving Show Mode disarms cells, while Stop is always available.",
     "link": "Read the current workflow documentation"
   },
   "download": {
@@ -150,14 +151,14 @@
   "docs": {
     "eyebrow": "DOCUMENTATION",
     "title": "Build the show. Then trust the surface.",
-    "lede": "The README is the source of truth for the current client/server workflow, packaging, network operation, and project setup.",
+    "lede": "The README is the source of truth for the current audio/video workflow, 21-language interface, packaging, network operation, and project setup.",
     "readme": "Read the README",
     "viewSource": "View source",
     "checklistHeading": "FIRST RUN",
-    "step1": "Choose a project folder and let DonWells Cue create its media directory.",
-    "step2": "Set the program output, target, and private Preview output in Project Settings.",
-    "step3": "Prepare cue markers and fades in Properties; copy repeatable sounds to One Shots.",
-    "step4": "Switch to Show Mode, verify the meters, and run the show."
+    "step1": "Create a project and import local audio or video, then confirm the media folder.",
+    "step2": "Set the program and Preview outputs, Output Target, and optional LTC device in Settings.",
+    "step3": "Prepare cue markers, fades, normalization, routing, and One Shot controls in Properties.",
+    "step4": "If the show uses video, identify the display, open Video Output, verify the test card, then run Show Mode."
   },
   "footer": {
     "tagline": "Open-source audio playback for live events.",

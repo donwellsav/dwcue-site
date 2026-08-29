@@ -6,7 +6,7 @@
     "direction": "ltr"
   },
   "header": {
-    "tagline": "Avspilling av lydinnslag for scenearrangementer"
+    "tagline": "Avspilling av lydinnslag + videoinnslag for scenearrangementer"
   },
   "common": {
     "changeLanguage": "Bytt språk",
@@ -14,7 +14,7 @@
     "download": "Last ned"
   },
   "seo": {
-    "description": "Lokalt drevet avspilling av lydinnslag for scenearrangementer, med One Shots, Show Mode, Properties og beskyttelse mot sanne toppverdier."
+    "description": "Avspilling av lyd- og videoinnslag for direktesendte arrangementer, med One Shots, Show Mode, dedikert Video Output og beskyttelse mot sanne toppverdier."
   },
   "brand": {
     "home": "DonWells Cue-startside",
@@ -25,12 +25,13 @@
     "workflow": "Arbeidsflyt",
     "oneShots": "One Shots",
     "showMode": "Show Mode",
+    "videoOutput": "Video Output",
     "download": "Nedlastinger",
     "docs": "Dokumentasjon"
   },
   "hero": {
     "title": "Gjør neste lydinnslag til en selvfølge.",
-    "lede": "En oversiktlig, lokalt drevet avspillingsflate for forestillinger og arrangementer. Forbered hver detalj, behold oversikten under avspillingen og start riktig lyd uten å måtte lete.",
+    "lede": "Forbered lyd- og videoinnslag til forestillinger og arrangementer. Hold kontrollflaten oversiktlig, publikumsutgangen synlig og neste lyd ett trykk unna.",
     "ctaPrimary": "Last ned DonWells Cue",
     "ctaSecondary": "Se hvordan det fungerer",
     "factPrepare": "Forbered",
@@ -44,35 +45,35 @@
     "screenshotAlt": "DonWells Cue med en fargekodet spilleliste, et One Shots-rutenett og utgangsmålere"
   },
   "signal": {
-    "localFirst": "Lokalt drevet",
-    "localFirstText": "Kjør arrangementet på maskinen du stoler på.",
-    "platforms": "Windows · macOS · Linux",
-    "platformsText": "Én arbeidsflyt på tvers av teknikerplassen.",
-    "license": "AGPL-3.0",
-    "licenseText": "Åpen kildekode, utviklet for å kunne granskes.",
+    "localFirst": "Lokal motor",
+    "localFirstText": "Spill av fra maskinen du stoler på — eller koble til en server ved scenen.",
+    "platforms": "Lyd + video",
+    "platformsText": "Versjoner for Windows, macOS og Linux med dedikert Video Output.",
+    "license": "21 språk",
+    "licenseText": "Inkluderer støtte for høyre-til-venstre-skrift på arabisk, persisk og urdu.",
     "versionText": "Gjeldende ferdigpakkede utgivelse.",
     "label": "Produktinformasjon om DonWells Cue"
   },
   "workflow": {
     "eyebrow": "ARBEIDSFLYTEN",
-    "title": "Tre flater. Én forestilling.",
-    "intro": "DonWells Cue holder forberedelse, prøvelytting og gjennomføring adskilt, slik at operatøren alltid ser informasjonen som er viktig her og nå.",
-    "step1Title": "Forbered i Properties",
-    "step1Text": "Tilpass lydinnslaget ved kilden: markører, inn- og uttoninger, volum, ruting, normalisering og avspillingskontroller – nøyaktig der du trenger dem.",
-    "step2Title": "Prøvelytt i Preview",
-    "step2Text": "Lytt privat uten å påvirke hovedlydbussen. Klargjør neste lydinnslag, kontroller nivåjusteringen og hold forestillingen i gang.",
-    "step3Title": "Gjennomfør i Show Mode",
-    "step3Text": "Begrens flaten til det som betyr noe under avspillingen: det som spilles nå, det neste, avspillingskontroller, One Shots og målere som kan leses med et blikk."
+    "title": "Forbered én gang. Gjennomfør tydelig.",
+    "intro": "Bygg forestillingen, kontroller signalet og hold direkteflaten fokusert — med lyd, video og fjernstyring i én arbeidsflyt.",
+    "step1Title": "Importer og organiser",
+    "step1Text": "Importer lokal lyd/video, YouTube eller utvalgte Spotify-spor, og organiser dem i nøstede spillelistegrupper.",
+    "step2Title": "Forbered i Properties",
+    "step2Text": "Tilpass hvert innslag med bølgeformer for toppnivå/RMS, markører, inn- og uttoninger, normalisering av lydstyrke eller sanne toppverdier, ruting og valgfri LTC-tidskode.",
+    "step3Title": "Gjennomfør med trygghet",
+    "step3Text": "Bruk Preview, One Shots, tastatur-/MIDI-kontroller, Show Mode og direktmålere uten å miste neste innslag av syne."
   },
   "oneShots": {
     "frameLabel": "01 / HURTIGAVSPILLING",
     "screenshotAlt": "One Shots-panelet i DonWells Cue med faste celler klare for hurtigavspilling",
     "eyebrow": "ONE SHOTS",
     "title": "Ha de viktige lydene ett trykk unna.",
-    "text": "One Shots er en fast flate for hurtigavspilling av annonseringer, korte jingler, effekter, entrémusikk og bakgrunnslyd. Cellene blir stående enten de er fulle eller tomme, slik at operatøren alltid vet hvor hver lyd ligger.",
-    "point1": "Dra en fil eller kopier et lydinnslag fra spillelisten til en celle.",
-    "point2": "Spill av cellen uten å endre den opprinnelige spillelisten.",
-    "point3": "Ha innstillingene lett tilgjengelig uten å overfylle direktevisningen.",
+    "text": "One Shots er en fast hurtigavspillingsflate for annonseringer, korte jingler, effekter, entrémusikk og bakgrunnslyd. I Show Mode armerer du en celle før den utløses fra ruten, en hurtigtast eller MIDI, mens den opprinnelige spillelisten forblir urørt.",
+    "point1": "Kopier lokale filer eller spillelisteinnslag til en celle uten å endre kilden.",
+    "point2": "Armer en celle for bevisst utløsning fra ruten, en hurtigtast eller en MIDI-kontroller.",
+    "point3": "Demp eller erstatt programavspillingen, angi virkemåte for ny utløsning og hold nedtellingene synlige.",
     "link": "Les mer om arbeidsflyten"
   },
   "showMode": {
@@ -80,29 +81,29 @@
     "screenshotAlt": "DonWells Cue Show Mode med en forenklet spilleliste og utgangsmålere for avspillingen",
     "eyebrow": "SHOW MODE",
     "title": "Mindre grensesnitt når forestillingen er i gang.",
-    "text": "Bytt til en forenklet og berøringsvennlig avspillingsvisning under forestillingen. Det som spilles nå, det neste, avspillingskontrollene og utgangsinformasjonen forblir tydelige, mens kontroller som bare brukes til redigering, skjules.",
+    "text": "Bytt til en forenklet og berøringsvennlig avspillingsvisning under forestillingen. Snarveislinjen, Preview-panelet, gjeldende/neste innslag og målerne forblir lett tilgjengelige, mens kontroller som bare brukes til redigering, skjules.",
     "currentLabel": "Spilles nå",
     "currentText": "det publikum hører",
     "nextLabel": "Neste",
     "nextText": "det som er klart",
     "safeLabel": "Trygt nivå",
-    "safeText": "nivået som målerne viser",
+    "safeText": "målere + utgang",
     "link": "Last ned gjeldende utgivelse"
   },
   "safety": {
-    "eyebrow": "SIGNALKONTROLL",
-    "title": "Se risikoen før den når salen.",
-    "text": "Properties gir teknikeren detaljene som trengs før forestillingen: bølgeformvisninger for toppnivå og RMS, markører for avspillingsposisjon, redigerbare markører, inn- og uttoninger, ruting, normalisering og avspillingskontroller fra lydinnslagets plassering.",
+    "eyebrow": "SIGNAL + VIDEO",
+    "title": "Beskytt signalet. Hold bildet klart.",
+    "text": "Preview holder prøvelyttingen utenfor programbussen; Output Target, normalisering og begrensning av sanne toppverdier holder nivåene kontrollerte; Video Output gir publikum en dedikert bildeflate.",
     "cardHeaderA": "DETTE FINNES I PROGRAMMET",
-    "cardHeaderB": "PROPERTIES / UTGANG",
-    "item1Title": "Bølgeformer for toppnivå og RMS",
-    "item1Text": "Kontroller lydinnslaget før avspilling, med samme sporfarge som i spillelisten.",
-    "item2Title": "Redigerbare posisjonsmarkører og andre markører",
-    "item2Text": "Angi posisjoner for innpunkt, utpunkt og overgang til neste lydinnslag i bølgeformen eller i nøyaktige tidsfelt.",
-    "item3Title": "Normalisering og beskyttelse mot sanne toppverdier",
-    "item3Text": "Normaliser til et valgt målnivå, og hold maksnivået for utgangen synlig mens du arbeider.",
-    "item4Title": "Ruting av hovedlyd og Preview",
-    "item4Text": "Prøvelytt privat, rut lyden bevisst og sørg for at målerne for begge signalveiene er lette å lese.",
+    "cardHeaderB": "SIGNAL / VIDEO",
+    "item1Title": "Preview utenfor programbussen",
+    "item1Text": "Prøvelytt, søk, nivåjuster og klargjør neste innslag via en dedikert monitorutgang.",
+    "item2Title": "Mål for lydstyrke og sanne toppverdier",
+    "item2Text": "Tilpass til mål for kringkasting, strømming, radio, OTT eller direktekonsoll før innslaget går på lufta.",
+    "item3Title": "Øktssikker Video Output",
+    "item3Text": "Send H.264/HEVC-video til en valgt skjerm, med skjermidentifikasjon, testbilde, ventebilde og gjenopprettingskontroller.",
+    "item4Title": "Sikkerhet med armerte One Shots",
+    "item4Text": "I Show Mode må en celle armeres eksplisitt før den kan utløses; når Show Mode forlates, avarmeres cellene, mens Stopp alltid er tilgjengelig.",
     "link": "Les den gjeldende dokumentasjonen for arbeidsflyten"
   },
   "download": {
@@ -150,14 +151,14 @@
   "docs": {
     "eyebrow": "DOKUMENTASJON",
     "title": "Forbered forestillingen. Stol deretter på grensesnittet.",
-    "lede": "README er den autoritative kilden for den gjeldende klient–server-arbeidsflyten, pakking, nettverksdrift og prosjektoppsett.",
+    "lede": "README er den autoritative kilden for gjeldende arbeidsflyt for lyd/video, grensesnittet på 21 språk, pakking, nettverksdrift og prosjektoppsett.",
     "readme": "Les README",
     "viewSource": "Vis kildekoden",
     "checklistHeading": "FØRSTE OPPSTART",
-    "step1": "Velg en prosjektmappe, og la DonWells Cue opprette mappen for mediefiler.",
-    "step2": "Angi hovedutgang, målnivå og privat Preview-utgang i prosjektinnstillingene.",
-    "step3": "Forbered markører og inn- og uttoninger for lydinnslagene i Properties. Kopier lyder som skal brukes flere ganger, til One Shots.",
-    "step4": "Bytt til Show Mode, kontroller målerne og gjennomfør forestillingen."
+    "step1": "Opprett et prosjekt og importer lokal lyd eller video. Bekreft deretter mediemappen.",
+    "step2": "Angi program- og Preview-utganger, Output Target og eventuell LTC-enhet i Innstillinger.",
+    "step3": "Forbered markører, inn- og uttoninger, normalisering, ruting og One Shot-kontroller i Properties.",
+    "step4": "Hvis forestillingen bruker video, identifiser skjermen, åpne Video Output, kontroller testbildet og start deretter Show Mode."
   },
   "footer": {
     "tagline": "Lydavspilling med åpen kildekode for scenearrangementer.",

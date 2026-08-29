@@ -11,15 +11,15 @@ export default defineNuxtConfig({
     baseURL,
     buildAssetsDir: 'assets',
     head: {
-      title: 'DonWells Cue - Audio Cue Playback for Live Events',
+      title: 'DonWells Cue - Audio + Video Cue Playback for Live Events',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'description', content: 'Free, open-source audio playback system for live sound operators. Available for Windows, macOS, and Linux.' },
+        { name: 'description', content: 'Audio and video cue playback for live events, with One Shots, Show Mode, dedicated Video Output, and true-peak protection.' },
         { name: 'theme-color', content: '#315FCF' },
         // Open Graph
-        { property: 'og:title', content: 'DonWells Cue - Audio Cue Playback for Live Events' },
-        { property: 'og:description', content: 'Free, open-source audio playback system for live sound operators. Available for Windows, macOS, and Linux.' },
+        { property: 'og:title', content: 'DonWells Cue - Audio + Video Cue Playback for Live Events' },
+        { property: 'og:description', content: 'Audio and video cue playback for live events, with One Shots, Show Mode, dedicated Video Output, and true-peak protection.' },
         { property: 'og:type', content: 'website' },
         { property: 'og:url', content: siteURL },
         { property: 'og:image', content: `${siteURL}screenshots/donwells_cue_main.jpg` },
@@ -28,8 +28,8 @@ export default defineNuxtConfig({
         { property: 'og:image:type', content: 'image/jpeg' },
         // Twitter Card
         { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:title', content: 'DonWells Cue - Audio Cue Playback for Live Events' },
-        { name: 'twitter:description', content: 'Free, open-source audio playback system for live sound operators. Available for Windows, macOS, and Linux.' },
+        { name: 'twitter:title', content: 'DonWells Cue - Audio + Video Cue Playback for Live Events' },
+        { name: 'twitter:description', content: 'Audio and video cue playback for live events, with One Shots, Show Mode, dedicated Video Output, and true-peak protection.' },
         { name: 'twitter:image', content: `${siteURL}screenshots/donwells_cue_main.jpg` }
       ],
       link: [

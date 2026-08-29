@@ -6,7 +6,7 @@
     "direction": "ltr"
   },
   "header": {
-    "tagline": "Audio-Cue-Wiedergabe für Live-Events"
+    "tagline": "Audio- + Video-Cue-Wiedergabe für Live-Events"
   },
   "common": {
     "changeLanguage": "Sprache ändern",
@@ -14,7 +14,7 @@
     "download": "Herunterladen"
   },
   "seo": {
-    "description": "Lokale Audio-Cue-Wiedergabe für Live-Events — mit One Shots, Show Mode, Properties und True-Peak-Schutz."
+    "description": "Audio- und Video-Cue-Wiedergabe für Live-Events — mit One Shots, Show Mode, dediziertem Video Output und True-Peak-Schutz."
   },
   "brand": {
     "home": "DonWells Cue Startseite",
@@ -25,12 +25,13 @@
     "workflow": "Workflow",
     "oneShots": "One Shots",
     "showMode": "Show Mode",
+    "videoOutput": "Video Output",
     "download": "Downloads",
     "docs": "Doku"
   },
   "hero": {
     "title": "Der nächste Cue fühlt sich unausweichlich an.",
-    "lede": "Eine ruhige, lokale Wiedergabe-Oberfläche für Live-Shows. Bereiten Sie jedes Detail vor, behalten Sie die Live-Ansicht lesbar und starten Sie den richtigen Sound ohne Suchen.",
+    "lede": "Bereiten Sie Audio- und Video-Cues für Live-Shows vor. Halten Sie die Bedienoberfläche ruhig, den Publikums-Output sichtbar und den nächsten Sound nur einen Fingertipp entfernt.",
     "ctaPrimary": "DonWells Cue holen",
     "ctaSecondary": "So funktioniert es",
     "factPrepare": "Vorbereiten",
@@ -44,35 +45,35 @@
     "screenshotAlt": "DonWells Cue mit farbcodierter Playlist, One-Shots-Raster und Ausgangspegeln"
   },
   "signal": {
-    "localFirst": "Lokal zuerst",
-    "localFirstText": "Führen Sie die Show auf dem Rechner aus, dem Sie vertrauen.",
-    "platforms": "Windows · macOS · Linux",
-    "platformsText": "Ein Workflow für die gesamte Regie.",
-    "license": "AGPL-3.0",
-    "licenseText": "Open Source, gebaut zum Nachlesen.",
+    "localFirst": "Lokale Engine",
+    "localFirstText": "Spielen Sie auf dem Rechner ab, dem Sie vertrauen — oder verbinden Sie einen Server an der Bühne.",
+    "platforms": "Audio + Video",
+    "platformsText": "Versionen für Windows, macOS und Linux mit dediziertem Video Output.",
+    "license": "21 Sprachen",
+    "licenseText": "Mit Rechts-nach-links-Unterstützung für Arabisch, Persisch und Urdu.",
     "versionText": "Aktuelles paketiertes Release.",
     "label": "DonWells Cue Produktdaten"
   },
   "workflow": {
     "eyebrow": "DER WORKFLOW",
-    "title": "Drei Oberflächen. Eine Show.",
-    "intro": "DonWells Cue hält Vorbereitung, Probehören und Aufführung getrennt, damit der Operator live immer genau die Informationen sieht, die jetzt zählen.",
-    "step1Title": "Vorbereiten in Properties",
-    "step1Text": "Formen Sie den Cue an der Quelle: Marker, Fades, Lautstärke, Routing, Normalisierung und Transport ab exakt der gewünschten Position.",
-    "step2Title": "Probehören über Preview",
-    "step2Text": "Hören Sie privat, ohne den Programm-Bus anzufassen. Nächsten Cue setzen, Schnitt prüfen und die Show läuft weiter.",
-    "step3Title": "Aufführen im Show Mode",
-    "step3Text": "Reduzieren Sie die Oberfläche auf das, was live zählt: aktuell, nächster, Transport, One Shots und Pegel, die auf einen Blick lesbar sind."
+    "title": "Einmal vorbereiten. Klar aufführen.",
+    "intro": "Bauen Sie die Show, prüfen Sie das Signal und halten Sie die Live-Oberfläche fokussiert — mit Audio, Video und Fernsteuerung in einem Workflow.",
+    "step1Title": "Importieren und anordnen",
+    "step1Text": "Importieren Sie lokale Audio-/Videodateien, YouTube oder ausgewählte Spotify-Titel und ordnen Sie sie in verschachtelten Playlist-Gruppen an.",
+    "step2Title": "In Properties vorbereiten",
+    "step2Text": "Formen Sie jeden Cue mit Peak-/RMS-Wellenformen, Markern, Fades, Loudness- oder True-Peak-Normalisierung, Routing und optionalem LTC-Timecode.",
+    "step3Title": "Sicher aufführen",
+    "step3Text": "Nutzen Sie Preview, One Shots, Tastatur-/MIDI-Steuerung, Show Mode und Live-Pegelanzeigen, ohne den nächsten Cue aus dem Blick zu verlieren."
   },
   "oneShots": {
     "frameLabel": "01 / SCHNELLSPIELEN",
     "screenshotAlt": "DonWells Cue One-Shots-Panel mit permanenten Zellen für schnelles Abspielen",
     "eyebrow": "ONE SHOTS",
     "title": "Die wichtigen Sounds bleiben eine Berührung entfernt.",
-    "text": "One Shots sind eine permanente Schnellspiel-Fläche für Ansagen, Stinger, Effekte, Walk-ons und Beds. Die Zellen bleiben an Ort und Stelle, ob voll oder leer — der Operator weiß immer, wo ein Sound liegt.",
-    "point1": "Ziehen Sie eine Datei in eine Zelle oder kopieren Sie einen Playlist-Cue hinein.",
-    "point2": "Spielen Sie die Zelle ab, ohne die Quell-Playlist zu verändern.",
-    "point3": "Einstellungen bleiben griffbereit, ohne die Live-Ansicht zu überladen.",
+    "text": "One Shots sind eine permanente Schnellstart-Fläche für Ansagen, Stinger, Effekte, Walk-ons und Beds. Schalten Sie im Show Mode eine Zelle scharf, bevor Sie sie per Kachel, Hotkey oder MIDI auslösen — die Quell-Playlist bleibt unverändert.",
+    "point1": "Kopieren Sie lokale Dateien oder Playlist-Cues in eine Zelle, ohne die Quelle zu verändern.",
+    "point2": "Schalten Sie eine Zelle für das gezielte Auslösen per Kachel, Hotkey oder MIDI-Controller scharf.",
+    "point3": "Senken Sie die Programmwiedergabe ab oder ersetzen Sie sie, legen Sie das Retrigger-Verhalten fest und halten Sie Countdowns sichtbar.",
     "link": "Die Workflow-Notizen lesen"
   },
   "showMode": {
@@ -80,29 +81,29 @@
     "screenshotAlt": "DonWells Cue Show Mode mit vereinfachter Playlist und Live-Ausgangspegeln",
     "eyebrow": "SHOW MODE",
     "title": "Weniger Interface, wenn der Raum live ist.",
-    "text": "Wechseln Sie für die Aufführung zu einer vereinfachten, touch-freundlichen Wiedergabeansicht. Aktuell, nächster, Transport und Ausgangsinformationen bleiben klar, während Bearbeitungs-Elemente in den Hintergrund treten.",
+    "text": "Wechseln Sie für die Aufführung zu einer vereinfachten, touch-freundlichen Wiedergabeansicht. Shortcut-Leiste, Preview-Panel, aktuelle/nächste Cues und Pegelanzeigen bleiben griffbereit, während reine Bearbeitungsfunktionen ausgeblendet werden.",
     "currentLabel": "Aktuell",
     "currentText": "was on air ist",
     "nextLabel": "Nächster",
     "nextText": "was bereitsteht",
     "safeLabel": "Sicher",
-    "safeText": "wo die Pegel stehen",
+    "safeText": "Pegel + Output",
     "link": "Das aktuelle Release herunterladen"
   },
   "safety": {
-    "eyebrow": "SIGNALDISZIPLIN",
-    "title": "Sehen Sie das Risiko, bevor es den Raum erreicht.",
-    "text": "Properties liefert dem Techniker alle Details vor der Show: Peak- und RMS-Wellenformen, Playheads, editierbare Marker, Fades, Routing, Normalisierung und Transport ab der Cue-Position.",
+    "eyebrow": "SIGNAL + VIDEO",
+    "title": "Schützen Sie das Signal. Halten Sie das Bild bereit.",
+    "text": "Preview hält das Probehören vom Programm-Bus fern; Output Target, Normalisierung und True-Peak-Limiting sichern definierte Pegel; Video Output bietet dem Publikum eine dedizierte Bildfläche.",
     "cardHeaderA": "WAS IN DER APP STECKT",
-    "cardHeaderB": "PROPERTIES / AUSGABE",
-    "item1Title": "Peak- + RMS-Wellenformen",
-    "item1Text": "Prüfen Sie den Cue vor dem Senden — mit derselben Track-Farbe wie in der Playlist.",
-    "item2Title": "Editierbare Playheads und Marker",
-    "item2Text": "Setzen Sie In-, Out- und Next-at-Marker-Positionen aus der Wellenform oder über exakte Zeitfelder.",
-    "item3Title": "Normalisierung und True-Peak-Schutz",
-    "item3Text": "Normalisieren Sie auf ein gewähltes Ziel und behalten Sie die Ausgangs-Obergrenze während der Arbeit im Blick.",
-    "item4Title": "Programm- und Preview-Routing",
-    "item4Text": "Hören Sie privat vor, routen Sie die Show bewusst und behalten Sie beide Pegelpfade lesbar.",
+    "cardHeaderB": "SIGNAL / VIDEO",
+    "item1Title": "Preview getrennt vom Programm-Bus",
+    "item1Text": "Hören Sie den nächsten Cue über einen dedizierten Monitor-Ausgang vor, navigieren und trimmen Sie ihn.",
+    "item2Title": "Loudness- und True-Peak-Zielwerte",
+    "item2Text": "Stimmen Sie Cues auf Zielwerte für Broadcast, Streaming, Radio, OTT oder Live-Konsolen ab, bevor sie auf Sendung gehen.",
+    "item3Title": "Session-sicherer Video Output",
+    "item3Text": "Senden Sie H.264/HEVC-Video an ein ausgewähltes Display — mit Display-Erkennung, Testbild, Standby-Bild und Wiederherstellungsfunktionen.",
+    "item4Title": "Sicher scharfgeschaltete One Shots",
+    "item4Text": "Verlangen Sie im Show Mode eine ausdrückliche Scharfschaltung, bevor eine Zelle ausgelöst werden kann; beim Verlassen von Show Mode werden Zellen entschärft, Stop bleibt immer verfügbar.",
     "link": "Die aktuelle Workflow-Dokumentation lesen"
   },
   "download": {
@@ -150,14 +151,14 @@
   "docs": {
     "eyebrow": "DOKUMENTATION",
     "title": "Bauen Sie die Show. Dann vertrauen Sie der Oberfläche.",
-    "lede": "Die README ist die verbindliche Quelle für den aktuellen Client/Server-Workflow, Paketierung, Netzwerkbetrieb und Projekt-Setup.",
+    "lede": "Die README ist die verbindliche Quelle für den aktuellen Audio-/Video-Workflow, die Oberfläche in 21 Sprachen, Paketierung, Netzwerkbetrieb und Projekt-Setup.",
     "readme": "README lesen",
     "viewSource": "Quellcode ansehen",
     "checklistHeading": "ERSTER START",
-    "step1": "Wählen Sie einen Projektordner und lassen Sie DonWells Cue sein Medienverzeichnis anlegen.",
-    "step2": "Setzen Sie Programm-Ausgabe, Ziel und privaten Preview-Ausgang in den Projekteinstellungen.",
-    "step3": "Bereiten Sie Cue-Marker und Fades in Properties vor; kopieren Sie wiederkehrende Sounds in One Shots.",
-    "step4": "Wechseln Sie in den Show Mode, prüfen Sie die Pegel und fahren Sie die Show."
+    "step1": "Erstellen Sie ein Projekt, importieren Sie lokale Audio- oder Videodateien und bestätigen Sie anschließend den Medienordner.",
+    "step2": "Legen Sie in den Einstellungen Programm- und Preview-Ausgänge, Output Target und optional das LTC-Gerät fest.",
+    "step3": "Bereiten Sie Cue-Marker, Fades, Normalisierung, Routing und die Steuerung von One Shots in Properties vor.",
+    "step4": "Wenn die Show Video nutzt, identifizieren Sie das Display, öffnen Sie Video Output, prüfen Sie das Testbild und starten Sie anschließend Show Mode."
   },
   "footer": {
     "tagline": "Open-Source-Audiowiedergabe für Live-Events.",
