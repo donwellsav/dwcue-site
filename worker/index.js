@@ -41,6 +41,7 @@ export default {
 
     let path = decodeURIComponent(url.pathname).replace(/^\/+/, '');
     let key = path || 'index.html';
+
     const legacyTarget = LEGACY_DOWNLOADS.get(key);
     if (legacyTarget) {
       return Response.redirect(new URL(`/${legacyTarget}`, url).toString(), 302);
@@ -51,7 +52,7 @@ export default {
       key = 'index.html';
       object = await env.SITE.get(key);
     }
-    if (!object) return new Response('Not found', { status: 404 });
+    if (!object) return Response.redirect(new URL('/#docs', url).toString(), 302);
 
     const extension = extOf(key);
     const contentType = MIME[extension] || (object.httpMetadata && object.httpMetadata.contentType) || 'application/octet-stream';
