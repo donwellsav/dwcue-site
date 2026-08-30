@@ -107,7 +107,12 @@
     "item3Text": "ディスプレイ識別、テストカード、スタンバイ画像、復旧操作を備え、H.264/HEVC ビデオを選択したディスプレイへ送出。",
     "item4Title": "アーム式 One Shot セーフティ",
     "item4Text": "Show Mode では、セルの再生前に明示的なアーム操作を必須化。Show Mode を終了するとセルのアームは解除され、停止操作は常に使用できます。",
-    "link": "現在のワークフロードキュメントを読む"
+    "link": "現在のワークフロードキュメントを読む",
+    "videoProofLabel": "ビデオ出力",
+    "videoProofTitle": "ここで操作。あちらで表示。",
+    "videoProofText": "オーディオは通常のエンジン経路に保ったまま、H.264/HEVC 映像を選択したディスプレイへ送出します。",
+    "videoProofFrom": "操作",
+    "videoProofTo": "ディスプレイ"
   },
   "download": {
     "eyebrow": "現在のビルドをインストール",

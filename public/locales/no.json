@@ -107,7 +107,12 @@
     "item3Text": "Send H.264/HEVC-video til en valgt skjerm, med skjermidentifikasjon, testbilde, ventebilde og gjenopprettingskontroller.",
     "item4Title": "Sikkerhet med armerte One Shots",
     "item4Text": "I Show Mode må en celle armeres eksplisitt før den kan utløses; når Show Mode forlates, avarmeres cellene, mens Stopp alltid er tilgjengelig.",
-    "link": "Les den gjeldende dokumentasjonen for arbeidsflyten"
+    "link": "Les den gjeldende dokumentasjonen for arbeidsflyten",
+    "videoProofLabel": "VIDEOUTGANG",
+    "videoProofTitle": "Styr her. Vis der.",
+    "videoProofText": "Send H.264/HEVC-bildet til en valgt skjerm mens lyden forblir i lydmotorens vanlige signalvei.",
+    "videoProofFrom": "KONTROLL",
+    "videoProofTo": "SKJERM"
   },
   "download": {
     "eyebrow": "INSTALLER GJELDENDE UTGIVELSE",

@@ -113,7 +113,8 @@ Build the standalone static output with root-relative asset URLs:
 NUXT_APP_BASE_URL=/ npm run generate
 ```
 
-The checked-in GitHub Actions workflow builds and uploads a validation artifact. Production hosting is the `dwcue-web` Worker backed by the `dwcue-site` R2 bucket. Publish `.output/public` with `npx --yes wrangler@4 r2 object put --remote`, uploading every generated file except `downloads/` (the release CI owns the macOS binaries). Use no-cache headers for HTML, XML, and `package.json`, and immutable caching for hashed assets.
+The checked-in GitHub Actions workflow builds and uploads a validation artifact. Production hosting is the `dwcue-web` Worker backed by the `dwcue-site` R2 bucket. Publish `.output/public` with `npx --yes wrangler@4 r2 object put --remote`, uploading every generated file except `downloads/` (the release CI owns the macOS binaries). Use no-cache headers for HTML, `sitemap.xml`, `robots.txt`, and `package.json`; use immutable caching for hashed assets and other versioned media.
+Worker response caching is versioned in `worker/index.js`; deploy the policy with `npx --yes wrangler@4 deploy --config wrangler.worker.toml --keep-vars` when it changes.
 
 ---
 

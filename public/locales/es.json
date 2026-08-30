@@ -107,7 +107,12 @@
     "item3Text": "Envía vídeo H.264/HEVC a la pantalla seleccionada, con identificación de pantallas, carta de ajuste, imagen de espera y controles de recuperación.",
     "item4Title": "Seguridad de One Shots armados",
     "item4Text": "En Show Mode, exige un armado explícito antes de poder lanzar una celda; al salir de Show Mode, las celdas se desarman, mientras que Detener siempre está disponible.",
-    "link": "Consulta la documentación actual del flujo de trabajo"
+    "link": "Consulta la documentación actual del flujo de trabajo",
+    "videoProofLabel": "SALIDA DE VÍDEO",
+    "videoProofTitle": "Controla aquí. Muestra allí.",
+    "videoProofText": "Envía la imagen H.264/HEVC a una pantalla seleccionada mientras el audio sigue la ruta normal del motor.",
+    "videoProofFrom": "CONTROL",
+    "videoProofTo": "PANTALLA"
   },
   "download": {
     "eyebrow": "INSTALA LA VERSIÓN ACTUAL",

@@ -107,7 +107,12 @@
     "item3Text": "Envie vídeo H.264/HEVC para uma tela selecionada, com identificação de telas, cartão de teste, imagem de espera e controles de recuperação.",
     "item4Title": "Segurança de One Shots armados",
     "item4Text": "No Show Mode, exija uma armação explícita para que uma célula possa disparar; sair do Show Mode desarma as células, enquanto o comando Parar permanece sempre disponível.",
-    "link": "Leia a documentação atual do fluxo de trabalho"
+    "link": "Leia a documentação atual do fluxo de trabalho",
+    "videoProofLabel": "SAÍDA DE VÍDEO",
+    "videoProofTitle": "Controle aqui. Exiba ali.",
+    "videoProofText": "Envie a imagem H.264/HEVC para uma tela selecionada enquanto o áudio permanece no fluxo normal do mecanismo de áudio.",
+    "videoProofFrom": "CONTROLE",
+    "videoProofTo": "TELA"
   },
   "download": {
     "eyebrow": "INSTALE A VERSÃO ATUAL",

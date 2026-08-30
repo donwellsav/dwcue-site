@@ -107,7 +107,12 @@
     "item3Text": "Dërgo video H.264/HEVC te një ekran i zgjedhur, me identifikimin e ekraneve, kartë prove, figurë gatishmërie dhe kontrolle rikuperimi.",
     "item4Title": "Siguri për One Shots të armatosura",
     "item4Text": "Në Show Mode, kërko armatosje të qartë para se një qelizë të lëshohet; dalja nga Show Mode i çarmatos qelizat, ndërsa Ndalimi është gjithmonë i disponueshëm.",
-    "link": "Lexo dokumentacionin aktual të rrjedhës së punës"
+    "link": "Lexo dokumentacionin aktual të rrjedhës së punës",
+    "videoProofLabel": "DALJA E VIDEOS",
+    "videoProofTitle": "Kontrollo këtu. Shfaq atje.",
+    "videoProofText": "Dërgo figurën H.264/HEVC te një ekran i zgjedhur, ndërsa audioja qëndron në rrugën normale të motorit të audios.",
+    "videoProofFrom": "KONTROLLI",
+    "videoProofTo": "EKRANI"
   },
   "download": {
     "eyebrow": "INSTALO PAKETËN AKTUALE",

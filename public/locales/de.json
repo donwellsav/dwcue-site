@@ -107,7 +107,12 @@
     "item3Text": "Senden Sie H.264/HEVC-Video an ein ausgewähltes Display — mit Display-Erkennung, Testbild, Standby-Bild und Wiederherstellungsfunktionen.",
     "item4Title": "Sicher scharfgeschaltete One Shots",
     "item4Text": "Verlangen Sie im Show Mode eine ausdrückliche Scharfschaltung, bevor eine Zelle ausgelöst werden kann; beim Verlassen von Show Mode werden Zellen entschärft, Stop bleibt immer verfügbar.",
-    "link": "Die aktuelle Workflow-Dokumentation lesen"
+    "link": "Die aktuelle Workflow-Dokumentation lesen",
+    "videoProofLabel": "VIDEOAUSGABE",
+    "videoProofTitle": "Hier steuern. Dort zeigen.",
+    "videoProofText": "Senden Sie das H.264/HEVC-Bild an ein ausgewähltes Display, während das Audio auf dem normalen Engine-Pfad bleibt.",
+    "videoProofFrom": "STEUERUNG",
+    "videoProofTo": "DISPLAY"
   },
   "download": {
     "eyebrow": "AKTUELLEN BUILD INSTALLIEREN",

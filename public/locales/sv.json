@@ -107,7 +107,12 @@
     "item3Text": "Skicka H.264/HEVC-video till en vald skärm, med identifiering av skärmar, testbild, standbybild och återställningsreglage.",
     "item4Title": "Säkerhet med armerade One Shots",
     "item4Text": "I Show Mode ska en ruta uttryckligen armeras innan den kan startas; när Show Mode lämnas avarmeras rutorna, medan Stopp alltid är tillgängligt.",
-    "link": "Läs den aktuella dokumentationen för arbetsflödet"
+    "link": "Läs den aktuella dokumentationen för arbetsflödet",
+    "videoProofLabel": "VIDEOUTGÅNG",
+    "videoProofTitle": "Styr här. Visa där.",
+    "videoProofText": "Skicka H.264/HEVC-bilden till en vald skärm medan ljudet följer ljudmotorns vanliga signalväg.",
+    "videoProofFrom": "KONTROLL",
+    "videoProofTo": "SKÄRM"
   },
   "download": {
     "eyebrow": "INSTALLERA DEN AKTUELLA VERSIONEN",

@@ -64,7 +64,8 @@ const handleChange = async (event: Event) => {
     &:focus-visible {
       border-color: #315fcf;
       background: rgba(49, 95, 207, 0.08);
-      outline: none;
+      outline: 3px solid #315fcf;
+      outline-offset: 2px;
     }
   }
 

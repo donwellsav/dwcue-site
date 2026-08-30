@@ -1,0 +1,8 @@
+name = "dwcue-web"
+main = "worker/index.js"
+compatibility_date = "2026-01-15"
+workers_dev = false
+
+[[r2_buckets]]
+binding = "SITE"
+bucket_name = "dwcue-site"

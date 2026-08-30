@@ -107,7 +107,12 @@
     "item3Text": "Send H.264/HEVC video to a selected display, with Identify Displays, a test card, standby image, and recovery controls.",
     "item4Title": "Armed One Shot safety",
     "item4Text": "In Show Mode, require an explicit arm before a cell can fire; leaving Show Mode disarms cells, while Stop is always available.",
-    "link": "Read the current workflow documentation"
+    "link": "Read the current workflow documentation",
+    "videoProofLabel": "VIDEO OUTPUT",
+    "videoProofTitle": "Control here. Show there.",
+    "videoProofText": "Send H.264/HEVC picture to a selected display while audio stays on the normal engine path.",
+    "videoProofFrom": "CONTROL",
+    "videoProofTo": "DISPLAY"
   },
   "download": {
     "eyebrow": "INSTALL THE CURRENT BUILD",

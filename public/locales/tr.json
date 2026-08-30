@@ -107,7 +107,12 @@
     "item3Text": "H.264/HEVC videoyu seçili bir ekrana gönderin; Ekranları Tanımla, test kartı, bekleme görüntüsü ve kurtarma denetimlerini kullanın.",
     "item4Title": "Etkinleştirilmiş One Shots güvenliği",
     "item4Text": "Show Mode'da bir hücrenin tetiklenebilmesi için açıkça etkinleştirilmesini zorunlu kılın; Show Mode'dan çıkıldığında hücreler devre dışı kalır, Durdur ise her zaman kullanılabilir.",
-    "link": "Güncel iş akışı belgelerini okuyun"
+    "link": "Güncel iş akışı belgelerini okuyun",
+    "videoProofLabel": "VİDEO ÇIKIŞI",
+    "videoProofTitle": "Buradan kontrol edin. Orada gösterin.",
+    "videoProofText": "Ses normal ses motoru yolunda kalırken H.264/HEVC görüntüyü seçili bir ekrana gönderin.",
+    "videoProofFrom": "KONTROL",
+    "videoProofTo": "EKRAN"
   },
   "download": {
     "eyebrow": "GÜNCEL PAKETİ YÜKLEYİN",

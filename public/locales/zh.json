@@ -107,7 +107,12 @@
     "item3Text": "将 H.264/HEVC 视频发送到指定显示器，并提供显示器识别、测试卡、待机图像和恢复控制。",
     "item4Title": "One Shot 就绪保护",
     "item4Text": "在 Show Mode 中，单元格必须明确设为就绪后才能触发；退出 Show Mode 会取消单元格的就绪状态，停止控制则始终可用。",
-    "link": "阅读当前工作流程文档"
+    "link": "阅读当前工作流程文档",
+    "videoProofLabel": "视频输出",
+    "videoProofTitle": "此处控制，彼处显示。",
+    "videoProofText": "将 H.264/HEVC 画面发送到指定显示器，同时让音频继续沿音频引擎的常规路径处理。",
+    "videoProofFrom": "控制",
+    "videoProofTo": "显示器"
   },
   "download": {
     "eyebrow": "安装当前版本",

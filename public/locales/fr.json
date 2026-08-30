@@ -107,7 +107,12 @@
     "item3Text": "Envoyez la vidéo H.264/HEVC vers l’écran sélectionné, avec identification des écrans, mire de test, image d’attente et commandes de récupération.",
     "item4Title": "Sécurité des One Shots armés",
     "item4Text": "En Show Mode, exigez un armement explicite avant le déclenchement d’une cellule ; quitter Show Mode désarme les cellules, tandis que l’arrêt reste toujours disponible.",
-    "link": "Lire la documentation de workflow actuelle"
+    "link": "Lire la documentation de workflow actuelle",
+    "videoProofLabel": "SORTIE VIDÉO",
+    "videoProofTitle": "Contrôlez ici. Diffusez là-bas.",
+    "videoProofText": "Envoyez l’image H.264/HEVC vers un écran sélectionné, tandis que l’audio reste sur le chemin normal du moteur.",
+    "videoProofFrom": "CONTRÔLE",
+    "videoProofTo": "ÉCRAN"
   },
   "download": {
     "eyebrow": "INSTALLER LA BUILD ACTUELLE",
