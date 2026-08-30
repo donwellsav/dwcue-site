@@ -107,7 +107,6 @@
     "item3Text": "Skicka H.264/HEVC-video till en vald skärm, med identifiering av skärmar, testbild, standbybild och återställningsreglage.",
     "item4Title": "Säkerhet med armerade One Shots",
     "item4Text": "I Show Mode ska en ruta uttryckligen armeras innan den kan startas; när Show Mode lämnas avarmeras rutorna, medan Stopp alltid är tillgängligt.",
-    "link": "Läs den aktuella dokumentationen för arbetsflödet",
     "videoProofLabel": "VIDEOUTGÅNG",
     "videoProofTitle": "Styr här. Visa där.",
     "videoProofText": "Skicka H.264/HEVC-bilden till en vald skärm medan ljudet följer ljudmotorns vanliga signalväg.",
@@ -159,8 +158,6 @@
   "docs": {
     "eyebrow": "DOKUMENTATION",
     "title": "Förbered evenemanget. Lita sedan på arbetsytan.",
-    "lede": "README är den primära referensen för det aktuella arbetsflödet för ljud/video, gränssnittet på 21 språk, paketering, nätverksdrift och projektkonfiguration.",
-    "readme": "Läs README",
     "checklistHeading": "FÖRSTA STARTEN",
     "step1": "Skapa ett projekt och importera lokalt ljud eller lokal video, och bekräfta sedan mediemappen.",
     "step2": "Ställ in program- och Preview-utgångarna, Output Target och valfri LTC-enhet i Inställningar.",
@@ -170,6 +167,7 @@
   "footer": {
     "tagline": "Ljuduppspelning för liveevenemang.",
     "backToTop": "Tillbaka till toppen",
-    "licenseMenu": "Licens"
+    "licenseMenu": "Licens",
+    "correspondingSource": "Tillhörande källkod"
   }
 }

@@ -107,7 +107,6 @@
     "item3Text": "Envía vídeo H.264/HEVC a la pantalla seleccionada, con identificación de pantallas, carta de ajuste, imagen de espera y controles de recuperación.",
     "item4Title": "Seguridad de One Shots armados",
     "item4Text": "En Show Mode, exige un armado explícito antes de poder lanzar una celda; al salir de Show Mode, las celdas se desarman, mientras que Detener siempre está disponible.",
-    "link": "Consulta la documentación actual del flujo de trabajo",
     "videoProofLabel": "SALIDA DE VÍDEO",
     "videoProofTitle": "Controla aquí. Muestra allí.",
     "videoProofText": "Envía la imagen H.264/HEVC a una pantalla seleccionada mientras el audio sigue la ruta normal del motor.",
@@ -159,8 +158,6 @@
   "docs": {
     "eyebrow": "DOCUMENTACIÓN",
     "title": "Prepara el espectáculo. Después, confía en la interfaz.",
-    "lede": "El README es la referencia principal para el flujo de trabajo actual de audio y vídeo, la interfaz en 21 idiomas, la creación de paquetes, el funcionamiento en red y la configuración del proyecto.",
-    "readme": "Leer el README",
     "checklistHeading": "PRIMER INICIO",
     "step1": "Crea un proyecto e importa audio o vídeo local; después, confirma la carpeta de archivos multimedia.",
     "step2": "Configura las salidas de programa y Preview, Output Target y el dispositivo LTC opcional en Ajustes.",
@@ -170,6 +167,7 @@
   "footer": {
     "tagline": "Reproducción de audio para eventos en directo.",
     "backToTop": "Volver arriba",
-    "licenseMenu": "Licencia"
+    "licenseMenu": "Licencia",
+    "correspondingSource": "Código fuente correspondiente"
   }
 }

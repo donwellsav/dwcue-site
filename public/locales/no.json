@@ -107,7 +107,6 @@
     "item3Text": "Send H.264/HEVC-video til en valgt skjerm, med skjermidentifikasjon, testbilde, ventebilde og gjenopprettingskontroller.",
     "item4Title": "Sikkerhet med armerte One Shots",
     "item4Text": "I Show Mode må en celle armeres eksplisitt før den kan utløses; når Show Mode forlates, avarmeres cellene, mens Stopp alltid er tilgjengelig.",
-    "link": "Les den gjeldende dokumentasjonen for arbeidsflyten",
     "videoProofLabel": "VIDEOUTGANG",
     "videoProofTitle": "Styr her. Vis der.",
     "videoProofText": "Send H.264/HEVC-bildet til en valgt skjerm mens lyden forblir i lydmotorens vanlige signalvei.",
@@ -159,8 +158,6 @@
   "docs": {
     "eyebrow": "DOKUMENTASJON",
     "title": "Forbered forestillingen. Stol deretter på grensesnittet.",
-    "lede": "README er den autoritative kilden for gjeldende arbeidsflyt for lyd/video, grensesnittet på 21 språk, pakking, nettverksdrift og prosjektoppsett.",
-    "readme": "Les README",
     "checklistHeading": "FØRSTE OPPSTART",
     "step1": "Opprett et prosjekt og importer lokal lyd eller video. Bekreft deretter mediemappen.",
     "step2": "Angi program- og Preview-utganger, Output Target og eventuell LTC-enhet i Innstillinger.",
@@ -170,6 +167,7 @@
   "footer": {
     "tagline": "Lydavspilling for livearrangementer.",
     "backToTop": "Tilbake til toppen",
-    "licenseMenu": "Lisens"
+    "licenseMenu": "Lisens",
+    "correspondingSource": "Tilhørende kildekode"
   }
 }

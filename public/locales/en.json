@@ -107,7 +107,6 @@
     "item3Text": "Send H.264/HEVC video to a selected display, with Identify Displays, a test card, standby image, and recovery controls.",
     "item4Title": "Armed One Shot safety",
     "item4Text": "In Show Mode, require an explicit arm before a cell can fire; leaving Show Mode disarms cells, while Stop is always available.",
-    "link": "Read the current workflow documentation",
     "videoProofLabel": "VIDEO OUTPUT",
     "videoProofTitle": "Control here. Show there.",
     "videoProofText": "Send H.264/HEVC picture to a selected display while audio stays on the normal engine path.",
@@ -159,8 +158,6 @@
   "docs": {
     "eyebrow": "DOCUMENTATION",
     "title": "Build the show. Then trust the surface.",
-    "lede": "The README is the source of truth for the current audio/video workflow, 21-language interface, packaging, network operation, and project setup.",
-    "readme": "Read the README",
     "checklistHeading": "FIRST RUN",
     "step1": "Create a project and import local audio or video, then confirm the media folder.",
     "step2": "Set the program and Preview outputs, Output Target, and optional LTC device in Settings.",
@@ -170,6 +167,7 @@
   "footer": {
     "tagline": "Audio playback for live events.",
     "backToTop": "Back to top",
-    "licenseMenu": "License"
+    "licenseMenu": "License",
+    "correspondingSource": "Corresponding source"
   }
 }

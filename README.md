@@ -1,6 +1,6 @@
 # DonWells Cue Website — developer guide
 
-This is the standalone public-facing DonWells Cue static site. It is a Nuxt 4 prerendered site built from the current desktop app and README, separate from the desktop-app repository. It builds the site intended for [`https://dwcue.com/`](https://dwcue.com/); generating locally does not deploy it.
+This is the standalone public-facing DonWells Cue static site. It is a Nuxt 4 prerendered site built from current desktop-app snapshots, separate from the desktop-app repository. It builds the site intended for [`https://dwcue.com/`](https://dwcue.com/); generating locally does not deploy it.
 
 This document is the developer's guide to the website. The current screenshot set is stored in `public/screenshots/`; refresh it from the current app UI when the playback surface changes. The checked-in workflow builds an artifact only; hosting/deployment credentials stay outside this project.
 
@@ -33,8 +33,7 @@ website/
 ├── app/assets/
 │   └── styles/main.scss          Shared global reset and typography defaults
 └── public/                       Static assets — served from `/...`
-    ├── README.md                 Snapshot of the app README for the docs section
-    ├── package.json              Minimal version/repository snapshot used by the page
+    ├── package.json              Minimal version and license metadata used by the page
     ├── downloads/                Packaged downloads served by the site
     ├── favicon.ico
     ├── assets/                   logo.svg
@@ -43,7 +42,7 @@ website/
     └── sitemap.xml               Search-engine discovery file
 ```
 
-`public/README.md`, `public/package.json`, and `public/screenshots/` are snapshots. Refresh them from the app repository before publishing. The site intentionally has no dependency on the app repository at build time.
+`public/package.json` and `public/screenshots/` are snapshots. Refresh them from the app repository before publishing. The site intentionally has no dependency on the app repository at build time.
 
 ---
 
@@ -62,12 +61,11 @@ npm run generate     # writes to .output/public
 npm run preview
 ```
 
-If you need the latest README, version, or screenshots while developing locally, copy them in manually:
+If you need the latest version or screenshots while developing locally, copy them in manually:
 
 ```sh
 # From this website directory
-cp ../liveplay/README.md public/README.md
-node -e "const fs=require('fs'); const p=JSON.parse(fs.readFileSync('../liveplay/package.json','utf8')); fs.writeFileSync('public/package.json', JSON.stringify({name:'donwells-cue',version:p.version,description:p.description,license:p.license,repository:'https://github.com/donwellsav/dwcue'},null,2)+'\\n')"
+node -e "const fs=require('fs'); const p=JSON.parse(fs.readFileSync('../liveplay/package.json','utf8')); fs.writeFileSync('public/package.json', JSON.stringify({name:'donwells-cue',version:p.version,description:'DonWells Cue — audio and video cue playback for live events.',license:p.license},null,2)+'\n')"
 cp ../liveplay/client/public/screenshots/donwells_cue_*.jpg public/screenshots/
 ```
 
@@ -85,7 +83,7 @@ cp ../liveplay/client/public/screenshots/donwells_cue_*.jpg public/screenshots/
    | Linux    | `DonWells-Cue-<version>-x86_64.AppImage`, `DonWells-Cue-<version>-amd64.deb`, `DonWells-Cue-<version>-x86_64.rpm` |
 
    The current site release is **v2.6.12**. macOS artifacts are served from the site mirror; Windows and Linux links require the matching GitHub release.
-3. **Product story** — the page explains the current audio/video workflow (Properties → Preview → Show Mode), Video Output, armed One Shots, output safety, language coverage, and supported release builds. The full technical reference remains the root README, linked from the docs section.
+3. **Product story** — the page explains the current audio/video workflow (Properties → Preview → Show Mode), Video Output, armed One Shots, output safety, language coverage, and supported release builds. The public page keeps a focused first-run checklist; detailed implementation reference remains in the desktop-app repository.
 4. **Localisation** — `app/composables/useI18n.ts` detects the browser language and loads the matching JSON from `/locales/<code>.json`. Locale fetches use `cache: 'reload'` because published locale objects are immutable, so a release cannot leave returning visitors on stale copy. Falls back to English. The current locale is persisted in `localStorage`; the document `lang` and `dir` attributes, title, and description stay synchronized. `LanguageSwitcher.vue` uses a native single-select control for complete keyboard support.
 
 ---

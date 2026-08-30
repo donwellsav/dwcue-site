@@ -107,7 +107,6 @@
     "item3Text": "Trimite conținut video H.264/HEVC către un ecran selectat, cu identificarea ecranelor, o miră de test, imagine de așteptare și comenzi de recuperare.",
     "item4Title": "Siguranță pentru One Shots armate",
     "item4Text": "În Show Mode, solicită armarea explicită înainte ca o celulă să poată fi declanșată; ieșirea din Show Mode dezarmează celulele, iar comanda Oprire rămâne mereu disponibilă.",
-    "link": "Citește documentația actuală despre fluxul de lucru",
     "videoProofLabel": "IEȘIRE VIDEO",
     "videoProofTitle": "Controlează aici. Afișează acolo.",
     "videoProofText": "Trimite imaginea H.264/HEVC către un ecran selectat, în timp ce semnalul audio rămâne pe traseul normal al motorului audio.",
@@ -159,8 +158,6 @@
   "docs": {
     "eyebrow": "DOCUMENTAȚIE",
     "title": "Pregătește spectacolul. Apoi bazează-te pe interfață.",
-    "lede": "README este sursa de referință pentru fluxul de lucru audio/video actual, interfața în 21 de limbi, împachetare, funcționarea în rețea și configurarea proiectului.",
-    "readme": "Citește README",
     "checklistHeading": "PRIMA RULARE",
     "step1": "Creează un proiect, importă fișiere audio sau video locale, apoi confirmă dosarul media.",
     "step2": "Configurează în Setări ieșirile de program și Preview, Output Target și dispozitivul LTC opțional.",
@@ -170,6 +167,7 @@
   "footer": {
     "tagline": "Redare audio pentru evenimente în direct.",
     "backToTop": "Înapoi sus",
-    "licenseMenu": "Licență"
+    "licenseMenu": "Licență",
+    "correspondingSource": "Codul-sursă corespunzător"
   }
 }

@@ -107,7 +107,6 @@
     "item3Text": "Envoyez la vidéo H.264/HEVC vers l’écran sélectionné, avec identification des écrans, mire de test, image d’attente et commandes de récupération.",
     "item4Title": "Sécurité des One Shots armés",
     "item4Text": "En Show Mode, exigez un armement explicite avant le déclenchement d’une cellule ; quitter Show Mode désarme les cellules, tandis que l’arrêt reste toujours disponible.",
-    "link": "Lire la documentation de workflow actuelle",
     "videoProofLabel": "SORTIE VIDÉO",
     "videoProofTitle": "Contrôlez ici. Diffusez là-bas.",
     "videoProofText": "Envoyez l’image H.264/HEVC vers un écran sélectionné, tandis que l’audio reste sur le chemin normal du moteur.",
@@ -159,8 +158,6 @@
   "docs": {
     "eyebrow": "DOCUMENTATION",
     "title": "Construisez le spectacle. Puis faites confiance à la surface.",
-    "lede": "Le README est la source de vérité pour le workflow audio/vidéo actuel, l’interface en 21 langues, le packaging, l’exploitation réseau et la configuration de projet.",
-    "readme": "Lire le README",
     "checklistHeading": "PREMIER DÉMARRAGE",
     "step1": "Créez un projet et importez des fichiers audio ou vidéo locaux, puis confirmez le dossier média.",
     "step2": "Définissez les sorties programme et Preview, Output Target et, si nécessaire, le périphérique LTC dans les réglages.",
@@ -170,6 +167,7 @@
   "footer": {
     "tagline": "Lecture audio pour les événements en direct.",
     "backToTop": "Haut de page",
-    "licenseMenu": "Licence"
+    "licenseMenu": "Licence",
+    "correspondingSource": "Code source correspondant"
   }
 }

@@ -107,7 +107,6 @@
     "item3Text": "H.264/HEVC videoyu seçili bir ekrana gönderin; Ekranları Tanımla, test kartı, bekleme görüntüsü ve kurtarma denetimlerini kullanın.",
     "item4Title": "Etkinleştirilmiş One Shots güvenliği",
     "item4Text": "Show Mode'da bir hücrenin tetiklenebilmesi için açıkça etkinleştirilmesini zorunlu kılın; Show Mode'dan çıkıldığında hücreler devre dışı kalır, Durdur ise her zaman kullanılabilir.",
-    "link": "Güncel iş akışı belgelerini okuyun",
     "videoProofLabel": "VİDEO ÇIKIŞI",
     "videoProofTitle": "Buradan kontrol edin. Orada gösterin.",
     "videoProofText": "Ses normal ses motoru yolunda kalırken H.264/HEVC görüntüyü seçili bir ekrana gönderin.",
@@ -159,8 +158,6 @@
   "docs": {
     "eyebrow": "BELGELER",
     "title": "Gösteriyi hazırlayın. Sonra arayüze güvenin.",
-    "lede": "README; güncel ses/video iş akışı, 21 dilli arayüz, paketleme, ağ üzerinden kullanım ve proje kurulumu için temel başvuru kaynağıdır.",
-    "readme": "README'yi okuyun",
     "checklistHeading": "İLK ÇALIŞTIRMA",
     "step1": "Bir proje oluşturup yerel ses veya video içe aktarın, ardından medya klasörünü doğrulayın.",
     "step2": "Ayarlar'da ana yayın ve Preview çıkışlarını, Output Target değerini ve isteğe bağlı LTC aygıtını ayarlayın.",
@@ -170,6 +167,7 @@
   "footer": {
     "tagline": "Canlı etkinlikler için ses oynatma.",
     "backToTop": "Başa dön",
-    "licenseMenu": "Lisans"
+    "licenseMenu": "Lisans",
+    "correspondingSource": "İlgili kaynak kodu"
   }
 }

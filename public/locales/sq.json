@@ -107,7 +107,6 @@
     "item3Text": "Dërgo video H.264/HEVC te një ekran i zgjedhur, me identifikimin e ekraneve, kartë prove, figurë gatishmërie dhe kontrolle rikuperimi.",
     "item4Title": "Siguri për One Shots të armatosura",
     "item4Text": "Në Show Mode, kërko armatosje të qartë para se një qelizë të lëshohet; dalja nga Show Mode i çarmatos qelizat, ndërsa Ndalimi është gjithmonë i disponueshëm.",
-    "link": "Lexo dokumentacionin aktual të rrjedhës së punës",
     "videoProofLabel": "DALJA E VIDEOS",
     "videoProofTitle": "Kontrollo këtu. Shfaq atje.",
     "videoProofText": "Dërgo figurën H.264/HEVC te një ekran i zgjedhur, ndërsa audioja qëndron në rrugën normale të motorit të audios.",
@@ -159,8 +158,6 @@
   "docs": {
     "eyebrow": "DOKUMENTACIONI",
     "title": "Përgatite shfaqjen. Pastaj besoju kontrolleve.",
-    "lede": "README është referenca përfundimtare për rrjedhën aktuale të punës me audio/video, ndërfaqen në 21 gjuhë, paketimin, funksionimin në rrjet dhe konfigurimin e projektit.",
-    "readme": "Lexo README",
     "checklistHeading": "HAPJA E PARË",
     "step1": "Krijo një projekt dhe importo audio ose video vendore, pastaj konfirmo dosjen e skedarëve media.",
     "step2": "Te Cilësimet, cakto daljet e programit dhe të Preview, Output Target dhe pajisjen opsionale LTC.",
@@ -170,6 +167,7 @@
   "footer": {
     "tagline": "Riprodhim audio për veprimtari të drejtpërdrejta.",
     "backToTop": "Kthehu në krye",
-    "licenseMenu": "Licencë"
+    "licenseMenu": "Licencë",
+    "correspondingSource": "Kodi burimor përkatës"
   }
 }

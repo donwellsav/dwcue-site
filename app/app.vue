@@ -217,7 +217,6 @@
               <li><span>03</span><div><strong>{{ t('safety.item3Title') }}</strong><p>{{ t('safety.item3Text') }}</p></div></li>
               <li><span>04</span><div><strong>{{ t('safety.item4Title') }}</strong><p>{{ t('safety.item4Text') }}</p></div></li>
             </ul>
-            <a class="safety-card__link" :href="asset('README.md')">{{ t('safety.link') }} <span aria-hidden="true">↗</span></a>
           </div>
         </div>
       </section>
@@ -295,10 +294,6 @@
           <div>
             <p class="eyebrow eyebrow--light">{{ t('docs.eyebrow') }}</p>
             <h2>{{ t('docs.title') }}</h2>
-            <p class="docs-section__lede">{{ t('docs.lede') }}</p>
-            <div class="docs-section__actions">
-              <a class="button button--light" :href="asset('README.md')">{{ t('docs.readme') }} <span aria-hidden="true">↗</span></a>
-            </div>
           </div>
           <div class="docs-checklist">
             <div class="docs-checklist__heading"><span>{{ t('docs.checklistHeading') }}</span><span>01—04</span></div>
@@ -320,6 +315,7 @@
           <details class="site-footer__legal">
             <summary>{{ t('footer.licenseMenu') }}</summary>
             <a href="https://github.com/donwellsav/dwcue/blob/main/LICENCE.txt" target="_blank" rel="noopener noreferrer">AGPL-3.0-only</a>
+            <a href="https://github.com/donwellsav/dwcue" target="_blank" rel="noopener noreferrer">{{ t('footer.correspondingSource') }}</a>
           </details>
           <a href="#top">{{ t('footer.backToTop') }} ↑</a>
         </div>

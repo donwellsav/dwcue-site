@@ -107,7 +107,6 @@
     "item3Text": "Senden Sie H.264/HEVC-Video an ein ausgewähltes Display — mit Display-Erkennung, Testbild, Standby-Bild und Wiederherstellungsfunktionen.",
     "item4Title": "Sicher scharfgeschaltete One Shots",
     "item4Text": "Verlangen Sie im Show Mode eine ausdrückliche Scharfschaltung, bevor eine Zelle ausgelöst werden kann; beim Verlassen von Show Mode werden Zellen entschärft, Stop bleibt immer verfügbar.",
-    "link": "Die aktuelle Workflow-Dokumentation lesen",
     "videoProofLabel": "VIDEOAUSGABE",
     "videoProofTitle": "Hier steuern. Dort zeigen.",
     "videoProofText": "Senden Sie das H.264/HEVC-Bild an ein ausgewähltes Display, während das Audio auf dem normalen Engine-Pfad bleibt.",
@@ -159,8 +158,6 @@
   "docs": {
     "eyebrow": "DOKUMENTATION",
     "title": "Bauen Sie die Show. Dann vertrauen Sie der Oberfläche.",
-    "lede": "Die README ist die verbindliche Quelle für den aktuellen Audio-/Video-Workflow, die Oberfläche in 21 Sprachen, Paketierung, Netzwerkbetrieb und Projekt-Setup.",
-    "readme": "README lesen",
     "checklistHeading": "ERSTER START",
     "step1": "Erstellen Sie ein Projekt, importieren Sie lokale Audio- oder Videodateien und bestätigen Sie anschließend den Medienordner.",
     "step2": "Legen Sie in den Einstellungen Programm- und Preview-Ausgänge, Output Target und optional das LTC-Gerät fest.",
@@ -170,6 +167,7 @@
   "footer": {
     "tagline": "Audio-Wiedergabe für Live-Events.",
     "backToTop": "Nach oben",
-    "licenseMenu": "Lizenz"
+    "licenseMenu": "Lizenz",
+    "correspondingSource": "Zugehöriger Quellcode"
   }
 }

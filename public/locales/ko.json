@@ -107,7 +107,6 @@
     "item3Text": "H.264/HEVC 비디오를 선택한 디스플레이로 보내고, 디스플레이 식별, 테스트 카드, 대기 이미지, 복구 제어를 사용하세요.",
     "item4Title": "준비 상태로 보호되는 One Shot",
     "item4Text": "Show Mode에서는 셀을 재생하려면 명시적으로 준비 상태로 설정하도록 하세요; Show Mode를 종료하면 셀의 준비 상태가 해제되며, 중지는 언제나 사용할 수 있습니다.",
-    "link": "현재 워크플로 문서 읽기",
     "videoProofLabel": "비디오 출력",
     "videoProofTitle": "여기서 제어하고, 저쪽 화면에 표시하세요.",
     "videoProofText": "오디오는 일반 엔진 경로에 유지하면서 H.264/HEVC 영상을 선택한 디스플레이로 보내세요.",
@@ -159,8 +158,6 @@
   "docs": {
     "eyebrow": "문서",
     "title": "공연을 구성하세요. 이제 인터페이스를 믿으세요.",
-    "lede": "README는 현재 오디오/비디오 워크플로, 21개 언어 인터페이스, 패키징, 네트워크 운영, 프로젝트 설정에 관한 가장 정확한 기준 문서입니다.",
-    "readme": "README 읽기",
     "checklistHeading": "첫 실행",
     "step1": "프로젝트를 만들고 로컬 오디오 또는 비디오를 가져온 뒤 미디어 폴더를 확인하세요.",
     "step2": "설정에서 프로그램 및 Preview 출력, Output Target, 선택적 LTC 장치를 지정하세요.",
@@ -170,6 +167,7 @@
   "footer": {
     "tagline": "라이브 이벤트를 위한 오디오 재생.",
     "backToTop": "맨 위로",
-    "licenseMenu": "라이선스"
+    "licenseMenu": "라이선스",
+    "correspondingSource": "해당 소스 코드"
   }
 }
