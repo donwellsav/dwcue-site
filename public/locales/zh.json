@@ -32,7 +32,7 @@
     "docs": "文档"
   },
   "hero": {
-    "productLabel": "面向现场活动的预发布 Cue 播放。",
+    "productLabel": "面向现场活动的 Cue 播放。",
     "title": "让下一个提示自然衔接。",
     "lede": "为现场演出准备音频和视频提示。保持控制界面沉稳清晰、观众输出随时可见，让下一段声音一触即发。",
     "ctaPrimary": "获取 DonWells Cue",
@@ -168,7 +168,7 @@
     "step4": "如果演出使用视频，请识别显示器、打开 Video Output、检查测试卡，然后运行 Show Mode。"
   },
   "footer": {
-    "tagline": "面向现场活动的预发布音频播放。",
+    "tagline": "面向现场活动的音频播放。",
     "backToTop": "返回顶部",
     "licenseMenu": "许可证"
   }

@@ -32,7 +32,7 @@
     "docs": "Doku"
   },
   "hero": {
-    "productLabel": "Cue-Wiedergabe als Vorabversion für Live-Veranstaltungen.",
+    "productLabel": "Cue-Wiedergabe für Live-Veranstaltungen.",
     "title": "Der nächste Cue fühlt sich unausweichlich an.",
     "lede": "Bereiten Sie Audio- und Video-Cues für Live-Shows vor. Halten Sie die Bedienoberfläche ruhig, den Publikums-Output sichtbar und den nächsten Sound nur einen Fingertipp entfernt.",
     "ctaPrimary": "DonWells Cue holen",
@@ -168,7 +168,7 @@
     "step4": "Wenn die Show Video nutzt, identifizieren Sie das Display, öffnen Sie Video Output, prüfen Sie das Testbild und starten Sie anschließend Show Mode."
   },
   "footer": {
-    "tagline": "Audio-Wiedergabe als Vorabversion für Live-Events.",
+    "tagline": "Audio-Wiedergabe für Live-Events.",
     "backToTop": "Nach oben",
     "licenseMenu": "Lizenz"
   }

@@ -32,7 +32,7 @@
     "docs": "Documentación"
   },
   "hero": {
-    "productLabel": "Reproducción de señales en versión preliminar para eventos en directo.",
+    "productLabel": "Reproducción de señales para eventos en directo.",
     "title": "Haz que la siguiente señal parezca inevitable.",
     "lede": "Prepara señales de audio y vídeo para espectáculos en directo. Mantén despejada la superficie de control, visible la salida para el público y el siguiente sonido a un toque.",
     "ctaPrimary": "Descargar DonWells Cue",
@@ -168,7 +168,7 @@
     "step4": "Si el espectáculo usa vídeo, identifica la pantalla, abre Video Output, comprueba la carta de ajuste y activa Show Mode."
   },
   "footer": {
-    "tagline": "Reproducción de audio en versión preliminar para eventos en directo.",
+    "tagline": "Reproducción de audio para eventos en directo.",
     "backToTop": "Volver arriba",
     "licenseMenu": "Licencia"
   }

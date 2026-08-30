@@ -32,7 +32,7 @@
     "docs": "Documentazione"
   },
   "hero": {
-    "productLabel": "Riproduzione di segnali in versione preliminare per eventi dal vivo.",
+    "productLabel": "Riproduzione di segnali per eventi dal vivo.",
     "title": "Fa’ sembrare inevitabile il segnale successivo.",
     "lede": "Prepara segnali audio e video per gli spettacoli dal vivo. Mantieni ordinata l’interfaccia di controllo, visibile l’uscita per il pubblico e il suono successivo a portata di tocco.",
     "ctaPrimary": "Scarica DonWells Cue",
@@ -168,7 +168,7 @@
     "step4": "Se lo spettacolo usa il video, identifica lo schermo, apri Video Output, verifica il monoscopio, quindi avvia Show Mode."
   },
   "footer": {
-    "tagline": "Riproduzione audio in versione preliminare per eventi dal vivo.",
+    "tagline": "Riproduzione audio per eventi dal vivo.",
     "backToTop": "Torna all’inizio",
     "licenseMenu": "Licenza"
   }

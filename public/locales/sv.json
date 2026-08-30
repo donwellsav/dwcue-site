@@ -32,7 +32,7 @@
     "docs": "Dokumentation"
   },
   "hero": {
-    "productLabel": "Förhandsversion för uppspelning av inslag vid liveevenemang.",
+    "productLabel": "Uppspelning av inslag för liveevenemang.",
     "title": "Få nästa ljudinslag att kännas självklart.",
     "lede": "Förbered ljud- och videoinslag för liveföreställningar. Behåll lugnet på kontrollytan, ha publikens utsignal under uppsikt och håll nästa ljud en tryckning bort.",
     "ctaPrimary": "Hämta DonWells Cue",
@@ -168,7 +168,7 @@
     "step4": "Om föreställningen använder video: identifiera skärmen, öppna Video Output, kontrollera testbilden och kör sedan Show Mode."
   },
   "footer": {
-    "tagline": "Ljuduppspelning i en förhandsversion för liveevenemang.",
+    "tagline": "Ljuduppspelning för liveevenemang.",
     "backToTop": "Tillbaka till toppen",
     "licenseMenu": "Licens"
   }

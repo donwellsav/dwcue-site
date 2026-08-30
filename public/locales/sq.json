@@ -32,7 +32,7 @@
     "docs": "Dokumentacioni"
   },
   "hero": {
-    "productLabel": "Riprodhim sinjalësh në version paraprak për veprimtari të drejtpërdrejta.",
+    "productLabel": "Riprodhim sinjalësh për veprimtari të drejtpërdrejta.",
     "title": "Bëj që sinjali i radhës të vijë krejt natyrshëm.",
     "lede": "Përgatit sinjalet audio dhe video për shfaqje të drejtpërdrejta. Mbaje të qetë ndërfaqen e kontrollit, të dukshme daljen për publikun dhe tingullin e radhës vetëm një prekje larg.",
     "ctaPrimary": "Merr DonWells Cue",
@@ -168,7 +168,7 @@
     "step4": "Nëse shfaqja përdor video, identifiko ekranin, hap Video Output, verifiko kartën e provës dhe pastaj ekzekuto Show Mode."
   },
   "footer": {
-    "tagline": "Riprodhim audio në version paraprak për veprimtari të drejtpërdrejta.",
+    "tagline": "Riprodhim audio për veprimtari të drejtpërdrejta.",
     "backToTop": "Kthehu në krye",
     "licenseMenu": "Licencë"
   }

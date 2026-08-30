@@ -32,7 +32,7 @@
     "docs": "Dokumentasjon"
   },
   "hero": {
-    "productLabel": "Avspilling av innslag i en forhåndsutgave for livearrangementer.",
+    "productLabel": "Avspilling av innslag for livearrangementer.",
     "title": "Gjør neste lydinnslag til en selvfølge.",
     "lede": "Forbered lyd- og videoinnslag til forestillinger og arrangementer. Hold kontrollflaten oversiktlig, publikumsutgangen synlig og neste lyd ett trykk unna.",
     "ctaPrimary": "Last ned DonWells Cue",
@@ -168,7 +168,7 @@
     "step4": "Hvis forestillingen bruker video, identifiser skjermen, åpne Video Output, kontroller testbildet og start deretter Show Mode."
   },
   "footer": {
-    "tagline": "Lydavspilling i en forhåndsutgave for livearrangementer.",
+    "tagline": "Lydavspilling for livearrangementer.",
     "backToTop": "Tilbake til toppen",
     "licenseMenu": "Lisens"
   }

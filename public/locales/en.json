@@ -33,7 +33,7 @@
   },
   "hero": {
     "title": "Make the next cue feel inevitable.",
-    "productLabel": "Pre-release cue playback for live events.",
+    "productLabel": "Cue playback for live events.",
     "lede": "Prepare audio and video cues for live shows. Keep the control surface calm, the audience output visible, and the next sound one touch away.",
     "ctaPrimary": "Get DonWells Cue",
     "ctaSecondary": "See how it works",
@@ -168,7 +168,7 @@
     "step4": "If the show uses video, identify the display, open Video Output, verify the test card, then run Show Mode."
   },
   "footer": {
-    "tagline": "Pre-release audio playback for live events.",
+    "tagline": "Audio playback for live events.",
     "backToTop": "Back to top",
     "licenseMenu": "License"
   }

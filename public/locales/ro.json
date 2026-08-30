@@ -32,7 +32,7 @@
     "docs": "Documentație"
   },
   "hero": {
-    "productLabel": "Redare de repere în versiune preliminară pentru evenimente în direct.",
+    "productLabel": "Redare de repere pentru evenimente în direct.",
     "title": "Fă ca următorul reper să pară inevitabil.",
     "lede": "Pregătește repere audio și video pentru spectacole în direct. Păstrează calmă interfața de control, vizibilă ieșirea pentru public și următorul sunet la o atingere distanță.",
     "ctaPrimary": "Descarcă DonWells Cue",
@@ -168,7 +168,7 @@
     "step4": "Dacă spectacolul folosește conținut video, identifică ecranul, deschide Video Output, verifică mira de test, apoi rulează Show Mode."
   },
   "footer": {
-    "tagline": "Redare audio în versiune preliminară pentru evenimente în direct.",
+    "tagline": "Redare audio pentru evenimente în direct.",
     "backToTop": "Înapoi sus",
     "licenseMenu": "Licență"
   }
