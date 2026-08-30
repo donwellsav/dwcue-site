@@ -32,7 +32,7 @@
     "docs": "Dokumentacioni"
   },
   "hero": {
-    "productLabel": "Program falas dhe me burim të hapur për riprodhimin e sinjaleve në veprimtari të drejtpërdrejta.",
+    "productLabel": "Riprodhim sinjalësh në version paraprak për veprimtari të drejtpërdrejta.",
     "title": "Bëj që sinjali i radhës të vijë krejt natyrshëm.",
     "lede": "Përgatit sinjalet audio dhe video për shfaqje të drejtpërdrejta. Mbaje të qetë ndërfaqen e kontrollit, të dukshme daljen për publikun dhe tingullin e radhës vetëm një prekje larg.",
     "ctaPrimary": "Merr DonWells Cue",
@@ -161,7 +161,6 @@
     "title": "Përgatite shfaqjen. Pastaj besoju kontrolleve.",
     "lede": "README është referenca përfundimtare për rrjedhën aktuale të punës me audio/video, ndërfaqen në 21 gjuhë, paketimin, funksionimin në rrjet dhe konfigurimin e projektit.",
     "readme": "Lexo README",
-    "viewSource": "Shiko kodin burimor",
     "checklistHeading": "HAPJA E PARË",
     "step1": "Krijo një projekt dhe importo audio ose video vendore, pastaj konfirmo dosjen e skedarëve media.",
     "step2": "Te Cilësimet, cakto daljet e programit dhe të Preview, Output Target dhe pajisjen opsionale LTC.",
@@ -169,7 +168,8 @@
     "step4": "Nëse shfaqja përdor video, identifiko ekranin, hap Video Output, verifiko kartën e provës dhe pastaj ekzekuto Show Mode."
   },
   "footer": {
-    "tagline": "Riprodhim audio me kod burimor të hapur për veprimtari të drejtpërdrejta.",
-    "backToTop": "Kthehu në krye"
+    "tagline": "Riprodhim audio në version paraprak për veprimtari të drejtpërdrejta.",
+    "backToTop": "Kthehu në krye",
+    "licenseMenu": "Licencë"
   }
 }

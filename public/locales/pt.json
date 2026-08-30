@@ -32,7 +32,7 @@
     "docs": "Documentação"
   },
   "hero": {
-    "productLabel": "Software gratuito e de código aberto para reprodução de deixas em eventos ao vivo.",
+    "productLabel": "Reprodução de deixas em pré-lançamento para eventos ao vivo.",
     "title": "Faça a próxima deixa parecer inevitável.",
     "lede": "Prepare deixas de áudio e vídeo para eventos ao vivo. Mantenha a interface de controle tranquila, a saída para o público visível e o próximo som a um toque de distância.",
     "ctaPrimary": "Baixar o DonWells Cue",
@@ -161,7 +161,6 @@
     "title": "Prepare o evento. Depois, confie na interface.",
     "lede": "O README é a referência oficial para o fluxo de trabalho atual de áudio/vídeo, a interface em 21 idiomas, a geração de pacotes, a operação em rede e a configuração do projeto.",
     "readme": "Leia o README",
-    "viewSource": "Ver código-fonte",
     "checklistHeading": "PRIMEIRA EXECUÇÃO",
     "step1": "Crie um projeto, importe áudio ou vídeo local e confirme a pasta de mídia.",
     "step2": "Defina as saídas de programa e Preview, o Output Target e o dispositivo LTC opcional em Configurações.",
@@ -169,7 +168,8 @@
     "step4": "Se o evento usar vídeo, identifique a tela, abra Video Output, verifique o cartão de teste e execute o Show Mode."
   },
   "footer": {
-    "tagline": "Reprodução de áudio de código aberto para eventos ao vivo.",
-    "backToTop": "Voltar ao topo"
+    "tagline": "Reprodução de áudio em pré-lançamento para eventos ao vivo.",
+    "backToTop": "Voltar ao topo",
+    "licenseMenu": "Licença"
   }
 }

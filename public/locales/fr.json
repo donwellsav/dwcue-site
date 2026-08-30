@@ -32,7 +32,7 @@
     "docs": "Docs"
   },
   "hero": {
-    "productLabel": "Lecture de cues gratuite et open source pour les événements en direct.",
+    "productLabel": "Lecture de cues en préversion pour les événements en direct.",
     "title": "Faites du prochain cue une évidence.",
     "lede": "Préparez les cues audio et vidéo de vos spectacles. Gardez une surface de contrôle claire, la sortie destinée au public visible et le prochain son à portée de main.",
     "ctaPrimary": "Obtenir DonWells Cue",
@@ -161,7 +161,6 @@
     "title": "Construisez le spectacle. Puis faites confiance à la surface.",
     "lede": "Le README est la source de vérité pour le workflow audio/vidéo actuel, l’interface en 21 langues, le packaging, l’exploitation réseau et la configuration de projet.",
     "readme": "Lire le README",
-    "viewSource": "Voir le code source",
     "checklistHeading": "PREMIER DÉMARRAGE",
     "step1": "Créez un projet et importez des fichiers audio ou vidéo locaux, puis confirmez le dossier média.",
     "step2": "Définissez les sorties programme et Preview, Output Target et, si nécessaire, le périphérique LTC dans les réglages.",
@@ -169,7 +168,8 @@
     "step4": "Si le spectacle utilise la vidéo, identifiez l’écran, ouvrez Video Output, vérifiez la mire de test, puis lancez Show Mode."
   },
   "footer": {
-    "tagline": "Lecture audio open source pour les événements en direct.",
-    "backToTop": "Haut de page"
+    "tagline": "Lecture audio en préversion pour les événements en direct.",
+    "backToTop": "Haut de page",
+    "licenseMenu": "Licence"
   }
 }

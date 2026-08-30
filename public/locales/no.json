@@ -32,7 +32,7 @@
     "docs": "Dokumentasjon"
   },
   "hero": {
-    "productLabel": "Gratis programvare med åpen kildekode for avspilling av innslag under livearrangementer.",
+    "productLabel": "Avspilling av innslag i en forhåndsutgave for livearrangementer.",
     "title": "Gjør neste lydinnslag til en selvfølge.",
     "lede": "Forbered lyd- og videoinnslag til forestillinger og arrangementer. Hold kontrollflaten oversiktlig, publikumsutgangen synlig og neste lyd ett trykk unna.",
     "ctaPrimary": "Last ned DonWells Cue",
@@ -161,7 +161,6 @@
     "title": "Forbered forestillingen. Stol deretter på grensesnittet.",
     "lede": "README er den autoritative kilden for gjeldende arbeidsflyt for lyd/video, grensesnittet på 21 språk, pakking, nettverksdrift og prosjektoppsett.",
     "readme": "Les README",
-    "viewSource": "Vis kildekoden",
     "checklistHeading": "FØRSTE OPPSTART",
     "step1": "Opprett et prosjekt og importer lokal lyd eller video. Bekreft deretter mediemappen.",
     "step2": "Angi program- og Preview-utganger, Output Target og eventuell LTC-enhet i Innstillinger.",
@@ -169,7 +168,8 @@
     "step4": "Hvis forestillingen bruker video, identifiser skjermen, åpne Video Output, kontroller testbildet og start deretter Show Mode."
   },
   "footer": {
-    "tagline": "Lydavspilling med åpen kildekode for scenearrangementer.",
-    "backToTop": "Tilbake til toppen"
+    "tagline": "Lydavspilling i en forhåndsutgave for livearrangementer.",
+    "backToTop": "Tilbake til toppen",
+    "licenseMenu": "Lisens"
   }
 }

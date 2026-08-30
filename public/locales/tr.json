@@ -32,7 +32,7 @@
     "docs": "Belgeler"
   },
   "hero": {
-    "productLabel": "Canlı etkinlikler için ücretsiz ve açık kaynaklı işaret oynatma yazılımı.",
+    "productLabel": "Canlı etkinlikler için ön sürüm işaret oynatma.",
     "title": "Sıradaki işaret tam zamanında gelsin.",
     "lede": "Canlı gösteriler için ses ve video işaretlerini hazırlayın. Kumanda arayüzünü sakin, seyirci çıkışını görünür ve sıradaki sesi tek dokunuş mesafesinde tutun.",
     "ctaPrimary": "DonWells Cue'yu edinin",
@@ -161,7 +161,6 @@
     "title": "Gösteriyi hazırlayın. Sonra arayüze güvenin.",
     "lede": "README; güncel ses/video iş akışı, 21 dilli arayüz, paketleme, ağ üzerinden kullanım ve proje kurulumu için temel başvuru kaynağıdır.",
     "readme": "README'yi okuyun",
-    "viewSource": "Kaynak kodunu görüntüleyin",
     "checklistHeading": "İLK ÇALIŞTIRMA",
     "step1": "Bir proje oluşturup yerel ses veya video içe aktarın, ardından medya klasörünü doğrulayın.",
     "step2": "Ayarlar'da ana yayın ve Preview çıkışlarını, Output Target değerini ve isteğe bağlı LTC aygıtını ayarlayın.",
@@ -169,7 +168,8 @@
     "step4": "Gösteride video kullanılıyorsa ekranı tanımlayın, Video Output penceresini açın, test kartını doğrulayın ve ardından Show Mode'u çalıştırın."
   },
   "footer": {
-    "tagline": "Canlı etkinlikler için açık kaynaklı ses oynatma.",
-    "backToTop": "Başa dön"
+    "tagline": "Canlı etkinlikler için ön sürüm ses oynatma.",
+    "backToTop": "Başa dön",
+    "licenseMenu": "Lisans"
   }
 }

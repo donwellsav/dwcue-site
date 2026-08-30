@@ -32,7 +32,7 @@
     "docs": "Documentazione"
   },
   "hero": {
-    "productLabel": "Riproduzione di segnali gratuita e open source per eventi dal vivo.",
+    "productLabel": "Riproduzione di segnali in versione preliminare per eventi dal vivo.",
     "title": "Fa’ sembrare inevitabile il segnale successivo.",
     "lede": "Prepara segnali audio e video per gli spettacoli dal vivo. Mantieni ordinata l’interfaccia di controllo, visibile l’uscita per il pubblico e il suono successivo a portata di tocco.",
     "ctaPrimary": "Scarica DonWells Cue",
@@ -161,7 +161,6 @@
     "title": "Prepara lo spettacolo. Poi affidati all’interfaccia.",
     "lede": "Il README è il riferimento autorevole per l’attuale flusso di lavoro audio/video, l’interfaccia in 21 lingue, la creazione dei pacchetti, il funzionamento in rete e la configurazione del progetto.",
     "readme": "Leggi il README",
-    "viewSource": "Vedi il codice sorgente",
     "checklistHeading": "PRIMO AVVIO",
     "step1": "Crea un progetto e importa file audio o video locali, quindi conferma la cartella dei contenuti multimediali.",
     "step2": "Configura le uscite di programma e Preview, Output Target e l’eventuale dispositivo LTC nelle Impostazioni.",
@@ -169,7 +168,8 @@
     "step4": "Se lo spettacolo usa il video, identifica lo schermo, apri Video Output, verifica il monoscopio, quindi avvia Show Mode."
   },
   "footer": {
-    "tagline": "Riproduzione audio a codice aperto per eventi dal vivo.",
-    "backToTop": "Torna all’inizio"
+    "tagline": "Riproduzione audio in versione preliminare per eventi dal vivo.",
+    "backToTop": "Torna all’inizio",
+    "licenseMenu": "Licenza"
   }
 }

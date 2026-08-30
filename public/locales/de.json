@@ -32,7 +32,7 @@
     "docs": "Doku"
   },
   "hero": {
-    "productLabel": "Kostenlose Open-Source-Cue-Wiedergabe für Live-Veranstaltungen.",
+    "productLabel": "Cue-Wiedergabe als Vorabversion für Live-Veranstaltungen.",
     "title": "Der nächste Cue fühlt sich unausweichlich an.",
     "lede": "Bereiten Sie Audio- und Video-Cues für Live-Shows vor. Halten Sie die Bedienoberfläche ruhig, den Publikums-Output sichtbar und den nächsten Sound nur einen Fingertipp entfernt.",
     "ctaPrimary": "DonWells Cue holen",
@@ -161,7 +161,6 @@
     "title": "Bauen Sie die Show. Dann vertrauen Sie der Oberfläche.",
     "lede": "Die README ist die verbindliche Quelle für den aktuellen Audio-/Video-Workflow, die Oberfläche in 21 Sprachen, Paketierung, Netzwerkbetrieb und Projekt-Setup.",
     "readme": "README lesen",
-    "viewSource": "Quellcode ansehen",
     "checklistHeading": "ERSTER START",
     "step1": "Erstellen Sie ein Projekt, importieren Sie lokale Audio- oder Videodateien und bestätigen Sie anschließend den Medienordner.",
     "step2": "Legen Sie in den Einstellungen Programm- und Preview-Ausgänge, Output Target und optional das LTC-Gerät fest.",
@@ -169,7 +168,8 @@
     "step4": "Wenn die Show Video nutzt, identifizieren Sie das Display, öffnen Sie Video Output, prüfen Sie das Testbild und starten Sie anschließend Show Mode."
   },
   "footer": {
-    "tagline": "Open-Source-Audiowiedergabe für Live-Events.",
-    "backToTop": "Nach oben"
+    "tagline": "Audio-Wiedergabe als Vorabversion für Live-Events.",
+    "backToTop": "Nach oben",
+    "licenseMenu": "Lizenz"
   }
 }

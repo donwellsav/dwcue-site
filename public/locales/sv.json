@@ -32,7 +32,7 @@
     "docs": "Dokumentation"
   },
   "hero": {
-    "productLabel": "Kostnadsfri programvara med öppen källkod för uppspelning av inslag vid liveevenemang.",
+    "productLabel": "Förhandsversion för uppspelning av inslag vid liveevenemang.",
     "title": "Få nästa ljudinslag att kännas självklart.",
     "lede": "Förbered ljud- och videoinslag för liveföreställningar. Behåll lugnet på kontrollytan, ha publikens utsignal under uppsikt och håll nästa ljud en tryckning bort.",
     "ctaPrimary": "Hämta DonWells Cue",
@@ -161,7 +161,6 @@
     "title": "Förbered evenemanget. Lita sedan på arbetsytan.",
     "lede": "README är den primära referensen för det aktuella arbetsflödet för ljud/video, gränssnittet på 21 språk, paketering, nätverksdrift och projektkonfiguration.",
     "readme": "Läs README",
-    "viewSource": "Visa källkoden",
     "checklistHeading": "FÖRSTA STARTEN",
     "step1": "Skapa ett projekt och importera lokalt ljud eller lokal video, och bekräfta sedan mediemappen.",
     "step2": "Ställ in program- och Preview-utgångarna, Output Target och valfri LTC-enhet i Inställningar.",
@@ -169,7 +168,8 @@
     "step4": "Om föreställningen använder video: identifiera skärmen, öppna Video Output, kontrollera testbilden och kör sedan Show Mode."
   },
   "footer": {
-    "tagline": "Ljuduppspelning med öppen källkod för direktevenemang.",
-    "backToTop": "Tillbaka till toppen"
+    "tagline": "Ljuduppspelning i en förhandsversion för liveevenemang.",
+    "backToTop": "Tillbaka till toppen",
+    "licenseMenu": "Licens"
   }
 }

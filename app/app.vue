@@ -217,7 +217,7 @@
               <li><span>03</span><div><strong>{{ t('safety.item3Title') }}</strong><p>{{ t('safety.item3Text') }}</p></div></li>
               <li><span>04</span><div><strong>{{ t('safety.item4Title') }}</strong><p>{{ t('safety.item4Text') }}</p></div></li>
             </ul>
-            <a class="safety-card__link" href="https://github.com/donwellsav/dwcue#readme" target="_blank" rel="noopener noreferrer">{{ t('safety.link') }} <span aria-hidden="true">↗</span></a>
+            <a class="safety-card__link" :href="asset('README.md')">{{ t('safety.link') }} <span aria-hidden="true">↗</span></a>
           </div>
         </div>
       </section>
@@ -297,8 +297,7 @@
             <h2>{{ t('docs.title') }}</h2>
             <p class="docs-section__lede">{{ t('docs.lede') }}</p>
             <div class="docs-section__actions">
-              <a class="button button--light" href="https://github.com/donwellsav/dwcue#readme" target="_blank" rel="noopener noreferrer">{{ t('docs.readme') }} <span aria-hidden="true">↗</span></a>
-              <a class="text-link text-link--light" href="https://github.com/donwellsav/dwcue" target="_blank" rel="noopener noreferrer">{{ t('docs.viewSource') }} <span aria-hidden="true">↗</span></a>
+              <a class="button button--light" :href="asset('README.md')">{{ t('docs.readme') }} <span aria-hidden="true">↗</span></a>
             </div>
           </div>
           <div class="docs-checklist">
@@ -317,7 +316,13 @@
     <footer class="site-footer">
       <div class="wrap site-footer__inner">
         <div><strong>DonWells Cue</strong><span>{{ t('footer.tagline') }}</span></div>
-        <div class="site-footer__links"><a href="https://github.com/donwellsav/dwcue" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://github.com/donwellsav/dwcue/blob/main/LICENCE.txt" target="_blank" rel="noopener noreferrer">AGPL-3.0</a><a href="#top">{{ t('footer.backToTop') }} ↑</a></div>
+        <div class="site-footer__links">
+          <details class="site-footer__legal">
+            <summary>{{ t('footer.licenseMenu') }}</summary>
+            <a href="https://github.com/donwellsav/dwcue/blob/main/LICENCE.txt" target="_blank" rel="noopener noreferrer">AGPL-3.0-only</a>
+          </details>
+          <a href="#top">{{ t('footer.backToTop') }} ↑</a>
+        </div>
       </div>
     </footer>
   </div>
@@ -504,6 +509,7 @@ main > section { scroll-margin-top: var(--header-height); }
 .install-note { display: flex; gap: 12px; align-items: flex-start; max-width: 720px; margin-top: 34px; color: var(--muted); font-size: 12px; line-height: 1.5; }.install-note__mark { flex: 0 0 20px; display: grid; place-items: center; width: 20px; height: 20px; background: var(--amber); color: var(--ink); font: 700 12px 'IBM Plex Mono', monospace; }.install-note strong { color: var(--ink); }.install-note code { font-family: 'IBM Plex Mono', monospace; font-size: .92em; color: var(--ink); }
 .docs-section { padding: 112px 0; background: var(--ink); color: white; }.docs-section__grid { display: grid; grid-template-columns: minmax(0,.95fr) minmax(0,1.05fr); gap: 90px; align-items: start; }.docs-section h2 { max-width: 550px; }.docs-section__lede { max-width: 470px; margin: 26px 0 0; color: #aab4c2; font-size: 17px; line-height: 1.65; }.docs-section__actions { display: flex; align-items: center; gap: 22px; flex-wrap: wrap; margin-top: 32px; }.docs-checklist { border-top: 1px solid rgba(255,255,255,.2); }.docs-checklist__heading { display: flex; justify-content: space-between; padding: 14px 0; color: #909baa; font-size: 9px; }.docs-checklist ol { margin: 0; padding: 0; list-style: none; }.docs-checklist li { display: grid; grid-template-columns: 34px 1fr; gap: 14px; padding: 20px 0; border-top: 1px solid rgba(255,255,255,.13); }.docs-checklist li > span { color: var(--amber); font: 600 11px 'IBM Plex Mono', monospace; }.docs-checklist p { margin: 0; color: #dbe1e8; font-size: 14px; line-height: 1.55; }
 .site-footer { background: var(--paper); border-top: 1px solid var(--line); }.site-footer__inner { display: flex; justify-content: space-between; align-items: center; gap: 30px; min-height: 92px; }.site-footer__inner > div:first-child { display: flex; align-items: baseline; gap: 14px; }.site-footer strong { font-size: 14px; }.site-footer span, .site-footer__links a { color: var(--muted); font-size: 12px; }.site-footer__links { display: flex; gap: 20px; }
+.site-footer__legal { position: relative; }.site-footer__legal summary { color: var(--muted); cursor: pointer; font-size: 12px; list-style-position: inside; }.site-footer__legal summary:hover { color: var(--ink); }.site-footer__legal a { display: block; margin-top: 10px; white-space: nowrap; }
 
 @media (max-width: 1100px) { .hero__annotation { display: none; } }
 @media (max-width: 980px) { .wrap { width: min(100% - 40px, 760px); }.site-nav { display: none; }.hero { padding: 76px 0 70px; }.hero__grid, .feature-band__grid, .feature-band__grid--reverse, .safety-section__grid, .docs-section__grid { grid-template-columns: 1fr; gap: 52px; }.hero__copy { max-width: 650px; }.hero__visual { margin: 0 22px; }.hero__annotation { display: none; }.feature-band__grid--reverse .feature-band__media, .feature-band__grid--reverse .feature-band__copy { order: initial; }.section-heading--split { display: block; }.section-heading--split > p { margin-top: 24px; }.workflow-grid, .download-grid { grid-template-columns: 1fr; }.workflow-card { min-height: auto; }.workflow-card h3 { margin-top: 48px; }.signal-band__grid { grid-template-columns: repeat(2,1fr); }.signal-band__item:nth-child(2) { border-right: 0; }.signal-band__item:nth-child(3), .signal-band__item:nth-child(4) { border-top: 1px solid rgba(255,255,255,.12); }.signal-band__item:nth-child(4) { border-right: 0; }.safety-card { max-width: 680px; } }

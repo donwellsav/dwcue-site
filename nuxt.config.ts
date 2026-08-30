@@ -43,12 +43,10 @@ export default defineNuxtConfig({
             description: 'Audio and video cue playback for live events, with One Shots, Show Mode, dedicated Video Output, and true-peak protection.',
             applicationCategory: 'MultimediaApplication',
             operatingSystem: 'Windows, macOS, Linux',
-            isAccessibleForFree: true,
             license: 'https://www.gnu.org/licenses/agpl-3.0.html',
             url: siteURL,
             downloadUrl: `${siteURL}#download`,
-            image: `${siteURL}screenshots/donwells_cue_main.jpg`,
-            sameAs: ['https://github.com/donwellsav/dwcue']
+            image: `${siteURL}screenshots/donwells_cue_main.jpg`
           })
         }
       ],

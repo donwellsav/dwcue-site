@@ -32,7 +32,7 @@
     "docs": "Documentație"
   },
   "hero": {
-    "productLabel": "Software gratuit și cu sursă deschisă pentru redarea reperelor la evenimente în direct.",
+    "productLabel": "Redare de repere în versiune preliminară pentru evenimente în direct.",
     "title": "Fă ca următorul reper să pară inevitabil.",
     "lede": "Pregătește repere audio și video pentru spectacole în direct. Păstrează calmă interfața de control, vizibilă ieșirea pentru public și următorul sunet la o atingere distanță.",
     "ctaPrimary": "Descarcă DonWells Cue",
@@ -161,7 +161,6 @@
     "title": "Pregătește spectacolul. Apoi bazează-te pe interfață.",
     "lede": "README este sursa de referință pentru fluxul de lucru audio/video actual, interfața în 21 de limbi, împachetare, funcționarea în rețea și configurarea proiectului.",
     "readme": "Citește README",
-    "viewSource": "Vezi codul-sursă",
     "checklistHeading": "PRIMA RULARE",
     "step1": "Creează un proiect, importă fișiere audio sau video locale, apoi confirmă dosarul media.",
     "step2": "Configurează în Setări ieșirile de program și Preview, Output Target și dispozitivul LTC opțional.",
@@ -169,7 +168,8 @@
     "step4": "Dacă spectacolul folosește conținut video, identifică ecranul, deschide Video Output, verifică mira de test, apoi rulează Show Mode."
   },
   "footer": {
-    "tagline": "Redare audio cu sursă deschisă pentru evenimente în direct.",
-    "backToTop": "Înapoi sus"
+    "tagline": "Redare audio în versiune preliminară pentru evenimente în direct.",
+    "backToTop": "Înapoi sus",
+    "licenseMenu": "Licență"
   }
 }

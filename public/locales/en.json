@@ -33,7 +33,7 @@
   },
   "hero": {
     "title": "Make the next cue feel inevitable.",
-    "productLabel": "Free, open-source cue playback for live events.",
+    "productLabel": "Pre-release cue playback for live events.",
     "lede": "Prepare audio and video cues for live shows. Keep the control surface calm, the audience output visible, and the next sound one touch away.",
     "ctaPrimary": "Get DonWells Cue",
     "ctaSecondary": "See how it works",
@@ -161,7 +161,6 @@
     "title": "Build the show. Then trust the surface.",
     "lede": "The README is the source of truth for the current audio/video workflow, 21-language interface, packaging, network operation, and project setup.",
     "readme": "Read the README",
-    "viewSource": "View source",
     "checklistHeading": "FIRST RUN",
     "step1": "Create a project and import local audio or video, then confirm the media folder.",
     "step2": "Set the program and Preview outputs, Output Target, and optional LTC device in Settings.",
@@ -169,7 +168,8 @@
     "step4": "If the show uses video, identify the display, open Video Output, verify the test card, then run Show Mode."
   },
   "footer": {
-    "tagline": "Open-source audio playback for live events.",
-    "backToTop": "Back to top"
+    "tagline": "Pre-release audio playback for live events.",
+    "backToTop": "Back to top",
+    "licenseMenu": "License"
   }
 }
