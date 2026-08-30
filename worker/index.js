@@ -25,6 +25,10 @@ const LEGACY_DOWNLOADS = new Map([
   ['downloads/DonWells-Cue-2.5.20-arm64.zip', 'downloads/DonWells-Cue-2.5.21-arm64.zip'],
 ]);
 
+const LEGACY_REDIRECTS = new Map([
+  ['README.md', '/#docs'],
+]);
+
 const NO_CACHE_FILES = new Set(['index.html', 'package.json', 'sitemap.xml', 'robots.txt']);
 
 function extOf(name) {
@@ -42,6 +46,11 @@ export default {
     let path = decodeURIComponent(url.pathname).replace(/^\/+/, '');
     let key = path || 'index.html';
 
+    const legacyRedirect = LEGACY_REDIRECTS.get(key);
+    if (legacyRedirect) {
+      return Response.redirect(new URL(legacyRedirect, url).toString(), 301);
+    }
+
     const legacyTarget = LEGACY_DOWNLOADS.get(key);
     if (legacyTarget) {
       return Response.redirect(new URL(`/${legacyTarget}`, url).toString(), 302);
@@ -52,7 +61,7 @@ export default {
       key = 'index.html';
       object = await env.SITE.get(key);
     }
-    if (!object) return Response.redirect(new URL('/#docs', url).toString(), 302);
+    if (!object) return new Response('Not found', { status: 404 });
 
     const extension = extOf(key);
     const contentType = MIME[extension] || (object.httpMetadata && object.httpMetadata.contentType) || 'application/octet-stream';
