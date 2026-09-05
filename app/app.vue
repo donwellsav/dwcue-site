@@ -333,7 +333,7 @@ const baseURL = useRuntimeConfig().app.baseURL;
 const asset = (path: string) => `${baseURL}${path.replace(/^\/+/, '')}`;
 const siteURL = baseURL === '/' ? 'https://dwcue.com/' : baseURL;
 
-const version = ref('2.6.12');
+const version = ref('2.6.14');
 const detectedOS = ref<string | null>(null);
 const navigationLinks = computed(() => [
   { href: '#workflow', label: t('nav.workflow') },
