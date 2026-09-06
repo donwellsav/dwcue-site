@@ -1,132 +1,98 @@
-# DonWells Cue Website — developer guide
+# DonWells Cue website
 
-This is the standalone public-facing DonWells Cue static site. It is a Nuxt 4 prerendered site built from current desktop-app snapshots, separate from the desktop-app repository. It builds the site intended for [`https://dwcue.com/`](https://dwcue.com/); generating locally does not deploy it.
+Standalone Nuxt 4 / Vue 3 static website for [dwcue.com](https://dwcue.com/). The September 2026 redesign is English-only: no language selector, browser-language detection, locale requests, or persisted language state. The desktop app's 21-language support is independent of the website language.
 
-This document is the developer's guide to the website. The current screenshot set is stored in `public/screenshots/`; refresh it from the current app UI when the playback surface changes. The checked-in workflow builds an artifact only; hosting/deployment credentials stay outside this project.
+## Structure
 
----
+| File | Responsibility |
+| --- | --- |
+| `app/app.vue` | Product story, responsive navigation, workflow/output tabs, silent GO illustration, manual and FAQ |
+| `app/components/DownloadSection.vue` | Platform selectors, eight release formats, installation guidance |
+| `app/components/ScreenshotDialog.vue` | Native screenshot dialog, Escape/backdrop dismissal and focus restoration |
+| `app/composables/useI18n.ts` | English copy-key lookup and parameter substitution; only exports `useI18n().t` |
+| `app/assets/styles/main.scss` | Global tokens, editorial layout, responsive rules and reduced-motion behavior |
+| `public/locales/en.json` | English copy, including the `redesign` namespace |
+| `nuxt.config.ts` | Static generation, fonts, metadata and social preview |
+| `public/package.json` | Runtime release-version pointer |
+| `public/screenshots/manual-20260906/` | Real operator-manual captures, converted to uncropped WebP |
+| `public/manual/operators-manual-2.6.14.pdf` | Published operator manual |
+| `worker/index.js` | Production R2-serving Worker |
 
-## Stack
+Existing non-English catalogs remain dormant. Do not reactivate the old locale behavior without a deliberate translated-content release.
 
-- **Nuxt 4** (`ssr: true`, `nitro.preset: 'static'`) → prerenders the English landing page and hydrates client-side locale switching.
-- **Vue 3** Composition API + `<script setup>`.
-- **SCSS** for styles ([`app/assets/styles/main.scss`](app/assets/styles/main.scss)).
-- Static output can be hosted by any static host. The production domain uses root-relative assets.
-- No backend, no API: the page fetches the version snapshot and non-English locale JSON at runtime.
+## Design and interaction contracts
 
-The site is deliberately tiny — a small set of reusable components, one composable, and one Nuxt page. Anything more elaborate (component libraries, CMS, etc.) is out of scope.
+Charcoal, warm ivory, lime, amber and coral; Barlow Condensed headings, IBM Plex Sans body copy and IBM Plex Mono labels. Use existing tokens and flat ruled layouts rather than adding a component library.
 
----
+Preserve `#top`, `#main`, `#workflow`, `#show-mode`, `#one-shots`, `#video-output`, `#download` and `#docs` links. Screenshot controls open the real capture, not a simulated app. The GO sequence is an explicitly labelled silent illustration, with no audio, autoplay or page-wide hotkeys. Enter and Space work when GO has keyboard focus. Reduced-motion users receive visible content without reveal movement; content remains visible without JavaScript.
 
-## Layout
+## Source provenance
 
-```
-website/
-├── app/app.vue                   The whole page: product story, responsive navigation, screenshots, downloads, docs checklist
-├── nuxt.config.ts                Nuxt config — prerendering, OG/Twitter metadata, structured data
-├── package.json                  Nuxt 4 + Vue 3 + sass
-├── tsconfig.json
-├── app/components/
-│   └── LanguageSwitcher.vue      Native locale select
-├── app/composables/
-│   └── useI18n.ts                Auto-detect browser language; load JSON from /locales
-├── app/assets/
-│   └── styles/main.scss          Shared global reset and typography defaults
-└── public/                       Static assets — served from `/...`
-    ├── package.json              Minimal version and license metadata used by the page
-    ├── downloads/                Packaged downloads served by the site
-    ├── favicon.ico
-    ├── assets/                   logo.svg
-    ├── locales/                  Site-specific locale JSON for strings rendered by the landing page
-    ├── screenshots/              Current in-app screenshots
-    └── sitemap.xml               Search-engine discovery file
-```
+Product facts and images come from the desktop repository's `docs/operators-manual.md`, `docs/operators-manual.pdf` and `docs/manual-assets/captures.json`.
 
-`public/package.json` and `public/screenshots/` are snapshots. Refresh them from the app repository before publishing. The site intentionally has no dependency on the app repository at build time.
+The published manual and screenshots are **operator edition 2.6.14**, captured **6 September 2026**, source revision `8ea1e9c`. Current installers are **2.6.15**. Keep these labels separate rather than relabelling old captures as a newer build.
 
----
+The PDF is copied byte-for-byte (6,294,820 bytes; SHA-256 `b7aee52a7d1f1a7a5097ad4a3e116ae9fcc8af171f7c54ea6f17af3270c84ed3`). Web images retain their full framing. Generated design references are not published as product screenshots. The site has no build-time dependency on the desktop repository.
 
-## Development
+When updating copy, preserve distinctions from the manual:
+
+- One Shot settings are Overlay, Duck Program and Replace Program. Duck Program sets an absolute Program Level, not a relative attenuation.
+- Preview is private only when routed to a separate physical output.
+- Video Output is one dedicated audience picture, not a layered video compositor.
+- Remote control belongs on a trusted LAN; token-authenticated HTTP is not an encrypted public-internet transport.
+- `.dwcuepack` packages the project folder; externally linked media still needs verification.
+
+## Development and verification
 
 ```sh
-cd /Volumes/A042/audioplayback/website
-npm install
-npm run dev          # http://localhost:3000
+npm ci
+TMPDIR=/tmp npm run dev
 ```
 
-To preview the production output:
+`TMPDIR=/tmp` avoids macOS UNIX-socket path-length errors when Nuxt's worker socket would otherwise use a long temporary-directory path.
 
 ```sh
-npm run generate     # writes to .output/public
-npm run preview
+TMPDIR=/tmp npm run generate
+python3 -m http.server 4318 --directory .output/public
 ```
 
-If you need the latest version or screenshots while developing locally, copy them in manually:
+Use the generated preview for final verification, not a dev server while generation is rewriting Nuxt artifacts. Check desktop and mobile geometry, menu/Escape behavior, workflow and output tabs, One Shot copy, GO/reset keyboard operation, screenshot close/focus restoration, platform downloads and FAQ expansion. Verify reduced-motion and JavaScript-disabled content visibility. On shared automated browsers, bring the page to the foreground before interaction; hidden-tab animation-frame throttling can stall waits.
+
+## Release-version and download contracts
+
+The page fetches `/package.json` from the active host, with `2.6.15` as the checked-in fallback. Update `public/package.json`, the app fallback and Nuxt release metadata together when publishing a new app release.
+
+| Platform | Asset names |
+| --- | --- |
+| macOS | `DonWells-Cue-<version>-arm64.dmg`, `-arm64.zip`, `-x64.dmg`, `-x64.zip` |
+| Windows | `DonWells-Cue-Setup-<version>.exe` |
+| Linux | `DonWells-Cue-<version>-x86_64.AppImage`, `-amd64.deb`, `-x86_64.rpm` |
+
+macOS files use the site's `/downloads/` mirror. Windows and Linux use the matching `donwellsav/dwcue` GitHub release. Preserve `/install.sh` and the all-releases link. Installer binaries belong to release CI, not website deployment.
+
+## Publishing
+
+The checked-in GitHub Actions workflow builds a validation artifact only. **A successful build or push does not deploy the website.**
+
+Production uses the `dwcue-web` Cloudflare Worker and the `dwcue-site` R2 bucket. Upload `.output/public` with `npx --yes wrangler@4 r2 object put --remote`:
+
+1. Exclude `downloads/`; never overwrite release binaries during a site publish.
+2. Upload assets and other dependencies before HTML; publish `index.html` last.
+3. Set correct MIME types, including `image/webp`, `application/pdf`, JavaScript, CSS, JSON and fonts.
+4. Use `no-cache` for HTML, `package.json`, `sitemap.xml` and `robots.txt`. Use immutable caching for hashed assets and versioned media.
+5. Verify the live page, runtime version, screenshot loading, manual MIME/bytes, interactions and installer links after upload.
+
+Worker response caching is versioned in `worker/index.js`. If that policy changes, deploy it with:
 
 ```sh
-# From this website directory
-node -e "const fs=require('fs'); const p=JSON.parse(fs.readFileSync('../liveplay/package.json','utf8')); fs.writeFileSync('public/package.json', JSON.stringify({name:'donwells-cue',version:p.version,description:'DonWells Cue — audio and video cue playback for live events.',license:p.license},null,2)+'\n')"
-cp ../liveplay/client/public/screenshots/donwells_cue_*.jpg public/screenshots/
+npx --yes wrangler@4 deploy --config wrangler.worker.toml --keep-vars
 ```
 
----
-
-## How it works
-
-1. **Version detection** — at runtime, the page fetches `package.json` from the active host and reads the `version` field. All download links are constructed from this version, with `2.6.12` as the checked-in fallback. Bump the three website version pointers with every app release.
-2. **Download links** — macOS artifacts are served from this site’s `/downloads/` path; Windows and Linux artifacts continue to use the matching GitHub release:
-
-   | Platform | Asset pattern                          |
-   |----------|-----------------------------------------|
-   | Windows  | `DonWells-Cue-Setup-<version>.exe`         |
-   | macOS    | `DonWells-Cue-<version>-arm64.dmg/.zip`, `DonWells-Cue-<version>-x64.dmg/.zip` |
-   | Linux    | `DonWells-Cue-<version>-x86_64.AppImage`, `DonWells-Cue-<version>-amd64.deb`, `DonWells-Cue-<version>-x86_64.rpm` |
-
-   The current site release is **v2.6.12**. macOS artifacts are served from the site mirror; Windows and Linux links require the matching GitHub release.
-3. **Product story** — the page explains the current audio/video workflow (Properties → Preview → Show Mode), Video Output, armed One Shots, output safety, language coverage, and supported release builds. The public page keeps a focused first-run checklist; detailed implementation reference remains in the desktop-app repository.
-4. **Localisation** — `app/composables/useI18n.ts` detects the browser language and loads the matching JSON from `/locales/<code>.json`. Locale fetches use `cache: 'reload'` because published locale objects are immutable, so a release cannot leave returning visitors on stale copy. Falls back to English. The current locale is persisted in `localStorage`; the document `lang` and `dir` attributes, title, and description stay synchronized. `LanguageSwitcher.vue` uses a native single-select control for complete keyboard support.
-
----
-
-## Editing
-
-| Task | Where |
-|------|-------|
-| Change layout / sections | `app/app.vue` (everything is here) |
-| Tweak the brand colour (currently `#315FCF`) | `app/app.vue` SCSS block + `app/assets/styles/main.scss` |
-| Add a feature section | Add a section in `app/app.vue`; keep current screenshots and controls truthful |
-| Add a language | New file in `public/locales/<code>.json`, then add it to `availableLocales` in `app/composables/useI18n.ts` |
-| Replace the logo | `public/assets/logo.svg` |
-| Update OG / Twitter cards | `nuxt.config.ts` → `app.head.meta` |
-
-The site's locale files are **separate** from `client/locales/` and intentionally contain only the strings rendered by this landing page. Don't copy the desktop app's much larger catalog into them.
-
----
-
-## Deployment
-
-Build the standalone static output with root-relative asset URLs:
-
-```sh
-NUXT_APP_BASE_URL=/ npm run generate
-```
-
-The checked-in GitHub Actions workflow builds and uploads a validation artifact. Production hosting is the `dwcue-web` Worker backed by the `dwcue-site` R2 bucket. Publish `.output/public` with `npx --yes wrangler@4 r2 object put --remote`, uploading every generated file except `downloads/` (the release CI owns the macOS binaries). Use no-cache headers for HTML, `sitemap.xml`, `robots.txt`, and `package.json`; use immutable caching for hashed assets and other versioned media.
-Worker response caching is versioned in `worker/index.js`; deploy the policy with `npx --yes wrangler@4 deploy --config wrangler.worker.toml --keep-vars` when it changes.
-
----
-
-## Adding a section
-
-Edit `app/app.vue`. Sections are plain `<section class="…-section">` blocks inside the page; the SCSS is colocated at the bottom of the same file. There is no router or other page — keep everything single-page, with English content prerendered for crawlers and client-side locale switching after hydration.
-
-If a section needs reusable layout (image-on-left, image-on-right, alternating), reuse the existing `feature-band__grid` pattern in `app/app.vue` rather than adding a component library.
-
----
+Hosting credentials remain outside the repository.
 
 ## Troubleshooting
 
-- **Old version shows after a release** — verify that the live `https://dwcue.com/package.json` has the new version and that the generated assets were uploaded to the `dwcue-site` R2 bucket. The page fetches this pointer at runtime.
-- **404 on downloads** — the site reads its version from `public/package.json`; ensure the matching macOS files exist in the R2 `downloads/` prefix. Windows and Linux links require the matching GitHub release.
-- **404 on assets** — confirm the file is in `public/` (not just `assets/` — Nuxt's `assets/` is bundle-only).
-- **Build fails** — reproduce locally with `npm run generate` and confirm the snapshots in `public/` are present.
+- Old release: check live `/package.json` and confirm generated files reached R2.
+- Missing installer: check the macOS R2 mirror or matching Windows/Linux GitHub release; do not rewrite links to an unrelated build.
+- Missing screenshot/manual: confirm the file is under `public/`, uploaded with the correct content type, and referenced by its versioned path.
+- Blank screenshot in an automated capture: wait for lazy images to load before capturing; a tall element screenshot can also include the sticky header in an artificial position. Use normal viewport screenshots for final visual evidence.

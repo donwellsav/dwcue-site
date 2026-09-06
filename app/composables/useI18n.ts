@@ -1,171 +1,21 @@
-import { ref, computed } from 'vue';
 import enData from '../../public/locales/en.json';
 
-interface LocaleMetadata {
-  code: string;
-  name: string;
-  nativeName: string;
-  direction: 'ltr' | 'rtl';
-}
+type CopyTree = { [key: string]: string | CopyTree };
+const english: CopyTree = enData;
 
-interface LocaleData {
-  _metadata: LocaleMetadata;
-  [key: string]: any;
-}
-
-const availableLocales: Record<string, string> = {
-  'ar': 'العربية',
-  'bn': 'বাংলা',
-  'de': 'Deutsch',
-  'el': 'Ελληνικά',
-  'en': 'English',
-  'es': 'Español',
-  'fa': 'فارسی',
-  'fr': 'Français',
-  'hi': 'हिन्दी',
-  'it': 'Italiano',
-  'ja': '日本語',
-  'ko': '한국어',
-  'no': 'Norsk',
-  'pt': 'Português',
-  'ro': 'Română',
-  'ru': 'Русский',
-  'sq': 'Shqip',
-  'sv': 'Svenska',
-  'tr': 'Türkçe',
-  'ur': 'اردو',
-  'zh': '中文'
+// This website edition is English-only. Keep copy keys centralized without
+// browser-language detection, locale requests, or persisted language state.
+const t = (path: string, params?: Record<string, string>): string => {
+  let value: string | CopyTree | undefined = english;
+  for (const key of path.split('.')) {
+    if (!value || typeof value === 'string') return path;
+    value = value[key];
+  }
+  const text = typeof value === 'string' ? value : path;
+  return params
+    ? text.replace(/\{(\w+)\}/g, (match, name: string) => params[name] ?? match)
+    : text;
 };
 
-const currentLocale = ref<string>('en');
-// English is bundled synchronously so SSG/SSR HTML renders real text; the
-// fetch in loadLocale() only swaps in a non-English locale afterwards.
-const localeData = ref<LocaleData | null>(enData as LocaleData);
-// English data kept loaded as a fallback so untranslated/new keys in other
-// locales render real text instead of the raw key path.
-const fallbackData = ref<LocaleData | null>(enData as LocaleData);
-
-export const useI18n = () => {
-  const baseURL = useRuntimeConfig().app.baseURL || '/';
-  const localeURL = (locale: string) => `${baseURL}locales/${locale}.json`;
-  // Locale JSON is immutable on the CDN; reload ensures a new deployment is visible.
-
-  // Get URL parameter
-  const getUrlParam = (param: string): string | null => {
-    if (typeof window === 'undefined') return null;
-    const urlParams = new URLSearchParams(window.location.search);
-    return urlParams.get(param);
-  };
-
-  // Detect browser language
-  const detectBrowserLanguage = (): string => {
-    if (typeof window === 'undefined') return 'en';
-    
-    const browserLang = navigator.language || (navigator as any).userLanguage;
-    const langCode = browserLang.split('-')[0]; // Get 'en' from 'en-US'
-    
-    // Check if we support this language
-    return availableLocales[langCode] ? langCode : 'en';
-  };
-
-  // Load locale data
-  const loadLocale = async (locale: string) => {
-    try {
-      const response = await fetch(localeURL(locale), { cache: 'reload' });
-      const data = await response.json();
-      localeData.value = data;
-      currentLocale.value = locale;
-
-      // Keep English loaded as the fallback for any keys missing in `locale`.
-      if (locale === 'en') {
-        fallbackData.value = data;
-      } else if (!fallbackData.value) {
-        try {
-          const enResponse = await fetch(localeURL('en'), { cache: 'reload' });
-          fallbackData.value = await enResponse.json();
-        } catch { /* fallback is best-effort */ }
-      }
-
-      // Save to localStorage
-      if (typeof window !== 'undefined') {
-        localStorage.setItem('docs-locale', locale);
-      }
-    } catch (error) {
-      console.error(`Failed to load locale ${locale}:`, error);
-      // Fallback to English
-      if (locale !== 'en') {
-        await loadLocale('en');
-      }
-    }
-  };
-
-  // Resolve a dotted path against a locale object, or return null if absent.
-  const resolve = (source: LocaleData | null, path: string): string | null => {
-    if (!source) return null;
-    let value: any = source;
-    for (const key of path.split('.')) {
-      if (value && typeof value === 'object' && key in value) {
-        value = value[key];
-      } else {
-        return null;
-      }
-    }
-    return typeof value === 'string' ? value : null;
-  };
-
-  // Get translation by path (e.g., 'header.tagline'). Falls back to English,
-  // then to the raw path if even English is missing the key.
-  const t = (path: string, params?: Record<string, string>): string => {
-    const raw = resolve(localeData.value, path)
-      ?? resolve(fallbackData.value, path)
-      ?? path;
-    if (!params) return raw;
-    return raw.replace(/\{(\w+)\}/g, (m, name) => params[name] ?? m);
-  };
-
-  // Initialize locale
-  const initLocale = async () => {
-    let locale = 'en';
-
-    if (typeof window !== 'undefined') {
-      // Check URL parameter first (highest priority)
-      const urlLang = getUrlParam('lang');
-      if (urlLang && availableLocales[urlLang]) {
-        locale = urlLang;
-      } else {
-        // Check localStorage
-        const savedLocale = localStorage.getItem('docs-locale');
-        if (savedLocale && availableLocales[savedLocale]) {
-          locale = savedLocale;
-        } else {
-          // Detect browser language
-          locale = detectBrowserLanguage();
-        }
-      }
-    }
-
-    await loadLocale(locale);
-  };
-
-  // Change locale
-  const setLocale = async (locale: string) => {
-    if (availableLocales[locale]) {
-      await loadLocale(locale);
-    }
-  };
-
-  const locale = computed(() => currentLocale.value);
-  const locales = computed(() => availableLocales);
-  const direction = computed(() => localeData.value?._metadata?.direction || 'ltr');
-  const isLocaleLoaded = computed(() => localeData.value !== null);
-
-  return {
-    t,
-    locale,
-    locales,
-    direction,
-    isLocaleLoaded,
-    initLocale,
-    setLocale
-  };
-};
+const copy = { t };
+export const useI18n = () => copy;
