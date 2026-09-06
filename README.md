@@ -30,7 +30,7 @@ Preserve `#top`, `#main`, `#workflow`, `#show-mode`, `#one-shots`, `#video-outpu
 
 Product facts and images come from the desktop repository's `docs/operators-manual.md`, `docs/operators-manual.pdf` and `docs/manual-assets/captures.json`.
 
-The published manual and screenshots are **operator edition 2.6.14**, captured **6 September 2026**, source revision `8ea1e9c`. Current installers are **2.6.15**. Keep these labels separate rather than relabelling old captures as a newer build.
+The published manual and screenshots are **operator edition 2.6.14**, captured **6 September 2026**, source revision `8ea1e9c`. Current installers are **2.6.16**. Keep these labels separate rather than relabelling old captures as a newer build.
 
 The PDF is copied byte-for-byte (6,294,820 bytes; SHA-256 `b7aee52a7d1f1a7a5097ad4a3e116ae9fcc8af171f7c54ea6f17af3270c84ed3`). Web images retain their full framing. Generated design references are not published as product screenshots. The site has no build-time dependency on the desktop repository.
 
@@ -60,7 +60,7 @@ Use the generated preview for final verification, not a dev server while generat
 
 ## Release-version and download contracts
 
-The page fetches `/package.json` from the active host, with `2.6.15` as the checked-in fallback. Update `public/package.json`, the app fallback and Nuxt release metadata together when publishing a new app release.
+The page fetches `/package.json` from the active host, with `2.6.16` as the checked-in fallback. Update `public/package.json`, the app fallback and Nuxt release metadata together when publishing a new app release.
 
 | Platform | Asset names |
 | --- | --- |
