@@ -54,7 +54,7 @@
     "platformsText": "Windows, macOS, and Linux builds with dedicated video output.",
     "license": "21 languages",
     "licenseText": "Includes right-to-left support for Arabic, Persian, and Urdu.",
-    "versionText": "Current packaged release.",
+    "versionText": "Current packaged release · 2.6.17 adds isolated Preview routing and refreshed playlist controls.",
     "label": "DonWells Cue product facts"
   },
   "workflow": {
@@ -188,8 +188,8 @@
       "factTwoLabel": "Interface languages",
       "factThreeValue": "LOCAL / LAN",
       "factThreeLabel": "Engine control",
-      "captureLabel": "Show Mode · Operator’s Manual 2.6.14 capture",
-      "screenshotAlt": "DonWells Cue Show Mode with large transport controls, a color-coded playlist, and output meters",
+      "captureLabel": "Main workspace · Packaged build 2.6.17 capture",
+      "screenshotAlt": "DonWells Cue main workspace with a color-coded playlist, One Shots grid, and output meters",
       "zoomHint": "Open full-size product capture"
     },
     "workflow": {
@@ -293,8 +293,8 @@
       "routingLabel": "Audio routing",
       "routingTitle": "Main and Preview are destinations, not labels.",
       "routingText": "Choose the main audio device, then route Preview to a separate headphone or monitor output. If Preview shares the audience speakers, the audience can hear it.",
-      "routingCaption": "Audio device settings · Manual capture 2.6.14",
-      "routingAlt": "DonWells Cue audio settings with main and Preview output device choices",
+      "routingCaption": "Audio routing · Preview device · Packaged build 2.6.17",
+      "routingAlt": "DonWells Cue Audio Routing settings with main and Preview device choices",
       "settingsLabel": "Video settings",
       "settingsTitle": "Same-machine H.264 or HEVC picture.",
       "settingsText": "Choose the display, identify it, and open Video Output. Play H.264 or HEVC video on one dedicated audience picture surface.",

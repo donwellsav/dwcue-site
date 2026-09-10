@@ -542,7 +542,7 @@ const { t } = useI18n();
 const baseURL = useRuntimeConfig().app.baseURL || '/';
 const asset = (path: string) => `${baseURL}${path.replace(/^\/+/, '')}`;
 const siteURL = baseURL === '/' ? 'https://dwcue.com/' : baseURL;
-const version = ref('2.6.16');
+const version = ref('2.6.17');
 const shell = ref<HTMLElement | null>(null);
 
 const navigationLinks = computed(() => [
@@ -582,7 +582,7 @@ const handleGlobalKeydown = (event: KeyboardEvent) => {
 };
 
 const heroCapture = computed<Capture>(() => ({
-  src: asset('screenshots/manual-20260906/show-mode.webp'),
+  src: asset('screenshots/release-2.6.17/main-workspace.webp'),
   alt: t('redesign.hero.screenshotAlt'),
   caption: t('redesign.hero.captureLabel'),
 }));
@@ -699,9 +699,9 @@ const outputItems = computed<Record<OutputKey, Capture & { label: string; title:
     text: t('redesign.output.routingText'),
     caption: t('redesign.output.routingCaption'),
     alt: t('redesign.output.routingAlt'),
-    src: asset('screenshots/manual-20260906/audio-settings-current.webp'),
-    width: 1448,
-    height: 1120,
+    src: asset('screenshots/release-2.6.17/settings-audio-routing.webp'),
+    width: 2800,
+    height: 1736,
   },
   settings: {
     label: t('redesign.output.settingsLabel'),
