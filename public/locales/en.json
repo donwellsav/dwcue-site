@@ -54,7 +54,7 @@
     "platformsText": "Windows, macOS, and Linux builds with dedicated video output.",
     "license": "21 languages",
     "licenseText": "Includes right-to-left support for Arabic, Persian, and Urdu.",
-    "versionText": "Version 2.6.18 improves playback recovery, device handling, and show control during stalled media reads.",
+    "versionText": "Version 2.6.19 fixes Spotify playlist review and keeps the app visible on macOS when identifying displays.",
     "label": "DonWells Cue product facts"
   },
   "workflow": {
@@ -330,9 +330,9 @@
       "eyebrow": "08 / OPERATING DETAIL",
       "title": "A little help. Right on cue.",
       "intro": "Open the complete operator edition for first-run setup, cue preparation, output checks, remote operation, recovery procedures, and printable show-day checklists.",
-      "manualAction": "Open Operator’s Manual 2.6.18",
+      "manualAction": "Open Operator’s Manual 2.6.19",
       "manualMeta": "PDF · English · 6 September 2026",
-      "editionNote": "The manual covers 2.6.18. Each website screenshot identifies its capture edition.",
+      "editionNote": "The manual covers 2.6.19. Each website screenshot identifies its capture edition.",
       "faqLabel": "Operator FAQ",
       "faqOneQuestion": "How do I listen before the audience does?",
       "faqOneAnswer": "Use Preview with a separate headphone or monitor output. Set and test that route first: if Preview shares the Main speakers, it will be audible to the audience.",

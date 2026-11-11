@@ -15,7 +15,7 @@ Standalone Nuxt 4 / Vue 3 static website for [dwcue.com](https://dwcue.com/). Th
 | `nuxt.config.ts` | Static generation, fonts, metadata and social preview |
 | `public/package.json` | Runtime release-version pointer |
 | `public/screenshots/manual-20260906/` | Real operator-manual captures, converted to uncropped WebP |
-| `public/manual/operators-manual-2.6.18.pdf` | Current operator manual |
+| `public/manual/operators-manual-2.6.19.pdf` | Current operator manual |
 | `worker/index.js` | Production R2-serving Worker |
 
 Existing non-English catalogs remain dormant. Do not reactivate the old locale behavior without a deliberate translated-content release.
@@ -30,9 +30,9 @@ Preserve `#top`, `#main`, `#workflow`, `#show-mode`, `#one-shots`, `#video-outpu
 
 Product facts and images come from the desktop repository's `docs/operators-manual.md`, `docs/operators-manual.pdf` and `docs/manual-assets/captures.json`.
 
-The current installer and manual are **2.6.18**. Website screenshots retain their original 2.6.14 manual or 2.6.17 packaged-build labels.
+The current installer and manual are **2.6.19**. Website screenshots retain their original 2.6.14 manual or 2.6.17 packaged-build labels.
 
-The current PDF is copied byte for byte from the desktop repository (1,842,780 bytes, SHA-256 `c08fbf86d7f4c5adb2965994994a7d92a733a6ba7ac60a541f5adc8cbcdb966b`). The previous manual remains available at its versioned URL. The site has no build-time dependency on the desktop repository.
+The current PDF is copied byte for byte from the desktop repository (1,842,969 bytes, SHA-256 `7aa7b091e97fc158acc8d26321d05d3313e752b83c919079af8be605375a7092`). Earlier manuals are available at their versioned URLs. The site has no build-time dependency on the desktop repository.
 
 When updating copy, preserve distinctions from the manual:
 
@@ -60,7 +60,7 @@ Use the generated preview for final verification, not a dev server while generat
 
 ## Release-version and download contracts
 
-The page fetches `/package.json` from the active host, with `2.6.18` as the checked-in fallback. Update `public/package.json`, the app fallback and Nuxt release metadata together when publishing a new app release.
+The page fetches `/package.json` from the active host, with `2.6.19` as the checked-in fallback. Update `public/package.json`, the app fallback and Nuxt release metadata together when publishing a new app release.
 
 | Platform | Asset names |
 | --- | --- |
