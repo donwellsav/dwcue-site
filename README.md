@@ -15,7 +15,8 @@ Standalone Nuxt 4 / Vue 3 static website for [dwcue.com](https://dwcue.com/). Th
 | `nuxt.config.ts` | Static generation, fonts, metadata and social preview |
 | `public/package.json` | Runtime release-version pointer |
 | `public/screenshots/manual-20260906/` | Real operator-manual captures, converted to uncropped WebP |
-| `public/manual/operators-manual-2.6.20.pdf` | Operator manual for this release |
+| `public/screenshots/release-2.6.21/` | Current Show Mode and One Shot captures from the 2.6.21 software test |
+| `public/manual/operators-manual-2.6.21.pdf` | Operator manual for this release |
 | `worker/index.js` | Production R2-serving Worker |
 
 Existing non-English catalogs remain dormant. Do not reactivate the old locale behavior without a deliberate translated-content release.
@@ -30,9 +31,9 @@ Preserve `#top`, `#main`, `#workflow`, `#show-mode`, `#one-shots`, `#video-outpu
 
 Product facts and images come from the desktop repository's `docs/operators-manual.md`, `docs/operators-manual.pdf` and `docs/manual-assets/captures.json`.
 
-This site revision targets **2.6.20**. Website screenshots retain their original 2.6.14 manual or 2.6.17 packaged-build labels.
+This site revision targets **2.6.21**. Capture captions identify the version shown.
 
-The 2.6.20 PDF is copied byte for byte from the desktop repository. It is 1,846,403 bytes with SHA-256 `2a1cafda0ad18cafe4ad303fbffb1e7e21ea2cfcacefa9c24b8f56245b6668cd`. Earlier manuals are available at their versioned URLs. The site has no build-time dependency on the desktop repository.
+The 2.6.21 PDF is copied byte for byte from the desktop repository. It is 1,829,685 bytes with SHA-256 `a4e038c2b3c20558ee9318eeb24cbf04e842fc08d0ce5db0dd96e1e7477056e8`. Earlier manuals remain available at their versioned URLs.
 
 When updating copy, preserve distinctions from the manual:
 
@@ -60,7 +61,7 @@ Use the generated preview for final verification, not a dev server while generat
 
 ## Release-version and download contracts
 
-The page fetches `/package.json` from the active host, with `2.6.20` as the checked-in fallback. Update `public/package.json`, the app fallback and the versioned manual together when preparing a new app release. The app release workflow checks all installer URLs before deploying the website.
+The page fetches `/package.json` from the active host, with `2.6.21` as the checked-in fallback. Update `public/package.json`, the app fallback and the versioned manual together when preparing a new app release. The app release workflow checks all installer URLs before deploying the website.
 
 | Platform | Asset names |
 | --- | --- |

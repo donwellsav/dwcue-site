@@ -1175,7 +1175,8 @@ h3 {
   font-size: 0.85rem;
 }
 
-.one-shot-armed {
+.one-shot-playback {
+  max-inline-size: 240px;
   border-block-start: 1px solid var(--line-light);
   padding-block-start: 12px;
 }

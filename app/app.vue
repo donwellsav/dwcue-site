@@ -309,19 +309,19 @@
               <p>{{ t('redesign.oneShots.safetyText') }}</p>
             </aside>
 
-            <button class="screenshot-trigger one-shot-armed" type="button" :aria-label="`${t('redesign.workflow.zoomAction')}: ${t('redesign.oneShots.armedCaption')}`" @click="openZoom(oneShotArmedCapture)">
-              <img :src="oneShotArmedCapture.src" :alt="oneShotArmedCapture.alt" width="1080" height="740" loading="lazy" decoding="async" />
+            <button class="screenshot-trigger one-shot-playback" type="button" :aria-label="`${t('redesign.workflow.zoomAction')}: ${oneShotPlaybackCapture.caption}`" @click="openZoom(oneShotPlaybackCapture)">
+              <img :src="oneShotPlaybackCapture.src" :alt="oneShotPlaybackCapture.alt" width="240" height="244" loading="lazy" decoding="async" />
               <span class="screenshot-trigger__affordance" aria-hidden="true">＋</span>
             </button>
             <div class="capture-caption capture-caption--dark">
-              <span>{{ t('redesign.oneShots.armedCaption') }}</span>
+              <span>{{ oneShotPlaybackCapture.caption }}</span>
               <span>{{ t('redesign.workflow.zoomAction') }} ↗</span>
             </div>
           </div>
 
           <figure class="one-shots-settings" data-reveal>
             <button class="screenshot-trigger" type="button" :aria-label="`${t('redesign.workflow.zoomAction')}: ${t('redesign.oneShots.settingsCaption')}`" @click="openZoom(oneShotSettingsCapture)">
-              <img :src="oneShotSettingsCapture.src" :alt="oneShotSettingsCapture.alt" width="1240" height="3020" loading="lazy" decoding="async" />
+              <img :src="oneShotSettingsCapture.src" :alt="oneShotSettingsCapture.alt" width="622" height="1178" loading="lazy" decoding="async" />
               <span class="screenshot-trigger__affordance" aria-hidden="true">＋</span>
             </button>
             <figcaption>{{ t('redesign.oneShots.settingsCaption') }}</figcaption>
@@ -467,7 +467,7 @@
             </div>
             <div class="docs-heading__copy">
               <p>{{ t('redesign.docs.intro') }}</p>
-              <a class="button button--acid" :href="asset('manual/operators-manual-2.6.20.pdf')" target="_blank" rel="noopener noreferrer">
+              <a class="button button--acid" :href="asset('manual/operators-manual-2.6.21.pdf')" target="_blank" rel="noopener noreferrer">
                 {{ t('redesign.docs.manualAction') }} <span aria-hidden="true">↗</span>
               </a>
               <span>{{ t('redesign.docs.manualMeta') }}</span>
@@ -475,7 +475,7 @@
           </div>
 
           <aside class="edition-note" data-reveal>
-            <span>2.6.20 / PDF</span>
+            <span>2.6.21 / PDF</span>
             <p>{{ t('redesign.docs.editionNote') }}</p>
           </aside>
 
@@ -542,7 +542,7 @@ const { t } = useI18n();
 const baseURL = useRuntimeConfig().app.baseURL || '/';
 const asset = (path: string) => `${baseURL}${path.replace(/^\/+/, '')}`;
 const siteURL = baseURL === '/' ? 'https://dwcue.com/' : baseURL;
-const version = ref('2.6.20');
+const version = ref('2.6.21');
 const shell = ref<HTMLElement | null>(null);
 
 const navigationLinks = computed(() => [
@@ -606,9 +606,9 @@ const workflowItems = computed<Record<WorkflowKey, Capture & { label: string; ti
     text: t('redesign.workflow.performText'),
     caption: t('redesign.workflow.performCaption'),
     alt: t('redesign.workflow.performAlt'),
-    src: asset('screenshots/manual-20260906/show-mode.webp'),
+    src: asset('screenshots/release-2.6.21/show-mode.webp'),
     width: 2400,
-    height: 1488,
+    height: 1600,
   },
   output: {
     label: t('redesign.workflow.outputLabel'),
@@ -669,13 +669,13 @@ const oneShotModes = computed<Record<OneShotKey, { label: string; title: string;
   duck: { label: t('redesign.oneShots.duckLabel'), title: t('redesign.oneShots.duckTitle'), text: t('redesign.oneShots.duckText') },
   replace: { label: t('redesign.oneShots.replaceLabel'), title: t('redesign.oneShots.replaceTitle'), text: t('redesign.oneShots.replaceText') },
 }));
-const oneShotArmedCapture = computed<Capture>(() => ({
-  src: asset('screenshots/manual-20260906/one-shot-armed-current.webp'),
-  alt: t('redesign.oneShots.armedAlt'),
-  caption: t('redesign.oneShots.armedCaption'),
+const oneShotPlaybackCapture = computed<Capture>(() => ({
+  src: asset('screenshots/release-2.6.21/one-shot-show-mode.webp'),
+  alt: t('redesign.oneShots.playbackAlt'),
+  caption: t('redesign.oneShots.playbackCaption'),
 }));
 const oneShotSettingsCapture = computed<Capture>(() => ({
-  src: asset('screenshots/manual-20260906/one-shot-settings-current.webp'),
+  src: asset('screenshots/release-2.6.21/one-shot-settings.webp'),
   alt: t('redesign.oneShots.settingsAlt'),
   caption: t('redesign.oneShots.settingsCaption'),
 }));
@@ -743,7 +743,7 @@ const openZoom = (capture: Capture) => {
 
 const seoTitle = computed(() => `DonWells Cue — ${t('header.tagline')}`);
 const seoDescription = computed(() => t('seo.description'));
-const ogImage = `${siteURL}screenshots/manual-20260906/show-mode.webp`;
+const ogImage = `${siteURL}screenshots/release-2.6.21/show-mode.webp`;
 
 useHead(() => ({
   title: seoTitle.value,
@@ -758,7 +758,7 @@ useSeoMeta(() => ({
   ogUrl: siteURL,
   ogImage,
   ogImageWidth: '2400',
-  ogImageHeight: '1488',
+  ogImageHeight: '1600',
   ogImageType: 'image/webp',
   twitterCard: 'summary_large_image',
   twitterTitle: seoTitle.value,
