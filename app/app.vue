@@ -467,7 +467,7 @@
             </div>
             <div class="docs-heading__copy">
               <p>{{ t('redesign.docs.intro') }}</p>
-              <a class="button button--acid" :href="asset('manual/operators-manual-2.6.19.pdf')" target="_blank" rel="noopener noreferrer">
+              <a class="button button--acid" :href="asset('manual/operators-manual-2.6.20.pdf')" target="_blank" rel="noopener noreferrer">
                 {{ t('redesign.docs.manualAction') }} <span aria-hidden="true">↗</span>
               </a>
               <span>{{ t('redesign.docs.manualMeta') }}</span>
@@ -475,7 +475,7 @@
           </div>
 
           <aside class="edition-note" data-reveal>
-            <span>2.6.19 / PDF</span>
+            <span>2.6.20 / PDF</span>
             <p>{{ t('redesign.docs.editionNote') }}</p>
           </aside>
 
@@ -542,7 +542,7 @@ const { t } = useI18n();
 const baseURL = useRuntimeConfig().app.baseURL || '/';
 const asset = (path: string) => `${baseURL}${path.replace(/^\/+/, '')}`;
 const siteURL = baseURL === '/' ? 'https://dwcue.com/' : baseURL;
-const version = ref('2.6.19');
+const version = ref('2.6.20');
 const shell = ref<HTMLElement | null>(null);
 
 const navigationLinks = computed(() => [
