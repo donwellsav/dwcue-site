@@ -1,7 +1,7 @@
 import process from 'node:process'
 const baseURL = process.env.NUXT_APP_BASE_URL || '/'
 const siteURL = baseURL === '/' ? 'https://dwcue.com/' : baseURL
-const productImage = `${siteURL}screenshots/manual-20260906/show-mode.webp`
+const productImage = `${siteURL}screenshots/release-2.6.21/show-mode.webp`
 const description = 'Audio and video cue playback for live events. Prepare precise cues, perform in Show Mode, trigger One Shots, and control dedicated audio and video outputs.'
 
 export default defineNuxtConfig({
@@ -24,7 +24,7 @@ export default defineNuxtConfig({
         { property: 'og:url', content: siteURL },
         { property: 'og:image', content: productImage },
         { property: 'og:image:width', content: '2400' },
-        { property: 'og:image:height', content: '1488' },
+        { property: 'og:image:height', content: '1600' },
         { property: 'og:image:type', content: 'image/webp' },
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:title', content: 'DonWells Cue — Audio + Video Cue Playback for Live Events' },
