@@ -179,7 +179,7 @@
 
           <div class="precision-waveform" data-reveal>
             <button class="screenshot-trigger screenshot-trigger--waveform" type="button" :aria-label="`${t('redesign.workflow.zoomAction')}: ${t('redesign.precision.captureLabel')}`" @click="openZoom(precisionCapture)">
-              <img :src="precisionCapture.src" :alt="precisionCapture.alt" width="1800" height="370" loading="lazy" decoding="async" />
+              <img :src="precisionCapture.src" :alt="precisionCapture.alt" width="2800" height="578" loading="lazy" decoding="async" />
               <span class="screenshot-trigger__affordance" aria-hidden="true">＋</span>
             </button>
             <div class="capture-caption">
@@ -254,7 +254,7 @@
           <div class="show-proof" data-reveal>
             <div class="show-proof__image">
               <button class="screenshot-trigger" type="button" :aria-label="`${t('redesign.workflow.zoomAction')}: ${t('redesign.show.transportLabel')}`" @click="openZoom(transportCapture)">
-                <img :src="transportCapture.src" :alt="transportCapture.alt" width="1800" height="736" loading="lazy" decoding="async" />
+                <img :src="transportCapture.src" :alt="transportCapture.alt" width="2800" height="580" loading="lazy" decoding="async" />
                 <span class="screenshot-trigger__affordance" aria-hidden="true">＋</span>
               </button>
               <div class="capture-caption capture-caption--dark">
@@ -310,7 +310,7 @@
             </aside>
 
             <button class="screenshot-trigger one-shot-playback" type="button" :aria-label="`${t('redesign.workflow.zoomAction')}: ${oneShotPlaybackCapture.caption}`" @click="openZoom(oneShotPlaybackCapture)">
-              <img :src="oneShotPlaybackCapture.src" :alt="oneShotPlaybackCapture.alt" width="240" height="244" loading="lazy" decoding="async" />
+              <img :src="oneShotPlaybackCapture.src" :alt="oneShotPlaybackCapture.alt" width="240" height="220" loading="lazy" decoding="async" />
               <span class="screenshot-trigger__affordance" aria-hidden="true">＋</span>
             </button>
             <div class="capture-caption capture-caption--dark">
@@ -321,7 +321,7 @@
 
           <figure class="one-shots-settings" data-reveal>
             <button class="screenshot-trigger" type="button" :aria-label="`${t('redesign.workflow.zoomAction')}: ${t('redesign.oneShots.settingsCaption')}`" @click="openZoom(oneShotSettingsCapture)">
-              <img :src="oneShotSettingsCapture.src" :alt="oneShotSettingsCapture.alt" width="622" height="1178" loading="lazy" decoding="async" />
+              <img :src="oneShotSettingsCapture.src" :alt="oneShotSettingsCapture.alt" width="622" height="1190" loading="lazy" decoding="async" />
               <span class="screenshot-trigger__affordance" aria-hidden="true">＋</span>
             </button>
             <figcaption>{{ t('redesign.oneShots.settingsCaption') }}</figcaption>
@@ -429,14 +429,14 @@
           <div class="project-captures" data-reveal>
             <figure>
               <button class="screenshot-trigger" type="button" :aria-label="`${t('redesign.workflow.zoomAction')}: ${t('redesign.projects.connectionCaption')}`" @click="openZoom(connectionCapture)">
-                <img :src="connectionCapture.src" :alt="connectionCapture.alt" width="1484" height="1094" loading="lazy" decoding="async" />
+                <img :src="connectionCapture.src" :alt="connectionCapture.alt" width="1296" height="772" loading="lazy" decoding="async" />
                 <span class="screenshot-trigger__affordance" aria-hidden="true">＋</span>
               </button>
               <figcaption>{{ t('redesign.projects.connectionCaption') }}</figcaption>
             </figure>
             <figure>
               <button class="screenshot-trigger" type="button" :aria-label="`${t('redesign.workflow.zoomAction')}: ${t('redesign.projects.importCaption')}`" @click="openZoom(importCapture)">
-                <img :src="importCapture.src" :alt="importCapture.alt" width="1800" height="1200" loading="lazy" decoding="async" />
+                <img :src="importCapture.src" :alt="importCapture.alt" width="2400" height="1488" loading="lazy" decoding="async" />
                 <span class="screenshot-trigger__affordance" aria-hidden="true">＋</span>
               </button>
               <figcaption>{{ t('redesign.projects.importCaption') }}</figcaption>
@@ -467,16 +467,16 @@
             </div>
             <div class="docs-heading__copy">
               <p>{{ t('redesign.docs.intro') }}</p>
-              <a class="button button--acid" :href="asset('manual/operators-manual-2.6.21.pdf')" target="_blank" rel="noopener noreferrer">
-                {{ t('redesign.docs.manualAction') }} <span aria-hidden="true">↗</span>
+              <a class="button button--acid" :href="asset(`manual/operators-manual-${releaseVersion}.pdf`)" target="_blank" rel="noopener noreferrer">
+                {{ t('redesign.docs.manualAction', { version: releaseVersion }) }} <span aria-hidden="true">↗</span>
               </a>
               <span>{{ t('redesign.docs.manualMeta') }}</span>
             </div>
           </div>
 
           <aside class="edition-note" data-reveal>
-            <span>2.6.21 / PDF</span>
-            <p>{{ t('redesign.docs.editionNote') }}</p>
+            <span>{{ releaseVersion }} / PDF</span>
+            <p>{{ t('redesign.docs.editionNote', { version: releaseVersion }) }}</p>
           </aside>
 
           <div class="faq" data-reveal>
@@ -525,6 +525,7 @@ import { computed, nextTick, onMounted, onUnmounted, ref } from 'vue';
 import DownloadSection from './components/DownloadSection.vue';
 import ScreenshotDialog from './components/ScreenshotDialog.vue';
 import { useI18n } from './composables/useI18n';
+import releasePackage from '../public/package.json';
 
 interface Capture {
   src: string;
@@ -542,7 +543,9 @@ const { t } = useI18n();
 const baseURL = useRuntimeConfig().app.baseURL || '/';
 const asset = (path: string) => `${baseURL}${path.replace(/^\/+/, '')}`;
 const siteURL = baseURL === '/' ? 'https://dwcue.com/' : baseURL;
-const version = ref('2.6.21');
+const releaseVersion = releasePackage.version;
+const version = ref(releaseVersion);
+const captureDirectory = `screenshots/release-${releaseVersion}`;
 const shell = ref<HTMLElement | null>(null);
 
 const navigationLinks = computed(() => [
@@ -582,7 +585,7 @@ const handleGlobalKeydown = (event: KeyboardEvent) => {
 };
 
 const heroCapture = computed<Capture>(() => ({
-  src: asset('screenshots/release-2.6.17/main-workspace.webp'),
+  src: asset(`${captureDirectory}/main-workspace.webp`),
   alt: t('redesign.hero.screenshotAlt'),
   caption: t('redesign.hero.captureLabel'),
 }));
@@ -596,9 +599,9 @@ const workflowItems = computed<Record<WorkflowKey, Capture & { label: string; ti
     text: t('redesign.workflow.prepareText'),
     caption: t('redesign.workflow.prepareCaption'),
     alt: t('redesign.workflow.prepareAlt'),
-    src: asset('screenshots/manual-20260906/edit-workspace.webp'),
-    width: 1800,
-    height: 1021,
+    src: asset(`${captureDirectory}/edit-workspace.webp`),
+    width: 2400,
+    height: 1488,
   },
   perform: {
     label: t('redesign.workflow.performLabel'),
@@ -606,9 +609,9 @@ const workflowItems = computed<Record<WorkflowKey, Capture & { label: string; ti
     text: t('redesign.workflow.performText'),
     caption: t('redesign.workflow.performCaption'),
     alt: t('redesign.workflow.performAlt'),
-    src: asset('screenshots/release-2.6.21/show-mode.webp'),
+    src: asset(`${captureDirectory}/show-mode.webp`),
     width: 2400,
-    height: 1600,
+    height: 1488,
   },
   output: {
     label: t('redesign.workflow.outputLabel'),
@@ -616,14 +619,14 @@ const workflowItems = computed<Record<WorkflowKey, Capture & { label: string; ti
     text: t('redesign.workflow.outputText'),
     caption: t('redesign.workflow.outputCaption'),
     alt: t('redesign.workflow.outputAlt'),
-    src: asset('screenshots/manual-20260906/output-routing-current.webp'),
-    width: 1800,
-    height: 432,
+    src: asset(`${captureDirectory}/cue-output.webp`),
+    width: 2800,
+    height: 578,
   },
 }));
 
 const precisionCapture = computed<Capture>(() => ({
-  src: asset('screenshots/manual-20260906/cue-playback-current.webp'),
+  src: asset(`${captureDirectory}/cue-playback.webp`),
   alt: t('redesign.precision.screenshotAlt'),
   caption: t('redesign.precision.captureLabel'),
 }));
@@ -657,7 +660,7 @@ const resetDemo = () => {
 };
 
 const transportCapture = computed<Capture>(() => ({
-  src: asset('screenshots/manual-20260906/transport-detail-current.webp'),
+  src: asset(`${captureDirectory}/transport.webp`),
   alt: t('redesign.show.transportAlt'),
   caption: t('redesign.show.transportLabel'),
 }));
@@ -670,12 +673,12 @@ const oneShotModes = computed<Record<OneShotKey, { label: string; title: string;
   replace: { label: t('redesign.oneShots.replaceLabel'), title: t('redesign.oneShots.replaceTitle'), text: t('redesign.oneShots.replaceText') },
 }));
 const oneShotPlaybackCapture = computed<Capture>(() => ({
-  src: asset('screenshots/release-2.6.21/one-shot-show-mode.webp'),
+  src: asset(`${captureDirectory}/quickplay-tile.webp`),
   alt: t('redesign.oneShots.playbackAlt'),
   caption: t('redesign.oneShots.playbackCaption'),
 }));
 const oneShotSettingsCapture = computed<Capture>(() => ({
-  src: asset('screenshots/release-2.6.21/one-shot-settings.webp'),
+  src: asset(`${captureDirectory}/quickplay-settings.webp`),
   alt: t('redesign.oneShots.settingsAlt'),
   caption: t('redesign.oneShots.settingsCaption'),
 }));
@@ -689,9 +692,9 @@ const outputItems = computed<Record<OutputKey, Capture & { label: string; title:
     text: t('redesign.output.testCardText'),
     caption: t('redesign.output.testCardCaption'),
     alt: t('redesign.output.testCardAlt'),
-    src: asset('screenshots/manual-20260906/video-test-card-current.webp'),
-    width: 1800,
-    height: 952,
+    src: asset(`${captureDirectory}/video-test-card.webp`),
+    width: 1920,
+    height: 1080,
   },
   routing: {
     label: t('redesign.output.routingLabel'),
@@ -699,9 +702,9 @@ const outputItems = computed<Record<OutputKey, Capture & { label: string; title:
     text: t('redesign.output.routingText'),
     caption: t('redesign.output.routingCaption'),
     alt: t('redesign.output.routingAlt'),
-    src: asset('screenshots/release-2.6.17/settings-audio-routing.webp'),
-    width: 2800,
-    height: 1736,
+    src: asset(`${captureDirectory}/audio-routing.webp`),
+    width: 2400,
+    height: 1488,
   },
   settings: {
     label: t('redesign.output.settingsLabel'),
@@ -709,19 +712,19 @@ const outputItems = computed<Record<OutputKey, Capture & { label: string; title:
     text: t('redesign.output.settingsText'),
     caption: t('redesign.output.settingsCaption'),
     alt: t('redesign.output.settingsAlt'),
-    src: asset('screenshots/manual-20260906/video-settings-current.webp'),
-    width: 1440,
-    height: 1408,
+    src: asset(`${captureDirectory}/video-settings.webp`),
+    width: 2400,
+    height: 1488,
   },
 }));
 
 const connectionCapture = computed<Capture>(() => ({
-  src: asset('screenshots/manual-20260906/server-connection-current.webp'),
+  src: asset(`${captureDirectory}/server-connection.webp`),
   alt: t('redesign.projects.connectionAlt'),
   caption: t('redesign.projects.connectionCaption'),
 }));
 const importCapture = computed<Capture>(() => ({
-  src: asset('screenshots/manual-20260906/import-options-current.webp'),
+  src: asset(`${captureDirectory}/import-media.webp`),
   alt: t('redesign.projects.importAlt'),
   caption: t('redesign.projects.importCaption'),
 }));
@@ -743,7 +746,7 @@ const openZoom = (capture: Capture) => {
 
 const seoTitle = computed(() => `DonWells Cue — ${t('header.tagline')}`);
 const seoDescription = computed(() => t('seo.description'));
-const ogImage = `${siteURL}screenshots/release-2.6.21/show-mode.webp`;
+const ogImage = `${siteURL}${captureDirectory}/show-mode.webp`;
 
 useHead(() => ({
   title: seoTitle.value,
@@ -758,7 +761,7 @@ useSeoMeta(() => ({
   ogUrl: siteURL,
   ogImage,
   ogImageWidth: '2400',
-  ogImageHeight: '1600',
+  ogImageHeight: '1488',
   ogImageType: 'image/webp',
   twitterCard: 'summary_large_image',
   twitterTitle: seoTitle.value,
