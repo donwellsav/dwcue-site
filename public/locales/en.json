@@ -134,7 +134,7 @@
     },
     "linux": {
       "title": "Linux",
-      "description": "x86_64 · AppImage",
+      "description": "x86_64 · glibc 2.43 or newer",
       "action": "Download AppImage",
       "meta": "Portable build"
     },

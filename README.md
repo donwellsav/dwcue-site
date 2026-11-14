@@ -32,7 +32,7 @@ Preserve `#top`, `#main`, `#workflow`, `#show-mode`, `#one-shots`, `#video-outpu
 
 Product facts come from the desktop repository’s `docs/operators-manual.md`. The 2.6.23 workspace screenshots use a packaged Apple Silicon review build at app revision `2f2a4b13cfc790030164881ee2b70d9ecfe6b6b1`, with generated show media and a software audio output. The detail crops retain their 2.6.22 captions and come from review build `6333f515c7b4cb3f07bf46dbb461fe2ce4ccd102`. The server screenshot uses a reserved example hostname and a blank access token.
 
-The 2.6.23 PDF is copied byte for byte from the desktop repository. It is 1,990,471 bytes with SHA-256 `9ca2dccdb7789143405b67c3827f54cb93858fe8fed99fbb44eee75ef172a6bc`. Earlier manuals remain available at their versioned URLs.
+The 2.6.23 PDF is copied byte for byte from the desktop repository. It is 1,990,471 bytes with SHA-256 `3535b5530a1b65a19b0a8545dbade7e529eb076bc429700e761d645be87daef9`. Earlier manuals remain available at their versioned URLs.
 
 When updating copy, preserve distinctions from the manual:
 
