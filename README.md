@@ -15,8 +15,9 @@ Standalone Nuxt 4 / Vue 3 static website for [dwcue.com](https://dwcue.com/). Th
 | `nuxt.config.ts` | Static generation, fonts, metadata and social preview |
 | `public/package.json` | Runtime release-version pointer |
 | `public/screenshots/manual-20260906/` | Real operator-manual captures, converted to uncropped WebP |
-| `public/screenshots/release-2.6.22/` | 13 current captures from the packaged 2.6.22 software review |
-| `public/manual/operators-manual-2.6.22.pdf` | Operator manual for this release |
+| `public/screenshots/release-2.6.23/` | Main workspace, Cue Properties, and Show Mode captures from packaged 2.6.23 |
+| `public/screenshots/release-2.6.22/` | Earlier captures retained for the detail views |
+| `public/manual/operators-manual-2.6.23.pdf` | Operator manual for this release |
 | `worker/index.js` | Production R2-serving Worker |
 
 Existing non-English catalogs remain dormant. Do not reactivate the old locale behavior without a deliberate translated-content release.
@@ -29,9 +30,9 @@ Preserve `#top`, `#main`, `#workflow`, `#show-mode`, `#one-shots`, `#video-outpu
 
 ## Source provenance
 
-Product facts come from the desktop repository’s `docs/operators-manual.md`. The 2.6.22 screenshots use a packaged Apple Silicon review build at app revision `6333f515c7b4cb3f07bf46dbb461fe2ce4ccd102`, with generated show media and a software audio output. Full workspace images are resized proportionally to WebP. Detail images are crops from that app. The server screenshot uses a reserved example hostname and a blank access token.
+Product facts come from the desktop repository’s `docs/operators-manual.md`. The 2.6.23 workspace screenshots use a packaged Apple Silicon review build at app revision `2f2a4b13cfc790030164881ee2b70d9ecfe6b6b1`, with generated show media and a software audio output. The detail crops retain their 2.6.22 captions and come from review build `6333f515c7b4cb3f07bf46dbb461fe2ce4ccd102`. The server screenshot uses a reserved example hostname and a blank access token.
 
-The 2.6.22 PDF is copied byte for byte from the desktop repository. It is 1,963,841 bytes with SHA-256 `0236474982fe587a9b7b03a31573563811ebbafd67f46cd875ca60f1718a6113`. Earlier manuals remain available at their versioned URLs.
+The 2.6.23 PDF is copied byte for byte from the desktop repository. It is 1,990,471 bytes with SHA-256 `9ca2dccdb7789143405b67c3827f54cb93858fe8fed99fbb44eee75ef172a6bc`. Earlier manuals remain available at their versioned URLs.
 
 When updating copy, preserve distinctions from the manual:
 
@@ -59,7 +60,7 @@ Use the generated preview for final verification, not a dev server while generat
 
 ## Release-version and download contracts
 
-The page uses the checked-in `public/package.json` version for the manual, screenshot directory, and initial download links. It fetches the runtime version from `/package.json` for the installer links. Update the manifest, versioned captures, and manual together. The app release workflow checks all installer URLs before deploying the website.
+The page uses the checked-in `public/package.json` version for the manual and initial download links. It fetches the runtime version from `/package.json` for the installer links. Screenshot paths and captions identify the version each capture shows. The app release workflow checks all installer URLs before deploying the website.
 
 | Platform | Asset names |
 | --- | --- |
