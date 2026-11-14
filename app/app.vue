@@ -545,7 +545,8 @@ const asset = (path: string) => `${baseURL}${path.replace(/^\/+/, '')}`;
 const siteURL = baseURL === '/' ? 'https://dwcue.com/' : baseURL;
 const releaseVersion = releasePackage.version;
 const version = ref(releaseVersion);
-const captureDirectory = `screenshots/release-${releaseVersion}`;
+const workspaceCaptures = `screenshots/release-${releaseVersion}`;
+const detailCaptures = 'screenshots/release-2.6.22';
 const shell = ref<HTMLElement | null>(null);
 
 const navigationLinks = computed(() => [
@@ -585,7 +586,7 @@ const handleGlobalKeydown = (event: KeyboardEvent) => {
 };
 
 const heroCapture = computed<Capture>(() => ({
-  src: asset(`${captureDirectory}/main-workspace.webp`),
+  src: asset(`${workspaceCaptures}/main-workspace.webp`),
   alt: t('redesign.hero.screenshotAlt'),
   caption: t('redesign.hero.captureLabel'),
 }));
@@ -599,7 +600,7 @@ const workflowItems = computed<Record<WorkflowKey, Capture & { label: string; ti
     text: t('redesign.workflow.prepareText'),
     caption: t('redesign.workflow.prepareCaption'),
     alt: t('redesign.workflow.prepareAlt'),
-    src: asset(`${captureDirectory}/edit-workspace.webp`),
+    src: asset(`${workspaceCaptures}/edit-workspace.webp`),
     width: 2400,
     height: 1488,
   },
@@ -609,7 +610,7 @@ const workflowItems = computed<Record<WorkflowKey, Capture & { label: string; ti
     text: t('redesign.workflow.performText'),
     caption: t('redesign.workflow.performCaption'),
     alt: t('redesign.workflow.performAlt'),
-    src: asset(`${captureDirectory}/show-mode.webp`),
+    src: asset(`${workspaceCaptures}/show-mode.webp`),
     width: 2400,
     height: 1488,
   },
@@ -619,14 +620,14 @@ const workflowItems = computed<Record<WorkflowKey, Capture & { label: string; ti
     text: t('redesign.workflow.outputText'),
     caption: t('redesign.workflow.outputCaption'),
     alt: t('redesign.workflow.outputAlt'),
-    src: asset(`${captureDirectory}/cue-output.webp`),
+    src: asset(`${detailCaptures}/cue-output.webp`),
     width: 2800,
     height: 578,
   },
 }));
 
 const precisionCapture = computed<Capture>(() => ({
-  src: asset(`${captureDirectory}/cue-playback.webp`),
+  src: asset(`${detailCaptures}/cue-playback.webp`),
   alt: t('redesign.precision.screenshotAlt'),
   caption: t('redesign.precision.captureLabel'),
 }));
@@ -660,7 +661,7 @@ const resetDemo = () => {
 };
 
 const transportCapture = computed<Capture>(() => ({
-  src: asset(`${captureDirectory}/transport.webp`),
+  src: asset(`${detailCaptures}/transport.webp`),
   alt: t('redesign.show.transportAlt'),
   caption: t('redesign.show.transportLabel'),
 }));
@@ -673,12 +674,12 @@ const oneShotModes = computed<Record<OneShotKey, { label: string; title: string;
   replace: { label: t('redesign.oneShots.replaceLabel'), title: t('redesign.oneShots.replaceTitle'), text: t('redesign.oneShots.replaceText') },
 }));
 const oneShotPlaybackCapture = computed<Capture>(() => ({
-  src: asset(`${captureDirectory}/quickplay-tile.webp`),
+  src: asset(`${detailCaptures}/quickplay-tile.webp`),
   alt: t('redesign.oneShots.playbackAlt'),
   caption: t('redesign.oneShots.playbackCaption'),
 }));
 const oneShotSettingsCapture = computed<Capture>(() => ({
-  src: asset(`${captureDirectory}/quickplay-settings.webp`),
+  src: asset(`${detailCaptures}/quickplay-settings.webp`),
   alt: t('redesign.oneShots.settingsAlt'),
   caption: t('redesign.oneShots.settingsCaption'),
 }));
@@ -692,7 +693,7 @@ const outputItems = computed<Record<OutputKey, Capture & { label: string; title:
     text: t('redesign.output.testCardText'),
     caption: t('redesign.output.testCardCaption'),
     alt: t('redesign.output.testCardAlt'),
-    src: asset(`${captureDirectory}/video-test-card.webp`),
+    src: asset(`${detailCaptures}/video-test-card.webp`),
     width: 1920,
     height: 1080,
   },
@@ -702,7 +703,7 @@ const outputItems = computed<Record<OutputKey, Capture & { label: string; title:
     text: t('redesign.output.routingText'),
     caption: t('redesign.output.routingCaption'),
     alt: t('redesign.output.routingAlt'),
-    src: asset(`${captureDirectory}/audio-routing.webp`),
+    src: asset(`${detailCaptures}/audio-routing.webp`),
     width: 2400,
     height: 1488,
   },
@@ -712,19 +713,19 @@ const outputItems = computed<Record<OutputKey, Capture & { label: string; title:
     text: t('redesign.output.settingsText'),
     caption: t('redesign.output.settingsCaption'),
     alt: t('redesign.output.settingsAlt'),
-    src: asset(`${captureDirectory}/video-settings.webp`),
+    src: asset(`${detailCaptures}/video-settings.webp`),
     width: 2400,
     height: 1488,
   },
 }));
 
 const connectionCapture = computed<Capture>(() => ({
-  src: asset(`${captureDirectory}/server-connection.webp`),
+  src: asset(`${detailCaptures}/server-connection.webp`),
   alt: t('redesign.projects.connectionAlt'),
   caption: t('redesign.projects.connectionCaption'),
 }));
 const importCapture = computed<Capture>(() => ({
-  src: asset(`${captureDirectory}/import-media.webp`),
+  src: asset(`${detailCaptures}/import-media.webp`),
   alt: t('redesign.projects.importAlt'),
   caption: t('redesign.projects.importCaption'),
 }));
@@ -746,7 +747,7 @@ const openZoom = (capture: Capture) => {
 
 const seoTitle = computed(() => `DonWells Cue — ${t('header.tagline')}`);
 const seoDescription = computed(() => t('seo.description'));
-const ogImage = `${siteURL}${captureDirectory}/show-mode.webp`;
+const ogImage = `${siteURL}${workspaceCaptures}/show-mode.webp`;
 
 useHead(() => ({
   title: seoTitle.value,
