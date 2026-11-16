@@ -545,7 +545,7 @@ const asset = (path: string) => `${baseURL}${path.replace(/^\/+/, '')}`;
 const siteURL = baseURL === '/' ? 'https://dwcue.com/' : baseURL;
 const releaseVersion = releasePackage.version;
 const version = ref(releaseVersion);
-const workspaceCaptures = `screenshots/release-${releaseVersion}`;
+const workspaceCaptures = 'screenshots/release-2.6.23';
 const detailCaptures = 'screenshots/release-2.6.22';
 const shell = ref<HTMLElement | null>(null);
 
