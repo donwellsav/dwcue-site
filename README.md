@@ -17,7 +17,7 @@ Standalone Nuxt 4 / Vue 3 static website for [dwcue.com](https://dwcue.com/). Th
 | `public/screenshots/manual-20260906/` | Real operator-manual captures, converted to uncropped WebP |
 | `public/screenshots/release-2.6.23/` | Main workspace, Cue Properties, and Show Mode captures from packaged 2.6.23 |
 | `public/screenshots/release-2.6.22/` | Earlier captures retained for the detail views |
-| `public/manual/operators-manual-2.6.23.pdf` | Operator manual for this release |
+| `public/manual/operators-manual-2.6.24.pdf` | Operator manual for this release |
 | `worker/index.js` | Production R2-serving Worker |
 
 Existing non-English catalogs remain dormant. Do not reactivate the old locale behavior without a deliberate translated-content release.
@@ -30,9 +30,9 @@ Preserve `#top`, `#main`, `#workflow`, `#show-mode`, `#one-shots`, `#video-outpu
 
 ## Source provenance
 
-Product facts come from the desktop repository’s `docs/operators-manual.md`. The 2.6.23 workspace screenshots use a packaged Apple Silicon review build at app revision `2f2a4b13cfc790030164881ee2b70d9ecfe6b6b1`, with generated show media and a software audio output. The detail crops retain their 2.6.22 captions and come from review build `6333f515c7b4cb3f07bf46dbb461fe2ce4ccd102`. The server screenshot uses a reserved example hostname and a blank access token.
+Product facts come from the desktop repository’s `docs/operators-manual.md`. The 2.6.24 site retains the labelled 2.6.23 workspace screenshots, which use a packaged Apple Silicon review build at app revision `2f2a4b13cfc790030164881ee2b70d9ecfe6b6b1`, with generated show media and a software audio output. The detail crops retain their 2.6.22 captions and come from review build `6333f515c7b4cb3f07bf46dbb461fe2ce4ccd102`. The server screenshot uses a reserved example hostname and a blank access token.
 
-The 2.6.23 PDF is copied byte for byte from the desktop repository. It is 1,990,471 bytes with SHA-256 `3535b5530a1b65a19b0a8545dbade7e529eb076bc429700e761d645be87daef9`. Earlier manuals remain available at their versioned URLs.
+The 2.6.24 PDF is copied byte for byte from the desktop repository. It is 2,056,507 bytes with SHA-256 `c035abe20521ae10b380fa5d34b56f30d14726a978111d4e1c0bd10b4b6de3a3`. Earlier manuals remain available at their versioned URLs.
 
 When updating copy, preserve distinctions from the manual:
 
