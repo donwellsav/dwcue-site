@@ -77,8 +77,8 @@
             <img
               :src="heroCapture.src"
               :alt="heroCapture.alt"
-              width="2400"
-              height="1488"
+              width="2800"
+              height="1736"
               loading="eager"
               fetchpriority="high"
               decoding="async"
@@ -310,7 +310,7 @@
             </aside>
 
             <button class="screenshot-trigger one-shot-playback" type="button" :aria-label="`${t('redesign.workflow.zoomAction')}: ${oneShotPlaybackCapture.caption}`" @click="openZoom(oneShotPlaybackCapture)">
-              <img :src="oneShotPlaybackCapture.src" :alt="oneShotPlaybackCapture.alt" width="240" height="220" loading="lazy" decoding="async" />
+              <img :src="oneShotPlaybackCapture.src" :alt="oneShotPlaybackCapture.alt" width="274" height="252" loading="lazy" decoding="async" />
               <span class="screenshot-trigger__affordance" aria-hidden="true">＋</span>
             </button>
             <div class="capture-caption capture-caption--dark">
@@ -545,7 +545,7 @@ const asset = (path: string) => `${baseURL}${path.replace(/^\/+/, '')}`;
 const siteURL = baseURL === '/' ? 'https://dwcue.com/' : baseURL;
 const releaseVersion = releasePackage.version;
 const version = ref(releaseVersion);
-const workspaceCaptures = 'screenshots/release-2.6.23';
+const workspaceCaptures = 'screenshots/release-2.7.0';
 const detailCaptures = 'screenshots/release-2.6.22';
 const shell = ref<HTMLElement | null>(null);
 
@@ -601,8 +601,8 @@ const workflowItems = computed<Record<WorkflowKey, Capture & { label: string; ti
     caption: t('redesign.workflow.prepareCaption'),
     alt: t('redesign.workflow.prepareAlt'),
     src: asset(`${workspaceCaptures}/edit-workspace.webp`),
-    width: 2400,
-    height: 1488,
+    width: 2800,
+    height: 1736,
   },
   perform: {
     label: t('redesign.workflow.performLabel'),
@@ -611,8 +611,8 @@ const workflowItems = computed<Record<WorkflowKey, Capture & { label: string; ti
     caption: t('redesign.workflow.performCaption'),
     alt: t('redesign.workflow.performAlt'),
     src: asset(`${workspaceCaptures}/show-mode.webp`),
-    width: 2400,
-    height: 1488,
+    width: 2800,
+    height: 1736,
   },
   output: {
     label: t('redesign.workflow.outputLabel'),
@@ -661,7 +661,7 @@ const resetDemo = () => {
 };
 
 const transportCapture = computed<Capture>(() => ({
-  src: asset(`${detailCaptures}/transport.webp`),
+  src: asset(`${workspaceCaptures}/transport.webp`),
   alt: t('redesign.show.transportAlt'),
   caption: t('redesign.show.transportLabel'),
 }));
@@ -674,7 +674,7 @@ const oneShotModes = computed<Record<OneShotKey, { label: string; title: string;
   replace: { label: t('redesign.oneShots.replaceLabel'), title: t('redesign.oneShots.replaceTitle'), text: t('redesign.oneShots.replaceText') },
 }));
 const oneShotPlaybackCapture = computed<Capture>(() => ({
-  src: asset(`${detailCaptures}/quickplay-tile.webp`),
+  src: asset(`${workspaceCaptures}/quickplay-tile.webp`),
   alt: t('redesign.oneShots.playbackAlt'),
   caption: t('redesign.oneShots.playbackCaption'),
 }));
