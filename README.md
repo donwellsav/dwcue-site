@@ -15,10 +15,11 @@ Standalone Nuxt 4 / Vue 3 static website for [dwcue.com](https://dwcue.com/). Th
 | `nuxt.config.ts` | Static generation, fonts, metadata and social preview |
 | `public/package.json` | Runtime release-version pointer |
 | `public/screenshots/manual-20260906/` | Real operator-manual captures, converted to uncropped WebP |
-| `public/screenshots/release-2.7.0/` | Main workspace, Cue Properties, Show Mode, transport, and QuickPlay tile captures from packaged 2.7.0 |
+| `public/screenshots/release-2.7.1/` | Main workspace, Cue Properties, Show Mode, transport, and QuickPlay tile captures from packaged 2.7.1 |
+| `public/screenshots/release-2.7.0/` | The same five captures from 2.7.0, no longer shown |
 | `public/screenshots/release-2.6.23/` | Earlier workspace captures, no longer shown |
 | `public/screenshots/release-2.6.22/` | Earlier captures retained for the detail views |
-| `public/manual/operators-manual-2.7.0.pdf` | Operator manual for this release |
+| `public/manual/operators-manual-2.7.1.pdf` | Operator manual for this release |
 | `worker/index.js` | Production R2-serving Worker |
 
 Existing non-English catalogs remain dormant. Do not reactivate the old locale behavior without a deliberate translated-content release.
@@ -31,9 +32,9 @@ Preserve `#top`, `#main`, `#workflow`, `#show-mode`, `#one-shots`, `#video-outpu
 
 ## Source provenance
 
-Product facts come from the desktop repository’s `docs/operators-manual.md`. The 2.7.0 workspace, transport, and QuickPlay tile screenshots use a locally packaged Apple Silicon build of the 2.7.0 source at app revision `6a36f4e919811b16d22ad71ecab31d3dbb166ea8` (the release tag adds only the manual), with a generated practice show of silent media and the computer's built-in audio output. They were taken at 1400 × 868 CSS pixels and two device pixels per CSS pixel. The remaining detail crops retain their 2.6.22 captions and come from review build `6333f515c7b4cb3f07bf46dbb461fe2ce4ccd102`; they show the interface before the 2.7.0 colours and QuickPlay tiles. The server screenshot uses a reserved example hostname and a blank access token.
+Product facts come from the desktop repository’s `docs/operators-manual.md`. The 2.7.1 workspace, transport, and QuickPlay tile screenshots use a locally packaged Apple Silicon build of the 2.7.1 source at app revision `5f90fd0`, with the attached QuickPlay panel at its new 336-pixel default, a generated practice show of silent media and the computer's built-in audio output. They were taken at 1400 × 868 CSS pixels and two device pixels per CSS pixel, with no window shown on screen. The flashing end-of-cue edge on the playing row is shown at the low point of its pulse. The remaining detail crops retain their 2.6.22 captions and come from review build `6333f515c7b4cb3f07bf46dbb461fe2ce4ccd102`; they show the interface before the 2.7.0 colours and QuickPlay tiles. The server screenshot uses a reserved example hostname and a blank access token.
 
-The 2.7.0 PDF is copied byte for byte from the desktop repository at tag `v2.7.0`. It is 2,233,259 bytes with SHA-256 `2a99ffa8013f89678f30b1b96a67683ff05f67b0b2c9899a0f4d623c92701d9a`. Earlier manuals remain available at their versioned URLs.
+The 2.7.1 PDF is copied byte for byte from the desktop repository at commit `4573368`, the release commit for tag `v2.7.1`. It is 2,227,620 bytes with SHA-256 `e29a4746ebfc34eb5b2526464f48af5079d60a373fde7ed57e8473a6cc1900fe`. Earlier manuals remain available at their versioned URLs.
 
 When updating copy, preserve distinctions from the manual:
 

@@ -310,7 +310,7 @@
             </aside>
 
             <button class="screenshot-trigger one-shot-playback" type="button" :aria-label="`${t('redesign.workflow.zoomAction')}: ${oneShotPlaybackCapture.caption}`" @click="openZoom(oneShotPlaybackCapture)">
-              <img :src="oneShotPlaybackCapture.src" :alt="oneShotPlaybackCapture.alt" width="274" height="252" loading="lazy" decoding="async" />
+              <img :src="oneShotPlaybackCapture.src" :alt="oneShotPlaybackCapture.alt" width="318" height="246" loading="lazy" decoding="async" />
               <span class="screenshot-trigger__affordance" aria-hidden="true">＋</span>
             </button>
             <div class="capture-caption capture-caption--dark">
@@ -545,7 +545,7 @@ const asset = (path: string) => `${baseURL}${path.replace(/^\/+/, '')}`;
 const siteURL = baseURL === '/' ? 'https://dwcue.com/' : baseURL;
 const releaseVersion = releasePackage.version;
 const version = ref(releaseVersion);
-const workspaceCaptures = 'screenshots/release-2.7.0';
+const workspaceCaptures = 'screenshots/release-2.7.1';
 const detailCaptures = 'screenshots/release-2.6.22';
 const shell = ref<HTMLElement | null>(null);
 
