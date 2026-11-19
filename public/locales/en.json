@@ -54,7 +54,7 @@
     "platformsText": "Windows, macOS, and Linux builds with dedicated video output.",
     "license": "21 languages",
     "licenseText": "Includes right-to-left support for Arabic, Persian, and Urdu.",
-    "versionText": "Version 2.7.1 keeps Video Output open when it goes full screen on one screen, chooses screens fresh at each launch, and makes QuickPlay Restart start a playing QuickPlay over. It builds on 2.7.0: live and next unmistakable, a pre-show check, show backups, and a printable cue sheet.",
+    "versionText": "Version 2.8.0 keeps sound and picture steady during a show: Program plays through one path you can meter and fade, a lost output comes back by itself, the clicks and gaps are gone, and video holds its frames in step with the sound. A new Picture sync setting makes up for a video chain that delays the picture.",
     "label": "DonWells Cue product facts"
   },
   "workflow": {

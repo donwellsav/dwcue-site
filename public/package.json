@@ -1,6 +1,6 @@
 {
   "name": "donwells-cue",
-  "version": "2.7.1",
+  "version": "2.8.0",
   "description": "DonWells Cue — audio and video cue playback for live events.",
   "license": "AGPL-3.0-only"
 }
