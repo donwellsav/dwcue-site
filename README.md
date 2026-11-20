@@ -34,7 +34,7 @@ Preserve `#top`, `#main`, `#workflow`, `#show-mode`, `#one-shots`, `#video-outpu
 
 Product facts come from the desktop repository’s `docs/operators-manual.md`. The workspace, transport, and QuickPlay tile screenshots are kept from 2.7.1, because 2.8.0 did not change how those screens look. They use a locally packaged Apple Silicon build of the 2.7.1 source at app revision `5f90fd0`, with the attached QuickPlay panel at its new 336-pixel default, a generated practice show of silent media and the computer's built-in audio output. They were taken at 1400 × 868 CSS pixels and two device pixels per CSS pixel, with no window shown on screen. The flashing end-of-cue edge on the playing row is shown at the low point of its pulse. The remaining detail crops retain their 2.6.22 captions and come from review build `6333f515c7b4cb3f07bf46dbb461fe2ce4ccd102`; they show the interface before the 2.7.0 colours and QuickPlay tiles. The server screenshot uses a reserved example hostname and a blank access token.
 
-The 2.8.0 PDF is copied byte for byte from the desktop repository at tag `v2.8.0`. It is 2,249,278 bytes with SHA-256 `5225e07ee31cd1a6e41b0334ddd88d273269081c66691dfab8c64cae8856baf2`. Earlier manuals remain available at their versioned URLs.
+The 2.8.0 PDF is copied byte for byte from the desktop repository at tag `v2.8.0`. It is 2,249,306 bytes with SHA-256 `cedfc5f9afe2133bac3830055b05cd7c14b722eb2ce99daf35a08d31181e737b`. Earlier manuals remain available at their versioned URLs.
 
 When updating copy, preserve distinctions from the manual:
 
