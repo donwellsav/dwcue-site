@@ -254,7 +254,7 @@
           <div class="show-proof" data-reveal>
             <div class="show-proof__image">
               <button class="screenshot-trigger" type="button" :aria-label="`${t('redesign.workflow.zoomAction')}: ${t('redesign.show.transportLabel')}`" @click="openZoom(transportCapture)">
-                <img :src="transportCapture.src" :alt="transportCapture.alt" width="2800" height="580" loading="lazy" decoding="async" />
+                <img :src="transportCapture.src" :alt="transportCapture.alt" width="2800" height="208" loading="lazy" decoding="async" />
                 <span class="screenshot-trigger__affordance" aria-hidden="true">＋</span>
               </button>
               <div class="capture-caption capture-caption--dark">
@@ -545,7 +545,7 @@ const asset = (path: string) => `${baseURL}${path.replace(/^\/+/, '')}`;
 const siteURL = baseURL === '/' ? 'https://dwcue.com/' : baseURL;
 const releaseVersion = releasePackage.version;
 const version = ref(releaseVersion);
-const workspaceCaptures = 'screenshots/release-2.7.1';
+const workspaceCaptures = 'screenshots/release-2.8.1';
 const detailCaptures = 'screenshots/release-2.6.22';
 const shell = ref<HTMLElement | null>(null);
 
@@ -674,7 +674,7 @@ const oneShotModes = computed<Record<OneShotKey, { label: string; title: string;
   replace: { label: t('redesign.oneShots.replaceLabel'), title: t('redesign.oneShots.replaceTitle'), text: t('redesign.oneShots.replaceText') },
 }));
 const oneShotPlaybackCapture = computed<Capture>(() => ({
-  src: asset(`${workspaceCaptures}/quickplay-tile.webp`),
+  src: asset(`screenshots/release-2.7.1/quickplay-tile.webp`),
   alt: t('redesign.oneShots.playbackAlt'),
   caption: t('redesign.oneShots.playbackCaption'),
 }));
@@ -713,9 +713,9 @@ const outputItems = computed<Record<OutputKey, Capture & { label: string; title:
     text: t('redesign.output.settingsText'),
     caption: t('redesign.output.settingsCaption'),
     alt: t('redesign.output.settingsAlt'),
-    src: asset(`${detailCaptures}/video-settings.webp`),
-    width: 2400,
-    height: 1488,
+    src: asset(`${workspaceCaptures}/video-settings.webp`),
+    width: 2800,
+    height: 1736,
   },
 }));
 
